@@ -16,7 +16,7 @@ Pronunciation and letter alignment come from pinned dictionaries. Teaching hints
 - Generation checks spelling coverage, phone order, source hashes, and explicit cue entries. Unresolved alignments fail generation; unknown words stay unmarked.
 - Four reviewed merges join `ee` in see/sheep, `oa` in boat, and `ch` in chip. They preserve the source phonemes.
 - Quick/stretch follows NIFDI’s convention, including quick `h`. Other teaching systems can differ. These are teaching cues, not measured sound durations; a short vowel can have a stretch cue.
-- AH0, ER0, NG, TH and ZH have no supported cue in this table. A word containing one retains letter hints and audio but has no sound rail. Currently this affects a, hello and the.
+- AH0, ER0, NG, TH and ZH have no supported cue in this table. These sounds show ? in the sound guide; documented sounds keep their quick/stretch marks. Currently this affects a, hello and the.
 - Long-vowel marks identify conventional letter-name sounds. They do not mean “hold longer.” Split digraphs and multi-phone long u need further grouping support.
 - Browser speech may use a different pronunciation variant. Its audio is not aligned to the visual guide.
 

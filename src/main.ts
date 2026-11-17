@@ -27,6 +27,7 @@ app.innerHTML = `
       <div id="hint-legend" class="legend" aria-label="Visible hint key" hidden>
         <span data-legend="quick" hidden><i class="legend-quick" aria-hidden="true"></i>Quick sound</span>
         <span data-legend="stretch" hidden><i class="legend-stretch" aria-hidden="true"></i>Stretch sound</span>
+        <span data-legend="unclassified" hidden><i class="legend-unclassified" aria-hidden="true">?</i>Unclassified sound</span>
         <span data-legend="group" hidden><i class="legend-group" aria-hidden="true"></i>Letter group</span>
         <span data-legend="long" hidden><i class="legend-long" aria-hidden="true"></i>Long vowel</span>
         <span data-legend="vowel" hidden><i class="legend-vowel" aria-hidden="true">a</i>Vowel</span>
@@ -45,7 +46,7 @@ app.innerHTML = `
       <p id="speech-status" class="status" role="status" aria-live="polite"></p>
     </section>
     <details class="panel parent-tools">
-      <summary>Parent tools</summary>
+      <summary>Reading hints</summary>
       <div class="control-grid">
         <label><input type="checkbox" id="hints" checked>Hints by default</label>
         <label><input type="checkbox" id="rail" checked>Rail</label>
@@ -156,14 +157,13 @@ function renderText(): void {
         occurrence.graphemes.push(grapheme);
         letters.append(grapheme);
       });
-      if (hasBlendingCues(entry)) {
       const rail = document.createElement('div');
       rail.className = 'sound-rail';
       rail.setAttribute('aria-label', `Sound steps for ${token.text}, word ${index + 1}`);
       entry.groups.forEach((group, soundIndex) => {
         const cue = document.createElement('button');
-        cue.className = `cue cue-${group.cue}`;
-        cue.setAttribute('aria-label', `${token.text}: letters ${group.text}, sound ${soundIndex + 1} of ${entry.groups.length}, ${group.cue}`);
+        cue.className = `cue cue-${group.cue ?? 'unclassified'}`;
+        cue.setAttribute('aria-label', `${token.text}: letters ${group.text}, sound ${soundIndex + 1} of ${entry.groups.length}, ${group.cue ?? 'unclassified'}`);
         cue.addEventListener('click', () => activate(index, soundIndex));
         occurrence.cues.push(cue);
         rail.append(cue);
@@ -181,7 +181,6 @@ function renderText(): void {
       rail.addEventListener('pointermove', (event) => { if (rail.hasPointerCapture(event.pointerId)) scrub(event); });
       rail.addEventListener('pointerup', (event) => { if (rail.hasPointerCapture(event.pointerId)) rail.releasePointerCapture(event.pointerId); });
       occurrence.rail = rail;
-      }
     } else {
       letters.textContent = token.text;
     }
@@ -233,6 +232,7 @@ function updatePresentation(): void {
   const visibleMarks: Record<string, string> = {
     quick: '.sound-rail:not([hidden]) .cue-quick',
     stretch: '.sound-rail:not([hidden]) .cue-stretch',
+    unclassified: '.sound-rail:not([hidden]) .cue-unclassified',
     group: '.group-link',
     long: '.vowel-long',
     vowel: '.letter-vowel',
@@ -253,33 +253,33 @@ function updatePresentation(): void {
   override.value = word?.override ?? 'default';
   const show = !!word && hintsVisible(settings.hints.checked, word.override);
   const touchSounds = get<HTMLDivElement>('#touch-sounds');
-  touchSounds.hidden = !hasBlendingCues(word?.entry) || !show || !settings.rail.checked;
+  touchSounds.hidden = !word?.entry?.groups.length || !show || !settings.rail.checked;
   if (touchControlsFor !== selected) {
     touchControlsFor = selected;
     touchSounds.replaceChildren();
     const index = selected;
-    if (word?.entry && hasBlendingCues(word.entry) && index !== null) {
+    if (word?.entry && index !== null) {
       word.entry.groups.forEach((group, soundIndex) => {
         const button = document.createElement('button');
         button.type = 'button';
         button.textContent = word.graphemes[soundIndex].textContent;
-        button.setAttribute('aria-label', `Letters ${group.text}, sound ${soundIndex + 1} of ${word.entry!.groups.length}, ${group.cue}`);
+        button.setAttribute('aria-label', `Letters ${group.text}, sound ${soundIndex + 1} of ${word.entry!.groups.length}, ${group.cue ?? 'unclassified'}`);
         button.addEventListener('click', () => activate(index, soundIndex));
         touchSounds.append(button);
       });
     }
   }
   touchSounds.querySelectorAll('button').forEach((button, index) => button.setAttribute('aria-pressed', String(word?.active === index)));
-  scrubber.hidden = !hasBlendingCues(word?.entry) || !show || !settings.rail.checked;
+  scrubber.hidden = !word?.entry?.groups.length || !show || !settings.rail.checked;
   reset.disabled = !word?.entry || word.active === null;
   if (word?.entry) {
     progress.max = String(word.entry.groups.length - 1);
     progress.value = String(word.active ?? 0);
     const group = word.entry.groups[word.active ?? 0];
-    progress.setAttribute('aria-valuetext', `Letters ${group.text}, sound ${(word.active ?? 0) + 1} of ${word.entry.groups.length}, ${group.cue}`);
+    progress.setAttribute('aria-valuetext', `Letters ${group.text}, sound ${(word.active ?? 0) + 1} of ${word.entry.groups.length}, ${group.cue ?? 'unclassified'}`);
     count.textContent = word.active === null ? `${word.entry.groups.length} sounds` : `Sound ${word.active + 1} of ${word.entry.groups.length}`;
   }
-  wordStatus.textContent = !word ? '' : !word.entry ? 'No sound mapping for this word yet.' : !show ? 'Hints hidden.' : !hasBlendingCues(word.entry) ? 'Blending cues await review for this word.' : '';
+  wordStatus.textContent = !word ? '' : !word.entry ? 'No sound mapping for this word yet.' : !show ? 'Hints hidden.' : !hasBlendingCues(word.entry) ? 'No quick/stretch cue yet for sounds marked ?.' : '';
   speak.disabled = !word || !voice;
 }
 function stopSpeech(): void {

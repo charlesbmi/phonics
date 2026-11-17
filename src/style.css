@@ -30,3 +30,5 @@
 .word-unknown{white-space:normal;overflow-wrap:anywhere}
 .word-unknown .word-button{max-width:100%;overflow-wrap:anywhere;white-space:normal;text-align:left}
 .word-unknown .graphemes{display:inline}
+
+.reader{font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;font-variant-ligatures:none}

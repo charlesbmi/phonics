@@ -1,6 +1,6 @@
 {
   "engine": "Chromium",
-  "method": "Actual renderer exercised by setting each sentence into the text input, dispatching input, waiting for a frame, and checking rendered DOM and page geometry.",
+  "method": "Actual renderer exercised with all sentence cases, then targeted usage scenarios. Unclassified cue counts are checked against source evidence gaps.",
   "viewports": [
     {
       "width": 1280,
@@ -16,7 +16,8 @@
   "checks": [
     "original text and punctuation",
     "word occurrence counts",
-    "documented-only full blend rails",
+    "sound guides for mapped words",
+    "documented cues and explicit unclassified markers",
     "unknown words remain unmarked",
     "page overflow",
     "word selection and deselection"
@@ -25,5 +26,13 @@
     "No classroom validation",
     "No pronunciation-quality listening validation",
     "Phone-sized desktop browser, not physical mobile Safari"
+  ],
+  "usageChecks": [
+    "hello retains four sound steps with one unclassified cue",
+    "unclassified range value announced accessibly",
+    "repeated-word hint overrides remain independent",
+    "individual hint toggles and global/local overrides",
+    "empty input and Unicode text",
+    "monospace reading text and Reading hints label"
   ]
 }

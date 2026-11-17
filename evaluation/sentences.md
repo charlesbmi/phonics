@@ -1,6 +1,6 @@
 # 100 generated sentence cases
 
-Mapping and rail coverage are separate. A missing rail can reflect a documented evidence gap, not a silent sound. These checks do not establish educational efficacy.
+Mapping and complete cue coverage are separate. Unclassified sounds display ? alongside documented cues; they are not silent. These checks do not establish educational efficacy.
 
 | ID | Sentence | Mapped words | Complete rails | Outside dictionary |
 | --- | --- | --- | --- | --- |

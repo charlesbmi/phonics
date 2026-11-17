@@ -61,7 +61,7 @@ const results = cases.map(row => {
       }
     }
     if (hasBlendingCues(entry)) completeRails++;
-    else assert.ok(entry.groups.some(group => group.cue === null), 'A missing rail must correspond to an explicitly unsupported cue.');
+    else assert.ok(entry.groups.some(group => group.cue === null), 'An incomplete cue set must correspond to an explicitly unsupported cue.');
   }
   assert.deepEqual([...unknown].sort(), [...row.expectedUnmapped].sort(), `Coverage mismatch: ${row.id}`);
   if (row.kind === 'supported-vocabulary') assert.equal(mapped, words.length);
@@ -88,7 +88,7 @@ const report = {
 };
 const serialized = JSON.stringify(report, null, 2) + '\n';
 const markdown = '# 100 generated sentence cases\n\n' +
-  'Mapping and rail coverage are separate. A missing rail can reflect a documented evidence gap, not a silent sound. These checks do not establish educational efficacy.\n\n' +
+  'Mapping and complete cue coverage are separate. Unclassified sounds display ? alongside documented cues; they are not silent. These checks do not establish educational efficacy.\n\n' +
   '| ID | Sentence | Mapped words | Complete rails | Outside dictionary |\n| --- | --- | --- | --- | --- |\n' +
   results.map(row => `| ${row.id} | ${row.text} | ${row.mappedWords}/${row.words} | ${row.completeBlendRails}/${row.words} | ${row.unmapped.join(', ') || '—'} |`).join('\n') + '\n';
 if (process.argv.includes('--check')) {
