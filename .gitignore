@@ -3,3 +3,5 @@ dist/
 .hermit/
 .DS_Store
 *.log
+
+.agents/scratch/

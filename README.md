@@ -1,15 +1,13 @@
 # Little Reader
 
-Read together, with a little help from sound and letter hints.
+Read together with optional letter and sound hints.
 
 **[Open Little Reader →](https://charlesbmi.github.io/phonics/)**
 
-[![Little Reader with letter groups and sound hints](docs/screenshot.png)](https://charlesbmi.github.io/phonics/)
+[![Little Reader](docs/screenshot.png)](https://charlesbmi.github.io/phonics/)
 
-Type a sentence, then tap a word to hear it or adjust its hints. Tap again to close. **Settings** controls hints across the text and offers nine fonts with different letter shapes.
+Type a sentence and tap a word for audio or hints. **Settings** includes nine fonts with different letter shapes.
 
-Quick sounds use filled diamonds; stretch sounds use rounded bars. Brackets connect letters that make one sound. A ? marks a sound without a quick/stretch classification. Optional vowel marks and colors add help when needed.
+Four words have recording previews. Sound-follow timing is experimental and requires opting in; other words use your browser’s voice.
 
-Dictionary lookups load as you type. Words without verified letter alignments stay readable without markings. **Hear word** uses your browser’s voice; the sound guide is visual only.
-
-[Development](docs/development.md) · [Data sources](docs/sources.md)
+[Review unmarked words](https://charlesbmi.github.io/phonics/?review=alignments) · [Development](docs/development.md) · [Sources](docs/sources.md)

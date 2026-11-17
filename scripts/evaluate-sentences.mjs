@@ -90,15 +90,9 @@ const report = {
   cases: results,
 };
 const serialized = JSON.stringify(report, null, 2) + '\n';
-const markdown = '# 100 generated sentence cases\n\n' +
-  'Mapping and complete cue coverage are separate. Unclassified sounds display ? alongside documented cues; they are not silent. These checks do not establish educational efficacy.\n\n' +
-  '| ID | Sentence | Mapped words | Complete rails | Outside dictionary |\n| --- | --- | --- | --- | --- |\n' +
-  results.map(row => `| ${row.id} | ${row.text} | ${row.mappedWords}/${row.words} | ${row.completeBlendRails}/${row.words} | ${row.unmapped.join(', ') || '—'} |`).join('\n') + '\n';
 if (process.argv.includes('--check')) {
   assert.equal(read('evaluation/report.json'), serialized, 'Sentence evaluation report is stale.');
-  assert.equal(read('evaluation/sentences.md'), markdown, 'Sentence review table is stale.');
 } else {
   writeFileSync(new URL('evaluation/report.json', root), serialized);
-  writeFileSync(new URL('evaluation/sentences.md', root), markdown);
 }
 console.log(JSON.stringify({ total: report.total, passed: report.passed, wordOccurrences: report.wordOccurrences, mappedOccurrences: report.mappedOccurrences, completeBlendRails: report.completeBlendRails, exercisedWords: report.exercisedWords.length, exercisedBasePhones: report.exercisedBasePhones.length, unexercisedBasePhones: report.unexercisedBasePhones, withheld: report.explicitlyWithheldPhones }, null, 2));

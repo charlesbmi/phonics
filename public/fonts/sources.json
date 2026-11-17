@@ -1,0 +1,83 @@
+[
+  {
+    "family": "Andika",
+    "file": "andika-latin-400.woff2",
+    "bytes": 12768,
+    "sha256": "50841fc9db96758f504a1776c700a585a774d172ac172e97b77fff5b75deff7b",
+    "fontUrl": "https://fonts.gstatic.com/s/andika/v27/mem_Ya6iyW-LwqgwarYQeL8WVQ.woff2",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/andika/OFL.txt",
+    "licenseFile": "andika-OFL.txt"
+  },
+  {
+    "family": "Atkinson Hyperlegible",
+    "file": "atkinson-hyperlegible-latin-400.woff2",
+    "bytes": 11208,
+    "sha256": "a60206dd4793eb886952e48dc3e1c1d59942c004b2ab1e0086e7ccd156a7852d",
+    "fontUrl": "https://fonts.gstatic.com/s/atkinsonhyperlegible/v12/9Bt23C1KxNDXMspQ1lPyU89-1h6ONRlW45G04pIoWQeCbA.woff2",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/atkinsonhyperlegible/OFL.txt",
+    "licenseFile": "atkinson-hyperlegible-OFL.txt"
+  },
+  {
+    "family": "Comic Neue",
+    "file": "comic-neue-latin-400.woff2",
+    "bytes": 13220,
+    "sha256": "9baadbbabee2f073ca6c9fafe13de388d5db5fdfbecda8438ffd4f14f2624d1c",
+    "fontUrl": "https://fonts.gstatic.com/s/comicneue/v9/4UaHrEJDsxBrF37olUeD96rp57F2IwM.woff2",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/comicneue/OFL.txt",
+    "licenseFile": "comic-neue-OFL.txt"
+  },
+  {
+    "family": "Fira Mono",
+    "file": "fira-mono-latin-400.woff2",
+    "bytes": 10756,
+    "sha256": "381d3214b878f132fd33d8af72bdf1f9415aef024aed80309d5052d7da54917e",
+    "fontUrl": "https://fonts.gstatic.com/s/firamono/v16/N0bX2SlFPv1weGeLZDtgJv7Ss9XZYQ.woff2",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/firamono/OFL.txt",
+    "licenseFile": "fira-mono-OFL.txt"
+  },
+  {
+    "family": "JetBrains Mono",
+    "file": "jetbrains-mono-latin-400.woff2",
+    "bytes": 21212,
+    "sha256": "d3dcdccdaba31643defe2317942155d4af3ee03951d058adbe8bc02b13e61b0a",
+    "fontUrl": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOVk6OThhvA.woff2",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/jetbrainsmono/OFL.txt",
+    "licenseFile": "jetbrains-mono-OFL.txt"
+  },
+  {
+    "family": "Lexend",
+    "file": "lexend-latin-400.woff2",
+    "bytes": 14524,
+    "sha256": "3fb28657f98abe141d55d5d6cd8e01b2985f7ad2731d24fcf7cf8f885dfed3d2",
+    "fontUrl": "https://fonts.gstatic.com/s/lexend/v26/wlptgwvFAVdoq2_F94zlCfv0bz1WCzsWzLdneoCrCEswgg.woff2",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/lexend/OFL.txt",
+    "licenseFile": "lexend-OFL.txt"
+  },
+  {
+    "family": "Noto Sans",
+    "file": "noto-sans-latin-400.woff2",
+    "bytes": 13100,
+    "sha256": "267e43051d74c0121dabb002274c3c873fb360137f0df722151904665de041af",
+    "fontUrl": "https://fonts.gstatic.com/s/notosans/v42/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A-9a6VLYyWtZ3rI.woff2",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosans/OFL.txt",
+    "licenseFile": "noto-sans-OFL.txt"
+  },
+  {
+    "family": "Noto Serif",
+    "file": "noto-serif-latin-400.woff2",
+    "bytes": 14372,
+    "sha256": "190064f73b8f5a6dc1c2ebf0605a9ca8909fce00bd04ce7e4340c110920551fb",
+    "fontUrl": "https://fonts.gstatic.com/s/notoserif/v33/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTx8cKpKrCzi0i.woff2",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserif/OFL.txt",
+    "licenseFile": "noto-serif-OFL.txt"
+  },
+  {
+    "family": "Arimo",
+    "file": "arimo-latin-400.woff2",
+    "bytes": 11476,
+    "sha256": "d27e1c7e2713fb28da1c7c945f9dde845cc2dfcc1e733b940dbbfd2bff29bfd3",
+    "fontUrl": "https://fonts.gstatic.com/s/arimo/v36/P5sfzZCDf9_T_3cV7NCUECyoxNk37cxcABrBdwcoaaQw.woff2",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/arimo/OFL.txt",
+    "licenseFile": "arimo-OFL.txt"
+  }
+]

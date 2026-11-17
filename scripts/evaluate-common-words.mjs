@@ -132,21 +132,8 @@ if (process.argv.includes('--extract-source')) {
     ],
     edgeCases, results,
   };
-  const deferred = results.filter(row => row.status !== 'mapped');
   const missingCues = [...new Set(results.flatMap(row => row.unsupportedPhones ?? []))].sort();
-  const markdown = '# Common-word reader audit\n\n' +
-    `500 independently selected frequency words. Baseline: ${sample.baseline.mapped} mapped, ${sample.baseline.pronunciationOnly} pronunciation-only, ${sample.baseline.missing} missing, ${sample.baseline.completeTeachingCues} with complete teaching cues. Current: **${totals.mapped} mapped**, **${totals.pronunciationOnly} pronunciation-only**, **${totals.missing} missing**; **${totals.completeTeachingCues}/500** have complete teaching cues.\n\n` +
-    `Source: [wordfreq English large list](${sample.source.url}), SHA-256 \`${sample.source.sha256}\`. First 500 tokens matching \`${sample.selection.pattern}\`, in source frequency-bin order (ties retain upstream alphabetical order). Excludes numbers and punctuation; retains internal-apostrophe contractions. This general-language sample is not a child-reading curriculum.\n\n` +
-    `Frequency data © Robyn Speer, [CC BY-SA 4.0](${sample.source.licenseUrl}); extraction/filtering is a modification. ${sample.source.attribution}\n\n` +
-    `Reproduce: \`node scripts/evaluate-common-words.mjs\`; check saved report: add \`--check\`. To verify selection against the original downloaded gzip, add \`--verify-frequency-source /path/to/large_en.msgpack.gz\` (checksum enforced).\n\n` +
-    '“Mapped” checks spelling reconstruction and source pronunciation agreement. It does not prove that each source alignment is a good teaching choice. “Complete teaching cues” only measures documented quick/stretch coverage, separately from pronunciation.\n\n' +
-    `Remaining pronunciation-only/missing words: ${deferred.map(row => `${row.word} (${row.reason})`).join(', ') || 'none'}.\n\n` +
-    `Unclassified phones in mapped sample: ${missingCues.join(', ') || 'none'}. These retain an explicit unknown teaching cue. hello /ə/ now uses UFLI’s documented quick schwa convention; ER0 is not covered by that supplement.\n\n` +
-    `Known heteronyms in this sample: ${report.knownHeteronyms.join(', ')}. Primary CMU pronunciation remains context-free.\n\n` +
-    '| Edge case | Status | Selected pronunciation | Why checked |\n| --- | --- | --- | --- |\n' +
-    edgeCases.map(row => `| ${row.word} | ${row.status} | ${(row.pronunciation ?? []).join(' ')} | ${row.concern} |`).join('\n') + '\n\n' +
-    'Per-word results, source ranks, cue gaps and numbered CMU alternatives are recorded in [common-words-report.json](common-words-report.json). The baseline records the previous importer and cue policy, so its cue gain includes the explicit schwa policy change as well as importer coverage. No educational efficacy claim follows from this audit.\n';
-  const outputs = { 'evaluation/common-words-report.json': JSON.stringify(report, null, 2) + '\n', 'evaluation/common-words.md': markdown };
+  const outputs = { 'evaluation/common-words-report.json': JSON.stringify(report, null, 2) + '\n' };
   for (const [path, value] of Object.entries(outputs)) {
     if (process.argv.includes('--check')) assert.equal(read(path), value, `${path} is stale`);
     else writeFileSync(new URL(path, root), value);
