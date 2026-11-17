@@ -1,6 +1,6 @@
 {
   "engine": "Chromium",
-  "method": "Actual renderer exercised with all sentence cases, then targeted usage scenarios. Unclassified cue counts are checked against source evidence gaps.",
+  "method": "Actual Chromium renderer with lazy local lexicon shards; 100 sentence cases at desktop and phone widths plus targeted loading and font scenarios.",
   "viewports": [
     {
       "width": 1280,
@@ -25,7 +25,9 @@
   "limits": [
     "No classroom validation",
     "No pronunciation-quality listening validation",
-    "Phone-sized desktop browser, not physical mobile Safari"
+    "Phone-sized desktop browser, not physical mobile Safari",
+    "No live screen-reader listening validation",
+    "Primary dictionary pronunciation; no contextual heteronym resolution"
   ],
   "usageChecks": [
     "hello retains four sound steps with one unclassified cue",
@@ -33,6 +35,17 @@
     "repeated-word hint overrides remain independent",
     "individual hint toggles and global/local overrides",
     "empty input and Unicode text",
-    "monospace reading text and Reading hints label"
+    "monospace reading text and Reading hints label",
+    "full-lexicon vocabulary beyond old selected list",
+    "prefix cache avoids duplicate requests",
+    "pronunciation-only versus missing-word states",
+    "rapid-edit async result protection",
+    "selection before lookup retains populated sound controls",
+    "eight bundled font previews and per-font rail alignment",
+    "font selection keyboard navigation and focus return",
+    "font preference persists across reload",
+    "repository-scoped /phonics/ dictionary and font asset paths",
+    "failed dictionary request recovers through Retry hints",
+    "Unicode and out-of-dictionary words remain readable without invented hints"
   ]
 }

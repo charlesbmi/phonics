@@ -23,3 +23,5 @@ Pronunciation and letter alignment come from pinned dictionaries. Teaching hints
 The app’s shapes and colors present these annotations; no third-party app graphics or audio are bundled. Dictionary notices are retained in `data/upstream/` and [the shipped credits](../public/third-party-licenses.txt).
 
 Only the primary CMU pronunciation is currently selected; heteronyms such as read are not resolved from sentence context. The [alignment proposal](alignment-next.md) covers explicit variants, silent letters and multi-phone groups.
+
+Eight self-hosted reading fonts include single- and double-storey a, different l/t shapes, and two monospace options. Their [licenses and provenance](../public/fonts/README.txt) are bundled with the site.

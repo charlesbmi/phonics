@@ -1,4 +1,5 @@
 import { Lexicon, hasLetterGroups, normalizeWord } from './lexicon';
+import { installFontPicker } from './font-picker';
 import type { LexiconEntry } from './lexicon';
 import '../shared/reader.css';
 import './style.css';
@@ -50,6 +51,7 @@ app.innerHTML = `
     </section>
     <details class="panel parent-tools">
       <summary>Reading hints</summary>
+      <div id="font-control"></div>
       <div class="control-grid">
         <label><input type="checkbox" id="hints" checked>Hints by default</label>
         <label><input type="checkbox" id="rail" checked>Rail</label>
@@ -405,3 +407,4 @@ window.addEventListener('resize', updatePresentation);
 void document.fonts.ready.then(updatePresentation);
 refreshText();
 refreshVoices();
+installFontPicker(get<HTMLElement>('#font-control'), reader, updatePresentation);

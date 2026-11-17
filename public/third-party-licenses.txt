@@ -62,3 +62,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+READING FONTS
+Eight unmodified regular Latin font subsets are bundled under SIL OFL 1.1.
+See fonts/README.txt and adjacent family-OFL.txt files for full copyright,
+license terms, source URLs and checksums. No Google Fonts requests are made at runtime.

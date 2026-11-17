@@ -32,3 +32,16 @@
 .word-unknown .graphemes{display:inline}
 
 .reader{font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;font-variant-ligatures:none}
+
+#font-control{margin-top:16px}
+.font-picker{position:relative;width:min(100%,420px)}
+.font-picker summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:9px 12px;min-height:44px;border:1px solid var(--border);border-radius:10px;list-style:none;background:white;font-size:14px}
+.font-picker summary::-webkit-details-marker{display:none}
+.font-picker summary::after{content:"▾";color:var(--muted)}
+.current-font{margin-left:auto}
+.font-options{position:absolute;top:calc(100% + 5px);left:0;right:0;z-index:5;max-height:350px;overflow:auto;padding:6px;background:white;border:1px solid var(--border);border-radius:12px;box-shadow:0 8px 24px #20333318}
+.font-options button{display:flex;width:100%;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:3px 12px;text-align:left;border-color:transparent;border-radius:7px;font-size:16px;min-height:54px}
+.font-options button[aria-pressed=true]{color:var(--ink);background:var(--reading-surface);border-color:var(--accent)}
+.font-sample{font-size:20px;letter-spacing:.05em}
+.font-picker summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:600px){.font-options{position:static;margin-top:5px;box-shadow:none}.font-options button{font-size:15px}.font-sample{font-size:19px}}
