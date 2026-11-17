@@ -67,3 +67,9 @@ READING FONTS
 Nine unmodified regular Latin font subsets are bundled under SIL OFL 1.1.
 See fonts/README.txt and adjacent family-OFL.txt files for full copyright,
 license terms, source URLs and checksums. No Google Fonts requests are made at runtime.
+
+RECORDING PREVIEWS
+Recordings attributed to Dvortygirl on Wikimedia Commons. Dad, She and sheep
+are CC BY-SA 3.0; hello is public domain. Sources, pinned revisions, changes
+and hashes are in audio/ATTRIBUTION.txt, audio/sources.json and audio/manifest.json.
+The CC BY-SA 3.0 license is included at audio/CC-BY-SA-3.0.txt.

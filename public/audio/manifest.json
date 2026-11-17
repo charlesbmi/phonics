@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "alignment": {
+    "tool": "pocketsphinx",
+    "version": "5.1.1",
+    "model": "bundled en-us/en-us acoustic model",
+    "modelSha256": {
+      "README": "8b88de980568509c646d0527b8414beef136964391903b40996d32f737bf752e",
+      "feat.params": "c982c5f75e2a30c34d2c9ef1f6b129a5a00e67e3e927565076b58664cc2404c9",
+      "mdef": "2360f9a86889c1cfee8bd618a0269387911e5fb2920a594f506b18b8c79683b0",
+      "means": "832019e32cac12eb318964f96f469034acb12d0348eeddc3831831a100cb4dd4",
+      "noisedict": "7295b07df2c204c4f87c6782b6be1a3859d7006d4e3864181c955d6dab105a33",
+      "sendump": "8c9564c0d5bef69ca9d9bf1014abe162f071644cf02cf1fa8a483c3dc165a7a8",
+      "transition_matrices": "c1f7f28ea43177be734be1f88bd7f1b9a853d0e660f8599c67c6eaeca8bb539a",
+      "variances": "b00d696f85e96834fc10f8e5f06428d8c4db6bffdbe5845b6f69bf6efbc48fa5"
+    },
+    "sampleRate": 16000,
+    "framesPerSecond": 100,
+    "documentation": "https://pocketsphinx.readthedocs.io/en/latest/pocketsphinx.html#pocketsphinx.Decoder.set_alignment",
+    "note": "Build-time only. No model or aligner is shipped to the browser."
+  },
+  "words": {
+    "dad": {
+      "word": "dad",
+      "variantId": "dad",
+      "phones": [
+        "D",
+        "AE1",
+        "D"
+      ],
+      "graphPhonemes": [
+        "d",
+        "\u00e6",
+        "d"
+      ],
+      "audioUrl": "audio/dad.wav",
+      "sha256": "11f5ba76d92789535561a7add6e58aec3ab94935cfcea5379b378b12076365b6",
+      "sampleRate": 44100,
+      "frameCount": 26624,
+      "review": {
+        "status": "candidate",
+        "method": "PocketSphinx two-pass forced alignment",
+        "toolVersion": "5.1.1",
+        "humanReviewed": false,
+        "listeningReviewed": false,
+        "pronunciationStatus": "forced lexicon candidate; not listening-verified",
+        "timingResolutionMs": 10,
+        "limitations": "Unreviewed acoustic-model estimates. Silence and stop boundaries may be inaccurate; coarticulation is ambiguous. No sustain regions approved."
+      },
+      "events": [
+        {
+          "phoneIndex": 0,
+          "startFrame": 0,
+          "endFrame": 5292
+        },
+        {
+          "phoneIndex": 1,
+          "startFrame": 5292,
+          "endFrame": 15876
+        },
+        {
+          "phoneIndex": 2,
+          "startFrame": 15876,
+          "endFrame": 23373
+        }
+      ],
+      "provenance": {
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-dad.ogg",
+        "sourceRevision": 1229126048,
+        "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:En-us-dad.ogg&oldid=1229126048",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/En-us-dad.ogg",
+        "originalTimestamp": "2006-09-28T06:42:47Z",
+        "originalSha1": "cf5510f101bf2d4077ec709770082132ca3659df",
+        "originalSha256": "b4ea451b1e0cdaf99abbf6e262b96ad5633239c30423836e5ffdced248d9ab64",
+        "author": "Dvortygirl",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Dvortygirl",
+        "authorEvidence": "No machine-readable author provided. Dvortygirl assumed (based on copyright claims).",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "retrievedAt": "2026-11-17T17:52:42.481Z",
+        "originalLocalUrl": "audio/originals/dad.ogg",
+        "processedLicense": "CC BY-SA 3.0",
+        "changes": "Decoded Ogg Vorbis to mono 44100 Hz signed 16-bit PCM WAV; stereo sources downmixed; metadata removed; full duration retained.",
+        "ffmpegVersion": "ffmpeg version 8.0 Copyright (c) 2000-2025 the FFmpeg developers"
+      }
+    },
+    "she": {
+      "word": "she",
+      "variantId": "she",
+      "phones": [
+        "SH",
+        "IY1"
+      ],
+      "graphPhonemes": [
+        "\u0283",
+        "i"
+      ],
+      "audioUrl": "audio/she.wav",
+      "sha256": "4cc8a73e5c5afc289388e470045e2b174f0e1efa3965bacee210427472d5b70f",
+      "sampleRate": 44100,
+      "frameCount": 28160,
+      "review": {
+        "status": "candidate",
+        "method": "PocketSphinx two-pass forced alignment",
+        "toolVersion": "5.1.1",
+        "humanReviewed": false,
+        "listeningReviewed": false,
+        "pronunciationStatus": "forced lexicon candidate; not listening-verified",
+        "timingResolutionMs": 10,
+        "limitations": "Unreviewed acoustic-model estimates. Silence and stop boundaries may be inaccurate; coarticulation is ambiguous. No sustain regions approved."
+      },
+      "events": [
+        {
+          "phoneIndex": 0,
+          "startFrame": 6174,
+          "endFrame": 13671
+        },
+        {
+          "phoneIndex": 1,
+          "startFrame": 13671,
+          "endFrame": 24696
+        }
+      ],
+      "provenance": {
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-she.ogg",
+        "sourceRevision": 1084714011,
+        "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:En-us-she.ogg&oldid=1084714011",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/En-us-she.ogg",
+        "originalTimestamp": "2006-04-17T06:14:54Z",
+        "originalSha1": "d7f8be38058795f0eb96fe2d4512817a63b26ebc",
+        "originalSha256": "22f1ffb421847ac8adf5b49a3a9ed07883b6e425c12ed0b227eb546c4164f5d8",
+        "author": "Dvortygirl",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Dvortygirl",
+        "authorEvidence": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "retrievedAt": "2026-11-17T17:52:42.480Z",
+        "originalLocalUrl": "audio/originals/she.ogg",
+        "processedLicense": "CC BY-SA 3.0",
+        "changes": "Decoded Ogg Vorbis to mono 44100 Hz signed 16-bit PCM WAV; stereo sources downmixed; metadata removed; full duration retained.",
+        "ffmpegVersion": "ffmpeg version 8.0 Copyright (c) 2000-2025 the FFmpeg developers"
+      }
+    },
+    "hello": {
+      "word": "hello",
+      "variantId": "hello",
+      "phones": [
+        "HH",
+        "AH0",
+        "L",
+        "OW1"
+      ],
+      "graphPhonemes": [
+        "h",
+        "\u0259",
+        "l",
+        "o\u028a"
+      ],
+      "audioUrl": "audio/hello.wav",
+      "sha256": "347cf9692413950f447e9cc81829658ff04bff5be3c24b7a7cb127b5610cd24d",
+      "sampleRate": 44100,
+      "frameCount": 21504,
+      "review": {
+        "status": "candidate",
+        "method": "PocketSphinx two-pass forced alignment",
+        "toolVersion": "5.1.1",
+        "humanReviewed": false,
+        "listeningReviewed": false,
+        "pronunciationStatus": "forced lexicon candidate; not listening-verified",
+        "timingResolutionMs": 10,
+        "limitations": "Unreviewed acoustic-model estimates. Silence and stop boundaries may be inaccurate; coarticulation is ambiguous. No sustain regions approved."
+      },
+      "events": [
+        {
+          "phoneIndex": 0,
+          "startFrame": 0,
+          "endFrame": 3087
+        },
+        {
+          "phoneIndex": 1,
+          "startFrame": 3087,
+          "endFrame": 4851
+        },
+        {
+          "phoneIndex": 2,
+          "startFrame": 4851,
+          "endFrame": 7497
+        },
+        {
+          "phoneIndex": 3,
+          "startFrame": 7497,
+          "endFrame": 18081
+        }
+      ],
+      "provenance": {
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-hello.ogg",
+        "sourceRevision": 1229136883,
+        "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:En-us-hello.ogg&oldid=1229136883",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/En-us-hello.ogg",
+        "originalTimestamp": "2005-08-14T07:04:51Z",
+        "originalSha1": "4cda0527da53ae7534968dcba6ec986c243ff072",
+        "originalSha256": "ade8485f1cfd454e27ec1bb93cc0234d3187b2507230f72e96f46ac686e82972",
+        "author": "Dvortygirl",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Dvortygirl",
+        "authorEvidence": "Dvortygirl",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+        "retrievedAt": "2026-11-17T17:52:42.479Z",
+        "originalLocalUrl": "audio/originals/hello.ogg",
+        "processedLicense": "Public domain",
+        "changes": "Decoded Ogg Vorbis to mono 44100 Hz signed 16-bit PCM WAV; stereo sources downmixed; metadata removed; full duration retained.",
+        "ffmpegVersion": "ffmpeg version 8.0 Copyright (c) 2000-2025 the FFmpeg developers"
+      }
+    },
+    "sheep": {
+      "word": "sheep",
+      "variantId": "sheep",
+      "phones": [
+        "SH",
+        "IY1",
+        "P"
+      ],
+      "graphPhonemes": [
+        "\u0283",
+        "i",
+        "p"
+      ],
+      "audioUrl": "audio/sheep.wav",
+      "sha256": "da7f83f4860346546cdfdd27d6ba18af86d9f07558c2a5c8e6954cb0c4465dd7",
+      "sampleRate": 44100,
+      "frameCount": 30720,
+      "review": {
+        "status": "candidate",
+        "method": "PocketSphinx two-pass forced alignment",
+        "toolVersion": "5.1.1",
+        "humanReviewed": false,
+        "listeningReviewed": false,
+        "pronunciationStatus": "forced lexicon candidate; not listening-verified",
+        "timingResolutionMs": 10,
+        "limitations": "Unreviewed acoustic-model estimates. Silence and stop boundaries may be inaccurate; coarticulation is ambiguous. No sustain regions approved."
+      },
+      "events": [
+        {
+          "phoneIndex": 0,
+          "startFrame": 2646,
+          "endFrame": 11907
+        },
+        {
+          "phoneIndex": 1,
+          "startFrame": 11907,
+          "endFrame": 18522
+        },
+        {
+          "phoneIndex": 2,
+          "startFrame": 18522,
+          "endFrame": 27342
+        }
+      ],
+      "provenance": {
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-sheep.ogg",
+        "sourceRevision": 1228462813,
+        "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:En-us-sheep.ogg&oldid=1228462813",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/En-us-sheep.ogg",
+        "originalTimestamp": "2006-04-20T05:11:35Z",
+        "originalSha1": "75d3e4b94f803cc79c79c4d8673bcb99e59d6894",
+        "originalSha256": "7e0b494c820f9fbfb9b9b8bec3d7ab3dc035a69e1ffff9c8a1178891c59c479c",
+        "author": "Dvortygirl",
+        "authorUrl": "https://commons.wikimedia.org/wiki/User:Dvortygirl",
+        "authorEvidence": "Dvortygirl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "retrievedAt": "2026-11-17T17:52:42.481Z",
+        "originalLocalUrl": "audio/originals/sheep.ogg",
+        "processedLicense": "CC BY-SA 3.0",
+        "changes": "Decoded Ogg Vorbis to mono 44100 Hz signed 16-bit PCM WAV; stereo sources downmixed; metadata removed; full duration retained.",
+        "ffmpegVersion": "ffmpeg version 8.0 Copyright (c) 2000-2025 the FFmpeg developers"
+      }
+    }
+  }
+}

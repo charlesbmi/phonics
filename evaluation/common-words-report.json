@@ -55,7 +55,7 @@
     "policyVersion": 3,
     "cuePolicy": "nifdi-decoding-with-ufli-schwa",
     "policySha256": "9ab67d6061070f93179b882a60099ed8c87082fe151d5b1155e3a4834d4f5bac",
-    "builderSha256": "2b4452f04c19c6cb498bee796e347cdf8f296066ceb2e3214e051dc434ff98a0",
+    "builderSha256": "be88bcfa7b4161355786d7afed9d51599dbd9e3394fed489bf7ac35595274b57",
     "sourceRevision": "ada77007168481de7422c6a44d6bc3df1ad95f4e"
   },
   "sourcePronunciationChecksPassed": 500,

@@ -1,0 +1,44 @@
+Four-word recording pilot
+
+These are natural US-English recordings by Dvortygirl on Wikimedia Commons.
+Timings are unreviewed PocketSphinx 5.1.1 forced-alignment candidates, not
+manually verified phone boundaries. No listening review or approved sustain
+regions are claimed. The selected hello pronunciation is a forced lexicon
+candidate and still needs listening review.
+
+Dad, She, and sheep originals and converted WAVs are distributed under
+Creative Commons Attribution-ShareAlike 3.0 Unported. See CC-BY-SA-3.0.txt
+and https://creativecommons.org/licenses/by-sa/3.0/.
+hello was released into the public domain by its creator (PD-self).
+
+Changes: decoded to mono 44100 Hz signed 16-bit PCM WAV, downmixed stereo
+where applicable, removed metadata, retained full duration. No splicing,
+speed/pitch changes, looping, or generated speech.
+
+Creator: Dvortygirl, https://commons.wikimedia.org/wiki/User:Dvortygirl
+Dad's file page identifies Dvortygirl in its description and marks the author
+field as assumed; sources.json retains that qualification.
+
+dad: CC BY-SA 3.0
+https://commons.wikimedia.org/w/index.php?title=File:En-us-dad.ogg&oldid=1229126048
+Original: https://upload.wikimedia.org/wikipedia/commons/5/56/En-us-dad.ogg
+
+she: CC BY-SA 3.0
+https://commons.wikimedia.org/w/index.php?title=File:En-us-she.ogg&oldid=1084714011
+Original: https://upload.wikimedia.org/wikipedia/commons/b/b3/En-us-she.ogg
+
+hello: Public domain
+https://commons.wikimedia.org/w/index.php?title=File:En-us-hello.ogg&oldid=1229136883
+Original: https://upload.wikimedia.org/wikipedia/commons/5/52/En-us-hello.ogg
+
+sheep: CC BY-SA 3.0
+https://commons.wikimedia.org/w/index.php?title=File:En-us-sheep.ogg&oldid=1228462813
+Original: https://upload.wikimedia.org/wikipedia/commons/8/82/En-us-sheep.ogg
+
+Exact original/processed hashes, retrieval dates, edits, source revisions,
+and build tool/model identity are recorded in manifest.json and sources.json.
+Original Ogg files are retained in originals/.
+
+Rebuild from checked-in originals: uv run --locked --no-config --script scripts/prepare-audio.py
+The build requires ffmpeg and uses a pinned build-time PocketSphinx package;
+the browser downloads no aligner or acoustic model.

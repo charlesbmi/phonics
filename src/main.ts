@@ -1,5 +1,8 @@
 import { Lexicon, hasLetterGroups, normalizeWord } from './lexicon';
 import { installFontPicker } from './font-picker';
+import { installRecordedReading } from './recorded-reading';
+import type { RecordedReading, RecordingSelection } from './recorded-reading';
+import type { AlignmentReview } from './alignment-review';
 import type { LexiconEntry } from './lexicon';
 import '../shared/reader.css';
 import './style.css';
@@ -14,6 +17,7 @@ app.innerHTML = `
       <h1>Little Reader</h1>
       <span class="badge">US English</span>
     </header>
+    <section id="review-root" class="panel" hidden></section>
     <section class="panel stack" aria-labelledby="text-heading">
       <h2 id="text-heading">Text to read</h2>
       <label class="sr-only" for="reading-text">Text to read</label>
@@ -34,14 +38,14 @@ app.innerHTML = `
         <span data-legend="unclassified" hidden><i class="legend-unclassified" aria-hidden="true">?</i>No blending cue</span>
         <span data-legend="group" hidden><i class="legend-group" aria-hidden="true"></i>Letter group</span>
         <span data-legend="silent" hidden><i class="legend-silent" aria-hidden="true">e</i>No added sound</span>
-        <span data-legend="split" hidden><i class="legend-split" aria-hidden="true"></i>Split spelling</span>
+        <span data-legend="split" hidden><svg class="legend-split" viewBox="0 0 26 11" aria-hidden="true"><path d="M 1 1 Q 13 19 25 1"/></svg>Split spelling</span>
         <span data-legend="long" hidden><i class="legend-long" aria-hidden="true"></i>Long vowel</span>
         <span data-legend="vowel" hidden><i class="legend-vowel" aria-hidden="true">a</i>Vowel</span>
         <span data-legend="consonant" hidden><i class="legend-consonant" aria-hidden="true">b</i>Consonant</span>
       </div>
     </section>
     <section id="selected-panel" class="panel" aria-labelledby="selected-heading" hidden>
-      <div class="toolbar"><h2 id="selected-heading"></h2><button id="speak" class="primary" disabled>▶ Hear word</button></div>
+      <div class="toolbar"><h2 id="selected-heading"></h2><div class="word-tools"><button id="speak" class="primary" disabled>▶ Hear word</button><button id="stop-audio" hidden>Stop</button></div></div>
       <div id="word-tools" class="word-tools" hidden>
         <label for="hint-override">Hints</label><select id="hint-override"><option value="default">Default</option><option value="show">Show</option><option value="hide">Hide</option></select>
         <button id="reset-progress">Show whole word</button>
@@ -49,6 +53,7 @@ app.innerHTML = `
       <label id="pronunciation-control" hidden>Pronunciation <select id="pronunciation-choice" aria-label="Word pronunciation"></select></label>
       <div id="touch-sounds" class="touch-sounds" role="group" aria-label="Silent sound steps" hidden></div>
       <div id="scrubber" class="scrubber" hidden><label for="sound-progress">Sound guide (silent)</label><input id="sound-progress" type="range" min="0" value="0" step="1"/><span id="sound-count" class="selected-sound"></span></div>
+      <div id="recorded-reading" hidden></div>
       <p id="word-status" class="status" aria-live="polite"></p>
       <p id="speech-status" class="status" role="status" aria-live="polite"></p>
     </section>
@@ -62,6 +67,7 @@ app.innerHTML = `
         <label><input type="checkbox" id="macrons">Long-vowel marks</label>
         <label><input type="checkbox" id="colors">Colors</label>
       </div>
+      <p class="tools-note"><a href="?review=alignments">Review missing hints</a></p>
       <p class="muted tools-note">Word controls can override these hints. Unsupported words stay unmarked.</p>
     </details>
     <p class="footer">Tap a word for controls; tap again to close. <a href="./third-party-licenses.txt">Data credits</a></p>
@@ -74,6 +80,7 @@ const heading = get<HTMLHeadingElement>('#selected-heading');
 const tools = get<HTMLDivElement>('#word-tools');
 const override = get<HTMLSelectElement>('#hint-override');
 const speak = get<HTMLButtonElement>('#speak');
+const stopButton = get<HTMLButtonElement>('#stop-audio');
 const wordStatus = get<HTMLParagraphElement>('#word-status');
 const speechStatus = get<HTMLParagraphElement>('#speech-status');
 const scrubber = get<HTMLDivElement>('#scrubber');
@@ -91,7 +98,7 @@ interface Occurrence {
   lexiconEntry?: LexiconEntry;
   baseEntry?: LexiconEntry;
   variantId?: string;
-  connectors: Array<{ element: HTMLSpanElement; unit: TeachingUnit; vowelMark?: HTMLSpanElement }>;
+  connectors: Array<{ element: HTMLSpanElement | SVGSVGElement; unit: TeachingUnit; vowelMark?: HTMLSpanElement }>;
   wrapper: HTMLSpanElement;
   button: HTMLButtonElement;
   rail?: HTMLDivElement;
@@ -100,6 +107,9 @@ interface Occurrence {
   override: HintOverride;
   active: number | null;
 }
+let recorded: RecordedReading | undefined;
+let recordedPlaying = false;
+let alignmentReview: AlignmentReview | undefined;
 let lookupPending = false;
 let lookupFailed = false;
 let lookupGeneration = 0;
@@ -115,7 +125,7 @@ let retainedUtterance: SpeechSynthesisUtterance | undefined;
 const speechSupported = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
 
 function audioAvailabilityMessage(): string {
-  return !speechSupported ? 'Word audio unavailable in this browser.' : !voice ? 'No US English voice available.' : '';
+  return !speechSupported ? 'System voice unavailable in this browser.' : !voice ? 'No US English system voice available.' : '';
 }
 
 function selectWord(index: number): void {
@@ -126,12 +136,13 @@ function selectWord(index: number): void {
   if (selected !== null) occurrences[selected].active = null;
   updatePresentation();
 }
-function activate(index: number, sound: number): void {
-  if (retainedUtterance) stopSpeech();
+function activate(index: number, sound: number, audition = false): void {
+  if (retainedUtterance || recorded?.isPlaying() || recorded?.isBusy()) stopSpeech();
   speechStatus.textContent = audioAvailabilityMessage();
   selected = index;
   occurrences[index].active = sound;
   updatePresentation();
+  if (audition) void recorded?.playFromPhone(sound);
 }
 function renderText(preserveSelection = false): void {
   touchControlsFor = null;
@@ -151,7 +162,7 @@ function renderText(preserveSelection = false): void {
       continue;
     }
     const index = token.occurrence;
-    const candidate = lexicon.lookup(token.text);
+    const candidate = alignmentReview?.lookup(token.text) ?? lexicon.lookup(token.text);
     const prior = previous[index];
     const baseEntry = candidate;
     const variantId = prior?.text === token.text ? prior.variantId ?? baseEntry?.primaryVariantId : baseEntry?.primaryVariantId;
@@ -187,7 +198,7 @@ function renderText(preserveSelection = false): void {
         const cue = document.createElement('button');
         cue.className = `cue cue-${sound.cue ?? 'unclassified'}`;
         cue.setAttribute('aria-label', `${token.text}: letters ${soundLetters(entry, sound)}, sound ${soundIndex + 1} of ${sounds.length}, ${sound.cue ?? 'unclassified'}`);
-        cue.addEventListener('click', () => activate(index, soundIndex));
+        cue.addEventListener('click', event => { if (event.detail === 0) activate(index, soundIndex, true); });
         occurrence.cues.push(cue);
         rail.append(cue);
       });
@@ -196,13 +207,29 @@ function renderText(preserveSelection = false): void {
       const scrub = (event: PointerEvent) => {
         activate(index, soundAtClientX(event.clientX, occurrence.cues.map(cue => cue.getBoundingClientRect().right)));
       };
+      let pointerStart: number | null = null;
+      let pointerMoved = false;
       rail.addEventListener('pointerdown', (event) => {
         if (event.button !== 0) return;
+        pointerStart = event.clientX;
+        pointerMoved = false;
         rail.setPointerCapture(event.pointerId);
         scrub(event);
       });
-      rail.addEventListener('pointermove', (event) => { if (rail.hasPointerCapture(event.pointerId)) scrub(event); });
-      rail.addEventListener('pointerup', (event) => { if (rail.hasPointerCapture(event.pointerId)) rail.releasePointerCapture(event.pointerId); });
+      rail.addEventListener('pointermove', event => {
+        if (rail.hasPointerCapture(event.pointerId)) {
+          if (pointerStart !== null && Math.abs(event.clientX - pointerStart) >= 6) pointerMoved = true;
+          scrub(event);
+        }
+      });
+      rail.addEventListener('pointerup', event => {
+        const tapped = !pointerMoved && pointerStart !== null && Math.abs(event.clientX - pointerStart) < 6;
+        pointerStart = null;
+        if (rail.hasPointerCapture(event.pointerId)) rail.releasePointerCapture(event.pointerId);
+        if (tapped && selected === index) void recorded?.playFromPhone(occurrence.active ?? 0);
+      });
+      rail.addEventListener('pointercancel', () => { pointerStart = null; stopSpeech(); });
+      rail.addEventListener('lostpointercapture', () => { if (pointerStart !== null) { pointerStart = null; stopSpeech(); } });
       occurrence.rail = rail;
     } else {
       letters.textContent = token.text;
@@ -210,9 +237,11 @@ function renderText(preserveSelection = false): void {
     button.append(letters);
     wrapper.append(button);
     for (const unit of entry?.teachingUnits ?? []) {
-      const connector = document.createElement('span');
-      connector.className = `teaching-connector${unit.patternId.startsWith('split-') ? ' split-connector' : ''}`;
+      const split = unit.patternId.startsWith('split-');
+      const connector = split ? document.createElementNS('http://www.w3.org/2000/svg', 'svg') : document.createElement('span');
+      connector.setAttribute('class', `teaching-connector${split ? ' split-connector' : ''}`);
       connector.setAttribute('aria-hidden', 'true');
+      if (split) connector.append(document.createElementNS('http://www.w3.org/2000/svg', 'path'));
       wrapper.append(connector);
       let vowelMark: HTMLSpanElement | undefined;
       if (unit.vowel === 'long') {
@@ -307,15 +336,29 @@ function updatePresentation(): void {
       grapheme.classList.toggle('letter-vowel', show && settings.colors.checked && !independentSilent && vowel !== null);
       grapheme.classList.toggle('letter-consonant', show && settings.colors.checked && !independentSilent && vowel === null);
       grapheme.classList.toggle('active', show && isSelected && activeGroups.has(groupIndex));
-      grapheme.classList.toggle('pending', show && isSelected && word.active !== null && linked.length > 0 && linked.every(index => index > word.active!));
+      grapheme.classList.toggle('pending', !recordedPlaying && show && isSelected && word.active !== null && linked.length > 0 && linked.every(index => index > word.active!));
     });
     for (const { element, unit, vowelMark } of word.connectors) {
-      element.hidden = !show || !settings.groups.checked;
+      element.toggleAttribute('hidden', !show || !settings.groups.checked);
       const linked = unit.groupIndices.map(index => bounds[index]);
       const left = Math.min(...linked.map(rect => rect.left));
       const right = Math.max(...linked.map(rect => rect.right));
-      element.style.left = `${left + 2}px`;
-      element.style.width = `${Math.max(0, right - left - 4)}px`;
+      if (element instanceof SVGSVGElement) {
+        const first = bounds[unit.groupIndices[0]];
+        const last = bounds[unit.groupIndices[unit.groupIndices.length - 1]];
+        const start = (first.left + first.right) / 2;
+        const end = (last.left + last.right) / 2;
+        const width = Math.max(1, end - start);
+        const height = Math.max(8, parseFloat(getComputedStyle(word.button).fontSize) * .22);
+        element.style.left = `${start}px`;
+        element.style.width = `${width}px`;
+        element.style.height = `${height}px`;
+        element.setAttribute('viewBox', `0 0 ${width} ${height}`);
+        element.querySelector('path')!.setAttribute('d', `M 0 1 Q ${width / 2} ${height * 1.7} ${width} 1`);
+      } else {
+        element.style.left = `${left + 2}px`;
+        element.style.width = `${Math.max(0, right - left - 4)}px`;
+      }
       if (vowelMark) {
         vowelMark.hidden = !show || !settings.macrons.checked;
         const markBounds = unit.patternId.startsWith('split-') ? bounds[unit.groupIndices[0]] : { left, right };
@@ -353,7 +396,10 @@ function updatePresentation(): void {
   override.disabled = !word?.entry;
   override.value = word?.override ?? 'default';
   const show = !!word && hintsVisible(settings.hints.checked, word.override);
+  const audibleGuide = recorded?.canPlayFromPhone() ?? false;
+  get<HTMLLabelElement>('label[for="sound-progress"]').textContent = audibleGuide ? 'Sound guide — Enter to hear' : 'Sound guide (silent)';
   const touchSounds = get<HTMLDivElement>('#touch-sounds');
+  touchSounds.setAttribute('aria-label', audibleGuide ? 'Hear from a sound — timing preview' : 'Silent sound steps');
   touchSounds.hidden = !soundEvents(word?.entry).length || !show || !settings.rail.checked;
   if (touchControlsFor !== selected) {
     touchControlsFor = selected;
@@ -366,7 +412,7 @@ function updatePresentation(): void {
         button.type = 'button';
         button.textContent = soundLetters(word.entry!, sound);
         button.setAttribute('aria-label', `Letters ${soundLetters(word.entry!, sound)}, sound ${soundIndex + 1} of ${sounds.length}, ${sound.cue ?? 'unclassified'}`);
-        button.addEventListener('click', () => activate(index, soundIndex));
+        button.addEventListener('click', () => activate(index, soundIndex, true));
         touchSounds.append(button);
       });
     }
@@ -415,22 +461,28 @@ function updatePresentation(): void {
   if (word && displayVariants.length > 1 && !wordStatus.textContent) wordStatus.textContent = 'More than one pronunciation. Hints use the dictionary default unless changed.';
   if (word && word.variantId && word.variantId !== word.baseEntry?.primaryVariantId) wordStatus.textContent += ' Word audio uses the device pronunciation.';
   speak.disabled = !word || !voice;
+  stopButton.hidden = !retainedUtterance && !recordedPlaying && !recorded?.isBusy();
+  recorded?.sync();
 }
-function stopSpeech(): void {
+function stopSystemSpeech(): void {
   speechGeneration++;
   clearTimeout(speechTimer);
   if (speechSupported) window.speechSynthesis.cancel();
   retainedUtterance = undefined;
 }
+function stopSpeech(): void {
+  stopSystemSpeech();
+  recorded?.stop();
+}
 function refreshVoices(): void {
   // Voices can arrive asynchronously via voiceschanged.
   // https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/getVoices
   if (!speechSupported) {
-    speechStatus.textContent = 'Word audio is unavailable: this browser does not support speech synthesis.';
+    speechStatus.textContent = 'System voice is unavailable in this browser.';
     return;
   }
   voice = window.speechSynthesis.getVoices().find(candidate => candidate.lang.replace('_', '-').toLowerCase() === 'en-us');
-  speechStatus.textContent = voice ? '' : 'No US English voice available. Check your browser’s voice settings.';
+  speechStatus.textContent = voice ? '' : 'No US English system voice available. Check your browser’s voice settings.';
   updatePresentation();
 }
 speak.addEventListener('click', () => {
@@ -440,6 +492,7 @@ speak.addEventListener('click', () => {
   const generation = speechGeneration;
   const utterance = new SpeechSynthesisUtterance(word.text);
   retainedUtterance = utterance;
+  updatePresentation();
   utterance.lang = 'en-US';
   utterance.voice = voice;
   utterance.rate = 0.8;
@@ -456,6 +509,7 @@ speak.addEventListener('click', () => {
     clearTimeout(speechTimer);
     speechStatus.textContent = `Played “${word.text}”.`;
     retainedUtterance = undefined;
+    updatePresentation();
   };
   // https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/error_event
   utterance.onerror = (event) => {
@@ -463,6 +517,7 @@ speak.addEventListener('click', () => {
     clearTimeout(speechTimer);
     speechStatus.textContent = `Word audio failed (${event.error}). Tap Hear word to retry.`;
     retainedUtterance = undefined;
+    updatePresentation();
   };
   speechTimer = setTimeout(() => {
     if (generation !== speechGeneration) return;
@@ -472,6 +527,7 @@ speak.addEventListener('click', () => {
   try { window.speechSynthesis.speak(retainedUtterance); }
   catch { stopSpeech(); speechStatus.textContent = 'Word audio failed to start. Please retry.'; }
 });
+stopButton.addEventListener('click', () => { stopSpeech(); speechStatus.textContent = 'Stopped.'; updatePresentation(); });
 textarea.addEventListener('input', refreshText);
 get<HTMLButtonElement>('#lookup-retry').addEventListener('click', refreshText);
 app.querySelectorAll<HTMLButtonElement>('[data-sample]').forEach(button => button.addEventListener('click', () => {
@@ -490,15 +546,55 @@ get<HTMLSelectElement>('#pronunciation-choice').addEventListener('change', event
   occurrences[selected].active = null;
   renderText(true);
 });
+progress.addEventListener('keydown', event => {
+  if ((event.key === 'Enter' || event.key === ' ') && recorded?.canPlayFromPhone()) { event.preventDefault(); void recorded.playFromPhone(Number(progress.value)); }
+});
 progress.addEventListener('input', () => { if (selected !== null) activate(selected, Number(progress.value)); });
 reset.addEventListener('click', () => {
+  stopSpeech();
   if (selected !== null) occurrences[selected].active = null;
   updatePresentation();
 });
 if (speechSupported) window.speechSynthesis.addEventListener('voiceschanged', refreshVoices);
 window.addEventListener('pagehide', stopSpeech);
+document.addEventListener('visibilitychange', () => { if (document.hidden) stopSpeech(); });
+document.addEventListener('keydown', event => { if (event.key === 'Escape') { stopSpeech(); updatePresentation(); } });
 window.addEventListener('resize', updatePresentation);
 void document.fonts.ready.then(updatePresentation);
+recorded = installRecordedReading(get<HTMLElement>('#recorded-reading'), {
+  baseUrl: new URL(import.meta.env.BASE_URL, location.href),
+  getSelection(): RecordingSelection | undefined {
+    const word = selected === null ? undefined : occurrences[selected];
+    if (!word?.entry || selected === null) return undefined;
+    const variantId = word.variantId ?? word.baseEntry?.primaryVariantId ?? normalizeWord(word.text);
+    const variant = word.baseEntry?.variants?.find(item => item.id === variantId);
+    return { key: `${selected}:${word.text}:${variantId}`, word: word.text, variantId,
+      phonemes: soundEvents(word.entry).map(sound => sound.phoneme), phones: variant?.pronunciation, active: word.active };
+  },
+  onPhone(index) { if (selected !== null && occurrences[selected]) { occurrences[selected].active = index; updatePresentation(); } },
+  onPlaying(playing) { recordedPlaying = playing; updatePresentation(); },
+  stopOtherAudio: stopSystemSpeech,
+});
 refreshText();
 refreshVoices();
 installFontPicker(get<HTMLElement>('#font-control'), reader, updatePresentation);
+
+if (new URLSearchParams(location.search).get('review') === 'alignments') {
+  const reviewRoot = get<HTMLElement>('#review-root');
+  reviewRoot.hidden = false;
+  reviewRoot.textContent = 'Loading alignment review…';
+  void import('./alignment-review').then(async ({ installAlignmentReview }) => {
+    alignmentReview = await installAlignmentReview(reviewRoot, word => {
+      occurrences = [];
+      textarea.value = word;
+      refreshText();
+    });
+    const readingSection = get<HTMLElement>('section[aria-labelledby="reading-heading"]');
+    const reason = reviewRoot.querySelector('[data-review=reason]');
+    reviewRoot.insertBefore(readingSection, reason);
+    get<HTMLElement>('section[aria-labelledby="text-heading"]').hidden = true;
+    textarea.value = alignmentReview.currentWord;
+    occurrences = [];
+    refreshText();
+  }).catch(() => { reviewRoot.textContent = 'The alignment review could not load. Reload to retry.'; });
+}

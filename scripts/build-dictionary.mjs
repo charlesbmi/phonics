@@ -82,7 +82,8 @@ export function deriveTeachingUnits(groups, sounds, teaching) {
   return units.filter((_, index) => !conflicts.has(index));
 }
 
-export function compileEntry(word, segments, pronunciation, phoneClasses, policy, teaching) {
+export function compileEntry(word, segments, pronunciation, phoneClasses, policy, teaching, options = {}) {
+  const ownershipReview = message => { if (!options.reviewOwnership) needsReview(message, 'alignment-review'); };
   if (segments.map(segment => segment.text).join('') !== word) throw new Error(`${word}: alignment spelling differs`);
   const ipa = segments.map(segment => segment.ipa).join('');
   const converted = conversion.pronunciations[ipa];
@@ -112,7 +113,7 @@ export function compileEntry(word, segments, pronunciation, phoneClasses, policy
     if (sound.phoneClass !== 'vowel') continue;
     const hasVowelLetter = indices => indices.some(index => /[aeiouy]/.test(groups[index].text));
     if (!hasVowelLetter(sound.groupIndices) && !teachingUnits.some(unit => unit.groupIndices.some(index => sound.groupIndices.includes(index)) && hasVowelLetter(unit.groupIndices))) {
-      needsReview(word + ': source vowel is linked only to consonant letters without a supported teaching unit', 'alignment-review');
+      ownershipReview(word + ': source vowel is linked only to consonant letters without a supported teaching unit');
     }
   }
   // A bare vowel-letter span feeding only stop/fricative/etc. events is also
@@ -122,13 +123,16 @@ export function compileEntry(word, segments, pronunciation, phoneClasses, policy
     const phoneIndices = sounds.flatMap((sound, index) => sound.groupIndices.includes(groupIndex) ? [index] : []);
     if (phoneIndices.some(index => sounds[index].phoneClass === 'vowel') || phoneIndices.every(index => ['Y', 'W'].includes(basePhone(sounds[index].arpabet)))) continue;
     if (!teachingUnits.some(unit => unit.groupIndices.includes(groupIndex) && phoneIndices.every(index => unit.phoneIndices.includes(index)))) {
-      needsReview(word + ': source vowel letters feed only consonant sounds without a supported teaching unit', 'alignment-review');
+      ownershipReview(word + ': source vowel letters feed only consonant sounds without a supported teaching unit');
     }
   }
   return { groups, sounds, ...(teachingUnits.length ? { teachingUnits } : {}),
     provenance: { pronunciation: word + ' ' + pronunciation.join(' '), alignment: segments.map(segment => ({ ...segment })),
       conversion: 'NRC g2p eng-ipa → eng-arpabet; pinned library-generated whole-pronunciation token graphs', teachingAdjustment: null } };
 }
+
+// Review-only: preserves source links and structural checks, never admits a word to the normal lexicon.
+export function compileReviewEntry(...args) { return compileEntry(...args, { reviewOwnership: true }); }
 
 export function parsePronunciations(source) {
   const words = new Map();

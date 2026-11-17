@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "hello": {
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-hello.ogg",
+      "sourceRevision": 1229136883,
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:En-us-hello.ogg&oldid=1229136883",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/En-us-hello.ogg",
+      "originalTimestamp": "2005-08-14T07:04:51Z",
+      "originalSha1": "4cda0527da53ae7534968dcba6ec986c243ff072",
+      "originalSha256": "ade8485f1cfd454e27ec1bb93cc0234d3187b2507230f72e96f46ac686e82972",
+      "author": "Dvortygirl",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Dvortygirl",
+      "authorEvidence": "Dvortygirl",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+      "retrievedAt": "2026-11-17T17:52:42.479Z"
+    },
+    "she": {
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-she.ogg",
+      "sourceRevision": 1084714011,
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:En-us-she.ogg&oldid=1084714011",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/En-us-she.ogg",
+      "originalTimestamp": "2006-04-17T06:14:54Z",
+      "originalSha1": "d7f8be38058795f0eb96fe2d4512817a63b26ebc",
+      "originalSha256": "22f1ffb421847ac8adf5b49a3a9ed07883b6e425c12ed0b227eb546c4164f5d8",
+      "author": "Dvortygirl",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Dvortygirl",
+      "authorEvidence": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "retrievedAt": "2026-11-17T17:52:42.480Z"
+    },
+    "sheep": {
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-sheep.ogg",
+      "sourceRevision": 1228462813,
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:En-us-sheep.ogg&oldid=1228462813",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/En-us-sheep.ogg",
+      "originalTimestamp": "2006-04-20T05:11:35Z",
+      "originalSha1": "75d3e4b94f803cc79c79c4d8673bcb99e59d6894",
+      "originalSha256": "7e0b494c820f9fbfb9b9b8bec3d7ab3dc035a69e1ffff9c8a1178891c59c479c",
+      "author": "Dvortygirl",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Dvortygirl",
+      "authorEvidence": "Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "retrievedAt": "2026-11-17T17:52:42.481Z"
+    },
+    "dad": {
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:En-us-dad.ogg",
+      "sourceRevision": 1229126048,
+      "sourceRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:En-us-dad.ogg&oldid=1229126048",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/En-us-dad.ogg",
+      "originalTimestamp": "2006-09-28T06:42:47Z",
+      "originalSha1": "cf5510f101bf2d4077ec709770082132ca3659df",
+      "originalSha256": "b4ea451b1e0cdaf99abbf6e262b96ad5633239c30423836e5ffdced248d9ab64",
+      "author": "Dvortygirl",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Dvortygirl",
+      "authorEvidence": "No machine-readable author provided. Dvortygirl assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "retrievedAt": "2026-11-17T17:52:42.481Z"
+    }
+  }
+}

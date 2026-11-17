@@ -49,11 +49,33 @@
 .sound-rail{display:block}
 .sound-rail .cue{position:absolute;top:0}
 .teaching-connector{position:absolute;bottom:.04em;height:.12em;border:2px solid var(--group);border-top:0;pointer-events:none}
-.split-connector{border-bottom-style:dashed}
+.split-connector{border:0;bottom:0;overflow:visible}
 .silent-letter{color:var(--muted);opacity:.65}
 .legend-silent{font-style:normal;opacity:.65;margin-right:7px}
-.legend-split{display:inline-block;vertical-align:middle;width:25px;height:7px;border:2px solid var(--group);border-top:0;border-bottom-style:dashed;margin-right:7px}
+.legend-split{display:inline-block;vertical-align:middle;width:26px;height:11px;margin-right:7px;overflow:visible}
 #pronunciation-control{margin-top:14px;flex-wrap:wrap;font-size:14px}
 #pronunciation-choice{max-width:100%}
 
 .unit-vowel-mark{position:absolute;top:.07em;height:4px;border-radius:4px;background:var(--long-vowel);pointer-events:none}
+
+.split-connector path,.legend-split path{fill:none;stroke:var(--group);stroke-width:2;stroke-dasharray:3 3;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.alignment-review{display:flex;flex-direction:column;gap:14px}
+.review-toolbar,.review-feedback{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.review-toolbar h2{margin-right:auto}
+.review-navigation select{min-width:110px;max-width:100%}
+.review-preview-status{font-size:14px;line-height:1.5;color:var(--muted)}
+.review-source summary{cursor:pointer;font-size:14px;min-height:32px}
+.review-source-cards{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin-top:10px}
+.review-source-card{border:1px solid var(--border);padding:12px;border-radius:10px;overflow-wrap:anywhere;font-size:14px;white-space:pre-wrap}
+.review-source-card span{display:block;line-height:1.6}
+.review-feedback textarea{width:100%;min-height:65px}
+.alignment-review .reader{margin-top:0}
+
+.recorded-reading{border-top:1px solid var(--border);margin-top:16px;padding-top:12px}
+.recording-timing{margin-top:12px;font-size:14px}
+.recorded-reading .word-tools{margin-top:0}
+
+.review-navigation{display:grid;grid-template-columns:44px minmax(0,1fr)44px}
+.review-navigation button{padding:8px}
+.review-navigation select{width:100%;min-width:0}
+.alignment-review [data-review=reason]{font-size:14px;color:var(--muted)}

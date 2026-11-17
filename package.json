@@ -8,13 +8,14 @@
     "build": "npm run data:check && tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1 --port 4180 --strictPort",
     "test": "node --test src/*.test.mjs scripts/*.test.mjs",
-    "data:build": "node scripts/build-dictionary.mjs",
-    "data:check": "node scripts/build-dictionary.mjs --check",
+    "data:build": "node scripts/build-dictionary.mjs && node scripts/build-alignment-review.mjs",
+    "data:check": "node scripts/build-dictionary.mjs --check && node scripts/build-alignment-review.mjs --check",
     "data:refresh": "node scripts/refresh-sources.mjs",
     "generate:sentences": "node scripts/generate-sentences.mjs",
     "evaluate:sentences": "node scripts/evaluate-sentences.mjs",
     "data:preprocess": "uv run --locked --no-config scripts/preprocess-alignments.py",
-    "evaluate:common": "node scripts/evaluate-common-words.mjs"
+    "evaluate:common": "node scripts/evaluate-common-words.mjs",
+    "audio:prepare": "uv run --locked --no-config --script scripts/prepare-audio.py"
   },
   "devDependencies": {
     "typescript": "7.0.2",
