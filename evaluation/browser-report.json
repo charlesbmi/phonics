@@ -1,0 +1,29 @@
+{
+  "engine": "Chromium",
+  "method": "Actual renderer exercised by setting each sentence into the text input, dispatching input, waiting for a frame, and checking rendered DOM and page geometry.",
+  "viewports": [
+    {
+      "width": 1280,
+      "sentences": 100,
+      "passed": 100
+    },
+    {
+      "width": 390,
+      "sentences": 100,
+      "passed": 100
+    }
+  ],
+  "checks": [
+    "original text and punctuation",
+    "word occurrence counts",
+    "documented-only full blend rails",
+    "unknown words remain unmarked",
+    "page overflow",
+    "word selection and deselection"
+  ],
+  "limits": [
+    "No classroom validation",
+    "No pronunciation-quality listening validation",
+    "Phone-sized desktop browser, not physical mobile Safari"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "cmudict": {
+    "repository": "https://github.com/cmusphinx/cmudict",
+    "revision": "74790861f652b15e4ac49015a90074ad62a27690",
+    "path": "cmudict.dict",
+    "sha256": "81917843c7f44ce2b094ac63873c2c7a4cf802040792c455ba3ca406891c3d22",
+    "subsetSha256": "d896e6715aa4a2e7559617871f4bb07c4616a3681ae4fe74908b101e830d14f6",
+    "license": "CMUdict BSD-style"
+  },
+  "alignment": {
+    "repository": "https://github.com/NRC-ILT/g2p",
+    "revision": "ada77007168481de7422c6a44d6bc3df1ad95f4e",
+    "path": "g2p/mappings/langs/eng/cmudict.ipa.aligned.txt",
+    "sha256": "38d74201dc651bb0840a280ceece8f05c2239c74fac09f09bf70f969631f7fda",
+    "subsetSha256": "49cff3360b67dc207139d34aef9fdb17f2f427dbb22274ec4b5abb4e24ebf052",
+    "license": "MIT; underlying CMUdict notice also retained"
+  },
+  "phoneClasses": {
+    "repository": "https://github.com/cmusphinx/cmudict",
+    "revision": "74790861f652b15e4ac49015a90074ad62a27690",
+    "path": "cmudict.phones",
+    "sha256": "ffb588a5e55684723582c7256e1d2f9fadb130011392d9e59237c76e34c2cfd6",
+    "subsetSha256": "ffb588a5e55684723582c7256e1d2f9fadb130011392d9e59237c76e34c2cfd6",
+    "license": "CMUdict BSD-style"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "reference": "https://www.hookedonphonics.com/wp-content/uploads/2025/05/44-phonemes-chart-rev2.pdf",
+  "note": "Explicit, word-specific teaching overlays on NRC alignments. Every source index must occur exactly once, in order. These merge a sound-bearing letter and its aligned silent partner; they do not invent or change pronunciation.",
+  "overrides": {
+    "boat": {"groups": [[0], [1, 2], [3]], "pattern": "oa", "reason": "Teach the oa vowel team together; NRC assigns OW to o and an epsilon to a."},
+    "chip": {"groups": [[0, 1], [2], [3]], "pattern": "ch", "reason": "Teach the ch digraph together; NRC assigns CH to c and an epsilon to h."},
+    "see": {"groups": [[0], [1, 2]], "pattern": "ee", "reason": "Teach the ee vowel team together; NRC gives one e an epsilon."},
+    "sheep": {"groups": [[0], [1, 2], [3]], "pattern": "ee", "reason": "Teach the ee vowel team together; NRC gives one e an epsilon."}
+  }
+}

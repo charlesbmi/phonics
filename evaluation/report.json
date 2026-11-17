@@ -1,0 +1,2144 @@
+{
+  "purpose": "Conformance and coverage checks; sentence generation is not independent proof of educational correctness.",
+  "cuePolicy": "nifdi-corrective-reading-decoding-sound-pronunciation",
+  "total": 100,
+  "supportedVocabularyCases": 75,
+  "coverageChallenges": 25,
+  "passed": 100,
+  "wordOccurrences": 533,
+  "mappedOccurrences": 463,
+  "completeBlendRails": 323,
+  "exercisedWords": [
+    "a",
+    "boat",
+    "book",
+    "can",
+    "cat",
+    "chip",
+    "dad",
+    "fish",
+    "hello",
+    "in",
+    "is",
+    "mat",
+    "moon",
+    "on",
+    "sam",
+    "sat",
+    "see",
+    "she",
+    "sheep",
+    "ship",
+    "shop",
+    "the"
+  ],
+  "exercisedBasePhones": [
+    "AA",
+    "AE",
+    "AH",
+    "B",
+    "CH",
+    "D",
+    "DH",
+    "F",
+    "HH",
+    "IH",
+    "IY",
+    "K",
+    "L",
+    "M",
+    "N",
+    "OW",
+    "P",
+    "S",
+    "SH",
+    "T",
+    "UH",
+    "UW",
+    "Z"
+  ],
+  "unexercisedBasePhones": [
+    "AO",
+    "AW",
+    "AY",
+    "EH",
+    "ER",
+    "EY",
+    "G",
+    "JH",
+    "NG",
+    "OY",
+    "R",
+    "TH",
+    "V",
+    "W",
+    "Y",
+    "ZH"
+  ],
+  "explicitlyWithheldPhones": [
+    "AH0"
+  ],
+  "exactPhones": [
+    "AA1",
+    "AE1",
+    "AH0",
+    "B",
+    "CH",
+    "D",
+    "DH",
+    "F",
+    "HH",
+    "IH0",
+    "IH1",
+    "IY1",
+    "K",
+    "L",
+    "M",
+    "N",
+    "OW1",
+    "P",
+    "S",
+    "SH",
+    "T",
+    "UH1",
+    "UW1",
+    "Z"
+  ],
+  "exercisedCueRows": [
+    "AA",
+    "AE",
+    "AH0",
+    "B",
+    "CH",
+    "D",
+    "DH",
+    "F",
+    "HH",
+    "IH",
+    "IY",
+    "K",
+    "L",
+    "M",
+    "N",
+    "OW",
+    "P",
+    "S",
+    "SH",
+    "T",
+    "UH",
+    "UW",
+    "Z"
+  ],
+  "unexercisedCueRows": [
+    "AH",
+    "AO",
+    "AW",
+    "AY",
+    "EH",
+    "ER",
+    "ER0",
+    "EY",
+    "G",
+    "JH",
+    "NG",
+    "OY",
+    "R",
+    "TH",
+    "V",
+    "W",
+    "Y",
+    "ZH"
+  ],
+  "cases": [
+    {
+      "id": 1,
+      "text": "Dad can see a book.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 2,
+      "text": "Dad can see a boat.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 3,
+      "text": "Dad can see a cat.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 4,
+      "text": "Dad can see a fish.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 5,
+      "text": "Dad can see a sheep.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 6,
+      "text": "Dad can see the moon.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 7,
+      "text": "Dad can see the shop.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 8,
+      "text": "Dad can see the ship.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 9,
+      "text": "Sam can see a book.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 10,
+      "text": "Sam can see a boat.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 11,
+      "text": "Sam can see a cat.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 12,
+      "text": "Sam can see a fish.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 13,
+      "text": "Sam can see a sheep.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 14,
+      "text": "Sam can see the moon.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 15,
+      "text": "Sam can see the shop.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 16,
+      "text": "Sam can see the ship.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 17,
+      "text": "She can see a book.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 18,
+      "text": "She can see a boat.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 19,
+      "text": "She can see a cat.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 20,
+      "text": "She can see a fish.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 21,
+      "text": "She can see a sheep.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 22,
+      "text": "She can see the moon.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 23,
+      "text": "She can see the shop.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 24,
+      "text": "She can see the ship.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 25,
+      "text": "The cat can see a book.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 26,
+      "text": "The cat can see a boat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 27,
+      "text": "The cat can see a cat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 28,
+      "text": "The cat can see a fish.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 29,
+      "text": "The cat can see a sheep.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 30,
+      "text": "The cat can see the moon.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 31,
+      "text": "The cat can see the shop.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 32,
+      "text": "The cat can see the ship.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 33,
+      "text": "The sheep can see a book.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 34,
+      "text": "The sheep can see a boat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 35,
+      "text": "The sheep can see a cat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 36,
+      "text": "The sheep can see a fish.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 37,
+      "text": "The sheep can see a sheep.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 38,
+      "text": "The sheep can see the moon.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 39,
+      "text": "The sheep can see the shop.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 40,
+      "text": "The sheep can see the ship.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 41,
+      "text": "The fish can see a book.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 42,
+      "text": "The fish can see a boat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 43,
+      "text": "The fish can see a cat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 44,
+      "text": "The fish can see a fish.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 45,
+      "text": "The fish can see a sheep.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 46,
+      "text": "The fish can see the moon.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 47,
+      "text": "The fish can see the shop.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 48,
+      "text": "The fish can see the ship.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 49,
+      "text": "Dad is in the shop.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 50,
+      "text": "Dad is on the ship.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 51,
+      "text": "Dad is on the boat.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 52,
+      "text": "Sam is in the shop.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 53,
+      "text": "Sam is on the ship.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 54,
+      "text": "Sam is on the boat.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 55,
+      "text": "She is in the shop.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 56,
+      "text": "She is on the ship.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 57,
+      "text": "She is on the boat.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 58,
+      "text": "The cat is in the shop.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 59,
+      "text": "The cat is on the ship.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 60,
+      "text": "The cat is on the boat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 61,
+      "text": "The sheep is in the shop.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 62,
+      "text": "The sheep is on the ship.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 63,
+      "text": "The sheep is on the boat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 64,
+      "text": "The fish is in the shop.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 65,
+      "text": "The fish is on the ship.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 66,
+      "text": "The fish is on the boat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 67,
+      "text": "Hello, Dad!",
+      "kind": "supported-vocabulary",
+      "words": 2,
+      "mappedWords": 2,
+      "completeBlendRails": 1,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "hello",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 68,
+      "text": "Hello, Sam!",
+      "kind": "supported-vocabulary",
+      "words": 2,
+      "mappedWords": 2,
+      "completeBlendRails": 1,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "hello",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 69,
+      "text": "The cat sat on the mat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 70,
+      "text": "Sam sat on the mat.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 71,
+      "text": "Dad can see a chip.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 72,
+      "text": "A book is on the mat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 73,
+      "text": "A chip is on the mat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 74,
+      "text": "A sheep sat on the mat.",
+      "kind": "supported-vocabulary",
+      "words": 6,
+      "mappedWords": 6,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 75,
+      "text": "She sat on the mat.",
+      "kind": "supported-vocabulary",
+      "words": 5,
+      "mappedWords": 5,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 76,
+      "text": "The red hen can run.",
+      "kind": "coverage-challenge",
+      "words": 5,
+      "mappedWords": 2,
+      "completeBlendRails": 1,
+      "unmapped": [
+        "red",
+        "hen",
+        "run"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 77,
+      "text": "Chip can jump with Dad.",
+      "kind": "coverage-challenge",
+      "words": 5,
+      "mappedWords": 3,
+      "completeBlendRails": 3,
+      "unmapped": [
+        "jump",
+        "with"
+      ],
+      "deferredCues": [],
+      "status": "checks-passed"
+    },
+    {
+      "id": 78,
+      "text": "The judge chose a giant peach.",
+      "kind": "coverage-challenge",
+      "words": 6,
+      "mappedWords": 2,
+      "completeBlendRails": 0,
+      "unmapped": [
+        "judge",
+        "chose",
+        "giant",
+        "peach"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 79,
+      "text": "We can sing a song.",
+      "kind": "coverage-challenge",
+      "words": 5,
+      "mappedWords": 2,
+      "completeBlendRails": 1,
+      "unmapped": [
+        "we",
+        "sing",
+        "song"
+      ],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 80,
+      "text": "Yes, the yellow yak can yawn.",
+      "kind": "coverage-challenge",
+      "words": 6,
+      "mappedWords": 2,
+      "completeBlendRails": 1,
+      "unmapped": [
+        "yes",
+        "yellow",
+        "yak",
+        "yawn"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 81,
+      "text": "Put the blue book in the room.",
+      "kind": "coverage-challenge",
+      "words": 7,
+      "mappedWords": 4,
+      "completeBlendRails": 2,
+      "unmapped": [
+        "put",
+        "blue",
+        "room"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 82,
+      "text": "She can make a cake.",
+      "kind": "coverage-challenge",
+      "words": 5,
+      "mappedWords": 3,
+      "completeBlendRails": 2,
+      "unmapped": [
+        "make",
+        "cake"
+      ],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 83,
+      "text": "I can read this book.",
+      "kind": "coverage-challenge",
+      "words": 5,
+      "mappedWords": 2,
+      "completeBlendRails": 2,
+      "unmapped": [
+        "i",
+        "read",
+        "this"
+      ],
+      "deferredCues": [],
+      "status": "checks-passed"
+    },
+    {
+      "id": 84,
+      "text": "Yesterday I read this book.",
+      "kind": "coverage-challenge",
+      "words": 5,
+      "mappedWords": 1,
+      "completeBlendRails": 1,
+      "unmapped": [
+        "yesterday",
+        "i",
+        "read",
+        "this"
+      ],
+      "deferredCues": [],
+      "status": "checks-passed"
+    },
+    {
+      "id": 85,
+      "text": "The wind is cold.",
+      "kind": "coverage-challenge",
+      "words": 4,
+      "mappedWords": 2,
+      "completeBlendRails": 1,
+      "unmapped": [
+        "wind",
+        "cold"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 86,
+      "text": "Wind the clock.",
+      "kind": "coverage-challenge",
+      "words": 3,
+      "mappedWords": 1,
+      "completeBlendRails": 0,
+      "unmapped": [
+        "wind",
+        "clock"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 87,
+      "text": "She has a little toy.",
+      "kind": "coverage-challenge",
+      "words": 5,
+      "mappedWords": 2,
+      "completeBlendRails": 1,
+      "unmapped": [
+        "has",
+        "little",
+        "toy"
+      ],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 88,
+      "text": "The boy found a coin.",
+      "kind": "coverage-challenge",
+      "words": 5,
+      "mappedWords": 2,
+      "completeBlendRails": 0,
+      "unmapped": [
+        "boy",
+        "found",
+        "coin"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 89,
+      "text": "The cow is loud.",
+      "kind": "coverage-challenge",
+      "words": 4,
+      "mappedWords": 2,
+      "completeBlendRails": 1,
+      "unmapped": [
+        "cow",
+        "loud"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 90,
+      "text": "Her bird sat near the door.",
+      "kind": "coverage-challenge",
+      "words": 6,
+      "mappedWords": 2,
+      "completeBlendRails": 1,
+      "unmapped": [
+        "her",
+        "bird",
+        "near",
+        "door"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 91,
+      "text": "Dad gave the girl a cube.",
+      "kind": "coverage-challenge",
+      "words": 6,
+      "mappedWords": 3,
+      "completeBlendRails": 1,
+      "unmapped": [
+        "gave",
+        "girl",
+        "cube"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 92,
+      "text": "A bright light is in the sky.",
+      "kind": "coverage-challenge",
+      "words": 7,
+      "mappedWords": 4,
+      "completeBlendRails": 2,
+      "unmapped": [
+        "bright",
+        "light",
+        "sky"
+      ],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 93,
+      "text": "The city has a gym.",
+      "kind": "coverage-challenge",
+      "words": 5,
+      "mappedWords": 2,
+      "completeBlendRails": 0,
+      "unmapped": [
+        "city",
+        "has",
+        "gym"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 94,
+      "text": "A knife is on the shelf.",
+      "kind": "coverage-challenge",
+      "words": 6,
+      "mappedWords": 4,
+      "completeBlendRails": 2,
+      "unmapped": [
+        "knife",
+        "shelf"
+      ],
+      "deferredCues": [
+        {
+          "word": "a",
+          "letters": "a",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 95,
+      "text": "Two boxes are on the mat.",
+      "kind": "coverage-challenge",
+      "words": 6,
+      "mappedWords": 3,
+      "completeBlendRails": 2,
+      "unmapped": [
+        "two",
+        "boxes",
+        "are"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 96,
+      "text": "This cat can't swim.",
+      "kind": "coverage-challenge",
+      "words": 4,
+      "mappedWords": 1,
+      "completeBlendRails": 1,
+      "unmapped": [
+        "this",
+        "can't",
+        "swim"
+      ],
+      "deferredCues": [],
+      "status": "checks-passed"
+    },
+    {
+      "id": 97,
+      "text": "The school is quiet.",
+      "kind": "coverage-challenge",
+      "words": 4,
+      "mappedWords": 2,
+      "completeBlendRails": 1,
+      "unmapped": [
+        "school",
+        "quiet"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 98,
+      "text": "The chief eats bread.",
+      "kind": "coverage-challenge",
+      "words": 4,
+      "mappedWords": 1,
+      "completeBlendRails": 0,
+      "unmapped": [
+        "chief",
+        "eats",
+        "bread"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 99,
+      "text": "The snow is on the ground.",
+      "kind": "coverage-challenge",
+      "words": 6,
+      "mappedWords": 4,
+      "completeBlendRails": 2,
+      "unmapped": [
+        "snow",
+        "ground"
+      ],
+      "deferredCues": [
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        },
+        {
+          "word": "the",
+          "letters": "e",
+          "phone": "AH0"
+        }
+      ],
+      "status": "checks-passed"
+    },
+    {
+      "id": 100,
+      "text": "She likes music.",
+      "kind": "coverage-challenge",
+      "words": 3,
+      "mappedWords": 1,
+      "completeBlendRails": 1,
+      "unmapped": [
+        "likes",
+        "music"
+      ],
+      "deferredCues": [],
+      "status": "checks-passed"
+    }
+  ]
+}

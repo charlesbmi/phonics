@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.hermit/
+.DS_Store
+*.log

@@ -1,0 +1,697 @@
+[
+  {
+    "id": 1,
+    "text": "Dad can see a book.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 2,
+    "text": "Dad can see a boat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 3,
+    "text": "Dad can see a cat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 4,
+    "text": "Dad can see a fish.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 5,
+    "text": "Dad can see a sheep.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 6,
+    "text": "Dad can see the moon.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 7,
+    "text": "Dad can see the shop.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 8,
+    "text": "Dad can see the ship.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 9,
+    "text": "Sam can see a book.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 10,
+    "text": "Sam can see a boat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 11,
+    "text": "Sam can see a cat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 12,
+    "text": "Sam can see a fish.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 13,
+    "text": "Sam can see a sheep.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 14,
+    "text": "Sam can see the moon.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 15,
+    "text": "Sam can see the shop.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 16,
+    "text": "Sam can see the ship.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 17,
+    "text": "She can see a book.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 18,
+    "text": "She can see a boat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 19,
+    "text": "She can see a cat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 20,
+    "text": "She can see a fish.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 21,
+    "text": "She can see a sheep.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 22,
+    "text": "She can see the moon.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 23,
+    "text": "She can see the shop.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 24,
+    "text": "She can see the ship.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 25,
+    "text": "The cat can see a book.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 26,
+    "text": "The cat can see a boat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 27,
+    "text": "The cat can see a cat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 28,
+    "text": "The cat can see a fish.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 29,
+    "text": "The cat can see a sheep.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 30,
+    "text": "The cat can see the moon.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 31,
+    "text": "The cat can see the shop.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 32,
+    "text": "The cat can see the ship.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 33,
+    "text": "The sheep can see a book.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 34,
+    "text": "The sheep can see a boat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 35,
+    "text": "The sheep can see a cat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 36,
+    "text": "The sheep can see a fish.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 37,
+    "text": "The sheep can see a sheep.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 38,
+    "text": "The sheep can see the moon.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 39,
+    "text": "The sheep can see the shop.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 40,
+    "text": "The sheep can see the ship.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 41,
+    "text": "The fish can see a book.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 42,
+    "text": "The fish can see a boat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 43,
+    "text": "The fish can see a cat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 44,
+    "text": "The fish can see a fish.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 45,
+    "text": "The fish can see a sheep.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 46,
+    "text": "The fish can see the moon.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 47,
+    "text": "The fish can see the shop.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 48,
+    "text": "The fish can see the ship.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 49,
+    "text": "Dad is in the shop.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 50,
+    "text": "Dad is on the ship.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 51,
+    "text": "Dad is on the boat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 52,
+    "text": "Sam is in the shop.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 53,
+    "text": "Sam is on the ship.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 54,
+    "text": "Sam is on the boat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 55,
+    "text": "She is in the shop.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 56,
+    "text": "She is on the ship.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 57,
+    "text": "She is on the boat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 58,
+    "text": "The cat is in the shop.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 59,
+    "text": "The cat is on the ship.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 60,
+    "text": "The cat is on the boat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 61,
+    "text": "The sheep is in the shop.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 62,
+    "text": "The sheep is on the ship.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 63,
+    "text": "The sheep is on the boat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 64,
+    "text": "The fish is in the shop.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 65,
+    "text": "The fish is on the ship.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 66,
+    "text": "The fish is on the boat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 67,
+    "text": "Hello, Dad!",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 68,
+    "text": "Hello, Sam!",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 69,
+    "text": "The cat sat on the mat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 70,
+    "text": "Sam sat on the mat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 71,
+    "text": "Dad can see a chip.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 72,
+    "text": "A book is on the mat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 73,
+    "text": "A chip is on the mat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 74,
+    "text": "A sheep sat on the mat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 75,
+    "text": "She sat on the mat.",
+    "kind": "supported-vocabulary",
+    "expectedUnmapped": []
+  },
+  {
+    "id": 76,
+    "text": "The red hen can run.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "red",
+      "hen",
+      "run"
+    ]
+  },
+  {
+    "id": 77,
+    "text": "Chip can jump with Dad.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "jump",
+      "with"
+    ]
+  },
+  {
+    "id": 78,
+    "text": "The judge chose a giant peach.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "judge",
+      "chose",
+      "giant",
+      "peach"
+    ]
+  },
+  {
+    "id": 79,
+    "text": "We can sing a song.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "we",
+      "sing",
+      "song"
+    ]
+  },
+  {
+    "id": 80,
+    "text": "Yes, the yellow yak can yawn.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "yes",
+      "yellow",
+      "yak",
+      "yawn"
+    ]
+  },
+  {
+    "id": 81,
+    "text": "Put the blue book in the room.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "put",
+      "blue",
+      "room"
+    ]
+  },
+  {
+    "id": 82,
+    "text": "She can make a cake.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "make",
+      "cake"
+    ]
+  },
+  {
+    "id": 83,
+    "text": "I can read this book.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "i",
+      "read",
+      "this"
+    ]
+  },
+  {
+    "id": 84,
+    "text": "Yesterday I read this book.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "yesterday",
+      "i",
+      "read",
+      "this"
+    ]
+  },
+  {
+    "id": 85,
+    "text": "The wind is cold.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "wind",
+      "cold"
+    ]
+  },
+  {
+    "id": 86,
+    "text": "Wind the clock.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "wind",
+      "clock"
+    ]
+  },
+  {
+    "id": 87,
+    "text": "She has a little toy.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "has",
+      "little",
+      "toy"
+    ]
+  },
+  {
+    "id": 88,
+    "text": "The boy found a coin.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "boy",
+      "found",
+      "coin"
+    ]
+  },
+  {
+    "id": 89,
+    "text": "The cow is loud.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "cow",
+      "loud"
+    ]
+  },
+  {
+    "id": 90,
+    "text": "Her bird sat near the door.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "her",
+      "bird",
+      "near",
+      "door"
+    ]
+  },
+  {
+    "id": 91,
+    "text": "Dad gave the girl a cube.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "gave",
+      "girl",
+      "cube"
+    ]
+  },
+  {
+    "id": 92,
+    "text": "A bright light is in the sky.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "bright",
+      "light",
+      "sky"
+    ]
+  },
+  {
+    "id": 93,
+    "text": "The city has a gym.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "city",
+      "has",
+      "gym"
+    ]
+  },
+  {
+    "id": 94,
+    "text": "A knife is on the shelf.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "knife",
+      "shelf"
+    ]
+  },
+  {
+    "id": 95,
+    "text": "Two boxes are on the mat.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "two",
+      "boxes",
+      "are"
+    ]
+  },
+  {
+    "id": 96,
+    "text": "This cat can't swim.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "this",
+      "can't",
+      "swim"
+    ]
+  },
+  {
+    "id": 97,
+    "text": "The school is quiet.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "school",
+      "quiet"
+    ]
+  },
+  {
+    "id": 98,
+    "text": "The chief eats bread.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "chief",
+      "eats",
+      "bread"
+    ]
+  },
+  {
+    "id": 99,
+    "text": "The snow is on the ground.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "snow",
+      "ground"
+    ]
+  },
+  {
+    "id": 100,
+    "text": "She likes music.",
+    "kind": "coverage-challenge",
+    "expectedUnmapped": [
+      "likes",
+      "music"
+    ]
+  }
+]

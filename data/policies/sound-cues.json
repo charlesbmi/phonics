@@ -1,0 +1,368 @@
+{
+  "version": 2,
+  "note": "Quick/stretch cues follow the explicitly documented phone examples in the named NIFDI packet. Missing cases are null, never inferred from phonetic class. Conventional vowel names remain a separately sourced notation layer.",
+  "references": {
+    "phoneClasses": "https://github.com/cmusphinx/cmudict/blob/74790861f652b15e4ac49015a90074ad62a27690/cmudict.phones",
+    "blending": "https://www.readnaturally.com/userfiles/ckfiles/files/FoundationalReadingSkillsP1Handout.pdf",
+    "quickSoundConvention": "https://ufli.education.ufl.edu/resources/teaching-resources/glossary/",
+    "alternativeHConvention": "https://www.scholastic.com/content/dam/PostPurchase/Downloads/7MMRRmove1.pdf",
+    "vowelNames": "https://www.hookedonphonics.com/wp-content/uploads/2025/05/44-phonemes-chart-rev2.pdf"
+  },
+  "vowelClassByPhone": {
+    "AA": "short",
+    "AE": "short",
+    "AH": "short",
+    "AO": "other",
+    "AW": "other",
+    "AY": "long",
+    "EH": "short",
+    "ER": "other",
+    "EY": "long",
+    "IH": "short",
+    "IY": "long",
+    "OW": "long",
+    "OY": "other",
+    "UH": "other",
+    "UW": "other"
+  },
+  "vowelNotes": "The mark uses conventional letter-name vowel classes, not IPA length. AY/EY/IY/OW correspond to long i/a/e/o. AH0 is reduced schwa. UW and UH remain other (oo sounds); this release does not infer long u from separate Y+UW phones or add split-digraph marks.",
+  "nrcIpaToPhone": {
+    "ɑ": "AA",
+    "æ": "AE",
+    "ʌ": "AH",
+    "ɔ": "AO",
+    "aʊ": "AW",
+    "aɪ": "AY",
+    "b": "B",
+    "tʃ": "CH",
+    "d": "D",
+    "ð": "DH",
+    "ɛ": "EH",
+    "ɜ˞": "ER",
+    "eɪ": "EY",
+    "f": "F",
+    "ɡ": "G",
+    "h": "HH",
+    "ɪ": "IH",
+    "i": "IY",
+    "dʒ": "JH",
+    "k": "K",
+    "l": "L",
+    "m": "M",
+    "n": "N",
+    "ŋ": "NG",
+    "oʊ": "OW",
+    "ɔɪ": "OY",
+    "p": "P",
+    "ɹ": "R",
+    "s": "S",
+    "ʃ": "SH",
+    "t": "T",
+    "θ": "TH",
+    "ʊ": "UH",
+    "u": "UW",
+    "v": "V",
+    "w": "W",
+    "j": "Y",
+    "z": "Z",
+    "ʒ": "ZH"
+  },
+  "ipaByPhone": {
+    "AA": "ɑ",
+    "AE": "æ",
+    "AH": "ʌ",
+    "AO": "ɔ",
+    "AW": "aʊ",
+    "AY": "aɪ",
+    "B": "b",
+    "CH": "tʃ",
+    "D": "d",
+    "DH": "ð",
+    "EH": "ɛ",
+    "ER": "ɝ",
+    "EY": "eɪ",
+    "F": "f",
+    "G": "ɡ",
+    "HH": "h",
+    "IH": "ɪ",
+    "IY": "i",
+    "JH": "dʒ",
+    "K": "k",
+    "L": "l",
+    "M": "m",
+    "N": "n",
+    "NG": "ŋ",
+    "OW": "oʊ",
+    "OY": "ɔɪ",
+    "P": "p",
+    "R": "ɹ",
+    "S": "s",
+    "SH": "ʃ",
+    "T": "t",
+    "TH": "θ",
+    "UH": "ʊ",
+    "UW": "u",
+    "V": "v",
+    "W": "w",
+    "Y": "j",
+    "Z": "z",
+    "ZH": "ʒ"
+  },
+  "policyId": "nifdi-corrective-reading-decoding-sound-pronunciation",
+  "cueSource": "https://www.nifdi.org/videos/video-guides/di-and-science-of-reading-webinar/4134-corrective-reading-decoding-a-b1-b2-and-c-sound-pronunciation-packet/file.html",
+  "cuePageConvention": "One-based PDF pages; page 1 is the cover. Page 2 Decoding A; page 3 Decoding B1; page 4 B1 continuation/B2; page 5 Decoding C.",
+  "cueStatusConvention": "documented means the source explicitly labels the example sound continuous or stop; mapping its instructional symbol to the app's ARPAbet phone is a notation conversion, not a source-supplied ARPAbet field. unsupported means no explicit isolated-phone cue was found in this packet; null does not mean silence or quick.",
+  "phoneCues": {
+    "AA": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "o / odd",
+      "status": "documented"
+    },
+    "AE": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "a / and",
+      "status": "documented"
+    },
+    "AH": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "u / up (stressed STRUT vowel; excludes AH0)",
+      "status": "documented"
+    },
+    "AH0": {
+      "cue": null,
+      "sourcePage": null,
+      "example": null,
+      "status": "unsupported",
+      "reason": "The packet does not explicitly classify isolated reduced schwa. Do not inherit the stressed AH/up cue."
+    },
+    "AO": {
+      "cue": "stretch",
+      "sourcePage": 5,
+      "example": "aw / awful (also al / fall on page 3)",
+      "status": "documented"
+    },
+    "AW": {
+      "cue": "stretch",
+      "sourcePage": 3,
+      "example": "ou / out",
+      "status": "documented"
+    },
+    "AY": {
+      "cue": "stretch",
+      "sourcePage": 3,
+      "example": "i / bite",
+      "status": "documented"
+    },
+    "B": {
+      "cue": "quick",
+      "sourcePage": 2,
+      "example": "b / bag",
+      "status": "documented"
+    },
+    "CH": {
+      "cue": "quick",
+      "sourcePage": 2,
+      "example": "ch / chip",
+      "status": "documented"
+    },
+    "D": {
+      "cue": "quick",
+      "sourcePage": 2,
+      "example": "d / dad",
+      "status": "documented"
+    },
+    "DH": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "th / them (voiced)",
+      "status": "documented"
+    },
+    "EH": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "e / end",
+      "status": "documented"
+    },
+    "ER": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "er / her (stressed rhotic vowel; ER0 not independently established)",
+      "status": "documented"
+    },
+    "ER0": {
+      "cue": null,
+      "sourcePage": null,
+      "example": null,
+      "status": "unsupported",
+      "reason": "The packet's er / her example does not independently establish a cue for reduced rhotic schwa ER0. A future ER0 display should use ɚ rather than stressed ɝ."
+    },
+    "EY": {
+      "cue": "stretch",
+      "sourcePage": 3,
+      "example": "a / ate",
+      "status": "documented"
+    },
+    "F": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "f / fit",
+      "status": "documented"
+    },
+    "G": {
+      "cue": "quick",
+      "sourcePage": 2,
+      "example": "g / go",
+      "status": "documented"
+    },
+    "HH": {
+      "cue": "quick",
+      "sourcePage": 2,
+      "example": "h / hat",
+      "status": "documented"
+    },
+    "IH": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "i / if",
+      "status": "documented"
+    },
+    "IY": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "e / me",
+      "status": "documented"
+    },
+    "JH": {
+      "cue": "quick",
+      "sourcePage": 2,
+      "example": "j / jump",
+      "status": "documented"
+    },
+    "K": {
+      "cue": "quick",
+      "sourcePage": 2,
+      "example": "k / kid",
+      "status": "documented"
+    },
+    "L": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "l / lip",
+      "status": "documented"
+    },
+    "M": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "m / mat",
+      "status": "documented"
+    },
+    "N": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "n / not",
+      "status": "documented"
+    },
+    "NG": {
+      "cue": null,
+      "sourcePage": null,
+      "example": null,
+      "status": "unsupported",
+      "reason": "The packet lists ing / sing as continuous, an instructional chunk /ɪŋ/; it does not explicitly isolate and classify /ŋ/."
+    },
+    "OW": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "o / note",
+      "status": "documented"
+    },
+    "OY": {
+      "cue": "stretch",
+      "sourcePage": 4,
+      "example": "oi / boil",
+      "status": "documented"
+    },
+    "P": {
+      "cue": "quick",
+      "sourcePage": 2,
+      "example": "p / pan",
+      "status": "documented"
+    },
+    "R": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "r / run",
+      "status": "documented"
+    },
+    "S": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "s / sat",
+      "status": "documented"
+    },
+    "SH": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "sh / ship",
+      "status": "documented"
+    },
+    "T": {
+      "cue": "quick",
+      "sourcePage": 2,
+      "example": "t / tap",
+      "status": "documented"
+    },
+    "TH": {
+      "cue": null,
+      "sourcePage": null,
+      "example": null,
+      "status": "unsupported",
+      "reason": "The packet's explicit th example is voiced them (DH); do not silently apply it to voiceless TH."
+    },
+    "UH": {
+      "cue": "stretch",
+      "sourcePage": 3,
+      "example": "oul / could",
+      "status": "documented"
+    },
+    "UW": {
+      "cue": "stretch",
+      "sourcePage": 3,
+      "example": "oo / soon",
+      "status": "documented"
+    },
+    "V": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "v / van",
+      "status": "documented"
+    },
+    "W": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "w / will",
+      "status": "documented"
+    },
+    "Y": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "y / yell (source uses instructional yēēē approximation)",
+      "status": "documented"
+    },
+    "Z": {
+      "cue": "stretch",
+      "sourcePage": 2,
+      "example": "z / zip",
+      "status": "documented"
+    },
+    "ZH": {
+      "cue": null,
+      "sourcePage": null,
+      "example": null,
+      "status": "unsupported",
+      "reason": "No explicit /ʒ/ isolated-phone cue found in this packet."
+    }
+  }
+}

@@ -1,0 +1,1097 @@
+{
+  "locale": "en-US",
+  "sources": {
+    "cmudict": {
+      "repository": "https://github.com/cmusphinx/cmudict",
+      "revision": "74790861f652b15e4ac49015a90074ad62a27690",
+      "path": "cmudict.dict",
+      "sha256": "81917843c7f44ce2b094ac63873c2c7a4cf802040792c455ba3ca406891c3d22",
+      "subsetSha256": "d896e6715aa4a2e7559617871f4bb07c4616a3681ae4fe74908b101e830d14f6",
+      "license": "CMUdict BSD-style"
+    },
+    "alignment": {
+      "repository": "https://github.com/NRC-ILT/g2p",
+      "revision": "ada77007168481de7422c6a44d6bc3df1ad95f4e",
+      "path": "g2p/mappings/langs/eng/cmudict.ipa.aligned.txt",
+      "sha256": "38d74201dc651bb0840a280ceece8f05c2239c74fac09f09bf70f969631f7fda",
+      "subsetSha256": "49cff3360b67dc207139d34aef9fdb17f2f427dbb22274ec4b5abb4e24ebf052",
+      "license": "MIT; underlying CMUdict notice also retained"
+    },
+    "phoneClasses": {
+      "repository": "https://github.com/cmusphinx/cmudict",
+      "revision": "74790861f652b15e4ac49015a90074ad62a27690",
+      "path": "cmudict.phones",
+      "sha256": "ffb588a5e55684723582c7256e1d2f9fadb130011392d9e59237c76e34c2cfd6",
+      "subsetSha256": "ffb588a5e55684723582c7256e1d2f9fadb130011392d9e59237c76e34c2cfd6",
+      "license": "CMUdict BSD-style"
+    }
+  },
+  "policyVersion": 2,
+  "cuePolicy": "nifdi-corrective-reading-decoding-sound-pronunciation",
+  "cueSource": "https://www.nifdi.org/videos/video-guides/di-and-science-of-reading-webinar/4134-corrective-reading-decoding-a-b1-b2-and-c-sound-pronunciation-packet/file.html",
+  "teachingReference": "https://www.hookedonphonics.com/wp-content/uploads/2025/05/44-phonemes-chart-rev2.pdf",
+  "words": {
+    "a": {
+      "groups": [
+        {
+          "text": "a",
+          "phoneme": "ə",
+          "arpabet": "AH0",
+          "phoneClass": "vowel",
+          "cue": null,
+          "cueStatus": "unsupported",
+          "cueSourcePage": null,
+          "vowel": "reduced"
+        }
+      ],
+      "provenance": {
+        "pronunciation": "a AH0",
+        "alignment": [
+          {
+            "text": "a",
+            "ipa": "ʌ"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "boat": {
+      "groups": [
+        {
+          "text": "b",
+          "phoneme": "b",
+          "arpabet": "B",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "oa",
+          "phoneme": "oʊ",
+          "arpabet": "OW1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "long"
+        },
+        {
+          "text": "t",
+          "phoneme": "t",
+          "arpabet": "T",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "boat B OW1 T",
+        "alignment": [
+          {
+            "text": "b",
+            "ipa": "b"
+          },
+          {
+            "text": "o",
+            "ipa": "oʊ"
+          },
+          {
+            "text": "a",
+            "ipa": ""
+          },
+          {
+            "text": "t",
+            "ipa": "t"
+          }
+        ],
+        "teachingAdjustment": "Teach the oa vowel team together; NRC assigns OW to o and an epsilon to a."
+      }
+    },
+    "book": {
+      "groups": [
+        {
+          "text": "b",
+          "phoneme": "b",
+          "arpabet": "B",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "oo",
+          "phoneme": "ʊ",
+          "arpabet": "UH1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 3,
+          "vowel": "other"
+        },
+        {
+          "text": "k",
+          "phoneme": "k",
+          "arpabet": "K",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "book B UH1 K",
+        "alignment": [
+          {
+            "text": "b",
+            "ipa": "b"
+          },
+          {
+            "text": "oo",
+            "ipa": "ʊ"
+          },
+          {
+            "text": "k",
+            "ipa": "k"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "can": {
+      "groups": [
+        {
+          "text": "c",
+          "phoneme": "k",
+          "arpabet": "K",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "a",
+          "phoneme": "æ",
+          "arpabet": "AE1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "n",
+          "phoneme": "n",
+          "arpabet": "N",
+          "phoneClass": "nasal",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "can K AE1 N",
+        "alignment": [
+          {
+            "text": "c",
+            "ipa": "k"
+          },
+          {
+            "text": "a",
+            "ipa": "æ"
+          },
+          {
+            "text": "n",
+            "ipa": "n"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "cat": {
+      "groups": [
+        {
+          "text": "c",
+          "phoneme": "k",
+          "arpabet": "K",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "a",
+          "phoneme": "æ",
+          "arpabet": "AE1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "t",
+          "phoneme": "t",
+          "arpabet": "T",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "cat K AE1 T",
+        "alignment": [
+          {
+            "text": "c",
+            "ipa": "k"
+          },
+          {
+            "text": "a",
+            "ipa": "æ"
+          },
+          {
+            "text": "t",
+            "ipa": "t"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "chip": {
+      "groups": [
+        {
+          "text": "ch",
+          "phoneme": "tʃ",
+          "arpabet": "CH",
+          "phoneClass": "affricate",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "i",
+          "phoneme": "ɪ",
+          "arpabet": "IH1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "p",
+          "phoneme": "p",
+          "arpabet": "P",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "chip CH IH1 P",
+        "alignment": [
+          {
+            "text": "c",
+            "ipa": "tʃ"
+          },
+          {
+            "text": "h",
+            "ipa": ""
+          },
+          {
+            "text": "i",
+            "ipa": "ɪ"
+          },
+          {
+            "text": "p",
+            "ipa": "p"
+          }
+        ],
+        "teachingAdjustment": "Teach the ch digraph together; NRC assigns CH to c and an epsilon to h."
+      }
+    },
+    "dad": {
+      "groups": [
+        {
+          "text": "d",
+          "phoneme": "d",
+          "arpabet": "D",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "a",
+          "phoneme": "æ",
+          "arpabet": "AE1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "d",
+          "phoneme": "d",
+          "arpabet": "D",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "dad D AE1 D",
+        "alignment": [
+          {
+            "text": "d",
+            "ipa": "d"
+          },
+          {
+            "text": "a",
+            "ipa": "æ"
+          },
+          {
+            "text": "d",
+            "ipa": "d"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "fish": {
+      "groups": [
+        {
+          "text": "f",
+          "phoneme": "f",
+          "arpabet": "F",
+          "phoneClass": "fricative",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "i",
+          "phoneme": "ɪ",
+          "arpabet": "IH1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "sh",
+          "phoneme": "ʃ",
+          "arpabet": "SH",
+          "phoneClass": "fricative",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "fish F IH1 SH",
+        "alignment": [
+          {
+            "text": "f",
+            "ipa": "f"
+          },
+          {
+            "text": "i",
+            "ipa": "ɪ"
+          },
+          {
+            "text": "sh",
+            "ipa": "ʃ"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "hello": {
+      "groups": [
+        {
+          "text": "h",
+          "phoneme": "h",
+          "arpabet": "HH",
+          "phoneClass": "aspirate",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "e",
+          "phoneme": "ə",
+          "arpabet": "AH0",
+          "phoneClass": "vowel",
+          "cue": null,
+          "cueStatus": "unsupported",
+          "cueSourcePage": null,
+          "vowel": "reduced"
+        },
+        {
+          "text": "ll",
+          "phoneme": "l",
+          "arpabet": "L",
+          "phoneClass": "liquid",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "o",
+          "phoneme": "oʊ",
+          "arpabet": "OW1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "long"
+        }
+      ],
+      "provenance": {
+        "pronunciation": "hello HH AH0 L OW1",
+        "alignment": [
+          {
+            "text": "h",
+            "ipa": "h"
+          },
+          {
+            "text": "e",
+            "ipa": "ʌ"
+          },
+          {
+            "text": "ll",
+            "ipa": "l"
+          },
+          {
+            "text": "o",
+            "ipa": "oʊ"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "in": {
+      "groups": [
+        {
+          "text": "i",
+          "phoneme": "ɪ",
+          "arpabet": "IH0",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "n",
+          "phoneme": "n",
+          "arpabet": "N",
+          "phoneClass": "nasal",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "in IH0 N",
+        "alignment": [
+          {
+            "text": "i",
+            "ipa": "ɪ"
+          },
+          {
+            "text": "n",
+            "ipa": "n"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "is": {
+      "groups": [
+        {
+          "text": "i",
+          "phoneme": "ɪ",
+          "arpabet": "IH1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "s",
+          "phoneme": "z",
+          "arpabet": "Z",
+          "phoneClass": "fricative",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "is IH1 Z",
+        "alignment": [
+          {
+            "text": "i",
+            "ipa": "ɪ"
+          },
+          {
+            "text": "s",
+            "ipa": "z"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "mat": {
+      "groups": [
+        {
+          "text": "m",
+          "phoneme": "m",
+          "arpabet": "M",
+          "phoneClass": "nasal",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "a",
+          "phoneme": "æ",
+          "arpabet": "AE1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "t",
+          "phoneme": "t",
+          "arpabet": "T",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "mat M AE1 T",
+        "alignment": [
+          {
+            "text": "m",
+            "ipa": "m"
+          },
+          {
+            "text": "a",
+            "ipa": "æ"
+          },
+          {
+            "text": "t",
+            "ipa": "t"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "moon": {
+      "groups": [
+        {
+          "text": "m",
+          "phoneme": "m",
+          "arpabet": "M",
+          "phoneClass": "nasal",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "oo",
+          "phoneme": "u",
+          "arpabet": "UW1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 3,
+          "vowel": "other"
+        },
+        {
+          "text": "n",
+          "phoneme": "n",
+          "arpabet": "N",
+          "phoneClass": "nasal",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "moon M UW1 N",
+        "alignment": [
+          {
+            "text": "m",
+            "ipa": "m"
+          },
+          {
+            "text": "oo",
+            "ipa": "u"
+          },
+          {
+            "text": "n",
+            "ipa": "n"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "on": {
+      "groups": [
+        {
+          "text": "o",
+          "phoneme": "ɑ",
+          "arpabet": "AA1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "n",
+          "phoneme": "n",
+          "arpabet": "N",
+          "phoneClass": "nasal",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "on AA1 N",
+        "alignment": [
+          {
+            "text": "o",
+            "ipa": "ɑ"
+          },
+          {
+            "text": "n",
+            "ipa": "n"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "sam": {
+      "groups": [
+        {
+          "text": "s",
+          "phoneme": "s",
+          "arpabet": "S",
+          "phoneClass": "fricative",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "a",
+          "phoneme": "æ",
+          "arpabet": "AE1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "m",
+          "phoneme": "m",
+          "arpabet": "M",
+          "phoneClass": "nasal",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "sam S AE1 M",
+        "alignment": [
+          {
+            "text": "s",
+            "ipa": "s"
+          },
+          {
+            "text": "a",
+            "ipa": "æ"
+          },
+          {
+            "text": "m",
+            "ipa": "m"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "sat": {
+      "groups": [
+        {
+          "text": "s",
+          "phoneme": "s",
+          "arpabet": "S",
+          "phoneClass": "fricative",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "a",
+          "phoneme": "æ",
+          "arpabet": "AE1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "t",
+          "phoneme": "t",
+          "arpabet": "T",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "sat S AE1 T",
+        "alignment": [
+          {
+            "text": "s",
+            "ipa": "s"
+          },
+          {
+            "text": "a",
+            "ipa": "æ"
+          },
+          {
+            "text": "t",
+            "ipa": "t"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "see": {
+      "groups": [
+        {
+          "text": "s",
+          "phoneme": "s",
+          "arpabet": "S",
+          "phoneClass": "fricative",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "ee",
+          "phoneme": "i",
+          "arpabet": "IY1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "long"
+        }
+      ],
+      "provenance": {
+        "pronunciation": "see S IY1",
+        "alignment": [
+          {
+            "text": "s",
+            "ipa": "s"
+          },
+          {
+            "text": "e",
+            "ipa": ""
+          },
+          {
+            "text": "e",
+            "ipa": "i"
+          }
+        ],
+        "teachingAdjustment": "Teach the ee vowel team together; NRC gives one e an epsilon."
+      }
+    },
+    "she": {
+      "groups": [
+        {
+          "text": "sh",
+          "phoneme": "ʃ",
+          "arpabet": "SH",
+          "phoneClass": "fricative",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "e",
+          "phoneme": "i",
+          "arpabet": "IY1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "long"
+        }
+      ],
+      "provenance": {
+        "pronunciation": "she SH IY1",
+        "alignment": [
+          {
+            "text": "sh",
+            "ipa": "ʃ"
+          },
+          {
+            "text": "e",
+            "ipa": "i"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "sheep": {
+      "groups": [
+        {
+          "text": "sh",
+          "phoneme": "ʃ",
+          "arpabet": "SH",
+          "phoneClass": "fricative",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "ee",
+          "phoneme": "i",
+          "arpabet": "IY1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "long"
+        },
+        {
+          "text": "p",
+          "phoneme": "p",
+          "arpabet": "P",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "sheep SH IY1 P",
+        "alignment": [
+          {
+            "text": "sh",
+            "ipa": "ʃ"
+          },
+          {
+            "text": "e",
+            "ipa": ""
+          },
+          {
+            "text": "e",
+            "ipa": "i"
+          },
+          {
+            "text": "p",
+            "ipa": "p"
+          }
+        ],
+        "teachingAdjustment": "Teach the ee vowel team together; NRC gives one e an epsilon."
+      }
+    },
+    "ship": {
+      "groups": [
+        {
+          "text": "sh",
+          "phoneme": "ʃ",
+          "arpabet": "SH",
+          "phoneClass": "fricative",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "i",
+          "phoneme": "ɪ",
+          "arpabet": "IH1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "p",
+          "phoneme": "p",
+          "arpabet": "P",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "ship SH IH1 P",
+        "alignment": [
+          {
+            "text": "sh",
+            "ipa": "ʃ"
+          },
+          {
+            "text": "i",
+            "ipa": "ɪ"
+          },
+          {
+            "text": "p",
+            "ipa": "p"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "shop": {
+      "groups": [
+        {
+          "text": "sh",
+          "phoneme": "ʃ",
+          "arpabet": "SH",
+          "phoneClass": "fricative",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "o",
+          "phoneme": "ɑ",
+          "arpabet": "AA1",
+          "phoneClass": "vowel",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": "short"
+        },
+        {
+          "text": "p",
+          "phoneme": "p",
+          "arpabet": "P",
+          "phoneClass": "stop",
+          "cue": "quick",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        }
+      ],
+      "provenance": {
+        "pronunciation": "shop SH AA1 P",
+        "alignment": [
+          {
+            "text": "sh",
+            "ipa": "ʃ"
+          },
+          {
+            "text": "o",
+            "ipa": "ɑ"
+          },
+          {
+            "text": "p",
+            "ipa": "p"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    },
+    "the": {
+      "groups": [
+        {
+          "text": "th",
+          "phoneme": "ð",
+          "arpabet": "DH",
+          "phoneClass": "fricative",
+          "cue": "stretch",
+          "cueStatus": "documented",
+          "cueSourcePage": 2,
+          "vowel": null
+        },
+        {
+          "text": "e",
+          "phoneme": "ə",
+          "arpabet": "AH0",
+          "phoneClass": "vowel",
+          "cue": null,
+          "cueStatus": "unsupported",
+          "cueSourcePage": null,
+          "vowel": "reduced"
+        }
+      ],
+      "provenance": {
+        "pronunciation": "the DH AH0",
+        "alignment": [
+          {
+            "text": "th",
+            "ipa": "ð"
+          },
+          {
+            "text": "e",
+            "ipa": "ʌ"
+          }
+        ],
+        "teachingAdjustment": null
+      }
+    }
+  }
+}
