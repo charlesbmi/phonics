@@ -1,1 +1,1 @@
-{"'gain":{"pronunciation":["G","EH1","N"],"reason":"unresolved-alignment"}}
+{"'gain":{"groups":[{"text":"'","vowel":null,"silent":true},{"text":"g","vowel":null},{"text":"a","vowel":"short"},{"text":"i","vowel":null,"silent":true},{"text":"n","vowel":null}],"sounds":[{"phoneme":"ɡ","cue":"quick","vowel":null,"groupIndices":[1]},{"phoneme":"ɛ","cue":"stretch","vowel":"short","groupIndices":[2]},{"phoneme":"n","cue":"stretch","vowel":null,"groupIndices":[4]}]}}

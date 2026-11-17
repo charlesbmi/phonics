@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFileSync, writeFileSync } from 'node:fs';
-import { tokenize, hasBlendingCues } from '../src/model.ts';
+import { tokenize, hasBlendingCues, soundEvents, soundLetters } from '../src/model.ts';
 import { buildDictionary } from './build-dictionary.mjs';
 
 const root = new URL('../', import.meta.url);
@@ -16,12 +16,12 @@ assert.equal(new Set(cases.map(row => row.text)).size, 100);
 const expected = {
   dad: [['d', 'D', 'quick'], ['a', 'AE1', 'stretch'], ['d', 'D', 'quick']],
   she: [['sh', 'SH', 'stretch'], ['e', 'IY1', 'stretch']],
-  hello: [['h', 'HH', 'quick'], ['e', 'AH0', null], ['ll', 'L', 'stretch'], ['o', 'OW1', 'stretch']],
+  hello: [['h', 'HH', 'quick'], ['e', 'AH0', 'quick'], ['ll', 'L', 'stretch'], ['o', 'OW1', 'stretch']],
   book: [['b', 'B', 'quick'], ['oo', 'UH1', 'stretch'], ['k', 'K', 'quick']],
   sheep: [['sh', 'SH', 'stretch'], ['ee', 'IY1', 'stretch'], ['p', 'P', 'quick']],
 };
 for (const [word, groups] of Object.entries(expected)) {
-  assert.deepEqual(dictionary.words[word].groups.map(g => [g.text, g.arpabet, g.cue]), groups);
+  assert.deepEqual(soundEvents(dictionary.words[word]).map(g => [soundLetters(dictionary.words[word], g), g.arpabet, g.cue]), groups);
 }
 
 const exercised = new Set();
@@ -45,7 +45,7 @@ const results = cases.map(row => {
     exercisedWords.add(key);
     mapped++;
     assert.equal(entry.groups.map(group => group.text).join(''), key);
-    for (const group of entry.groups) {
+    for (const group of soundEvents(entry)) {
       const base = group.arpabet.replace(/[012]$/, '');
       exercised.add(base);
       exactPhones.add(group.arpabet);
@@ -56,14 +56,14 @@ const results = cases.map(row => {
       if (reference.status === 'unsupported') {
         assert.equal(group.cue, null);
         withheld.add(group.arpabet);
-        deferredCues.push({ word: key, letters: group.text, phone: group.arpabet });
+        deferredCues.push({ word: key, letters: soundLetters(entry, group), phone: group.arpabet });
       } else {
         assert.ok(['quick', 'stretch'].includes(group.cue));
         assert.equal(group.cueSourcePage, reference.sourcePage);
       }
     }
     if (hasBlendingCues(entry)) completeRails++;
-    else assert.ok(entry.groups.some(group => group.cue === null), 'An incomplete cue set must correspond to an explicitly unsupported cue.');
+    else assert.ok(soundEvents(entry).some(group => group.cue === null), 'An incomplete cue set must correspond to an explicitly unsupported cue.');
   }
 
   if (row.kind === 'supported-vocabulary') assert.equal(mapped, words.length);

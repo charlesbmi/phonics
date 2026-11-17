@@ -1,1 +1,1 @@
-{"'em":{"pronunciation":["AH0","M"],"reason":"unresolved-alignment"}}
+{"'em":{"groups":[{"text":"'","vowel":null,"silent":true},{"text":"e","vowel":"reduced"},{"text":"m","vowel":null}],"sounds":[{"phoneme":"ə","cue":"quick","vowel":"reduced","groupIndices":[1]},{"phoneme":"m","cue":"stretch","vowel":null,"groupIndices":[2]}]}}

@@ -1,1 +1,1 @@
-{"a":{"groups":[{"text":"a","phoneme":"ə","cue":null,"vowel":"reduced"}]}}
+{"a":{"groups":[{"text":"a","vowel":"reduced"}],"sounds":[{"phoneme":"ə","cue":"quick","vowel":"reduced","groupIndices":[0]}],"primaryVariantId":"a","variants":[{"id":"a","pronunciation":["AH0"],"phonemes":["ə"],"aligned":true},{"id":"a(2)","pronunciation":["EY1"],"phonemes":["eɪ"],"aligned":false}],"pronunciationAmbiguous":true}}

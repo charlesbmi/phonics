@@ -1,1 +1,1 @@
-{"xhosa":{"pronunciation":["Z","OW1","SH","AH0"],"reason":"unresolved-alignment"}}
+{"xhosa":{"groups":[{"text":"x","vowel":null},{"text":"h","vowel":null,"silent":true},{"text":"o","vowel":"long"},{"text":"s","vowel":null},{"text":"a","vowel":"reduced"}],"sounds":[{"phoneme":"z","cue":"stretch","vowel":null,"groupIndices":[0]},{"phoneme":"oʊ","cue":"stretch","vowel":"long","groupIndices":[2]},{"phoneme":"ʃ","cue":"stretch","vowel":null,"groupIndices":[3]},{"phoneme":"ə","cue":"quick","vowel":"reduced","groupIndices":[4]}]}}

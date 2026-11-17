@@ -1,1 +1,1 @@
-{"ws":{"pronunciation":["D","AH1","B","AH0","L","Y","UW0","EH1","S"],"reason":"unresolved-alignment"}}
+{"ws":{"pronunciation":["D","AH1","B","AH0","L","Y","UW0","EH1","S"],"reason":"unresolved-alignment","primaryVariantId":"ws","variants":[{"id":"ws","pronunciation":["D","AH1","B","AH0","L","Y","UW0","EH1","S"],"phonemes":["d","ʌ","b","ə","l","j","u","ɛ","s"],"aligned":false},{"id":"ws(2)","pronunciation":["D","AH1","B","Y","AH0","EH1","S"],"phonemes":["d","ʌ","b","j","ə","ɛ","s"],"aligned":false}],"pronunciationAmbiguous":true}}

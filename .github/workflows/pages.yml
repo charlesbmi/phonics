@@ -25,6 +25,7 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run evaluate:sentences -- --check
+      - run: npm run evaluate:common -- --check
       - run: npm run build
         env:
           PAGES_BASE_PATH: /${{ github.event.repository.name }}/

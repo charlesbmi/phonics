@@ -1,45 +1,76 @@
 {
   "purpose": "Conformance and coverage checks; sentence generation is not independent proof of educational correctness.",
-  "cuePolicy": "nifdi-corrective-reading-decoding-sound-pronunciation",
+  "cuePolicy": "nifdi-decoding-with-ufli-schwa",
   "total": 100,
   "supportedVocabularyCases": 75,
   "coverageChallenges": 25,
   "passed": 100,
   "wordOccurrences": 533,
-  "pronunciationOnlyOccurrences": 39,
-  "mappedOccurrences": 494,
-  "completeBlendRails": 350,
+  "pronunciationOnlyOccurrences": 2,
+  "mappedOccurrences": 531,
+  "completeBlendRails": 528,
   "exercisedWords": [
     "a",
+    "are",
+    "bird",
+    "blue",
     "boat",
     "book",
+    "boxes",
+    "boy",
+    "bread",
+    "bright",
+    "cake",
     "can",
+    "can't",
     "cat",
+    "chief",
     "chip",
+    "chose",
     "city",
     "clock",
+    "coin",
     "cold",
+    "cow",
+    "cube",
     "dad",
+    "door",
+    "eats",
     "fish",
+    "found",
+    "gave",
     "giant",
+    "girl",
+    "ground",
     "gym",
     "has",
     "hello",
     "hen",
+    "her",
     "i",
     "in",
     "is",
+    "judge",
     "jump",
+    "knife",
+    "light",
+    "likes",
+    "loud",
+    "make",
     "mat",
     "moon",
+    "music",
+    "near",
     "on",
     "put",
     "quiet",
+    "read",
     "red",
     "room",
     "run",
     "sam",
     "sat",
+    "school",
     "see",
     "she",
     "sheep",
@@ -48,29 +79,38 @@
     "shop",
     "sing",
     "sky",
+    "snow",
     "song",
     "swim",
     "the",
     "this",
+    "toy",
+    "two",
     "we",
     "wind",
     "with",
     "yak",
     "yawn",
-    "yes"
+    "yellow",
+    "yes",
+    "yesterday"
   ],
   "exercisedBasePhones": [
     "AA",
     "AE",
     "AH",
     "AO",
+    "AW",
     "AY",
     "B",
     "CH",
     "D",
     "DH",
     "EH",
+    "ER",
+    "EY",
     "F",
+    "G",
     "HH",
     "IH",
     "IY",
@@ -81,6 +121,7 @@
     "N",
     "NG",
     "OW",
+    "OY",
     "P",
     "R",
     "S",
@@ -88,22 +129,17 @@
     "T",
     "UH",
     "UW",
+    "V",
     "W",
     "Y",
     "Z"
   ],
   "unexercisedBasePhones": [
-    "AW",
-    "ER",
-    "EY",
-    "G",
-    "OY",
     "TH",
-    "V",
     "ZH"
   ],
   "explicitlyWithheldPhones": [
-    "AH0",
+    "ER0",
     "NG"
   ],
   "exactPhones": [
@@ -112,13 +148,19 @@
     "AH0",
     "AH1",
     "AO1",
+    "AW1",
     "AY1",
     "B",
     "CH",
     "D",
     "DH",
     "EH1",
+    "ER0",
+    "ER1",
+    "EY1",
+    "EY2",
     "F",
+    "G",
     "HH",
     "IH0",
     "IH1",
@@ -130,7 +172,9 @@
     "M",
     "N",
     "NG",
+    "OW0",
     "OW1",
+    "OY1",
     "P",
     "R",
     "S",
@@ -138,6 +182,7 @@
     "T",
     "UH1",
     "UW1",
+    "V",
     "W",
     "Y",
     "Z"
@@ -148,13 +193,18 @@
     "AH",
     "AH0",
     "AO",
+    "AW",
     "AY",
     "B",
     "CH",
     "D",
     "DH",
     "EH",
+    "ER",
+    "ER0",
+    "EY",
     "F",
+    "G",
     "HH",
     "IH",
     "IY",
@@ -165,6 +215,7 @@
     "N",
     "NG",
     "OW",
+    "OY",
     "P",
     "R",
     "S",
@@ -172,19 +223,13 @@
     "T",
     "UH",
     "UW",
+    "V",
     "W",
     "Y",
     "Z"
   ],
   "unexercisedCueRows": [
-    "AW",
-    "ER",
-    "ER0",
-    "EY",
-    "G",
-    "OY",
     "TH",
-    "V",
     "ZH"
   ],
   "cases": [
@@ -195,15 +240,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -213,15 +252,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -231,15 +264,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -249,15 +276,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -267,15 +288,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -285,15 +300,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -303,15 +312,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -321,15 +324,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -339,15 +336,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -357,15 +348,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -375,15 +360,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -393,15 +372,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -411,15 +384,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -429,15 +396,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -447,15 +408,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -465,15 +420,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -483,15 +432,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -501,15 +444,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -519,15 +456,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -537,15 +468,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -555,15 +480,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -573,15 +492,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -591,15 +504,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -609,15 +516,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -627,20 +528,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -650,20 +540,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -673,20 +552,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -696,20 +564,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -719,20 +576,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -742,20 +588,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -765,20 +600,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -788,20 +612,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -811,20 +624,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -834,20 +636,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -857,20 +648,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -880,20 +660,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -903,20 +672,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -926,20 +684,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -949,20 +696,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -972,20 +708,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -995,20 +720,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1018,20 +732,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1041,20 +744,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1064,20 +756,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1087,20 +768,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1110,20 +780,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1133,20 +792,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1156,20 +804,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1179,15 +816,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1197,15 +828,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1215,15 +840,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1233,15 +852,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1251,15 +864,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1269,15 +876,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1287,15 +888,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1305,15 +900,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1323,15 +912,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1341,20 +924,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1364,20 +936,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1387,20 +948,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1410,20 +960,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1433,20 +972,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1456,20 +984,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1479,20 +996,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1502,20 +1008,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1525,20 +1020,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1548,15 +1032,9 @@
       "words": 2,
       "mappedWords": 2,
       "pronunciationOnly": 0,
-      "completeBlendRails": 1,
+      "completeBlendRails": 2,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "hello",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1566,15 +1044,9 @@
       "words": 2,
       "mappedWords": 2,
       "pronunciationOnly": 0,
-      "completeBlendRails": 1,
+      "completeBlendRails": 2,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "hello",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1584,20 +1056,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1607,15 +1068,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1625,15 +1080,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1643,20 +1092,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1666,20 +1104,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1689,20 +1116,9 @@
       "words": 6,
       "mappedWords": 6,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 6,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1712,15 +1128,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1730,15 +1140,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 4,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1758,31 +1162,13 @@
       "text": "The judge chose a giant peach.",
       "kind": "coverage-challenge",
       "words": 6,
-      "mappedWords": 3,
-      "pronunciationOnly": 3,
-      "completeBlendRails": 0,
+      "mappedWords": 5,
+      "pronunciationOnly": 1,
+      "completeBlendRails": 5,
       "unmapped": [
-        "judge",
-        "chose",
         "peach"
       ],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        },
-        {
-          "word": "giant",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1792,18 +1178,13 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 2,
+      "completeBlendRails": 3,
       "unmapped": [],
       "deferredCues": [
         {
           "word": "sing",
           "letters": "ng",
           "phone": "NG"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
         },
         {
           "word": "song",
@@ -1818,19 +1199,11 @@
       "text": "Yes, the yellow yak can yawn.",
       "kind": "coverage-challenge",
       "words": 6,
-      "mappedWords": 5,
-      "pronunciationOnly": 1,
-      "completeBlendRails": 4,
-      "unmapped": [
-        "yellow"
-      ],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 6,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 6,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1838,24 +1211,11 @@
       "text": "Put the blue book in the room.",
       "kind": "coverage-challenge",
       "words": 7,
-      "mappedWords": 6,
-      "pronunciationOnly": 1,
-      "completeBlendRails": 4,
-      "unmapped": [
-        "blue"
-      ],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 7,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 7,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1863,20 +1223,11 @@
       "text": "She can make a cake.",
       "kind": "coverage-challenge",
       "words": 5,
-      "mappedWords": 3,
-      "pronunciationOnly": 2,
-      "completeBlendRails": 2,
-      "unmapped": [
-        "make",
-        "cake"
-      ],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 5,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 5,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1884,12 +1235,10 @@
       "text": "I can read this book.",
       "kind": "coverage-challenge",
       "words": 5,
-      "mappedWords": 4,
-      "pronunciationOnly": 1,
-      "completeBlendRails": 4,
-      "unmapped": [
-        "read"
-      ],
+      "mappedWords": 5,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 5,
+      "unmapped": [],
       "deferredCues": [],
       "status": "checks-passed"
     },
@@ -1898,14 +1247,17 @@
       "text": "Yesterday I read this book.",
       "kind": "coverage-challenge",
       "words": 5,
-      "mappedWords": 3,
-      "pronunciationOnly": 2,
-      "completeBlendRails": 3,
-      "unmapped": [
-        "yesterday",
-        "read"
+      "mappedWords": 5,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [
+        {
+          "word": "yesterday",
+          "letters": "er",
+          "phone": "ER0"
+        }
       ],
-      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1915,15 +1267,9 @@
       "words": 4,
       "mappedWords": 4,
       "pronunciationOnly": 0,
-      "completeBlendRails": 3,
+      "completeBlendRails": 4,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1933,15 +1279,9 @@
       "words": 3,
       "mappedWords": 3,
       "pronunciationOnly": 0,
-      "completeBlendRails": 2,
+      "completeBlendRails": 3,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1949,20 +1289,13 @@
       "text": "She has a little toy.",
       "kind": "coverage-challenge",
       "words": 5,
-      "mappedWords": 3,
-      "pronunciationOnly": 2,
-      "completeBlendRails": 2,
+      "mappedWords": 4,
+      "pronunciationOnly": 1,
+      "completeBlendRails": 4,
       "unmapped": [
-        "little",
-        "toy"
+        "little"
       ],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1970,26 +1303,11 @@
       "text": "The boy found a coin.",
       "kind": "coverage-challenge",
       "words": 5,
-      "mappedWords": 2,
-      "pronunciationOnly": 3,
-      "completeBlendRails": 0,
-      "unmapped": [
-        "boy",
-        "found",
-        "coin"
-      ],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 5,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 5,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -1997,20 +1315,11 @@
       "text": "The cow is loud.",
       "kind": "coverage-challenge",
       "words": 4,
-      "mappedWords": 2,
-      "pronunciationOnly": 2,
-      "completeBlendRails": 1,
-      "unmapped": [
-        "cow",
-        "loud"
-      ],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 4,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -2018,22 +1327,11 @@
       "text": "Her bird sat near the door.",
       "kind": "coverage-challenge",
       "words": 6,
-      "mappedWords": 2,
-      "pronunciationOnly": 4,
-      "completeBlendRails": 1,
-      "unmapped": [
-        "her",
-        "bird",
-        "near",
-        "door"
-      ],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 6,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 6,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -2041,26 +1339,11 @@
       "text": "Dad gave the girl a cube.",
       "kind": "coverage-challenge",
       "words": 6,
-      "mappedWords": 3,
-      "pronunciationOnly": 3,
-      "completeBlendRails": 1,
-      "unmapped": [
-        "gave",
-        "girl",
-        "cube"
-      ],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 6,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 6,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -2068,25 +1351,11 @@
       "text": "A bright light is in the sky.",
       "kind": "coverage-challenge",
       "words": 7,
-      "mappedWords": 5,
-      "pronunciationOnly": 2,
-      "completeBlendRails": 3,
-      "unmapped": [
-        "bright",
-        "light"
-      ],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 7,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 7,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -2096,20 +1365,9 @@
       "words": 5,
       "mappedWords": 5,
       "pronunciationOnly": 0,
-      "completeBlendRails": 3,
+      "completeBlendRails": 5,
       "unmapped": [],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        }
-      ],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -2117,24 +1375,11 @@
       "text": "A knife is on the shelf.",
       "kind": "coverage-challenge",
       "words": 6,
-      "mappedWords": 5,
-      "pronunciationOnly": 1,
-      "completeBlendRails": 3,
-      "unmapped": [
-        "knife"
-      ],
-      "deferredCues": [
-        {
-          "word": "a",
-          "letters": "a",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 6,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 6,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -2142,21 +1387,11 @@
       "text": "Two boxes are on the mat.",
       "kind": "coverage-challenge",
       "words": 6,
-      "mappedWords": 3,
-      "pronunciationOnly": 3,
-      "completeBlendRails": 2,
-      "unmapped": [
-        "two",
-        "boxes",
-        "are"
-      ],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 6,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 6,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -2164,12 +1399,10 @@
       "text": "This cat can't swim.",
       "kind": "coverage-challenge",
       "words": 4,
-      "mappedWords": 3,
-      "pronunciationOnly": 1,
-      "completeBlendRails": 3,
-      "unmapped": [
-        "can't"
-      ],
+      "mappedWords": 4,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 4,
+      "unmapped": [],
       "deferredCues": [],
       "status": "checks-passed"
     },
@@ -2178,24 +1411,11 @@
       "text": "The school is quiet.",
       "kind": "coverage-challenge",
       "words": 4,
-      "mappedWords": 3,
-      "pronunciationOnly": 1,
-      "completeBlendRails": 1,
-      "unmapped": [
-        "school"
-      ],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "quiet",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 4,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -2203,21 +1423,11 @@
       "text": "The chief eats bread.",
       "kind": "coverage-challenge",
       "words": 4,
-      "mappedWords": 1,
-      "pronunciationOnly": 3,
-      "completeBlendRails": 0,
-      "unmapped": [
-        "chief",
-        "eats",
-        "bread"
-      ],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 4,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 4,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -2225,25 +1435,11 @@
       "text": "The snow is on the ground.",
       "kind": "coverage-challenge",
       "words": 6,
-      "mappedWords": 4,
-      "pronunciationOnly": 2,
-      "completeBlendRails": 2,
-      "unmapped": [
-        "snow",
-        "ground"
-      ],
-      "deferredCues": [
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        },
-        {
-          "word": "the",
-          "letters": "e",
-          "phone": "AH0"
-        }
-      ],
+      "mappedWords": 6,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 6,
+      "unmapped": [],
+      "deferredCues": [],
       "status": "checks-passed"
     },
     {
@@ -2251,13 +1447,10 @@
       "text": "She likes music.",
       "kind": "coverage-challenge",
       "words": 3,
-      "mappedWords": 1,
-      "pronunciationOnly": 2,
-      "completeBlendRails": 1,
-      "unmapped": [
-        "likes",
-        "music"
-      ],
+      "mappedWords": 3,
+      "pronunciationOnly": 0,
+      "completeBlendRails": 3,
+      "unmapped": [],
       "deferredCues": [],
       "status": "checks-passed"
     }

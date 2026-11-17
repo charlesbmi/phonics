@@ -19,5 +19,16 @@
     "path": "cmudict.phones",
     "sha256": "ffb588a5e55684723582c7256e1d2f9fadb130011392d9e59237c76e34c2cfd6",
     "license": "CMUdict BSD-style"
+  },
+  "ipaConversion": {
+    "repository": "https://github.com/NRC-ILT/g2p",
+    "revision": "ada77007168481de7422c6a44d6bc3df1ad95f4e",
+    "path": "data/upstream/nrc-ipa-graphs.json",
+    "generatedBy": "uv run --locked scripts/preprocess-alignments.py",
+    "sha256": "f6490b248d046e383c59301272b21df7fd67c209d498b72aac06fc01cb328a9b",
+    "license": "MIT; generated from pinned NRC g2p eng-ipa → eng-arpabet rules",
+    "kind": "generated-source-conversion",
+    "upstreamRulesPath": "g2p/mappings/langs/eng/eng_ipa_to_arpabet.json",
+    "upstreamRulesSha256": "23c4fede2de65dbb92fd514a28f029b524d9e5ed32ffff3a7ba8eb12c195f48b"
   }
 }

@@ -12,7 +12,9 @@
     "data:check": "node scripts/build-dictionary.mjs --check",
     "data:refresh": "node scripts/refresh-sources.mjs",
     "generate:sentences": "node scripts/generate-sentences.mjs",
-    "evaluate:sentences": "node scripts/evaluate-sentences.mjs"
+    "evaluate:sentences": "node scripts/evaluate-sentences.mjs",
+    "data:preprocess": "uv run --locked --no-config scripts/preprocess-alignments.py",
+    "evaluate:common": "node scripts/evaluate-common-words.mjs"
   },
   "devDependencies": {
     "typescript": "7.0.2",

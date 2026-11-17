@@ -1,6 +1,6 @@
 {
   "engine": "Chromium",
-  "method": "Actual Chromium renderer with lazy local lexicon shards; 100 sentence cases at desktop and phone widths plus targeted loading and font scenarios.",
+  "method": "Actual Chromium reader exercised with all 500 sourced common words in batches and all 100 sentence cases at desktop and phone widths; counts compared with independent source-backed reports.",
   "viewports": [
     {
       "width": 1280,
@@ -35,17 +35,41 @@
     "repeated-word hint overrides remain independent",
     "individual hint toggles and global/local overrides",
     "empty input and Unicode text",
-    "monospace reading text and Reading hints label",
+    "monospace reading text and Settings label",
     "full-lexicon vocabulary beyond old selected list",
     "prefix cache avoids duplicate requests",
     "pronunciation-only versus missing-word states",
     "rapid-edit async result protection",
     "selection before lookup retains populated sound controls",
-    "eight bundled font previews and per-font rail alignment",
+    "nine bundled font previews and per-font rail alignment",
     "font selection keyboard navigation and focus return",
     "font preference persists across reload",
     "repository-scoped /phonics/ dictionary and font asset paths",
     "failed dictionary request recovers through Retry hints",
-    "Unicode and out-of-dictionary words remain readable without invented hints"
+    "Unicode and out-of-dictionary words remain readable without invented hints",
+    "common-word sound counts match exact primary CMU sequences",
+    "silent spans add no extra sound cue",
+    "overlapping graph ranges have distinct ordered hit cells",
+    "sourced quick schwa removes hello question mark",
+    "silent spans and multi-phone x use separate sound-event counts",
+    "split-vowel endpoints share pending and active highlighting",
+    "all nine fonts retain ordered non-overlapping richer sound controls",
+    "pronunciation chooser preserves stress variants and withholds unsupported alternatives"
+  ],
+  "commonWords": [
+    {
+      "width": 1280,
+      "checked": 500,
+      "mapped": 463,
+      "pronunciationOnly": 37,
+      "passed": 500
+    },
+    {
+      "width": 390,
+      "checked": 500,
+      "mapped": 463,
+      "pronunciationOnly": 37,
+      "passed": 500
+    }
   ]
 }

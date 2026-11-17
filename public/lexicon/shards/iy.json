@@ -1,1 +1,1 @@
-{"iyer":{"pronunciation":["AY1","ER0"],"reason":"unresolved-alignment"}}
+{"iyer":{"groups":[{"text":"i","vowel":"long"},{"text":"y","vowel":"long"},{"text":"e","vowel":null,"silent":true},{"text":"r","vowel":"other"}],"sounds":[{"phoneme":"aɪ","cue":"stretch","vowel":"long","groupIndices":[0,1]},{"phoneme":"ɚ","cue":null,"vowel":"other","groupIndices":[3]}],"teachingUnits":[{"groupIndices":[2,3],"phoneIndices":[1],"patternId":"team-er","phoneme":"ɚ","vowel":"other"}]}}

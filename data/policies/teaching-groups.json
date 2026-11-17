@@ -1,10 +1,363 @@
 {
+  "version": 2,
   "reference": "https://www.hookedonphonics.com/wp-content/uploads/2025/05/44-phonemes-chart-rev2.pdf",
-  "note": "Explicit, word-specific teaching overlays on NRC alignments. Every source index must occur exactly once, in order. These merge a sound-bearing letter and its aligned silent partner; they do not invent or change pronunciation.",
-  "overrides": {
-    "boat": {"groups": [[0], [1, 2], [3]], "pattern": "oa", "reason": "Teach the oa vowel team together; NRC assigns OW to o and an epsilon to a."},
-    "chip": {"groups": [[0, 1], [2], [3]], "pattern": "ch", "reason": "Teach the ch digraph together; NRC assigns CH to c and an epsilon to h."},
-    "see": {"groups": [[0], [1, 2]], "pattern": "ee", "reason": "Teach the ee vowel team together; NRC gives one e an epsilon."},
-    "sheep": {"groups": [[0], [1, 2], [3]], "pattern": "ee", "reason": "Teach the ee vowel team together; NRC gives one e an epsilon."}
-  }
+  "note": "General chart spelling patterns only; no word overrides. Match source spelling and actual source-agreeing CMU phones. Contiguous units require at least one source-empty span or a shared library-graph phone across their source groups. Split digraphs require one intervening consonant and a source-empty word-final e. Raw source spans and sound links remain unchanged; these units are an explicit teaching policy, not a library analysis.",
+  "patterns": [
+    {
+      "id": "team-ch",
+      "kind": "contiguous-team",
+      "spelling": "ch",
+      "phones": [
+        [
+          "CH"
+        ]
+      ],
+      "vowel": null
+    },
+    {
+      "id": "team-sh",
+      "kind": "contiguous-team",
+      "spelling": "sh",
+      "phones": [
+        [
+          "SH"
+        ]
+      ],
+      "vowel": null
+    },
+    {
+      "id": "team-th",
+      "kind": "contiguous-team",
+      "spelling": "th",
+      "phones": [
+        [
+          "TH"
+        ],
+        [
+          "DH"
+        ]
+      ],
+      "vowel": null
+    },
+    {
+      "id": "team-wh",
+      "kind": "contiguous-team",
+      "spelling": "wh",
+      "phones": [
+        [
+          "W"
+        ]
+      ],
+      "vowel": null
+    },
+    {
+      "id": "team-ph",
+      "kind": "contiguous-team",
+      "spelling": "ph",
+      "phones": [
+        [
+          "F"
+        ]
+      ],
+      "vowel": null
+    },
+    {
+      "id": "team-ck",
+      "kind": "contiguous-team",
+      "spelling": "ck",
+      "phones": [
+        [
+          "K"
+        ]
+      ],
+      "vowel": null
+    },
+    {
+      "id": "team-ng",
+      "kind": "contiguous-team",
+      "spelling": "ng",
+      "phones": [
+        [
+          "NG"
+        ]
+      ],
+      "vowel": null
+    },
+    {
+      "id": "team-ee",
+      "kind": "contiguous-team",
+      "spelling": "ee",
+      "phones": [
+        [
+          "IY"
+        ]
+      ],
+      "vowel": "long"
+    },
+    {
+      "id": "team-ea",
+      "kind": "contiguous-team",
+      "spelling": "ea",
+      "phones": [
+        [
+          "IY"
+        ],
+        [
+          "EH"
+        ]
+      ],
+      "vowel": null
+    },
+    {
+      "id": "team-ai",
+      "kind": "contiguous-team",
+      "spelling": "ai",
+      "phones": [
+        [
+          "EY"
+        ]
+      ],
+      "vowel": "long"
+    },
+    {
+      "id": "team-ay",
+      "kind": "contiguous-team",
+      "spelling": "ay",
+      "phones": [
+        [
+          "EY"
+        ]
+      ],
+      "vowel": "long"
+    },
+    {
+      "id": "team-oa",
+      "kind": "contiguous-team",
+      "spelling": "oa",
+      "phones": [
+        [
+          "OW"
+        ]
+      ],
+      "vowel": "long"
+    },
+    {
+      "id": "team-ow",
+      "kind": "contiguous-team",
+      "spelling": "ow",
+      "phones": [
+        [
+          "OW"
+        ],
+        [
+          "AW"
+        ]
+      ],
+      "vowel": null
+    },
+    {
+      "id": "team-oo",
+      "kind": "contiguous-team",
+      "spelling": "oo",
+      "phones": [
+        [
+          "UH"
+        ],
+        [
+          "UW"
+        ]
+      ],
+      "vowel": "other"
+    },
+    {
+      "id": "team-ou",
+      "kind": "contiguous-team",
+      "spelling": "ou",
+      "phones": [
+        [
+          "AW"
+        ]
+      ],
+      "vowel": "other"
+    },
+    {
+      "id": "team-oi",
+      "kind": "contiguous-team",
+      "spelling": "oi",
+      "phones": [
+        [
+          "OY"
+        ]
+      ],
+      "vowel": "other"
+    },
+    {
+      "id": "team-oy",
+      "kind": "contiguous-team",
+      "spelling": "oy",
+      "phones": [
+        [
+          "OY"
+        ]
+      ],
+      "vowel": "other"
+    },
+    {
+      "id": "team-aw",
+      "kind": "contiguous-team",
+      "spelling": "aw",
+      "phones": [
+        [
+          "AO"
+        ]
+      ],
+      "vowel": "other"
+    },
+    {
+      "id": "team-au",
+      "kind": "contiguous-team",
+      "spelling": "au",
+      "phones": [
+        [
+          "AO"
+        ]
+      ],
+      "vowel": "other"
+    },
+    {
+      "id": "team-er",
+      "kind": "contiguous-team",
+      "spelling": "er",
+      "phones": [
+        [
+          "ER"
+        ]
+      ],
+      "vowel": "other"
+    },
+    {
+      "id": "team-ir",
+      "kind": "contiguous-team",
+      "spelling": "ir",
+      "phones": [
+        [
+          "ER"
+        ]
+      ],
+      "vowel": "other"
+    },
+    {
+      "id": "team-ur",
+      "kind": "contiguous-team",
+      "spelling": "ur",
+      "phones": [
+        [
+          "ER"
+        ]
+      ],
+      "vowel": "other"
+    },
+    {
+      "id": "team-ar",
+      "kind": "contiguous-team",
+      "spelling": "ar",
+      "phones": [
+        [
+          "AA",
+          "R"
+        ]
+      ],
+      "vowel": "other"
+    },
+    {
+      "id": "team-or",
+      "kind": "contiguous-team",
+      "spelling": "or",
+      "phones": [
+        [
+          "AO",
+          "R"
+        ]
+      ],
+      "vowel": "other"
+    },
+    {
+      "id": "team-igh",
+      "kind": "contiguous-team",
+      "spelling": "igh",
+      "phones": [
+        [
+          "AY"
+        ]
+      ],
+      "vowel": "long"
+    },
+    {
+      "id": "team-ie",
+      "kind": "contiguous-team",
+      "spelling": "ie",
+      "phones": [
+        [
+          "AY"
+        ]
+      ],
+      "vowel": "long"
+    },
+    {
+      "id": "split-a-e",
+      "kind": "split-digraph",
+      "spelling": "a_e",
+      "phones": [
+        [
+          "EY"
+        ]
+      ],
+      "vowel": "long"
+    },
+    {
+      "id": "split-e-e",
+      "kind": "split-digraph",
+      "spelling": "e_e",
+      "phones": [
+        [
+          "IY"
+        ]
+      ],
+      "vowel": "long"
+    },
+    {
+      "id": "split-i-e",
+      "kind": "split-digraph",
+      "spelling": "i_e",
+      "phones": [
+        [
+          "AY"
+        ]
+      ],
+      "vowel": "long"
+    },
+    {
+      "id": "split-o-e",
+      "kind": "split-digraph",
+      "spelling": "o_e",
+      "phones": [
+        [
+          "OW"
+        ]
+      ],
+      "vowel": "long"
+    },
+    {
+      "id": "split-u-e",
+      "kind": "split-digraph",
+      "spelling": "u_e",
+      "phones": [
+        [
+          "Y",
+          "UW"
+        ]
+      ],
+      "vowel": "long"
+    }
+  ]
 }

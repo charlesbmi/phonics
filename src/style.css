@@ -45,3 +45,15 @@
 .font-sample{font-size:20px;letter-spacing:.05em}
 .font-picker summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(max-width:600px){.font-options{position:static;margin-top:5px;box-shadow:none}.font-options button{font-size:15px}.font-sample{font-size:19px}}
+
+.sound-rail{display:block}
+.sound-rail .cue{position:absolute;top:0}
+.teaching-connector{position:absolute;bottom:.04em;height:.12em;border:2px solid var(--group);border-top:0;pointer-events:none}
+.split-connector{border-bottom-style:dashed}
+.silent-letter{color:var(--muted);opacity:.65}
+.legend-silent{font-style:normal;opacity:.65;margin-right:7px}
+.legend-split{display:inline-block;vertical-align:middle;width:25px;height:7px;border:2px solid var(--group);border-top:0;border-bottom-style:dashed;margin-right:7px}
+#pronunciation-control{margin-top:14px;flex-wrap:wrap;font-size:14px}
+#pronunciation-choice{max-width:100%}
+
+.unit-vowel-mark{position:absolute;top:.07em;height:4px;border-radius:4px;background:var(--long-vowel);pointer-events:none}

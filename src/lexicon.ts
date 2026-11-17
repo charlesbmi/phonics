@@ -1,8 +1,8 @@
-import type { WordEntry } from './model';
+import type { WordEntry, WordMetadata } from './model';
 
-export interface PronunciationEntry {
+export interface PronunciationEntry extends WordMetadata {
   pronunciation: string[];
-  reason: 'missing-alignment' | 'unresolved-alignment';
+  reason: 'missing-alignment' | 'unresolved-alignment' | 'alignment-review';
 }
 export type LexiconEntry = WordEntry | PronunciationEntry;
 interface ShardInfo { path: string; sha256: string; words: number }
@@ -67,7 +67,7 @@ export class Lexicon {
         const response = await this.fetcher(new URL('lexicon/manifest.json', this.base), { cache: 'no-cache' });
         if (!response.ok) throw Error('Dictionary manifest unavailable');
         const manifest: LexiconManifest = await response.json();
-        if (manifest.schemaVersion !== 1 || !manifest.shards || !manifest.counts) throw Error('Unsupported dictionary manifest');
+        if (![1, 2].includes(manifest.schemaVersion) || !manifest.shards || !manifest.counts) throw Error('Unsupported dictionary manifest');
         this.manifest = manifest;
         return manifest;
       })().finally(() => { this.manifestRequest = undefined; });

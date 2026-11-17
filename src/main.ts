@@ -3,8 +3,8 @@ import { installFontPicker } from './font-picker';
 import type { LexiconEntry } from './lexicon';
 import '../shared/reader.css';
 import './style.css';
-import { hasBlendingCues, hintsVisible, soundAtClientX, tokenize } from './model';
-import type { HintOverride, WordEntry } from './model';
+import { hasBlendingCues, hintsVisible, soundAtClientX, soundEvents, soundLetters, soundCueBounds, groupSoundIndices, tokenize } from './model';
+import type { HintOverride, WordEntry, TeachingUnit } from './model';
 
 const lexicon = new Lexicon(new URL(import.meta.env.BASE_URL, location.href));
 const app = document.querySelector<HTMLDivElement>('#app')!;
@@ -31,8 +31,10 @@ app.innerHTML = `
       <div id="hint-legend" class="legend" aria-label="Visible hint key" hidden>
         <span data-legend="quick" hidden><i class="legend-quick" aria-hidden="true"></i>Quick sound</span>
         <span data-legend="stretch" hidden><i class="legend-stretch" aria-hidden="true"></i>Stretch sound</span>
-        <span data-legend="unclassified" hidden><i class="legend-unclassified" aria-hidden="true">?</i>Unclassified sound</span>
+        <span data-legend="unclassified" hidden><i class="legend-unclassified" aria-hidden="true">?</i>No blending cue</span>
         <span data-legend="group" hidden><i class="legend-group" aria-hidden="true"></i>Letter group</span>
+        <span data-legend="silent" hidden><i class="legend-silent" aria-hidden="true">e</i>No added sound</span>
+        <span data-legend="split" hidden><i class="legend-split" aria-hidden="true"></i>Split spelling</span>
         <span data-legend="long" hidden><i class="legend-long" aria-hidden="true"></i>Long vowel</span>
         <span data-legend="vowel" hidden><i class="legend-vowel" aria-hidden="true">a</i>Vowel</span>
         <span data-legend="consonant" hidden><i class="legend-consonant" aria-hidden="true">b</i>Consonant</span>
@@ -44,6 +46,7 @@ app.innerHTML = `
         <label for="hint-override">Hints</label><select id="hint-override"><option value="default">Default</option><option value="show">Show</option><option value="hide">Hide</option></select>
         <button id="reset-progress">Show whole word</button>
       </div>
+      <label id="pronunciation-control" hidden>Pronunciation <select id="pronunciation-choice" aria-label="Word pronunciation"></select></label>
       <div id="touch-sounds" class="touch-sounds" role="group" aria-label="Silent sound steps" hidden></div>
       <div id="scrubber" class="scrubber" hidden><label for="sound-progress">Sound guide (silent)</label><input id="sound-progress" type="range" min="0" value="0" step="1"/><span id="sound-count" class="selected-sound"></span></div>
       <p id="word-status" class="status" aria-live="polite"></p>
@@ -59,7 +62,7 @@ app.innerHTML = `
         <label><input type="checkbox" id="macrons">Long-vowel marks</label>
         <label><input type="checkbox" id="colors">Colors</label>
       </div>
-      <p class="muted tools-note">Hint changes apply to one occurrence. Unsupported words stay unmarked.</p>
+      <p class="muted tools-note">Word controls can override these hints. Unsupported words stay unmarked.</p>
     </details>
     <p class="footer">Tap a word for controls; tap again to close. <a href="./third-party-licenses.txt">Data credits</a></p>
   </main>`;
@@ -86,6 +89,9 @@ interface Occurrence {
   text: string;
   entry?: WordEntry;
   lexiconEntry?: LexiconEntry;
+  baseEntry?: LexiconEntry;
+  variantId?: string;
+  connectors: Array<{ element: HTMLSpanElement; unit: TeachingUnit; vowelMark?: HTMLSpanElement }>;
   wrapper: HTMLSpanElement;
   button: HTMLButtonElement;
   rail?: HTMLDivElement;
@@ -146,8 +152,13 @@ function renderText(preserveSelection = false): void {
     }
     const index = token.occurrence;
     const candidate = lexicon.lookup(token.text);
+    const prior = previous[index];
+    const baseEntry = candidate;
+    const variantId = prior?.text === token.text ? prior.variantId ?? baseEntry?.primaryVariantId : baseEntry?.primaryVariantId;
+    const variant = baseEntry?.variants?.find(variant => variant.id === variantId);
+    const alignment = variantId && variantId !== baseEntry?.primaryVariantId ? variant?.entry : hasLetterGroups(baseEntry) ? baseEntry : undefined;
     // An incomplete entry is treated as unknown rather than guessing a mapping.
-    const entry = hasLetterGroups(candidate) && candidate.groups.map(g => g.text).join('').toLowerCase() === normalizeWord(token.text) ? candidate : undefined;
+    const entry = alignment && alignment.groups.map(g => g.text).join('').toLowerCase() === normalizeWord(token.text) ? alignment : undefined;
     const wrapper = document.createElement('span');
     wrapper.className = entry ? 'word' : 'word word-unknown';
     wrapper.dataset.occurrence = String(index);
@@ -157,8 +168,7 @@ function renderText(preserveSelection = false): void {
     button.addEventListener('click', () => selectWord(index));
     const letters = document.createElement('span');
     letters.className = 'graphemes';
-    const prior = previous[index];
-    const occurrence: Occurrence = { text: token.text, entry, lexiconEntry: candidate, wrapper, button, graphemes: [], cues: [], override: prior?.text === token.text ? prior.override : 'default', active: preserveSelection ? prior?.active ?? null : null };
+    const occurrence: Occurrence = { text: token.text, entry, lexiconEntry: candidate, baseEntry, variantId, connectors: [], wrapper, button, graphemes: [], cues: [], override: prior?.text === token.text ? prior.override : 'default', active: preserveSelection ? prior?.active ?? null : null };
     if (entry) {
       let offset = 0;
       entry.groups.forEach((group) => {
@@ -172,10 +182,11 @@ function renderText(preserveSelection = false): void {
       const rail = document.createElement('div');
       rail.className = 'sound-rail';
       rail.setAttribute('aria-label', `Sound steps for ${token.text}, word ${index + 1}`);
-      entry.groups.forEach((group, soundIndex) => {
+      const sounds = soundEvents(entry);
+      sounds.forEach((sound, soundIndex) => {
         const cue = document.createElement('button');
-        cue.className = `cue cue-${group.cue ?? 'unclassified'}`;
-        cue.setAttribute('aria-label', `${token.text}: letters ${group.text}, sound ${soundIndex + 1} of ${entry.groups.length}, ${group.cue ?? 'unclassified'}`);
+        cue.className = `cue cue-${sound.cue ?? 'unclassified'}`;
+        cue.setAttribute('aria-label', `${token.text}: letters ${soundLetters(entry, sound)}, sound ${soundIndex + 1} of ${sounds.length}, ${sound.cue ?? 'unclassified'}`);
         cue.addEventListener('click', () => activate(index, soundIndex));
         occurrence.cues.push(cue);
         rail.append(cue);
@@ -198,6 +209,20 @@ function renderText(preserveSelection = false): void {
     }
     button.append(letters);
     wrapper.append(button);
+    for (const unit of entry?.teachingUnits ?? []) {
+      const connector = document.createElement('span');
+      connector.className = `teaching-connector${unit.patternId.startsWith('split-') ? ' split-connector' : ''}`;
+      connector.setAttribute('aria-hidden', 'true');
+      wrapper.append(connector);
+      let vowelMark: HTMLSpanElement | undefined;
+      if (unit.vowel === 'long') {
+        vowelMark = document.createElement('span');
+        vowelMark.className = 'unit-vowel-mark';
+        vowelMark.setAttribute('aria-hidden', 'true');
+        wrapper.append(vowelMark);
+      }
+      occurrence.connectors.push({ element: connector, unit, vowelMark });
+    }
     if (occurrence.rail) wrapper.append(occurrence.rail);
     occurrences.push(occurrence);
     reader.append(wrapper);
@@ -249,21 +274,55 @@ function updatePresentation(): void {
     word.wrapper.classList.toggle('word-selected', isSelected);
     word.button.setAttribute('aria-pressed', String(isSelected));
     word.button.setAttribute('aria-label', `${isSelected ? 'Deselect' : 'Select'} ${word.text}, word ${index + 1}`);
-    if (word.rail) {
-      word.rail.hidden = !show || !settings.rail.checked;
-      word.rail.style.gridTemplateColumns = word.graphemes.map(grapheme => `${grapheme.getBoundingClientRect().width}px`).join(' ');
+    const sounds = soundEvents(word.entry);
+    const activeGroups = new Set(word.active === null ? [] : sounds[word.active]?.groupIndices ?? []);
+    for (const unit of word.entry?.teachingUnits ?? []) {
+      if (word.active !== null && unit.phoneIndices.includes(word.active)) unit.groupIndices.forEach(group => activeGroups.add(group));
     }
-    word.graphemes.forEach((grapheme, soundIndex) => {
-      const group = word.entry!.groups[soundIndex];
-      grapheme.classList.toggle('group-link', show && settings.groups.checked && group.text.length > 1);
-      grapheme.classList.toggle('vowel-long', show && settings.macrons.checked && group.vowel === 'long');
-      grapheme.classList.toggle('letter-vowel', show && settings.colors.checked && group.vowel !== null);
-      grapheme.classList.toggle('letter-consonant', show && settings.colors.checked && group.vowel === null);
-      grapheme.classList.toggle('active', show && isSelected && word.active === soundIndex);
-      grapheme.classList.toggle('pending', show && isSelected && word.active !== null && soundIndex > word.active);
-      word.cues[soundIndex]?.classList.toggle('active', isSelected && word.active === soundIndex);
-      word.cues[soundIndex]?.setAttribute('aria-pressed', String(isSelected && word.active === soundIndex));
+    const base = word.button.getBoundingClientRect().left;
+    const bounds = word.graphemes.map(grapheme => {
+      const rect = grapheme.getBoundingClientRect();
+      return { left: rect.left - base, right: rect.right - base };
     });
+    if (word.rail && word.entry) {
+      word.rail.hidden = !show || !settings.rail.checked;
+      soundCueBounds(word.entry, bounds).forEach((rect, soundIndex) => {
+        const cue = word.cues[soundIndex];
+        cue.style.left = `${rect.left}px`;
+        cue.style.width = `${rect.width}px`;
+        cue.classList.toggle('active', isSelected && word.active === soundIndex);
+        cue.setAttribute('aria-pressed', String(isSelected && word.active === soundIndex));
+      });
+    }
+    word.graphemes.forEach((grapheme, groupIndex) => {
+      const group = word.entry!.groups[groupIndex];
+      const linked = groupSoundIndices(word.entry!, groupIndex);
+      const units = word.entry?.teachingUnits?.filter(unit => unit.groupIndices.includes(groupIndex)) ?? [];
+      const taught = units.length > 0;
+      const independentSilent = !!group.silent && !taught;
+      const vowel = group.vowel ?? units.find(unit => unit.vowel !== null)?.vowel ?? (linked.some(index => sounds[index].vowel !== null) ? 'other' : null);
+      grapheme.classList.toggle('group-link', show && settings.groups.checked && !taught && !group.silent && linked.length === 1 && group.text.length > 1);
+      grapheme.classList.toggle('silent-letter', show && settings.groups.checked && independentSilent);
+      grapheme.classList.toggle('vowel-long', show && settings.macrons.checked && group.vowel === 'long' && !units.some(unit => unit.vowel === 'long'));
+      grapheme.classList.toggle('letter-vowel', show && settings.colors.checked && !independentSilent && vowel !== null);
+      grapheme.classList.toggle('letter-consonant', show && settings.colors.checked && !independentSilent && vowel === null);
+      grapheme.classList.toggle('active', show && isSelected && activeGroups.has(groupIndex));
+      grapheme.classList.toggle('pending', show && isSelected && word.active !== null && linked.length > 0 && linked.every(index => index > word.active!));
+    });
+    for (const { element, unit, vowelMark } of word.connectors) {
+      element.hidden = !show || !settings.groups.checked;
+      const linked = unit.groupIndices.map(index => bounds[index]);
+      const left = Math.min(...linked.map(rect => rect.left));
+      const right = Math.max(...linked.map(rect => rect.right));
+      element.style.left = `${left + 2}px`;
+      element.style.width = `${Math.max(0, right - left - 4)}px`;
+      if (vowelMark) {
+        vowelMark.hidden = !show || !settings.macrons.checked;
+        const markBounds = unit.patternId.startsWith('split-') ? bounds[unit.groupIndices[0]] : { left, right };
+        vowelMark.style.left = `${markBounds.left + (markBounds.right - markBounds.left) * .24}px`;
+        vowelMark.style.width = `${(markBounds.right - markBounds.left) * .52}px`;
+      }
+    }
   });
   // Describe marks actually rendered, including occurrence-specific overrides.
   // Checking only the global toggles would give the wrong key for a hidden word,
@@ -273,8 +332,10 @@ function updatePresentation(): void {
     quick: '.sound-rail:not([hidden]) .cue-quick',
     stretch: '.sound-rail:not([hidden]) .cue-stretch',
     unclassified: '.sound-rail:not([hidden]) .cue-unclassified',
-    group: '.group-link',
-    long: '.vowel-long',
+    group: '.group-link, .teaching-connector:not([hidden]):not(.split-connector)',
+    silent: '.silent-letter',
+    split: '.split-connector:not([hidden])',
+    long: '.vowel-long, .unit-vowel-mark:not([hidden])',
     vowel: '.letter-vowel',
     consonant: '.letter-consonant',
   };
@@ -293,39 +354,66 @@ function updatePresentation(): void {
   override.value = word?.override ?? 'default';
   const show = !!word && hintsVisible(settings.hints.checked, word.override);
   const touchSounds = get<HTMLDivElement>('#touch-sounds');
-  touchSounds.hidden = !word?.entry?.groups.length || !show || !settings.rail.checked;
+  touchSounds.hidden = !soundEvents(word?.entry).length || !show || !settings.rail.checked;
   if (touchControlsFor !== selected) {
     touchControlsFor = selected;
     touchSounds.replaceChildren();
     const index = selected;
     if (word?.entry && index !== null) {
-      word.entry.groups.forEach((group, soundIndex) => {
+      const sounds = soundEvents(word.entry);
+      sounds.forEach((sound, soundIndex) => {
         const button = document.createElement('button');
         button.type = 'button';
-        button.textContent = word.graphemes[soundIndex].textContent;
-        button.setAttribute('aria-label', `Letters ${group.text}, sound ${soundIndex + 1} of ${word.entry!.groups.length}, ${group.cue ?? 'unclassified'}`);
+        button.textContent = soundLetters(word.entry!, sound);
+        button.setAttribute('aria-label', `Letters ${soundLetters(word.entry!, sound)}, sound ${soundIndex + 1} of ${sounds.length}, ${sound.cue ?? 'unclassified'}`);
         button.addEventListener('click', () => activate(index, soundIndex));
         touchSounds.append(button);
       });
     }
   }
   touchSounds.querySelectorAll('button').forEach((button, index) => button.setAttribute('aria-pressed', String(word?.active === index)));
-  scrubber.hidden = !word?.entry?.groups.length || !show || !settings.rail.checked;
+  scrubber.hidden = !soundEvents(word?.entry).length || !show || !settings.rail.checked;
   reset.disabled = !word?.entry || word.active === null;
   if (word?.entry) {
-    progress.max = String(word.entry.groups.length - 1);
+    const sounds = soundEvents(word.entry);
+    progress.max = String(sounds.length - 1);
     progress.value = String(word.active ?? 0);
-    const group = word.entry.groups[word.active ?? 0];
-    progress.setAttribute('aria-valuetext', `Letters ${group.text}, sound ${(word.active ?? 0) + 1} of ${word.entry.groups.length}, ${group.cue ?? 'unclassified'}`);
-    count.textContent = word.active === null ? `${word.entry.groups.length} sounds` : `Sound ${word.active + 1} of ${word.entry.groups.length}`;
+    const sound = sounds[word.active ?? 0];
+    progress.setAttribute('aria-valuetext', `Letters ${soundLetters(word.entry, sound)}, sound ${(word.active ?? 0) + 1} of ${sounds.length}, ${sound.cue ?? 'unclassified'}`);
+    count.textContent = word.active === null ? `${sounds.length} sounds` : `Sound ${word.active + 1} of ${sounds.length}`;
   }
   if (!word) wordStatus.textContent = '';
   else if (!word.entry) {
-    wordStatus.textContent = word.lexiconEntry ? 'Pronunciation found; letter hints are not available yet.'
+    wordStatus.textContent = word.variantId && word.variantId !== word.baseEntry?.primaryVariantId ? 'Letter hints are not available for this pronunciation yet.'
+      : word.lexiconEntry && 'reason' in word.lexiconEntry && word.lexiconEntry.reason === 'alignment-review' ? 'Pronunciation found; its letter alignment needs review.'
+      : word.lexiconEntry ? 'Pronunciation found; letter hints are not available yet.'
       : lookupPending ? 'Loading hints…'
       : lookupFailed ? 'Hints could not load. Please retry.'
       : 'Word not found in this dictionary.';
   } else wordStatus.textContent = !show ? 'Hints hidden.' : !hasBlendingCues(word.entry) ? 'No quick/stretch cue yet for sounds marked ?.' : '';
+  const variantControl = get<HTMLLabelElement>('#pronunciation-control');
+  const variantSelect = get<HTMLSelectElement>('#pronunciation-choice');
+  const variants = word?.baseEntry?.variants ?? [];
+  const displayVariants = variants.filter((variant, index) => variants.findIndex(other => other.pronunciation.join(' ') === variant.pronunciation.join(' ')) === index);
+  variantControl.hidden = displayVariants.length < 2;
+  const signature = displayVariants.map(variant => variant.id).join('|');
+  if (variantSelect.dataset.variants !== signature) {
+    variantSelect.replaceChildren(...displayVariants.map((variant, index) => {
+      const option = document.createElement('option');
+      option.value = variant.id;
+      const sameSounds = displayVariants.filter(other => other.phonemes.join('') === variant.phonemes.join('')).length > 1;
+      const vowelStress = variant.pronunciation.filter(phone => /[012]$/.test(phone));
+      const primaryVowels = vowelStress.flatMap((phone, i) => phone.endsWith('1') ? [i + 1] : []);
+      const stress = sameSounds ? ` · stress on vowel ${primaryVowels.join(', ') || 'not specified'}` : '';
+      option.textContent = `${index + 1}: /${variant.phonemes.join('')}/${stress}${variant.aligned ? '' : ' — no letter hints yet'}`;
+      option.title = variant.pronunciation.join(' ');
+      return option;
+    }));
+    variantSelect.dataset.variants = signature;
+  }
+  variantSelect.value = word?.variantId ?? word?.baseEntry?.primaryVariantId ?? '';
+  if (word && displayVariants.length > 1 && !wordStatus.textContent) wordStatus.textContent = 'More than one pronunciation. Hints use the dictionary default unless changed.';
+  if (word && word.variantId && word.variantId !== word.baseEntry?.primaryVariantId) wordStatus.textContent += ' Word audio uses the device pronunciation.';
   speak.disabled = !word || !voice;
 }
 function stopSpeech(): void {
@@ -395,6 +483,12 @@ Object.values(settings).forEach(setting => setting.addEventListener('change', up
 override.addEventListener('change', () => {
   if (selected !== null) occurrences[selected].override = override.value as HintOverride;
   updatePresentation();
+});
+get<HTMLSelectElement>('#pronunciation-choice').addEventListener('change', event => {
+  if (selected === null) return;
+  occurrences[selected].variantId = (event.target as HTMLSelectElement).value;
+  occurrences[selected].active = null;
+  renderText(true);
 });
 progress.addEventListener('input', () => { if (selected !== null) activate(selected, Number(progress.value)); });
 reset.addEventListener('click', () => {

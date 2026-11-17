@@ -1,1 +1,1 @@
-{"'bout":{"pronunciation":["B","AW1","T"],"reason":"unresolved-alignment"}}
+{"'bout":{"groups":[{"text":"'","vowel":null,"silent":true},{"text":"b","vowel":null},{"text":"o","vowel":null,"silent":true},{"text":"u","vowel":"other"},{"text":"t","vowel":null}],"sounds":[{"phoneme":"b","cue":"quick","vowel":null,"groupIndices":[1]},{"phoneme":"aʊ","cue":"stretch","vowel":"other","groupIndices":[3]},{"phoneme":"t","cue":"quick","vowel":null,"groupIndices":[4]}],"teachingUnits":[{"groupIndices":[2,3],"phoneIndices":[1],"patternId":"team-ou","phoneme":"aʊ","vowel":"other"}]}}

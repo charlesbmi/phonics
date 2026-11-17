@@ -1,1 +1,1 @@
-{"qom":{"groups":[{"text":"q","phoneme":"k","cue":"quick","vowel":null},{"text":"o","phoneme":"ɑ","cue":"stretch","vowel":"short"},{"text":"m","phoneme":"m","cue":"stretch","vowel":null}]}}
+{"qom":{"groups":[{"text":"q","vowel":null},{"text":"o","vowel":"short"},{"text":"m","vowel":null}],"sounds":[{"phoneme":"k","cue":"quick","vowel":null,"groupIndices":[0]},{"phoneme":"ɑ","cue":"stretch","vowel":"short","groupIndices":[1]},{"phoneme":"m","cue":"stretch","vowel":null,"groupIndices":[2]}]}}

@@ -21,7 +21,7 @@ The 100 sentence cases check annotation coverage and rendering assumptions; they
 
 ## Dictionary
 
-Source pins, checksums and licenses live in `data/`. Unknown words receive no guessed hints. The importer processes the complete pinned dictionaries automatically; there is no selected-word list. It emits prefix shards, loading only the prefixes needed for the text. Alignments that fail validation remain pronunciation-only.
+Source pins, checksums and licenses live in `data/`. Unknown words receive no guessed hints. The importer processes the complete pinned dictionaries automatically; there is no selected-word list. It emits prefix shards, loading only the prefixes needed for the text. Alignments that fail agreement or ownership checks remain pronunciation-only.
 
 ```sh
 bin/npm run data:build
@@ -38,4 +38,8 @@ Pushes to `main` run checks and deploy `dist/` to GitHub Pages. Pull requests ru
 
 Future sound-level playback needs reviewed recordings and phoneme timestamps. Browser speech currently provides whole-word audio only.
 
-The [next alignment path](alignment-next.md) proposes library-backed graph conversion and richer letter/phone links. It is a proposal, separate from the current strict importer.
+The [alignment guide](alignment-next.md) covers the implemented graph importer and remaining work. The [gradual-reading plan](gradual-reading.md) scopes reviewed audio and timed highlighting.
+
+To regenerate the vendored NRC conversion graph, install uv and run `bin/npm run data:preprocess`. This optional refresh uses Python; normal tests and builds use only Node and checked-in data.
+
+Run `bin/npm run evaluate:common` for the sourced 500-word reader audit; add `-- --check` to verify saved results.

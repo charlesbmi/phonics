@@ -1,0 +1,3154 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "name": "wordfreq English large frequency list",
+    "author": "Robyn Speer",
+    "repository": "https://github.com/rspeer/wordfreq",
+    "url": "https://raw.githubusercontent.com/rspeer/wordfreq/master/wordfreq/data/large_en.msgpack.gz",
+    "upstreamVersionAtRetrieval": "3.2.0",
+    "retrieved": "2026-11-17",
+    "sha256": "dffae8066b78dce0a6667cf5f58e567054f902674667090a7ac8a8a44628b05c",
+    "pin": "Exact source bytes pinned by SHA-256; master URL is mutable. Check checksum before extraction.",
+    "dataPeriod": "General-language snapshot through approximately 2021 (upstream README)",
+    "license": "CC-BY-SA-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "noticeUrl": "https://github.com/rspeer/wordfreq/blob/master/NOTICE.md",
+    "attribution": "wordfreq © Robyn Speer; includes Google Books Ngrams (https://books.google.com/ngrams), the Leeds Internet Corpus, Wikipedia, ParaCrawl, OPUS OpenSubtitles 2018 (OpenSubtitles.org), and freely available SUBTLEX data by Marc Brysbaert et al. (http://crr.ugent.be/programs-data/subtitle-frequencies). See upstream NOTICE.md for complete terms and citations.",
+    "upstreamNotice": "wordfreq  \nCopyright 2022 Robyn Speer\n\n# Attribution notes\n\nRobyn Speer must be credited as Robyn Speer, which is her maiden name, used on academic work.\nCrediting her as Elia Robyn Lake (her married name) will make the credit less effective, as it will\nnot line up with other work.\n\nCrediting Robyn Speer by a different name than one of the above is a serious violation of the license,\nin which case you do not have permission to use, copy, or redistribute wordfreq.\n\nIf you use wordfreq in academic work, you must cite it. See \"Citing wordfreq\" in README.md.\n\n# Included licenses\n\n`wordfreq` is freely redistributable under the Apache license (see\n`LICENSE.txt`), and it includes data files that may be\nredistributed under a Creative Commons Attribution-ShareAlike 4.0\nlicense (<https://creativecommons.org/licenses/by-sa/4.0/>).\n\n`wordfreq` contains data extracted from Google Books Ngrams\n(<http://books.google.com/ngrams>) and Google Books Syntactic Ngrams\n(<http://commondatastorage.googleapis.com/books/syntactic-ngrams/index.html>).\nThe terms of use of this data are:\n\n    Ngram Viewer graphs and data may be freely used for any purpose, although\n    acknowledgement of Google Books Ngram Viewer as the source, and inclusion\n    of a link to http://books.google.com/ngrams, would be appreciated.\n\n`wordfreq` also contains data derived from the following Creative Commons-licensed\nsources:\n\n- The Leeds Internet Corpus, from the University of Leeds Centre for Translation\n  Studies (<http://corpus.leeds.ac.uk/list.html>)\n\n- Wikipedia, the free encyclopedia (<http://www.wikipedia.org>)\n\n- ParaCrawl, a multilingual Web crawl (<https://paracrawl.eu>)\n\nIt contains data from OPUS OpenSubtitles 2018\n(<http://opus.nlpl.eu/OpenSubtitles.php>), whose data originates from the\nOpenSubtitles project (<http://www.opensubtitles.org/>) and may be used with\nattribution to OpenSubtitles.\n\nIt contains data from various SUBTLEX word lists: SUBTLEX-US, SUBTLEX-UK,\nSUBTLEX-CH, SUBTLEX-DE, and SUBTLEX-NL, created by Marc Brysbaert et al.\n(see citations below) and available at\n<http://crr.ugent.be/programs-data/subtitle-frequencies>.\n\nI (Robyn Speer) have obtained permission by e-mail from Marc Brysbaert to\ndistribute these wordlists in wordfreq, to be used for any purpose, not just\nfor academic use, under these conditions:\n\n- Wordfreq and code derived from it must credit the SUBTLEX authors.\n- It must remain clear that SUBTLEX is freely available data.\n\nThese terms are similar to the Creative Commons Attribution-ShareAlike license.\n\nSome additional data was collected by a custom application that watched the\nstreaming Twitter API, in accordance with Twitter's Developer Agreement &\nPolicy. This software gives statistics about words that were commonly used on\nTwitter; it does not display or republish any Twitter content, and does not\ncontain any content from after Twitter's sale.\n\n"
+  },
+  "selection": {
+    "language": "en",
+    "wordlist": "large",
+    "size": 500,
+    "pattern": "^[a-z]+(?:'[a-z]+)*$",
+    "order": "Descending upstream frequency bins; upstream alphabetical order within ties.",
+    "definition": "First 500 eligible lowercase ASCII alphabetic tokens, allowing internal apostrophes. Excludes digit placeholders, punctuation, accented spellings and other scripts; retains contractions, single letters, names and informal/offensive words when ranked. No manual word substitutions."
+  },
+  "baseline": {
+    "recordedAt": "2026-11-17T00:56:42Z",
+    "gitRevision": "2bfef6295b24ebcf908a2ec4ded7bba76424d653",
+    "description": "Observed legacy one-phone-per-group importer and cue policy version 2, before richer import and UFLI AH0 supplement; captured in this session before edits.",
+    "policyVersion": 2,
+    "cuePolicy": "nifdi-corrective-reading-decoding-sound-pronunciation",
+    "words": 500,
+    "mapped": 221,
+    "pronunciationOnly": 279,
+    "missing": 0,
+    "completeTeachingCues": 161,
+    "dictionaryCounts": {
+      "total": 126052,
+      "complete": 51801,
+      "pronunciationOnly": 74251,
+      "missingAlignment": 6,
+      "unresolvedAlignment": 74245,
+      "completeCueSets": 23036,
+      "alternativePronunciations": 9114,
+      "sourceAlignments": 126046
+    }
+  },
+  "knownHeteronyms": [
+    "read",
+    "live",
+    "does",
+    "close",
+    "lead",
+    "wind",
+    "minute",
+    "record",
+    "present",
+    "subject",
+    "object",
+    "project",
+    "produce",
+    "use",
+    "house",
+    "tear",
+    "bow",
+    "content",
+    "second",
+    "desert",
+    "learned",
+    "invalid",
+    "bass",
+    "refuse",
+    "contract",
+    "conduct",
+    "permit"
+  ],
+  "edgeCases": [
+    {
+      "word": "hello",
+      "concern": "AH0 schwa should have sourced quick cue, not inherited stressed AH stretch."
+    },
+    {
+      "word": "e",
+      "concern": "Letter name IY1 is stretch; spelling alone does not identify schwa."
+    },
+    {
+      "word": "x",
+      "concern": "Letter-name pronunciation needs an alignment; it is not the /ks/ sound of x in box."
+    },
+    {
+      "word": "box",
+      "concern": "The x group must retain two independently cued phones K quick and S stretch."
+    },
+    {
+      "word": "make",
+      "concern": "Final silent e participates in the reviewed generic split-digraph pattern."
+    },
+    {
+      "word": "you",
+      "concern": "Y+UW multi-phone alignment must retain both phones."
+    },
+    {
+      "word": "apple",
+      "concern": "Risky upstream vowel-to-p assignment is withheld, not silently repaired."
+    },
+    {
+      "word": "little",
+      "concern": "Risky source vowel-to-consonant assignment requires review."
+    },
+    {
+      "word": "bottle",
+      "concern": "Risky source vowel-to-consonant assignment requires review."
+    },
+    {
+      "word": "read",
+      "concern": "Heteronym: context-free primary pronunciation cannot choose tense."
+    },
+    {
+      "word": "the",
+      "concern": "Primary and reduced/dialect alternatives are not contextually selected."
+    },
+    {
+      "word": "of",
+      "concern": "Irregular spelling must follow source pronunciation."
+    },
+    {
+      "word": "one",
+      "concern": "Irregular spelling alignment must retain source phone order."
+    },
+    {
+      "word": "said",
+      "concern": "Vowel team is not automatically long."
+    },
+    {
+      "word": "day",
+      "concern": "One EY phoneme crosses the raw a/y source boundary."
+    },
+    {
+      "word": "wait",
+      "concern": "One EY phoneme crosses the raw a/i source boundary."
+    },
+    {
+      "word": "each",
+      "concern": "Source a participates in CH; questionable ownership remains withheld."
+    },
+    {
+      "word": "amplifier",
+      "concern": "Conflicting ie and er teaching units must not both claim the same silent span."
+    }
+  ],
+  "words": [
+    {
+      "rank": 1,
+      "sourceRank": 1,
+      "word": "the",
+      "zipf": 7.73
+    },
+    {
+      "rank": 2,
+      "sourceRank": 2,
+      "word": "to",
+      "zipf": 7.43
+    },
+    {
+      "rank": 3,
+      "sourceRank": 3,
+      "word": "and",
+      "zipf": 7.41
+    },
+    {
+      "rank": 4,
+      "sourceRank": 4,
+      "word": "of",
+      "zipf": 7.4
+    },
+    {
+      "rank": 5,
+      "sourceRank": 5,
+      "word": "a",
+      "zipf": 7.36
+    },
+    {
+      "rank": 6,
+      "sourceRank": 6,
+      "word": "in",
+      "zipf": 7.27
+    },
+    {
+      "rank": 7,
+      "sourceRank": 7,
+      "word": "i",
+      "zipf": 7.09
+    },
+    {
+      "rank": 8,
+      "sourceRank": 8,
+      "word": "is",
+      "zipf": 7.07
+    },
+    {
+      "rank": 9,
+      "sourceRank": 9,
+      "word": "for",
+      "zipf": 7.01
+    },
+    {
+      "rank": 10,
+      "sourceRank": 10,
+      "word": "that",
+      "zipf": 7.01
+    },
+    {
+      "rank": 11,
+      "sourceRank": 11,
+      "word": "you",
+      "zipf": 6.98
+    },
+    {
+      "rank": 12,
+      "sourceRank": 12,
+      "word": "it",
+      "zipf": 6.95
+    },
+    {
+      "rank": 13,
+      "sourceRank": 13,
+      "word": "on",
+      "zipf": 6.91
+    },
+    {
+      "rank": 14,
+      "sourceRank": 14,
+      "word": "with",
+      "zipf": 6.85
+    },
+    {
+      "rank": 15,
+      "sourceRank": 16,
+      "word": "this",
+      "zipf": 6.82
+    },
+    {
+      "rank": 16,
+      "sourceRank": 17,
+      "word": "was",
+      "zipf": 6.82
+    },
+    {
+      "rank": 17,
+      "sourceRank": 18,
+      "word": "be",
+      "zipf": 6.79
+    },
+    {
+      "rank": 18,
+      "sourceRank": 19,
+      "word": "as",
+      "zipf": 6.77
+    },
+    {
+      "rank": 19,
+      "sourceRank": 20,
+      "word": "are",
+      "zipf": 6.74
+    },
+    {
+      "rank": 20,
+      "sourceRank": 21,
+      "word": "have",
+      "zipf": 6.71
+    },
+    {
+      "rank": 21,
+      "sourceRank": 22,
+      "word": "at",
+      "zipf": 6.7
+    },
+    {
+      "rank": 22,
+      "sourceRank": 23,
+      "word": "he",
+      "zipf": 6.69
+    },
+    {
+      "rank": 23,
+      "sourceRank": 24,
+      "word": "not",
+      "zipf": 6.69
+    },
+    {
+      "rank": 24,
+      "sourceRank": 25,
+      "word": "by",
+      "zipf": 6.66
+    },
+    {
+      "rank": 25,
+      "sourceRank": 27,
+      "word": "but",
+      "zipf": 6.63
+    },
+    {
+      "rank": 26,
+      "sourceRank": 28,
+      "word": "from",
+      "zipf": 6.63
+    },
+    {
+      "rank": 27,
+      "sourceRank": 29,
+      "word": "my",
+      "zipf": 6.57
+    },
+    {
+      "rank": 28,
+      "sourceRank": 30,
+      "word": "or",
+      "zipf": 6.54
+    },
+    {
+      "rank": 29,
+      "sourceRank": 31,
+      "word": "we",
+      "zipf": 6.54
+    },
+    {
+      "rank": 30,
+      "sourceRank": 32,
+      "word": "an",
+      "zipf": 6.53
+    },
+    {
+      "rank": 31,
+      "sourceRank": 33,
+      "word": "your",
+      "zipf": 6.53
+    },
+    {
+      "rank": 32,
+      "sourceRank": 34,
+      "word": "all",
+      "zipf": 6.52
+    },
+    {
+      "rank": 33,
+      "sourceRank": 35,
+      "word": "so",
+      "zipf": 6.52
+    },
+    {
+      "rank": 34,
+      "sourceRank": 36,
+      "word": "his",
+      "zipf": 6.51
+    },
+    {
+      "rank": 35,
+      "sourceRank": 37,
+      "word": "they",
+      "zipf": 6.5
+    },
+    {
+      "rank": 36,
+      "sourceRank": 38,
+      "word": "me",
+      "zipf": 6.48
+    },
+    {
+      "rank": 37,
+      "sourceRank": 39,
+      "word": "if",
+      "zipf": 6.47
+    },
+    {
+      "rank": 38,
+      "sourceRank": 40,
+      "word": "one",
+      "zipf": 6.47
+    },
+    {
+      "rank": 39,
+      "sourceRank": 41,
+      "word": "can",
+      "zipf": 6.46
+    },
+    {
+      "rank": 40,
+      "sourceRank": 42,
+      "word": "will",
+      "zipf": 6.45
+    },
+    {
+      "rank": 41,
+      "sourceRank": 43,
+      "word": "just",
+      "zipf": 6.43
+    },
+    {
+      "rank": 42,
+      "sourceRank": 44,
+      "word": "like",
+      "zipf": 6.41
+    },
+    {
+      "rank": 43,
+      "sourceRank": 45,
+      "word": "about",
+      "zipf": 6.4
+    },
+    {
+      "rank": 44,
+      "sourceRank": 46,
+      "word": "up",
+      "zipf": 6.39
+    },
+    {
+      "rank": 45,
+      "sourceRank": 47,
+      "word": "out",
+      "zipf": 6.38
+    },
+    {
+      "rank": 46,
+      "sourceRank": 48,
+      "word": "what",
+      "zipf": 6.38
+    },
+    {
+      "rank": 47,
+      "sourceRank": 49,
+      "word": "has",
+      "zipf": 6.37
+    },
+    {
+      "rank": 48,
+      "sourceRank": 50,
+      "word": "when",
+      "zipf": 6.37
+    },
+    {
+      "rank": 49,
+      "sourceRank": 51,
+      "word": "more",
+      "zipf": 6.36
+    },
+    {
+      "rank": 50,
+      "sourceRank": 52,
+      "word": "do",
+      "zipf": 6.35
+    },
+    {
+      "rank": 51,
+      "sourceRank": 53,
+      "word": "no",
+      "zipf": 6.35
+    },
+    {
+      "rank": 52,
+      "sourceRank": 54,
+      "word": "were",
+      "zipf": 6.34
+    },
+    {
+      "rank": 53,
+      "sourceRank": 55,
+      "word": "who",
+      "zipf": 6.34
+    },
+    {
+      "rank": 54,
+      "sourceRank": 56,
+      "word": "had",
+      "zipf": 6.33
+    },
+    {
+      "rank": 55,
+      "sourceRank": 57,
+      "word": "it's",
+      "zipf": 6.33
+    },
+    {
+      "rank": 56,
+      "sourceRank": 58,
+      "word": "their",
+      "zipf": 6.33
+    },
+    {
+      "rank": 57,
+      "sourceRank": 59,
+      "word": "there",
+      "zipf": 6.31
+    },
+    {
+      "rank": 58,
+      "sourceRank": 60,
+      "word": "her",
+      "zipf": 6.3
+    },
+    {
+      "rank": 59,
+      "sourceRank": 61,
+      "word": "which",
+      "zipf": 6.3
+    },
+    {
+      "rank": 60,
+      "sourceRank": 62,
+      "word": "time",
+      "zipf": 6.29
+    },
+    {
+      "rank": 61,
+      "sourceRank": 63,
+      "word": "get",
+      "zipf": 6.28
+    },
+    {
+      "rank": 62,
+      "sourceRank": 64,
+      "word": "been",
+      "zipf": 6.27
+    },
+    {
+      "rank": 63,
+      "sourceRank": 65,
+      "word": "would",
+      "zipf": 6.27
+    },
+    {
+      "rank": 64,
+      "sourceRank": 67,
+      "word": "she",
+      "zipf": 6.26
+    },
+    {
+      "rank": 65,
+      "sourceRank": 68,
+      "word": "new",
+      "zipf": 6.25
+    },
+    {
+      "rank": 66,
+      "sourceRank": 69,
+      "word": "people",
+      "zipf": 6.25
+    },
+    {
+      "rank": 67,
+      "sourceRank": 70,
+      "word": "how",
+      "zipf": 6.24
+    },
+    {
+      "rank": 68,
+      "sourceRank": 71,
+      "word": "don't",
+      "zipf": 6.2
+    },
+    {
+      "rank": 69,
+      "sourceRank": 72,
+      "word": "some",
+      "zipf": 6.2
+    },
+    {
+      "rank": 70,
+      "sourceRank": 73,
+      "word": "also",
+      "zipf": 6.19
+    },
+    {
+      "rank": 71,
+      "sourceRank": 74,
+      "word": "them",
+      "zipf": 6.19
+    },
+    {
+      "rank": 72,
+      "sourceRank": 75,
+      "word": "now",
+      "zipf": 6.18
+    },
+    {
+      "rank": 73,
+      "sourceRank": 76,
+      "word": "other",
+      "zipf": 6.16
+    },
+    {
+      "rank": 74,
+      "sourceRank": 77,
+      "word": "i'm",
+      "zipf": 6.15
+    },
+    {
+      "rank": 75,
+      "sourceRank": 78,
+      "word": "its",
+      "zipf": 6.14
+    },
+    {
+      "rank": 76,
+      "sourceRank": 79,
+      "word": "our",
+      "zipf": 6.14
+    },
+    {
+      "rank": 77,
+      "sourceRank": 80,
+      "word": "than",
+      "zipf": 6.13
+    },
+    {
+      "rank": 78,
+      "sourceRank": 81,
+      "word": "good",
+      "zipf": 6.12
+    },
+    {
+      "rank": 79,
+      "sourceRank": 82,
+      "word": "only",
+      "zipf": 6.12
+    },
+    {
+      "rank": 80,
+      "sourceRank": 83,
+      "word": "after",
+      "zipf": 6.11
+    },
+    {
+      "rank": 81,
+      "sourceRank": 84,
+      "word": "first",
+      "zipf": 6.11
+    },
+    {
+      "rank": 82,
+      "sourceRank": 85,
+      "word": "him",
+      "zipf": 6.11
+    },
+    {
+      "rank": 83,
+      "sourceRank": 86,
+      "word": "into",
+      "zipf": 6.11
+    },
+    {
+      "rank": 84,
+      "sourceRank": 87,
+      "word": "know",
+      "zipf": 6.1
+    },
+    {
+      "rank": 85,
+      "sourceRank": 88,
+      "word": "see",
+      "zipf": 6.1
+    },
+    {
+      "rank": 86,
+      "sourceRank": 89,
+      "word": "two",
+      "zipf": 6.1
+    },
+    {
+      "rank": 87,
+      "sourceRank": 90,
+      "word": "make",
+      "zipf": 6.08
+    },
+    {
+      "rank": 88,
+      "sourceRank": 91,
+      "word": "over",
+      "zipf": 6.08
+    },
+    {
+      "rank": 89,
+      "sourceRank": 92,
+      "word": "think",
+      "zipf": 6.08
+    },
+    {
+      "rank": 90,
+      "sourceRank": 93,
+      "word": "any",
+      "zipf": 6.07
+    },
+    {
+      "rank": 91,
+      "sourceRank": 94,
+      "word": "then",
+      "zipf": 6.07
+    },
+    {
+      "rank": 92,
+      "sourceRank": 95,
+      "word": "could",
+      "zipf": 6.06
+    },
+    {
+      "rank": 93,
+      "sourceRank": 96,
+      "word": "back",
+      "zipf": 6.04
+    },
+    {
+      "rank": 94,
+      "sourceRank": 97,
+      "word": "these",
+      "zipf": 6.04
+    },
+    {
+      "rank": 95,
+      "sourceRank": 98,
+      "word": "us",
+      "zipf": 6.04
+    },
+    {
+      "rank": 96,
+      "sourceRank": 99,
+      "word": "want",
+      "zipf": 6.04
+    },
+    {
+      "rank": 97,
+      "sourceRank": 100,
+      "word": "because",
+      "zipf": 6.03
+    },
+    {
+      "rank": 98,
+      "sourceRank": 101,
+      "word": "go",
+      "zipf": 6.03
+    },
+    {
+      "rank": 99,
+      "sourceRank": 102,
+      "word": "well",
+      "zipf": 6.03
+    },
+    {
+      "rank": 100,
+      "sourceRank": 103,
+      "word": "said",
+      "zipf": 6.01
+    },
+    {
+      "rank": 101,
+      "sourceRank": 104,
+      "word": "way",
+      "zipf": 6.01
+    },
+    {
+      "rank": 102,
+      "sourceRank": 107,
+      "word": "most",
+      "zipf": 6
+    },
+    {
+      "rank": 103,
+      "sourceRank": 108,
+      "word": "much",
+      "zipf": 6
+    },
+    {
+      "rank": 104,
+      "sourceRank": 109,
+      "word": "very",
+      "zipf": 6
+    },
+    {
+      "rank": 105,
+      "sourceRank": 110,
+      "word": "where",
+      "zipf": 6
+    },
+    {
+      "rank": 106,
+      "sourceRank": 111,
+      "word": "even",
+      "zipf": 5.99
+    },
+    {
+      "rank": 107,
+      "sourceRank": 112,
+      "word": "should",
+      "zipf": 5.99
+    },
+    {
+      "rank": 108,
+      "sourceRank": 113,
+      "word": "may",
+      "zipf": 5.98
+    },
+    {
+      "rank": 109,
+      "sourceRank": 114,
+      "word": "here",
+      "zipf": 5.97
+    },
+    {
+      "rank": 110,
+      "sourceRank": 115,
+      "word": "need",
+      "zipf": 5.97
+    },
+    {
+      "rank": 111,
+      "sourceRank": 116,
+      "word": "really",
+      "zipf": 5.97
+    },
+    {
+      "rank": 112,
+      "sourceRank": 117,
+      "word": "did",
+      "zipf": 5.96
+    },
+    {
+      "rank": 113,
+      "sourceRank": 118,
+      "word": "right",
+      "zipf": 5.96
+    },
+    {
+      "rank": 114,
+      "sourceRank": 119,
+      "word": "work",
+      "zipf": 5.96
+    },
+    {
+      "rank": 115,
+      "sourceRank": 120,
+      "word": "year",
+      "zipf": 5.96
+    },
+    {
+      "rank": 116,
+      "sourceRank": 121,
+      "word": "years",
+      "zipf": 5.96
+    },
+    {
+      "rank": 117,
+      "sourceRank": 122,
+      "word": "being",
+      "zipf": 5.95
+    },
+    {
+      "rank": 118,
+      "sourceRank": 123,
+      "word": "day",
+      "zipf": 5.95
+    },
+    {
+      "rank": 119,
+      "sourceRank": 124,
+      "word": "too",
+      "zipf": 5.95
+    },
+    {
+      "rank": 120,
+      "sourceRank": 125,
+      "word": "going",
+      "zipf": 5.94
+    },
+    {
+      "rank": 121,
+      "sourceRank": 126,
+      "word": "before",
+      "zipf": 5.93
+    },
+    {
+      "rank": 122,
+      "sourceRank": 127,
+      "word": "off",
+      "zipf": 5.93
+    },
+    {
+      "rank": 123,
+      "sourceRank": 128,
+      "word": "why",
+      "zipf": 5.93
+    },
+    {
+      "rank": 124,
+      "sourceRank": 129,
+      "word": "made",
+      "zipf": 5.92
+    },
+    {
+      "rank": 125,
+      "sourceRank": 130,
+      "word": "still",
+      "zipf": 5.92
+    },
+    {
+      "rank": 126,
+      "sourceRank": 131,
+      "word": "take",
+      "zipf": 5.92
+    },
+    {
+      "rank": 127,
+      "sourceRank": 133,
+      "word": "got",
+      "zipf": 5.91
+    },
+    {
+      "rank": 128,
+      "sourceRank": 134,
+      "word": "many",
+      "zipf": 5.91
+    },
+    {
+      "rank": 129,
+      "sourceRank": 135,
+      "word": "never",
+      "zipf": 5.91
+    },
+    {
+      "rank": 130,
+      "sourceRank": 136,
+      "word": "those",
+      "zipf": 5.9
+    },
+    {
+      "rank": 131,
+      "sourceRank": 137,
+      "word": "life",
+      "zipf": 5.89
+    },
+    {
+      "rank": 132,
+      "sourceRank": 138,
+      "word": "say",
+      "zipf": 5.89
+    },
+    {
+      "rank": 133,
+      "sourceRank": 139,
+      "word": "world",
+      "zipf": 5.89
+    },
+    {
+      "rank": 134,
+      "sourceRank": 140,
+      "word": "down",
+      "zipf": 5.88
+    },
+    {
+      "rank": 135,
+      "sourceRank": 141,
+      "word": "great",
+      "zipf": 5.88
+    },
+    {
+      "rank": 136,
+      "sourceRank": 142,
+      "word": "through",
+      "zipf": 5.87
+    },
+    {
+      "rank": 137,
+      "sourceRank": 143,
+      "word": "you're",
+      "zipf": 5.87
+    },
+    {
+      "rank": 138,
+      "sourceRank": 144,
+      "word": "last",
+      "zipf": 5.86
+    },
+    {
+      "rank": 139,
+      "sourceRank": 145,
+      "word": "s",
+      "zipf": 5.86
+    },
+    {
+      "rank": 140,
+      "sourceRank": 146,
+      "word": "that's",
+      "zipf": 5.86
+    },
+    {
+      "rank": 141,
+      "sourceRank": 147,
+      "word": "while",
+      "zipf": 5.86
+    },
+    {
+      "rank": 142,
+      "sourceRank": 148,
+      "word": "best",
+      "zipf": 5.84
+    },
+    {
+      "rank": 143,
+      "sourceRank": 149,
+      "word": "such",
+      "zipf": 5.84
+    },
+    {
+      "rank": 144,
+      "sourceRank": 150,
+      "word": "love",
+      "zipf": 5.82
+    },
+    {
+      "rank": 145,
+      "sourceRank": 151,
+      "word": "man",
+      "zipf": 5.82
+    },
+    {
+      "rank": 146,
+      "sourceRank": 152,
+      "word": "home",
+      "zipf": 5.81
+    },
+    {
+      "rank": 147,
+      "sourceRank": 153,
+      "word": "long",
+      "zipf": 5.81
+    },
+    {
+      "rank": 148,
+      "sourceRank": 154,
+      "word": "look",
+      "zipf": 5.81
+    },
+    {
+      "rank": 149,
+      "sourceRank": 155,
+      "word": "something",
+      "zipf": 5.81
+    },
+    {
+      "rank": 150,
+      "sourceRank": 156,
+      "word": "use",
+      "zipf": 5.81
+    },
+    {
+      "rank": 151,
+      "sourceRank": 157,
+      "word": "can't",
+      "zipf": 5.8
+    },
+    {
+      "rank": 152,
+      "sourceRank": 158,
+      "word": "same",
+      "zipf": 5.8
+    },
+    {
+      "rank": 153,
+      "sourceRank": 159,
+      "word": "used",
+      "zipf": 5.8
+    },
+    {
+      "rank": 154,
+      "sourceRank": 160,
+      "word": "both",
+      "zipf": 5.79
+    },
+    {
+      "rank": 155,
+      "sourceRank": 161,
+      "word": "every",
+      "zipf": 5.79
+    },
+    {
+      "rank": 156,
+      "sourceRank": 163,
+      "word": "am",
+      "zipf": 5.78
+    },
+    {
+      "rank": 157,
+      "sourceRank": 164,
+      "word": "come",
+      "zipf": 5.78
+    },
+    {
+      "rank": 158,
+      "sourceRank": 165,
+      "word": "part",
+      "zipf": 5.78
+    },
+    {
+      "rank": 159,
+      "sourceRank": 166,
+      "word": "state",
+      "zipf": 5.78
+    },
+    {
+      "rank": 160,
+      "sourceRank": 167,
+      "word": "three",
+      "zipf": 5.78
+    },
+    {
+      "rank": 161,
+      "sourceRank": 168,
+      "word": "around",
+      "zipf": 5.77
+    },
+    {
+      "rank": 162,
+      "sourceRank": 169,
+      "word": "between",
+      "zipf": 5.77
+    },
+    {
+      "rank": 163,
+      "sourceRank": 170,
+      "word": "always",
+      "zipf": 5.76
+    },
+    {
+      "rank": 164,
+      "sourceRank": 171,
+      "word": "better",
+      "zipf": 5.76
+    },
+    {
+      "rank": 165,
+      "sourceRank": 172,
+      "word": "find",
+      "zipf": 5.76
+    },
+    {
+      "rank": 166,
+      "sourceRank": 174,
+      "word": "help",
+      "zipf": 5.75
+    },
+    {
+      "rank": 167,
+      "sourceRank": 175,
+      "word": "high",
+      "zipf": 5.75
+    },
+    {
+      "rank": 168,
+      "sourceRank": 176,
+      "word": "little",
+      "zipf": 5.75
+    },
+    {
+      "rank": 169,
+      "sourceRank": 177,
+      "word": "old",
+      "zipf": 5.75
+    },
+    {
+      "rank": 170,
+      "sourceRank": 178,
+      "word": "since",
+      "zipf": 5.75
+    },
+    {
+      "rank": 171,
+      "sourceRank": 179,
+      "word": "another",
+      "zipf": 5.74
+    },
+    {
+      "rank": 172,
+      "sourceRank": 180,
+      "word": "does",
+      "zipf": 5.74
+    },
+    {
+      "rank": 173,
+      "sourceRank": 181,
+      "word": "own",
+      "zipf": 5.74
+    },
+    {
+      "rank": 174,
+      "sourceRank": 182,
+      "word": "things",
+      "zipf": 5.74
+    },
+    {
+      "rank": 175,
+      "sourceRank": 183,
+      "word": "under",
+      "zipf": 5.73
+    },
+    {
+      "rank": 176,
+      "sourceRank": 184,
+      "word": "during",
+      "zipf": 5.72
+    },
+    {
+      "rank": 177,
+      "sourceRank": 185,
+      "word": "game",
+      "zipf": 5.72
+    },
+    {
+      "rank": 178,
+      "sourceRank": 186,
+      "word": "i've",
+      "zipf": 5.72
+    },
+    {
+      "rank": 179,
+      "sourceRank": 187,
+      "word": "thing",
+      "zipf": 5.72
+    },
+    {
+      "rank": 180,
+      "sourceRank": 188,
+      "word": "give",
+      "zipf": 5.71
+    },
+    {
+      "rank": 181,
+      "sourceRank": 189,
+      "word": "house",
+      "zipf": 5.71
+    },
+    {
+      "rank": 182,
+      "sourceRank": 190,
+      "word": "place",
+      "zipf": 5.71
+    },
+    {
+      "rank": 183,
+      "sourceRank": 191,
+      "word": "school",
+      "zipf": 5.71
+    },
+    {
+      "rank": 184,
+      "sourceRank": 192,
+      "word": "again",
+      "zipf": 5.7
+    },
+    {
+      "rank": 185,
+      "sourceRank": 193,
+      "word": "next",
+      "zipf": 5.7
+    },
+    {
+      "rank": 186,
+      "sourceRank": 194,
+      "word": "each",
+      "zipf": 5.69
+    },
+    {
+      "rank": 187,
+      "sourceRank": 195,
+      "word": "mr",
+      "zipf": 5.69
+    },
+    {
+      "rank": 188,
+      "sourceRank": 196,
+      "word": "without",
+      "zipf": 5.69
+    },
+    {
+      "rank": 189,
+      "sourceRank": 197,
+      "word": "against",
+      "zipf": 5.68
+    },
+    {
+      "rank": 190,
+      "sourceRank": 198,
+      "word": "didn't",
+      "zipf": 5.68
+    },
+    {
+      "rank": 191,
+      "sourceRank": 199,
+      "word": "end",
+      "zipf": 5.68
+    },
+    {
+      "rank": 192,
+      "sourceRank": 200,
+      "word": "found",
+      "zipf": 5.68
+    },
+    {
+      "rank": 193,
+      "sourceRank": 201,
+      "word": "must",
+      "zipf": 5.68
+    },
+    {
+      "rank": 194,
+      "sourceRank": 202,
+      "word": "show",
+      "zipf": 5.68
+    },
+    {
+      "rank": 195,
+      "sourceRank": 203,
+      "word": "big",
+      "zipf": 5.67
+    },
+    {
+      "rank": 196,
+      "sourceRank": 204,
+      "word": "feel",
+      "zipf": 5.67
+    },
+    {
+      "rank": 197,
+      "sourceRank": 205,
+      "word": "sure",
+      "zipf": 5.67
+    },
+    {
+      "rank": 198,
+      "sourceRank": 206,
+      "word": "team",
+      "zipf": 5.67
+    },
+    {
+      "rank": 199,
+      "sourceRank": 207,
+      "word": "ever",
+      "zipf": 5.66
+    },
+    {
+      "rank": 200,
+      "sourceRank": 208,
+      "word": "family",
+      "zipf": 5.66
+    },
+    {
+      "rank": 201,
+      "sourceRank": 209,
+      "word": "keep",
+      "zipf": 5.66
+    },
+    {
+      "rank": 202,
+      "sourceRank": 210,
+      "word": "might",
+      "zipf": 5.66
+    },
+    {
+      "rank": 203,
+      "sourceRank": 211,
+      "word": "please",
+      "zipf": 5.66
+    },
+    {
+      "rank": 204,
+      "sourceRank": 212,
+      "word": "put",
+      "zipf": 5.66
+    },
+    {
+      "rank": 205,
+      "sourceRank": 213,
+      "word": "money",
+      "zipf": 5.64
+    },
+    {
+      "rank": 206,
+      "sourceRank": 214,
+      "word": "free",
+      "zipf": 5.63
+    },
+    {
+      "rank": 207,
+      "sourceRank": 215,
+      "word": "second",
+      "zipf": 5.63
+    },
+    {
+      "rank": 208,
+      "sourceRank": 216,
+      "word": "someone",
+      "zipf": 5.63
+    },
+    {
+      "rank": 209,
+      "sourceRank": 217,
+      "word": "away",
+      "zipf": 5.62
+    },
+    {
+      "rank": 210,
+      "sourceRank": 218,
+      "word": "left",
+      "zipf": 5.62
+    },
+    {
+      "rank": 211,
+      "sourceRank": 219,
+      "word": "number",
+      "zipf": 5.62
+    },
+    {
+      "rank": 212,
+      "sourceRank": 220,
+      "word": "city",
+      "zipf": 5.61
+    },
+    {
+      "rank": 213,
+      "sourceRank": 221,
+      "word": "days",
+      "zipf": 5.61
+    },
+    {
+      "rank": 214,
+      "sourceRank": 222,
+      "word": "lot",
+      "zipf": 5.61
+    },
+    {
+      "rank": 215,
+      "sourceRank": 223,
+      "word": "name",
+      "zipf": 5.61
+    },
+    {
+      "rank": 216,
+      "sourceRank": 224,
+      "word": "night",
+      "zipf": 5.61
+    },
+    {
+      "rank": 217,
+      "sourceRank": 225,
+      "word": "play",
+      "zipf": 5.61
+    },
+    {
+      "rank": 218,
+      "sourceRank": 226,
+      "word": "until",
+      "zipf": 5.61
+    },
+    {
+      "rank": 219,
+      "sourceRank": 227,
+      "word": "company",
+      "zipf": 5.6
+    },
+    {
+      "rank": 220,
+      "sourceRank": 228,
+      "word": "doing",
+      "zipf": 5.6
+    },
+    {
+      "rank": 221,
+      "sourceRank": 229,
+      "word": "few",
+      "zipf": 5.6
+    },
+    {
+      "rank": 222,
+      "sourceRank": 230,
+      "word": "he's",
+      "zipf": 5.6
+    },
+    {
+      "rank": 223,
+      "sourceRank": 231,
+      "word": "let",
+      "zipf": 5.6
+    },
+    {
+      "rank": 224,
+      "sourceRank": 232,
+      "word": "real",
+      "zipf": 5.6
+    },
+    {
+      "rank": 225,
+      "sourceRank": 234,
+      "word": "called",
+      "zipf": 5.59
+    },
+    {
+      "rank": 226,
+      "sourceRank": 235,
+      "word": "different",
+      "zipf": 5.59
+    },
+    {
+      "rank": 227,
+      "sourceRank": 236,
+      "word": "having",
+      "zipf": 5.59
+    },
+    {
+      "rank": 228,
+      "sourceRank": 237,
+      "word": "set",
+      "zipf": 5.59
+    },
+    {
+      "rank": 229,
+      "sourceRank": 238,
+      "word": "thought",
+      "zipf": 5.59
+    },
+    {
+      "rank": 230,
+      "sourceRank": 240,
+      "word": "done",
+      "zipf": 5.58
+    },
+    {
+      "rank": 231,
+      "sourceRank": 241,
+      "word": "however",
+      "zipf": 5.58
+    },
+    {
+      "rank": 232,
+      "sourceRank": 242,
+      "word": "getting",
+      "zipf": 5.57
+    },
+    {
+      "rank": 233,
+      "sourceRank": 243,
+      "word": "god",
+      "zipf": 5.57
+    },
+    {
+      "rank": 234,
+      "sourceRank": 244,
+      "word": "government",
+      "zipf": 5.57
+    },
+    {
+      "rank": 235,
+      "sourceRank": 245,
+      "word": "group",
+      "zipf": 5.57
+    },
+    {
+      "rank": 236,
+      "sourceRank": 246,
+      "word": "looking",
+      "zipf": 5.57
+    },
+    {
+      "rank": 237,
+      "sourceRank": 247,
+      "word": "public",
+      "zipf": 5.57
+    },
+    {
+      "rank": 238,
+      "sourceRank": 248,
+      "word": "top",
+      "zipf": 5.57
+    },
+    {
+      "rank": 239,
+      "sourceRank": 249,
+      "word": "women",
+      "zipf": 5.57
+    },
+    {
+      "rank": 240,
+      "sourceRank": 250,
+      "word": "business",
+      "zipf": 5.56
+    },
+    {
+      "rank": 241,
+      "sourceRank": 251,
+      "word": "care",
+      "zipf": 5.56
+    },
+    {
+      "rank": 242,
+      "sourceRank": 252,
+      "word": "start",
+      "zipf": 5.56
+    },
+    {
+      "rank": 243,
+      "sourceRank": 253,
+      "word": "system",
+      "zipf": 5.56
+    },
+    {
+      "rank": 244,
+      "sourceRank": 254,
+      "word": "times",
+      "zipf": 5.56
+    },
+    {
+      "rank": 245,
+      "sourceRank": 255,
+      "word": "week",
+      "zipf": 5.56
+    },
+    {
+      "rank": 246,
+      "sourceRank": 257,
+      "word": "already",
+      "zipf": 5.55
+    },
+    {
+      "rank": 247,
+      "sourceRank": 258,
+      "word": "anything",
+      "zipf": 5.55
+    },
+    {
+      "rank": 248,
+      "sourceRank": 259,
+      "word": "case",
+      "zipf": 5.55
+    },
+    {
+      "rank": 249,
+      "sourceRank": 260,
+      "word": "nothing",
+      "zipf": 5.55
+    },
+    {
+      "rank": 250,
+      "sourceRank": 261,
+      "word": "person",
+      "zipf": 5.55
+    },
+    {
+      "rank": 251,
+      "sourceRank": 262,
+      "word": "today",
+      "zipf": 5.55
+    },
+    {
+      "rank": 252,
+      "sourceRank": 263,
+      "word": "change",
+      "zipf": 5.54
+    },
+    {
+      "rank": 253,
+      "sourceRank": 264,
+      "word": "enough",
+      "zipf": 5.54
+    },
+    {
+      "rank": 254,
+      "sourceRank": 265,
+      "word": "everything",
+      "zipf": 5.54
+    },
+    {
+      "rank": 255,
+      "sourceRank": 266,
+      "word": "full",
+      "zipf": 5.54
+    },
+    {
+      "rank": 256,
+      "sourceRank": 267,
+      "word": "live",
+      "zipf": 5.54
+    },
+    {
+      "rank": 257,
+      "sourceRank": 268,
+      "word": "making",
+      "zipf": 5.54
+    },
+    {
+      "rank": 258,
+      "sourceRank": 269,
+      "word": "point",
+      "zipf": 5.54
+    },
+    {
+      "rank": 259,
+      "sourceRank": 270,
+      "word": "read",
+      "zipf": 5.54
+    },
+    {
+      "rank": 260,
+      "sourceRank": 271,
+      "word": "there's",
+      "zipf": 5.54
+    },
+    {
+      "rank": 261,
+      "sourceRank": 272,
+      "word": "told",
+      "zipf": 5.54
+    },
+    {
+      "rank": 262,
+      "sourceRank": 273,
+      "word": "yet",
+      "zipf": 5.54
+    },
+    {
+      "rank": 263,
+      "sourceRank": 274,
+      "word": "bad",
+      "zipf": 5.53
+    },
+    {
+      "rank": 264,
+      "sourceRank": 275,
+      "word": "doesn't",
+      "zipf": 5.53
+    },
+    {
+      "rank": 265,
+      "sourceRank": 276,
+      "word": "four",
+      "zipf": 5.53
+    },
+    {
+      "rank": 266,
+      "sourceRank": 277,
+      "word": "hard",
+      "zipf": 5.53
+    },
+    {
+      "rank": 267,
+      "sourceRank": 278,
+      "word": "mean",
+      "zipf": 5.53
+    },
+    {
+      "rank": 268,
+      "sourceRank": 279,
+      "word": "once",
+      "zipf": 5.53
+    },
+    {
+      "rank": 269,
+      "sourceRank": 280,
+      "word": "support",
+      "zipf": 5.53
+    },
+    {
+      "rank": 270,
+      "sourceRank": 281,
+      "word": "tell",
+      "zipf": 5.53
+    },
+    {
+      "rank": 271,
+      "sourceRank": 282,
+      "word": "including",
+      "zipf": 5.52
+    },
+    {
+      "rank": 272,
+      "sourceRank": 283,
+      "word": "music",
+      "zipf": 5.52
+    },
+    {
+      "rank": 273,
+      "sourceRank": 284,
+      "word": "power",
+      "zipf": 5.52
+    },
+    {
+      "rank": 274,
+      "sourceRank": 285,
+      "word": "seen",
+      "zipf": 5.52
+    },
+    {
+      "rank": 275,
+      "sourceRank": 286,
+      "word": "states",
+      "zipf": 5.52
+    },
+    {
+      "rank": 276,
+      "sourceRank": 287,
+      "word": "stop",
+      "zipf": 5.52
+    },
+    {
+      "rank": 277,
+      "sourceRank": 288,
+      "word": "water",
+      "zipf": 5.52
+    },
+    {
+      "rank": 278,
+      "sourceRank": 289,
+      "word": "based",
+      "zipf": 5.51
+    },
+    {
+      "rank": 279,
+      "sourceRank": 290,
+      "word": "believe",
+      "zipf": 5.51
+    },
+    {
+      "rank": 280,
+      "sourceRank": 291,
+      "word": "call",
+      "zipf": 5.51
+    },
+    {
+      "rank": 281,
+      "sourceRank": 292,
+      "word": "head",
+      "zipf": 5.51
+    },
+    {
+      "rank": 282,
+      "sourceRank": 293,
+      "word": "men",
+      "zipf": 5.51
+    },
+    {
+      "rank": 283,
+      "sourceRank": 294,
+      "word": "national",
+      "zipf": 5.51
+    },
+    {
+      "rank": 284,
+      "sourceRank": 295,
+      "word": "small",
+      "zipf": 5.51
+    },
+    {
+      "rank": 285,
+      "sourceRank": 296,
+      "word": "took",
+      "zipf": 5.51
+    },
+    {
+      "rank": 286,
+      "sourceRank": 297,
+      "word": "white",
+      "zipf": 5.51
+    },
+    {
+      "rank": 287,
+      "sourceRank": 298,
+      "word": "came",
+      "zipf": 5.5
+    },
+    {
+      "rank": 288,
+      "sourceRank": 299,
+      "word": "far",
+      "zipf": 5.5
+    },
+    {
+      "rank": 289,
+      "sourceRank": 300,
+      "word": "job",
+      "zipf": 5.5
+    },
+    {
+      "rank": 290,
+      "sourceRank": 301,
+      "word": "side",
+      "zipf": 5.5
+    },
+    {
+      "rank": 291,
+      "sourceRank": 302,
+      "word": "though",
+      "zipf": 5.5
+    },
+    {
+      "rank": 292,
+      "sourceRank": 303,
+      "word": "try",
+      "zipf": 5.5
+    },
+    {
+      "rank": 293,
+      "sourceRank": 304,
+      "word": "went",
+      "zipf": 5.5
+    },
+    {
+      "rank": 294,
+      "sourceRank": 305,
+      "word": "yes",
+      "zipf": 5.5
+    },
+    {
+      "rank": 295,
+      "sourceRank": 306,
+      "word": "actually",
+      "zipf": 5.49
+    },
+    {
+      "rank": 296,
+      "sourceRank": 307,
+      "word": "american",
+      "zipf": 5.49
+    },
+    {
+      "rank": 297,
+      "sourceRank": 308,
+      "word": "later",
+      "zipf": 5.49
+    },
+    {
+      "rank": 298,
+      "sourceRank": 309,
+      "word": "less",
+      "zipf": 5.49
+    },
+    {
+      "rank": 299,
+      "sourceRank": 310,
+      "word": "line",
+      "zipf": 5.49
+    },
+    {
+      "rank": 300,
+      "sourceRank": 311,
+      "word": "order",
+      "zipf": 5.49
+    },
+    {
+      "rank": 301,
+      "sourceRank": 312,
+      "word": "party",
+      "zipf": 5.49
+    },
+    {
+      "rank": 302,
+      "sourceRank": 313,
+      "word": "run",
+      "zipf": 5.49
+    },
+    {
+      "rank": 303,
+      "sourceRank": 314,
+      "word": "says",
+      "zipf": 5.49
+    },
+    {
+      "rank": 304,
+      "sourceRank": 315,
+      "word": "service",
+      "zipf": 5.49
+    },
+    {
+      "rank": 305,
+      "sourceRank": 317,
+      "word": "country",
+      "zipf": 5.48
+    },
+    {
+      "rank": 306,
+      "sourceRank": 318,
+      "word": "open",
+      "zipf": 5.48
+    },
+    {
+      "rank": 307,
+      "sourceRank": 319,
+      "word": "season",
+      "zipf": 5.48
+    },
+    {
+      "rank": 308,
+      "sourceRank": 320,
+      "word": "shit",
+      "zipf": 5.48
+    },
+    {
+      "rank": 309,
+      "sourceRank": 321,
+      "word": "thank",
+      "zipf": 5.48
+    },
+    {
+      "rank": 310,
+      "sourceRank": 322,
+      "word": "children",
+      "zipf": 5.47
+    },
+    {
+      "rank": 311,
+      "sourceRank": 323,
+      "word": "everyone",
+      "zipf": 5.47
+    },
+    {
+      "rank": 312,
+      "sourceRank": 324,
+      "word": "general",
+      "zipf": 5.47
+    },
+    {
+      "rank": 313,
+      "sourceRank": 325,
+      "word": "they're",
+      "zipf": 5.47
+    },
+    {
+      "rank": 314,
+      "sourceRank": 326,
+      "word": "trying",
+      "zipf": 5.47
+    },
+    {
+      "rank": 315,
+      "sourceRank": 327,
+      "word": "united",
+      "zipf": 5.47
+    },
+    {
+      "rank": 316,
+      "sourceRank": 328,
+      "word": "using",
+      "zipf": 5.47
+    },
+    {
+      "rank": 317,
+      "sourceRank": 329,
+      "word": "area",
+      "zipf": 5.46
+    },
+    {
+      "rank": 318,
+      "sourceRank": 330,
+      "word": "black",
+      "zipf": 5.46
+    },
+    {
+      "rank": 319,
+      "sourceRank": 331,
+      "word": "d",
+      "zipf": 5.46
+    },
+    {
+      "rank": 320,
+      "sourceRank": 332,
+      "word": "following",
+      "zipf": 5.46
+    },
+    {
+      "rank": 321,
+      "sourceRank": 333,
+      "word": "law",
+      "zipf": 5.46
+    },
+    {
+      "rank": 322,
+      "sourceRank": 334,
+      "word": "makes",
+      "zipf": 5.46
+    },
+    {
+      "rank": 323,
+      "sourceRank": 335,
+      "word": "together",
+      "zipf": 5.46
+    },
+    {
+      "rank": 324,
+      "sourceRank": 336,
+      "word": "war",
+      "zipf": 5.46
+    },
+    {
+      "rank": 325,
+      "sourceRank": 337,
+      "word": "whole",
+      "zipf": 5.46
+    },
+    {
+      "rank": 326,
+      "sourceRank": 338,
+      "word": "car",
+      "zipf": 5.45
+    },
+    {
+      "rank": 327,
+      "sourceRank": 339,
+      "word": "face",
+      "zipf": 5.45
+    },
+    {
+      "rank": 328,
+      "sourceRank": 340,
+      "word": "five",
+      "zipf": 5.45
+    },
+    {
+      "rank": 329,
+      "sourceRank": 341,
+      "word": "kind",
+      "zipf": 5.45
+    },
+    {
+      "rank": 330,
+      "sourceRank": 342,
+      "word": "maybe",
+      "zipf": 5.45
+    },
+    {
+      "rank": 331,
+      "sourceRank": 343,
+      "word": "per",
+      "zipf": 5.45
+    },
+    {
+      "rank": 332,
+      "sourceRank": 344,
+      "word": "president",
+      "zipf": 5.45
+    },
+    {
+      "rank": 333,
+      "sourceRank": 345,
+      "word": "story",
+      "zipf": 5.45
+    },
+    {
+      "rank": 334,
+      "sourceRank": 346,
+      "word": "working",
+      "zipf": 5.45
+    },
+    {
+      "rank": 335,
+      "sourceRank": 347,
+      "word": "course",
+      "zipf": 5.44
+    },
+    {
+      "rank": 336,
+      "sourceRank": 348,
+      "word": "games",
+      "zipf": 5.44
+    },
+    {
+      "rank": 337,
+      "sourceRank": 349,
+      "word": "health",
+      "zipf": 5.44
+    },
+    {
+      "rank": 338,
+      "sourceRank": 350,
+      "word": "hope",
+      "zipf": 5.44
+    },
+    {
+      "rank": 339,
+      "sourceRank": 351,
+      "word": "important",
+      "zipf": 5.44
+    },
+    {
+      "rank": 340,
+      "sourceRank": 352,
+      "word": "least",
+      "zipf": 5.44
+    },
+    {
+      "rank": 341,
+      "sourceRank": 353,
+      "word": "means",
+      "zipf": 5.44
+    },
+    {
+      "rank": 342,
+      "sourceRank": 354,
+      "word": "news",
+      "zipf": 5.44
+    },
+    {
+      "rank": 343,
+      "sourceRank": 355,
+      "word": "within",
+      "zipf": 5.44
+    },
+    {
+      "rank": 344,
+      "sourceRank": 356,
+      "word": "able",
+      "zipf": 5.43
+    },
+    {
+      "rank": 345,
+      "sourceRank": 357,
+      "word": "book",
+      "zipf": 5.43
+    },
+    {
+      "rank": 346,
+      "sourceRank": 358,
+      "word": "early",
+      "zipf": 5.43
+    },
+    {
+      "rank": 347,
+      "sourceRank": 359,
+      "word": "friends",
+      "zipf": 5.43
+    },
+    {
+      "rank": 348,
+      "sourceRank": 360,
+      "word": "i'll",
+      "zipf": 5.43
+    },
+    {
+      "rank": 349,
+      "sourceRank": 361,
+      "word": "information",
+      "zipf": 5.43
+    },
+    {
+      "rank": 350,
+      "sourceRank": 362,
+      "word": "local",
+      "zipf": 5.43
+    },
+    {
+      "rank": 351,
+      "sourceRank": 363,
+      "word": "oh",
+      "zipf": 5.43
+    },
+    {
+      "rank": 352,
+      "sourceRank": 364,
+      "word": "post",
+      "zipf": 5.43
+    },
+    {
+      "rank": 353,
+      "sourceRank": 365,
+      "word": "t",
+      "zipf": 5.43
+    },
+    {
+      "rank": 354,
+      "sourceRank": 366,
+      "word": "thanks",
+      "zipf": 5.43
+    },
+    {
+      "rank": 355,
+      "sourceRank": 367,
+      "word": "video",
+      "zipf": 5.43
+    },
+    {
+      "rank": 356,
+      "sourceRank": 368,
+      "word": "young",
+      "zipf": 5.43
+    },
+    {
+      "rank": 357,
+      "sourceRank": 369,
+      "word": "ago",
+      "zipf": 5.42
+    },
+    {
+      "rank": 358,
+      "sourceRank": 370,
+      "word": "others",
+      "zipf": 5.42
+    },
+    {
+      "rank": 359,
+      "sourceRank": 371,
+      "word": "social",
+      "zipf": 5.42
+    },
+    {
+      "rank": 360,
+      "sourceRank": 372,
+      "word": "talk",
+      "zipf": 5.42
+    },
+    {
+      "rank": 361,
+      "sourceRank": 376,
+      "word": "court",
+      "zipf": 5.41
+    },
+    {
+      "rank": 362,
+      "sourceRank": 377,
+      "word": "fact",
+      "zipf": 5.41
+    },
+    {
+      "rank": 363,
+      "sourceRank": 378,
+      "word": "given",
+      "zipf": 5.41
+    },
+    {
+      "rank": 364,
+      "sourceRank": 379,
+      "word": "guys",
+      "zipf": 5.41
+    },
+    {
+      "rank": 365,
+      "sourceRank": 380,
+      "word": "half",
+      "zipf": 5.41
+    },
+    {
+      "rank": 366,
+      "sourceRank": 381,
+      "word": "hand",
+      "zipf": 5.41
+    },
+    {
+      "rank": 367,
+      "sourceRank": 382,
+      "word": "isn't",
+      "zipf": 5.41
+    },
+    {
+      "rank": 368,
+      "sourceRank": 383,
+      "word": "level",
+      "zipf": 5.41
+    },
+    {
+      "rank": 369,
+      "sourceRank": 384,
+      "word": "mind",
+      "zipf": 5.41
+    },
+    {
+      "rank": 370,
+      "sourceRank": 385,
+      "word": "often",
+      "zipf": 5.41
+    },
+    {
+      "rank": 371,
+      "sourceRank": 386,
+      "word": "single",
+      "zipf": 5.41
+    },
+    {
+      "rank": 372,
+      "sourceRank": 388,
+      "word": "become",
+      "zipf": 5.4
+    },
+    {
+      "rank": 373,
+      "sourceRank": 389,
+      "word": "body",
+      "zipf": 5.4
+    },
+    {
+      "rank": 374,
+      "sourceRank": 390,
+      "word": "coming",
+      "zipf": 5.4
+    },
+    {
+      "rank": 375,
+      "sourceRank": 391,
+      "word": "control",
+      "zipf": 5.4
+    },
+    {
+      "rank": 376,
+      "sourceRank": 392,
+      "word": "death",
+      "zipf": 5.4
+    },
+    {
+      "rank": 377,
+      "sourceRank": 393,
+      "word": "food",
+      "zipf": 5.4
+    },
+    {
+      "rank": 378,
+      "sourceRank": 394,
+      "word": "guy",
+      "zipf": 5.4
+    },
+    {
+      "rank": 379,
+      "sourceRank": 395,
+      "word": "hours",
+      "zipf": 5.4
+    },
+    {
+      "rank": 380,
+      "sourceRank": 396,
+      "word": "office",
+      "zipf": 5.4
+    },
+    {
+      "rank": 381,
+      "sourceRank": 397,
+      "word": "pay",
+      "zipf": 5.4
+    },
+    {
+      "rank": 382,
+      "sourceRank": 398,
+      "word": "problem",
+      "zipf": 5.4
+    },
+    {
+      "rank": 383,
+      "sourceRank": 399,
+      "word": "south",
+      "zipf": 5.4
+    },
+    {
+      "rank": 384,
+      "sourceRank": 400,
+      "word": "true",
+      "zipf": 5.4
+    },
+    {
+      "rank": 385,
+      "sourceRank": 401,
+      "word": "we're",
+      "zipf": 5.4
+    },
+    {
+      "rank": 386,
+      "sourceRank": 402,
+      "word": "almost",
+      "zipf": 5.39
+    },
+    {
+      "rank": 387,
+      "sourceRank": 403,
+      "word": "fuck",
+      "zipf": 5.39
+    },
+    {
+      "rank": 388,
+      "sourceRank": 404,
+      "word": "history",
+      "zipf": 5.39
+    },
+    {
+      "rank": 389,
+      "sourceRank": 405,
+      "word": "known",
+      "zipf": 5.39
+    },
+    {
+      "rank": 390,
+      "sourceRank": 406,
+      "word": "large",
+      "zipf": 5.39
+    },
+    {
+      "rank": 391,
+      "sourceRank": 407,
+      "word": "lost",
+      "zipf": 5.39
+    },
+    {
+      "rank": 392,
+      "sourceRank": 408,
+      "word": "m",
+      "zipf": 5.39
+    },
+    {
+      "rank": 393,
+      "sourceRank": 409,
+      "word": "research",
+      "zipf": 5.39
+    },
+    {
+      "rank": 394,
+      "sourceRank": 410,
+      "word": "room",
+      "zipf": 5.39
+    },
+    {
+      "rank": 395,
+      "sourceRank": 411,
+      "word": "several",
+      "zipf": 5.39
+    },
+    {
+      "rank": 396,
+      "sourceRank": 412,
+      "word": "started",
+      "zipf": 5.39
+    },
+    {
+      "rank": 397,
+      "sourceRank": 413,
+      "word": "taking",
+      "zipf": 5.39
+    },
+    {
+      "rank": 398,
+      "sourceRank": 414,
+      "word": "university",
+      "zipf": 5.39
+    },
+    {
+      "rank": 399,
+      "sourceRank": 415,
+      "word": "win",
+      "zipf": 5.39
+    },
+    {
+      "rank": 400,
+      "sourceRank": 416,
+      "word": "wrong",
+      "zipf": 5.39
+    },
+    {
+      "rank": 401,
+      "sourceRank": 417,
+      "word": "along",
+      "zipf": 5.38
+    },
+    {
+      "rank": 402,
+      "sourceRank": 418,
+      "word": "anyone",
+      "zipf": 5.38
+    },
+    {
+      "rank": 403,
+      "sourceRank": 419,
+      "word": "else",
+      "zipf": 5.38
+    },
+    {
+      "rank": 404,
+      "sourceRank": 420,
+      "word": "girl",
+      "zipf": 5.38
+    },
+    {
+      "rank": 405,
+      "sourceRank": 421,
+      "word": "john",
+      "zipf": 5.38
+    },
+    {
+      "rank": 406,
+      "sourceRank": 422,
+      "word": "matter",
+      "zipf": 5.38
+    },
+    {
+      "rank": 407,
+      "sourceRank": 423,
+      "word": "pretty",
+      "zipf": 5.38
+    },
+    {
+      "rank": 408,
+      "sourceRank": 424,
+      "word": "remember",
+      "zipf": 5.38
+    },
+    {
+      "rank": 409,
+      "sourceRank": 425,
+      "word": "air",
+      "zipf": 5.37
+    },
+    {
+      "rank": 410,
+      "sourceRank": 426,
+      "word": "bit",
+      "zipf": 5.37
+    },
+    {
+      "rank": 411,
+      "sourceRank": 427,
+      "word": "friend",
+      "zipf": 5.37
+    },
+    {
+      "rank": 412,
+      "sourceRank": 428,
+      "word": "hit",
+      "zipf": 5.37
+    },
+    {
+      "rank": 413,
+      "sourceRank": 429,
+      "word": "needs",
+      "zipf": 5.37
+    },
+    {
+      "rank": 414,
+      "sourceRank": 430,
+      "word": "nice",
+      "zipf": 5.37
+    },
+    {
+      "rank": 415,
+      "sourceRank": 431,
+      "word": "playing",
+      "zipf": 5.37
+    },
+    {
+      "rank": 416,
+      "sourceRank": 432,
+      "word": "probably",
+      "zipf": 5.37
+    },
+    {
+      "rank": 417,
+      "sourceRank": 433,
+      "word": "saying",
+      "zipf": 5.37
+    },
+    {
+      "rank": 418,
+      "sourceRank": 434,
+      "word": "understand",
+      "zipf": 5.37
+    },
+    {
+      "rank": 419,
+      "sourceRank": 435,
+      "word": "yeah",
+      "zipf": 5.37
+    },
+    {
+      "rank": 420,
+      "sourceRank": 436,
+      "word": "york",
+      "zipf": 5.37
+    },
+    {
+      "rank": 421,
+      "sourceRank": 437,
+      "word": "class",
+      "zipf": 5.36
+    },
+    {
+      "rank": 422,
+      "sourceRank": 438,
+      "word": "close",
+      "zipf": 5.36
+    },
+    {
+      "rank": 423,
+      "sourceRank": 439,
+      "word": "comes",
+      "zipf": 5.36
+    },
+    {
+      "rank": 424,
+      "sourceRank": 440,
+      "word": "i'd",
+      "zipf": 5.36
+    },
+    {
+      "rank": 425,
+      "sourceRank": 441,
+      "word": "idea",
+      "zipf": 5.36
+    },
+    {
+      "rank": 426,
+      "sourceRank": 442,
+      "word": "international",
+      "zipf": 5.36
+    },
+    {
+      "rank": 427,
+      "sourceRank": 443,
+      "word": "looks",
+      "zipf": 5.36
+    },
+    {
+      "rank": 428,
+      "sourceRank": 444,
+      "word": "past",
+      "zipf": 5.36
+    },
+    {
+      "rank": 429,
+      "sourceRank": 445,
+      "word": "possible",
+      "zipf": 5.36
+    },
+    {
+      "rank": 430,
+      "sourceRank": 446,
+      "word": "wanted",
+      "zipf": 5.36
+    },
+    {
+      "rank": 431,
+      "sourceRank": 447,
+      "word": "b",
+      "zipf": 5.35
+    },
+    {
+      "rank": 432,
+      "sourceRank": 448,
+      "word": "cause",
+      "zipf": 5.35
+    },
+    {
+      "rank": 433,
+      "sourceRank": 449,
+      "word": "due",
+      "zipf": 5.35
+    },
+    {
+      "rank": 434,
+      "sourceRank": 450,
+      "word": "happy",
+      "zipf": 5.35
+    },
+    {
+      "rank": 435,
+      "sourceRank": 451,
+      "word": "human",
+      "zipf": 5.35
+    },
+    {
+      "rank": 436,
+      "sourceRank": 452,
+      "word": "members",
+      "zipf": 5.35
+    },
+    {
+      "rank": 437,
+      "sourceRank": 453,
+      "word": "months",
+      "zipf": 5.35
+    },
+    {
+      "rank": 438,
+      "sourceRank": 454,
+      "word": "move",
+      "zipf": 5.35
+    },
+    {
+      "rank": 439,
+      "sourceRank": 455,
+      "word": "question",
+      "zipf": 5.35
+    },
+    {
+      "rank": 440,
+      "sourceRank": 456,
+      "word": "r",
+      "zipf": 5.35
+    },
+    {
+      "rank": 441,
+      "sourceRank": 457,
+      "word": "series",
+      "zipf": 5.35
+    },
+    {
+      "rank": 442,
+      "sourceRank": 458,
+      "word": "wait",
+      "zipf": 5.35
+    },
+    {
+      "rank": 443,
+      "sourceRank": 459,
+      "word": "woman",
+      "zipf": 5.35
+    },
+    {
+      "rank": 444,
+      "sourceRank": 461,
+      "word": "ask",
+      "zipf": 5.34
+    },
+    {
+      "rank": 445,
+      "sourceRank": 462,
+      "word": "community",
+      "zipf": 5.34
+    },
+    {
+      "rank": 446,
+      "sourceRank": 463,
+      "word": "data",
+      "zipf": 5.34
+    },
+    {
+      "rank": 447,
+      "sourceRank": 464,
+      "word": "late",
+      "zipf": 5.34
+    },
+    {
+      "rank": 448,
+      "sourceRank": 465,
+      "word": "leave",
+      "zipf": 5.34
+    },
+    {
+      "rank": 449,
+      "sourceRank": 466,
+      "word": "north",
+      "zipf": 5.34
+    },
+    {
+      "rank": 450,
+      "sourceRank": 467,
+      "word": "saw",
+      "zipf": 5.34
+    },
+    {
+      "rank": 451,
+      "sourceRank": 468,
+      "word": "special",
+      "zipf": 5.34
+    },
+    {
+      "rank": 452,
+      "sourceRank": 469,
+      "word": "watch",
+      "zipf": 5.34
+    },
+    {
+      "rank": 453,
+      "sourceRank": 470,
+      "word": "won't",
+      "zipf": 5.34
+    },
+    {
+      "rank": 454,
+      "sourceRank": 471,
+      "word": "c",
+      "zipf": 5.33
+    },
+    {
+      "rank": 455,
+      "sourceRank": 472,
+      "word": "either",
+      "zipf": 5.33
+    },
+    {
+      "rank": 456,
+      "sourceRank": 473,
+      "word": "fucking",
+      "zipf": 5.33
+    },
+    {
+      "rank": 457,
+      "sourceRank": 474,
+      "word": "future",
+      "zipf": 5.33
+    },
+    {
+      "rank": 458,
+      "sourceRank": 475,
+      "word": "light",
+      "zipf": 5.33
+    },
+    {
+      "rank": 459,
+      "sourceRank": 476,
+      "word": "low",
+      "zipf": 5.33
+    },
+    {
+      "rank": 460,
+      "sourceRank": 477,
+      "word": "million",
+      "zipf": 5.33
+    },
+    {
+      "rank": 461,
+      "sourceRank": 478,
+      "word": "morning",
+      "zipf": 5.33
+    },
+    {
+      "rank": 462,
+      "sourceRank": 479,
+      "word": "police",
+      "zipf": 5.33
+    },
+    {
+      "rank": 463,
+      "sourceRank": 480,
+      "word": "short",
+      "zipf": 5.33
+    },
+    {
+      "rank": 464,
+      "sourceRank": 481,
+      "word": "stay",
+      "zipf": 5.33
+    },
+    {
+      "rank": 465,
+      "sourceRank": 482,
+      "word": "taken",
+      "zipf": 5.33
+    },
+    {
+      "rank": 466,
+      "sourceRank": 483,
+      "word": "age",
+      "zipf": 5.32
+    },
+    {
+      "rank": 467,
+      "sourceRank": 484,
+      "word": "buy",
+      "zipf": 5.32
+    },
+    {
+      "rank": 468,
+      "sourceRank": 485,
+      "word": "deal",
+      "zipf": 5.32
+    },
+    {
+      "rank": 469,
+      "sourceRank": 486,
+      "word": "rather",
+      "zipf": 5.32
+    },
+    {
+      "rank": 470,
+      "sourceRank": 487,
+      "word": "reason",
+      "zipf": 5.32
+    },
+    {
+      "rank": 471,
+      "sourceRank": 488,
+      "word": "red",
+      "zipf": 5.32
+    },
+    {
+      "rank": 472,
+      "sourceRank": 489,
+      "word": "report",
+      "zipf": 5.32
+    },
+    {
+      "rank": 473,
+      "sourceRank": 490,
+      "word": "soon",
+      "zipf": 5.32
+    },
+    {
+      "rank": 474,
+      "sourceRank": 491,
+      "word": "third",
+      "zipf": 5.32
+    },
+    {
+      "rank": 475,
+      "sourceRank": 492,
+      "word": "turn",
+      "zipf": 5.32
+    },
+    {
+      "rank": 476,
+      "sourceRank": 493,
+      "word": "whether",
+      "zipf": 5.32
+    },
+    {
+      "rank": 477,
+      "sourceRank": 494,
+      "word": "among",
+      "zipf": 5.31
+    },
+    {
+      "rank": 478,
+      "sourceRank": 495,
+      "word": "check",
+      "zipf": 5.31
+    },
+    {
+      "rank": 479,
+      "sourceRank": 496,
+      "word": "development",
+      "zipf": 5.31
+    },
+    {
+      "rank": 480,
+      "sourceRank": 497,
+      "word": "form",
+      "zipf": 5.31
+    },
+    {
+      "rank": 481,
+      "sourceRank": 498,
+      "word": "further",
+      "zipf": 5.31
+    },
+    {
+      "rank": 482,
+      "sourceRank": 499,
+      "word": "heart",
+      "zipf": 5.31
+    },
+    {
+      "rank": 483,
+      "sourceRank": 500,
+      "word": "minutes",
+      "zipf": 5.31
+    },
+    {
+      "rank": 484,
+      "sourceRank": 501,
+      "word": "myself",
+      "zipf": 5.31
+    },
+    {
+      "rank": 485,
+      "sourceRank": 502,
+      "word": "services",
+      "zipf": 5.31
+    },
+    {
+      "rank": 486,
+      "sourceRank": 504,
+      "word": "yourself",
+      "zipf": 5.31
+    },
+    {
+      "rank": 487,
+      "sourceRank": 505,
+      "word": "act",
+      "zipf": 5.3
+    },
+    {
+      "rank": 488,
+      "sourceRank": 506,
+      "word": "although",
+      "zipf": 5.3
+    },
+    {
+      "rank": 489,
+      "sourceRank": 507,
+      "word": "asked",
+      "zipf": 5.3
+    },
+    {
+      "rank": 490,
+      "sourceRank": 508,
+      "word": "child",
+      "zipf": 5.3
+    },
+    {
+      "rank": 491,
+      "sourceRank": 509,
+      "word": "fire",
+      "zipf": 5.3
+    },
+    {
+      "rank": 492,
+      "sourceRank": 510,
+      "word": "fun",
+      "zipf": 5.3
+    },
+    {
+      "rank": 493,
+      "sourceRank": 511,
+      "word": "living",
+      "zipf": 5.3
+    },
+    {
+      "rank": 494,
+      "sourceRank": 512,
+      "word": "major",
+      "zipf": 5.3
+    },
+    {
+      "rank": 495,
+      "sourceRank": 513,
+      "word": "media",
+      "zipf": 5.3
+    },
+    {
+      "rank": 496,
+      "sourceRank": 514,
+      "word": "phone",
+      "zipf": 5.3
+    },
+    {
+      "rank": 497,
+      "sourceRank": 515,
+      "word": "players",
+      "zipf": 5.3
+    },
+    {
+      "rank": 498,
+      "sourceRank": 516,
+      "word": "art",
+      "zipf": 5.29
+    },
+    {
+      "rank": 499,
+      "sourceRank": 517,
+      "word": "behind",
+      "zipf": 5.29
+    },
+    {
+      "rank": 500,
+      "sourceRank": 518,
+      "word": "building",
+      "zipf": 5.29
+    }
+  ]
+}
