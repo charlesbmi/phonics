@@ -50,7 +50,7 @@ app.innerHTML = `
       <p id="speech-status" class="status" role="status" aria-live="polite"></p>
     </section>
     <details class="panel parent-tools">
-      <summary>Reading hints</summary>
+      <summary>Settings</summary>
       <div id="font-control"></div>
       <div class="control-grid">
         <label><input type="checkbox" id="hints" checked>Hints by default</label>

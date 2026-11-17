@@ -3,7 +3,7 @@ Downloaded 2026-11-17 UTC. Each bundled file is the unmodified normal-style,
 400-weight Latin WOFF2 subset served by official Google Fonts. The application
 loads these local files; it does not contact Google Fonts at runtime.
 
-All eight families are licensed under SIL Open Font License 1.1. Complete
+All nine families are licensed under SIL Open Font License 1.1. Complete
 copyright notices, reserved font names, and license terms are included in the
 adjacent family-OFL.txt files. Font copyright remains with each named owner.
 The internal application font-family aliases do not alter the font files.
@@ -86,4 +86,20 @@ Noto Serif
   License: https://raw.githubusercontent.com/google/fonts/main/ofl/notoserif/OFL.txt
   License copy: noto-serif-OFL.txt
 
-Total WOFF2 bytes: 111160
+Total WOFF2 bytes: 122636
+
+Arimo
+  File: arimo-latin-400.woff2 (11476 bytes)
+  Font: https://fonts.gstatic.com/s/arimo/v36/P5sfzZCDf9_T_3cV7NCUECyoxNk37cxcABrBdwcoaaQw.woff2
+  License: https://raw.githubusercontent.com/google/fonts/main/ofl/arimo/OFL.txt
+  SHA-256: d27e1c7e2713fb28da1c7c945f9dde845cc2dfcc1e733b940dbbfd2bff29bfd3
+  Bytes: 11476
+  License copy: arimo-OFL.txt
+  Supplemental stylesheet: https://fonts.googleapis.com/css2?family=Arimo:wght@400&display=swap
+
+Preview groups: ag (common alternate forms), Il (capital I / lowercase l),
+i1 (lowercase i / numeral one), jt (hooks), O0 (capital O / zero).
+
+Arimo glyph review: the bundled WOFF2 was rendered in Chromium at reading
+size; uppercase I and lowercase l are both plain vertical stems, while
+lowercase i retains its dot. This is a deliberate comparison option.
