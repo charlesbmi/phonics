@@ -10,6 +10,6 @@ Type a sentence, then tap a word to hear it or adjust its hints. Tap again to cl
 
 Quick sounds use filled diamonds; stretch sounds use rounded bars. Brackets connect letters that make one sound. A ? marks a sound without a quick/stretch classification. Optional vowel marks and colors add help when needed.
 
-This small prototype has hints for **22 words**. Other words stay readable without markings. **Hear word** uses your browser’s voice; the sound guide is visual only.
+Dictionary lookups load as you type. Words without verified letter alignments stay readable without markings. **Hear word** uses your browser’s voice; the sound guide is visual only.
 
 [Development](docs/development.md) · [Data sources](docs/sources.md)

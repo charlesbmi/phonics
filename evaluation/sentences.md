@@ -79,28 +79,28 @@ Mapping and complete cue coverage are separate. Unclassified sounds display ? al
 | 73 | A chip is on the mat. | 6/6 | 4/6 | — |
 | 74 | A sheep sat on the mat. | 6/6 | 4/6 | — |
 | 75 | She sat on the mat. | 5/5 | 4/5 | — |
-| 76 | The red hen can run. | 2/5 | 1/5 | red, hen, run |
-| 77 | Chip can jump with Dad. | 3/5 | 3/5 | jump, with |
-| 78 | The judge chose a giant peach. | 2/6 | 0/6 | judge, chose, giant, peach |
-| 79 | We can sing a song. | 2/5 | 1/5 | we, sing, song |
-| 80 | Yes, the yellow yak can yawn. | 2/6 | 1/6 | yes, yellow, yak, yawn |
-| 81 | Put the blue book in the room. | 4/7 | 2/7 | put, blue, room |
+| 76 | The red hen can run. | 5/5 | 4/5 | — |
+| 77 | Chip can jump with Dad. | 5/5 | 5/5 | — |
+| 78 | The judge chose a giant peach. | 3/6 | 0/6 | judge, chose, peach |
+| 79 | We can sing a song. | 5/5 | 2/5 | — |
+| 80 | Yes, the yellow yak can yawn. | 5/6 | 4/6 | yellow |
+| 81 | Put the blue book in the room. | 6/7 | 4/7 | blue |
 | 82 | She can make a cake. | 3/5 | 2/5 | make, cake |
-| 83 | I can read this book. | 2/5 | 2/5 | i, read, this |
-| 84 | Yesterday I read this book. | 1/5 | 1/5 | yesterday, i, read, this |
-| 85 | The wind is cold. | 2/4 | 1/4 | wind, cold |
-| 86 | Wind the clock. | 1/3 | 0/3 | wind, clock |
-| 87 | She has a little toy. | 2/5 | 1/5 | has, little, toy |
+| 83 | I can read this book. | 4/5 | 4/5 | read |
+| 84 | Yesterday I read this book. | 3/5 | 3/5 | yesterday, read |
+| 85 | The wind is cold. | 4/4 | 3/4 | — |
+| 86 | Wind the clock. | 3/3 | 2/3 | — |
+| 87 | She has a little toy. | 3/5 | 2/5 | little, toy |
 | 88 | The boy found a coin. | 2/5 | 0/5 | boy, found, coin |
 | 89 | The cow is loud. | 2/4 | 1/4 | cow, loud |
 | 90 | Her bird sat near the door. | 2/6 | 1/6 | her, bird, near, door |
 | 91 | Dad gave the girl a cube. | 3/6 | 1/6 | gave, girl, cube |
-| 92 | A bright light is in the sky. | 4/7 | 2/7 | bright, light, sky |
-| 93 | The city has a gym. | 2/5 | 0/5 | city, has, gym |
-| 94 | A knife is on the shelf. | 4/6 | 2/6 | knife, shelf |
+| 92 | A bright light is in the sky. | 5/7 | 3/7 | bright, light |
+| 93 | The city has a gym. | 5/5 | 3/5 | — |
+| 94 | A knife is on the shelf. | 5/6 | 3/6 | knife |
 | 95 | Two boxes are on the mat. | 3/6 | 2/6 | two, boxes, are |
-| 96 | This cat can't swim. | 1/4 | 1/4 | this, can't, swim |
-| 97 | The school is quiet. | 2/4 | 1/4 | school, quiet |
+| 96 | This cat can't swim. | 3/4 | 3/4 | can't |
+| 97 | The school is quiet. | 3/4 | 1/4 | school |
 | 98 | The chief eats bread. | 1/4 | 0/4 | chief, eats, bread |
 | 99 | The snow is on the ground. | 4/6 | 2/6 | snow, ground |
 | 100 | She likes music. | 1/3 | 1/3 | likes, music |

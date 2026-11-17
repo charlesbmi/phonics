@@ -1,10 +1,11 @@
-import dictionary from '../shared/dictionary.json';
+import { Lexicon, hasLetterGroups, normalizeWord } from './lexicon';
+import type { LexiconEntry } from './lexicon';
 import '../shared/reader.css';
 import './style.css';
 import { hasBlendingCues, hintsVisible, soundAtClientX, tokenize } from './model';
 import type { HintOverride, WordEntry } from './model';
 
-const words: Record<string, WordEntry> = dictionary.words;
+const lexicon = new Lexicon(new URL(import.meta.env.BASE_URL, location.href));
 const app = document.querySelector<HTMLDivElement>('#app')!;
 app.innerHTML = `
   <main class="app-shell">
@@ -19,6 +20,8 @@ app.innerHTML = `
       <div class="sample-row" aria-label="Sample text">
         <button data-sample="Dad">Dad</button><button data-sample="She">She</button><button data-sample="hello">hello</button><button data-sample="Dad. She can see a sheep. Hello!">Sentence</button>
       </div>
+      <p id="lookup-status" class="muted" role="status" hidden></p>
+      <button id="lookup-retry" hidden>Retry hints</button>
       <details id="coverage" class="coverage" hidden><summary id="coverage-summary"></summary><p id="coverage-words" class="muted"></p></details>
     </section>
     <section aria-labelledby="reading-heading">
@@ -80,6 +83,7 @@ const settings = {
 interface Occurrence {
   text: string;
   entry?: WordEntry;
+  lexiconEntry?: LexiconEntry;
   wrapper: HTMLSpanElement;
   button: HTMLButtonElement;
   rail?: HTMLDivElement;
@@ -88,6 +92,10 @@ interface Occurrence {
   override: HintOverride;
   active: number | null;
 }
+let lookupPending = false;
+let lookupFailed = false;
+let lookupGeneration = 0;
+let lookupTimer: ReturnType<typeof setTimeout> | undefined;
 let occurrences: Occurrence[] = [];
 let selected: number | null = null;
 let renderedText = '';
@@ -117,7 +125,9 @@ function activate(index: number, sound: number): void {
   occurrences[index].active = sound;
   updatePresentation();
 }
-function renderText(): void {
+function renderText(preserveSelection = false): void {
+  touchControlsFor = null;
+  const priorSelection = selected;
   stopSpeech();
   speechStatus.textContent = '';
   // A trailing edit leaves earlier occurrences in place. Retain their parent
@@ -133,9 +143,9 @@ function renderText(): void {
       continue;
     }
     const index = token.occurrence;
-    const candidate = words[token.text.toLowerCase()];
+    const candidate = lexicon.lookup(token.text);
     // An incomplete entry is treated as unknown rather than guessing a mapping.
-    const entry = candidate?.groups.map(g => g.text).join('').toLowerCase() === token.text.toLowerCase() ? candidate : undefined;
+    const entry = hasLetterGroups(candidate) && candidate.groups.map(g => g.text).join('').toLowerCase() === normalizeWord(token.text) ? candidate : undefined;
     const wrapper = document.createElement('span');
     wrapper.className = entry ? 'word' : 'word word-unknown';
     wrapper.dataset.occurrence = String(index);
@@ -146,7 +156,7 @@ function renderText(): void {
     const letters = document.createElement('span');
     letters.className = 'graphemes';
     const prior = previous[index];
-    const occurrence: Occurrence = { text: token.text, entry, wrapper, button, graphemes: [], cues: [], override: prior?.text === token.text ? prior.override : 'default', active: null };
+    const occurrence: Occurrence = { text: token.text, entry, lexiconEntry: candidate, wrapper, button, graphemes: [], cues: [], override: prior?.text === token.text ? prior.override : 'default', active: preserveSelection ? prior?.active ?? null : null };
     if (entry) {
       let offset = 0;
       entry.groups.forEach((group) => {
@@ -196,12 +206,40 @@ function renderText(): void {
     empty.textContent = 'Your next story starts here…';
     reader.append(empty);
   }
+  if (preserveSelection && priorSelection !== null && occurrences[priorSelection]) selected = priorSelection;
+  const lookupStatus = get<HTMLElement>('#lookup-status');
+  lookupStatus.hidden = !lookupPending && !lookupFailed;
+  lookupStatus.textContent = lookupFailed ? 'Hints could not load. Please retry.' : lookupPending ? 'Loading hints…' : '';
+  get<HTMLButtonElement>('#lookup-retry').hidden = !lookupFailed;
   const unsupported = occurrences.filter(word => !word.entry);
-  get<HTMLDetailsElement>('#coverage').hidden = unsupported.length === 0;
+  get<HTMLDetailsElement>('#coverage').hidden = lookupPending || lookupFailed || unsupported.length === 0;
   get<HTMLElement>('#coverage-summary').textContent = `Hints available: ${occurrences.length - unsupported.length} of ${occurrences.length} words`;
   get<HTMLElement>('#coverage-words').textContent = `Unmarked: ${[...new Set(unsupported.map(word => word.text))].join(', ')}`;
   updatePresentation();
 }
+function refreshText(): void {
+  clearTimeout(lookupTimer);
+  const generation = ++lookupGeneration;
+  const text = textarea.value;
+  const words = tokenize(text).filter(token => token.word).map(token => token.text);
+  lookupPending = lexicon.needsWords(words);
+  lookupFailed = false;
+  renderText();
+  if (!lookupPending) return;
+  lookupTimer = setTimeout(() => {
+    void lexicon.loadWords(words).then(() => {
+      if (generation !== lookupGeneration || textarea.value !== text) return;
+      lookupPending = false;
+      renderText(true);
+    }).catch(() => {
+      if (generation !== lookupGeneration || textarea.value !== text) return;
+      lookupPending = false;
+      lookupFailed = true;
+      renderText(true);
+    });
+  }, 120);
+}
+
 function updatePresentation(): void {
   occurrences.forEach((word, index) => {
     const isSelected = selected === index;
@@ -279,7 +317,13 @@ function updatePresentation(): void {
     progress.setAttribute('aria-valuetext', `Letters ${group.text}, sound ${(word.active ?? 0) + 1} of ${word.entry.groups.length}, ${group.cue ?? 'unclassified'}`);
     count.textContent = word.active === null ? `${word.entry.groups.length} sounds` : `Sound ${word.active + 1} of ${word.entry.groups.length}`;
   }
-  wordStatus.textContent = !word ? '' : !word.entry ? 'No sound mapping for this word yet.' : !show ? 'Hints hidden.' : !hasBlendingCues(word.entry) ? 'No quick/stretch cue yet for sounds marked ?.' : '';
+  if (!word) wordStatus.textContent = '';
+  else if (!word.entry) {
+    wordStatus.textContent = word.lexiconEntry ? 'Pronunciation found; letter hints are not available yet.'
+      : lookupPending ? 'Loading hints…'
+      : lookupFailed ? 'Hints could not load. Please retry.'
+      : 'Word not found in this dictionary.';
+  } else wordStatus.textContent = !show ? 'Hints hidden.' : !hasBlendingCues(word.entry) ? 'No quick/stretch cue yet for sounds marked ?.' : '';
   speak.disabled = !word || !voice;
 }
 function stopSpeech(): void {
@@ -338,11 +382,12 @@ speak.addEventListener('click', () => {
   try { window.speechSynthesis.speak(retainedUtterance); }
   catch { stopSpeech(); speechStatus.textContent = 'Word audio failed to start. Please retry.'; }
 });
-textarea.addEventListener('input', renderText);
+textarea.addEventListener('input', refreshText);
+get<HTMLButtonElement>('#lookup-retry').addEventListener('click', refreshText);
 app.querySelectorAll<HTMLButtonElement>('[data-sample]').forEach(button => button.addEventListener('click', () => {
   occurrences = [];
   textarea.value = button.dataset.sample!;
-  renderText();
+  refreshText();
 }));
 Object.values(settings).forEach(setting => setting.addEventListener('change', updatePresentation));
 override.addEventListener('change', () => {
@@ -358,5 +403,5 @@ if (speechSupported) window.speechSynthesis.addEventListener('voiceschanged', re
 window.addEventListener('pagehide', stopSpeech);
 window.addEventListener('resize', updatePresentation);
 void document.fonts.ready.then(updatePresentation);
-renderText();
+refreshText();
 refreshVoices();

@@ -1,0 +1,4312 @@
+{
+  "schemaVersion": 1,
+  "locale": "en-US",
+  "pronunciationSelection": "CMUdict primary entry; numbered alternatives are not selected contextually.",
+  "coverageNote": "Complete means validated letter-to-phone groups, not complete cue evidence. Pronunciation-only entries have no inferred letter grouping.",
+  "shardKey": "Lowercase word, first two characters, replace each non a-z character with underscore.",
+  "counts": {
+    "total": 126052,
+    "complete": 51801,
+    "pronunciationOnly": 74251,
+    "missingAlignment": 6,
+    "unresolvedAlignment": 74245,
+    "completeCueSets": 23036,
+    "alternativePronunciations": 9114,
+    "sourceAlignments": 126046
+  },
+  "policyVersion": 2,
+  "cuePolicy": "nifdi-corrective-reading-decoding-sound-pronunciation",
+  "cueSource": "https://www.nifdi.org/videos/video-guides/di-and-science-of-reading-webinar/4134-corrective-reading-decoding-a-b1-b2-and-c-sound-pronunciation-packet/file.html",
+  "teachingReference": "https://www.hookedonphonics.com/wp-content/uploads/2025/05/44-phonemes-chart-rev2.pdf",
+  "policySha256": "3550a79328b1c62114031d478aaa3b1f42eb1a42332538e250e0be2ee081e792",
+  "teachingGroupsSha256": "fb7cca15c2bddedd91b37b2c602489be36fdcd3abb40404d4663b965ea25d9da",
+  "sources": {
+    "cmudict": {
+      "repository": "https://github.com/cmusphinx/cmudict",
+      "revision": "74790861f652b15e4ac49015a90074ad62a27690",
+      "path": "cmudict.dict",
+      "sha256": "81917843c7f44ce2b094ac63873c2c7a4cf802040792c455ba3ca406891c3d22",
+      "license": "CMUdict BSD-style"
+    },
+    "alignment": {
+      "repository": "https://github.com/NRC-ILT/g2p",
+      "revision": "ada77007168481de7422c6a44d6bc3df1ad95f4e",
+      "path": "g2p/mappings/langs/eng/cmudict.ipa.aligned.txt",
+      "sha256": "38d74201dc651bb0840a280ceece8f05c2239c74fac09f09bf70f969631f7fda",
+      "license": "MIT; underlying CMUdict notice also retained"
+    },
+    "phoneClasses": {
+      "repository": "https://github.com/cmusphinx/cmudict",
+      "revision": "74790861f652b15e4ac49015a90074ad62a27690",
+      "path": "cmudict.phones",
+      "sha256": "ffb588a5e55684723582c7256e1d2f9fadb130011392d9e59237c76e34c2cfd6",
+      "license": "CMUdict BSD-style"
+    }
+  },
+  "shards": {
+    "_b": {
+      "path": "lexicon/shards/_b.json",
+      "sha256": "f640e2b75d40598a7cd2d217d3d3220e1f130dc74d15d0fbdb8d2c1df0433cb4",
+      "bytes": 76,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "_c": {
+      "path": "lexicon/shards/_c.json",
+      "sha256": "c8b532838b5274050b8a5c6b2204fd095a9cba9003ec32a934180ac64776b91a",
+      "bytes": 235,
+      "words": 3,
+      "complete": 0,
+      "pronunciationOnly": 3
+    },
+    "_e": {
+      "path": "lexicon/shards/_e.json",
+      "sha256": "2d35d16817c6785ac2cc81f4f0faf4d1a4df4e0314efe1f20254d140c1b12d41",
+      "bytes": 70,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "_f": {
+      "path": "lexicon/shards/_f.json",
+      "sha256": "8b778c36aa1d1ed8faa2979a144cb21fc4b400fc095b1a8637d77ab0b7ea13e5",
+      "bytes": 92,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "_g": {
+      "path": "lexicon/shards/_g.json",
+      "sha256": "a9bac1944fc589e41a200ee756ebc7f86ba5bc5e3534ade54a7b721f9343a7e8",
+      "bytes": 76,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "_k": {
+      "path": "lexicon/shards/_k.json",
+      "sha256": "4fffd7a6d57b3079c2bb2b5da8d3c16ba96e9a94213b56a17ea9ba495ee9ce5d",
+      "bytes": 71,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "_m": {
+      "path": "lexicon/shards/_m.json",
+      "sha256": "2e241e383bfb168973e43ddffab537345d2de8c1c65927c467ec8de9a1cc4fae",
+      "bytes": 133,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "_n": {
+      "path": "lexicon/shards/_n.json",
+      "sha256": "fa4259cf07c1d7d045c673114d565865345caece339b98639f150a557a99e6b9",
+      "bytes": 133,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "_r": {
+      "path": "lexicon/shards/_r.json",
+      "sha256": "11df9fe5deb5d34770763e45b8520288bb647f206628265499930144cced0695",
+      "bytes": 81,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "_s": {
+      "path": "lexicon/shards/_s.json",
+      "sha256": "94a88525d05345932072c7fa47b06b021e922ff08332382dc7b0e50335712044",
+      "bytes": 136,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "_t": {
+      "path": "lexicon/shards/_t.json",
+      "sha256": "f376e6b438ecf7ddd784c31066bb6da42607b544f84eaec8aa997a1852550508",
+      "bytes": 226,
+      "words": 3,
+      "complete": 0,
+      "pronunciationOnly": 3
+    },
+    "a": {
+      "path": "lexicon/shards/a.json",
+      "sha256": "e12686d844b5e2b063d6a529bc813aa4e17cc01af048ac3d6c4e274a24dc1c88",
+      "bytes": 76,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "a_": {
+      "path": "lexicon/shards/a_.json",
+      "sha256": "e55c589f1ad68ac9ecc0641853a71c5a27887f29c2e13b0fc04d94c7f91638c5",
+      "bytes": 610,
+      "words": 6,
+      "complete": 2,
+      "pronunciationOnly": 4
+    },
+    "aa": {
+      "path": "lexicon/shards/aa.json",
+      "sha256": "79d9eb5b70dbdc42e2d43b1b98a9b6043210651a7b9cc7cbac21fd7d5def3493",
+      "bytes": 2308,
+      "words": 27,
+      "complete": 0,
+      "pronunciationOnly": 27
+    },
+    "ab": {
+      "path": "lexicon/shards/ab.json",
+      "sha256": "7fe4879e7648dbef4ec6f3cc801a2df6b15954a9ee773f5204112aca1fdfbf8f",
+      "bytes": 102866,
+      "words": 382,
+      "complete": 214,
+      "pronunciationOnly": 168
+    },
+    "ac": {
+      "path": "lexicon/shards/ac.json",
+      "sha256": "af3e7aa973bc3c8680ddd9cca814f9a44ff70f7ef236ac6b1638600d66e2304c",
+      "bytes": 105125,
+      "words": 444,
+      "complete": 186,
+      "pronunciationOnly": 258
+    },
+    "ad": {
+      "path": "lexicon/shards/ad.json",
+      "sha256": "219e4c7df1fa2ae4f182eb8d480102821653bb962a4c62a19d46f279119872bb",
+      "bytes": 111489,
+      "words": 464,
+      "complete": 223,
+      "pronunciationOnly": 241
+    },
+    "ae": {
+      "path": "lexicon/shards/ae.json",
+      "sha256": "0ce5ac83f47284fae4f407906e97757d829781e97c3d469d3bfa013a31a69843",
+      "bytes": 8007,
+      "words": 81,
+      "complete": 0,
+      "pronunciationOnly": 81
+    },
+    "af": {
+      "path": "lexicon/shards/af.json",
+      "sha256": "f3107bf913c2f949b5287f311d954d47cf8ca9fafe3a796184851f5b974169f5",
+      "bytes": 38153,
+      "words": 163,
+      "complete": 63,
+      "pronunciationOnly": 100
+    },
+    "ag": {
+      "path": "lexicon/shards/ag.json",
+      "sha256": "afa293fd8fae806526126ce9bf9d0386a3e55b19cac91c35c541ae9ed509d72f",
+      "bytes": 55093,
+      "words": 216,
+      "complete": 111,
+      "pronunciationOnly": 105
+    },
+    "ah": {
+      "path": "lexicon/shards/ah.json",
+      "sha256": "df24212ce86889e59183dc93f77ca82ca4a5acb8442ffe89750090ac695c7525",
+      "bytes": 7761,
+      "words": 61,
+      "complete": 11,
+      "pronunciationOnly": 50
+    },
+    "ai": {
+      "path": "lexicon/shards/ai.json",
+      "sha256": "bd2ccd212e706d45155c0323d71cf04bfc0c971400879b12be21669a596231e8",
+      "bytes": 18155,
+      "words": 205,
+      "complete": 1,
+      "pronunciationOnly": 204
+    },
+    "aj": {
+      "path": "lexicon/shards/aj.json",
+      "sha256": "1cedd2617fff6934ab04e8b4cc70f792046a1af8469fac0bc18edcda37060977",
+      "bytes": 2352,
+      "words": 10,
+      "complete": 6,
+      "pronunciationOnly": 4
+    },
+    "ak": {
+      "path": "lexicon/shards/ak.json",
+      "sha256": "3ea1d09d94df7b358cb6da8877eb127b0fba8d12ec40b80eee5c163e6b97ca77",
+      "bytes": 12167,
+      "words": 52,
+      "complete": 34,
+      "pronunciationOnly": 18
+    },
+    "al": {
+      "path": "lexicon/shards/al.json",
+      "sha256": "cdeef52b7f1c50c63b627e7d081b6a873a3e708e96186cabb0a4fce56ebe21f6",
+      "bytes": 249082,
+      "words": 989,
+      "complete": 541,
+      "pronunciationOnly": 448
+    },
+    "am": {
+      "path": "lexicon/shards/am.json",
+      "sha256": "0ecec4736c9b5e8018cc027ea0c9275a2612a05dab5be225cea188650d8655c7",
+      "bytes": 120775,
+      "words": 480,
+      "complete": 250,
+      "pronunciationOnly": 230
+    },
+    "an": {
+      "path": "lexicon/shards/an.json",
+      "sha256": "89ebec0b7f1c3dcadd0a8dc18eb90aa396265b503443fd9059552269da919fa7",
+      "bytes": 246789,
+      "words": 857,
+      "complete": 484,
+      "pronunciationOnly": 373
+    },
+    "ao": {
+      "path": "lexicon/shards/ao.json",
+      "sha256": "939efb45e4eb1cf319c28d30f3a3cbb7b10f08609fd6be5e523f44917f2180c2",
+      "bytes": 1868,
+      "words": 11,
+      "complete": 5,
+      "pronunciationOnly": 6
+    },
+    "ap": {
+      "path": "lexicon/shards/ap.json",
+      "sha256": "cbc9132785f7f43c4189da369526accda4da4fc0220b453cc5c382eac1938053",
+      "bytes": 78013,
+      "words": 307,
+      "complete": 142,
+      "pronunciationOnly": 165
+    },
+    "aq": {
+      "path": "lexicon/shards/aq.json",
+      "sha256": "a9ed0ebc5021fd56cc0973e3b7410940a6f856a3d6b76451e8e2f18dd082042c",
+      "bytes": 8713,
+      "words": 28,
+      "complete": 18,
+      "pronunciationOnly": 10
+    },
+    "ar": {
+      "path": "lexicon/shards/ar.json",
+      "sha256": "d1c73347f8e5a733079f543abfd9b3d06b86afe2e079df8555ba8972717ce3db",
+      "bytes": 186126,
+      "words": 762,
+      "complete": 391,
+      "pronunciationOnly": 371
+    },
+    "as": {
+      "path": "lexicon/shards/as.json",
+      "sha256": "782d775d53782a919d06cf1691f9928ac2f277da1089880a9ed88fd4846c6a15",
+      "bytes": 106974,
+      "words": 424,
+      "complete": 220,
+      "pronunciationOnly": 204
+    },
+    "at": {
+      "path": "lexicon/shards/at.json",
+      "sha256": "d7e6ea3c88d3e7f67409965fc5328e92839612d25dfb4b53e2b360b97608c44f",
+      "bytes": 57820,
+      "words": 241,
+      "complete": 124,
+      "pronunciationOnly": 117
+    },
+    "au": {
+      "path": "lexicon/shards/au.json",
+      "sha256": "26d0b8a7e007eff4adf2614b4abd46bc62c8edae2b59f81dbf76402af9539255",
+      "bytes": 68101,
+      "words": 329,
+      "complete": 121,
+      "pronunciationOnly": 208
+    },
+    "av": {
+      "path": "lexicon/shards/av.json",
+      "sha256": "9411649bb19499136369c2d077f85909c62168f5af08209587354d953439209f",
+      "bytes": 34825,
+      "words": 147,
+      "complete": 81,
+      "pronunciationOnly": 66
+    },
+    "aw": {
+      "path": "lexicon/shards/aw.json",
+      "sha256": "626b9f634bdd25084ffdf71ff1ff10b0041ba5d10f87c2e239c00d38d7d0ce3a",
+      "bytes": 7449,
+      "words": 44,
+      "complete": 16,
+      "pronunciationOnly": 28
+    },
+    "ax": {
+      "path": "lexicon/shards/ax.json",
+      "sha256": "e43b0432d6ac836cff4ed0e59faeff8e995f42d2aefe2ede36c85cf14269b0f4",
+      "bytes": 2951,
+      "words": 31,
+      "complete": 1,
+      "pronunciationOnly": 30
+    },
+    "ay": {
+      "path": "lexicon/shards/ay.json",
+      "sha256": "d4e0438224bfcbb8f62fb1a310d89b242aa343a08c513019a29a140d3e82e126",
+      "bytes": 5192,
+      "words": 55,
+      "complete": 3,
+      "pronunciationOnly": 52
+    },
+    "az": {
+      "path": "lexicon/shards/az.json",
+      "sha256": "202915affcdbc9efd9a2863962de334257f0daf47be1add5e3ab83577563b9ed",
+      "bytes": 10206,
+      "words": 40,
+      "complete": 24,
+      "pronunciationOnly": 16
+    },
+    "b": {
+      "path": "lexicon/shards/b.json",
+      "sha256": "48918740cb785c7a5194d984e4def2da8c934f2de504338fc67e0e5646c39e58",
+      "bytes": 130,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "b_": {
+      "path": "lexicon/shards/b_.json",
+      "sha256": "99c73e6aabb6f605ace9a8a5a0762e4cc642c5e23dda1fe37937416864a2539a",
+      "bytes": 1958,
+      "words": 10,
+      "complete": 8,
+      "pronunciationOnly": 2
+    },
+    "ba": {
+      "path": "lexicon/shards/ba.json",
+      "sha256": "51443d4241a294c12e51541fb8a6f7a4edbbbb3943600493929e3ae8e2adb27c",
+      "bytes": 429716,
+      "words": 1904,
+      "complete": 888,
+      "pronunciationOnly": 1016
+    },
+    "bb": {
+      "path": "lexicon/shards/bb.json",
+      "sha256": "e6a399180002c236d842159cc6caa241368c04a0db3eae00a3025b53756e7e6b",
+      "bytes": 861,
+      "words": 3,
+      "complete": 2,
+      "pronunciationOnly": 1
+    },
+    "bc": {
+      "path": "lexicon/shards/bc.json",
+      "sha256": "557f426fea2e6896c5771f3c6059032fe5fc2e35892350c012505497aa6c94aa",
+      "bytes": 244,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "be": {
+      "path": "lexicon/shards/be.json",
+      "sha256": "0f2f6351833e1d0d6e357e4870378a6f5de77d641cf2d0ca32a8c6416cf3503c",
+      "bytes": 297221,
+      "words": 1660,
+      "complete": 527,
+      "pronunciationOnly": 1133
+    },
+    "bh": {
+      "path": "lexicon/shards/bh.json",
+      "sha256": "3ec26e7763b1f6d8099bc2f7a3274ac7f20ecb3f31c846e1acf1439646ba0a09",
+      "bytes": 1476,
+      "words": 17,
+      "complete": 0,
+      "pronunciationOnly": 17
+    },
+    "bi": {
+      "path": "lexicon/shards/bi.json",
+      "sha256": "fa1b93183d0853b60c2d5c48c977d2859ce140c4e0ad7c4f66a8548e957a67ec",
+      "bytes": 165442,
+      "words": 777,
+      "complete": 332,
+      "pronunciationOnly": 445
+    },
+    "bj": {
+      "path": "lexicon/shards/bj.json",
+      "sha256": "6e6f667a77955486e18e07abb2ec3c6ee466c8dc1a59e71f9699c48a336a9433",
+      "bytes": 3398,
+      "words": 10,
+      "complete": 7,
+      "pronunciationOnly": 3
+    },
+    "bl": {
+      "path": "lexicon/shards/bl.json",
+      "sha256": "54f3ceaf997dea61910f304e6a376b4156965f5bcc7e21d39e10135223c438e0",
+      "bytes": 135988,
+      "words": 689,
+      "complete": 247,
+      "pronunciationOnly": 442
+    },
+    "bm": {
+      "path": "lexicon/shards/bm.json",
+      "sha256": "89ae293aefb4cd8b125dbb93b01ab545172d5daf4febb548d5721439d3af58cf",
+      "bytes": 114,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "bo": {
+      "path": "lexicon/shards/bo.json",
+      "sha256": "0f47f86f834ee1c1a6daac5ba36f6ca10ce90dbafcf0c5c0a071d8b5dadfda5a",
+      "bytes": 277844,
+      "words": 1454,
+      "complete": 567,
+      "pronunciationOnly": 887
+    },
+    "bp": {
+      "path": "lexicon/shards/bp.json",
+      "sha256": "c35e8cc08aedaafeb94ca306002e7c4ed3f8ac799384533270737cae6864e8ef",
+      "bytes": 242,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "br": {
+      "path": "lexicon/shards/br.json",
+      "sha256": "33d530970dcf65ed534787657661d917ae7a3cf1b364fe10e7be194e137babad",
+      "bytes": 326687,
+      "words": 1552,
+      "complete": 625,
+      "pronunciationOnly": 927
+    },
+    "bs": {
+      "path": "lexicon/shards/bs.json",
+      "sha256": "78bc12b08b9951dcef3d8ef906bd58b4420d19daa76b1027ce82233512a49b8b",
+      "bytes": 79,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "bt": {
+      "path": "lexicon/shards/bt.json",
+      "sha256": "f57fca0cd93e16f2e48768ee758702258a160bda17f4ba140cc1b3b17465423e",
+      "bytes": 543,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "bu": {
+      "path": "lexicon/shards/bu.json",
+      "sha256": "bddb24c84cc15a752e1df32b604ed060753a28d1f664ab8f97042f6b119b777c",
+      "bytes": 188843,
+      "words": 1124,
+      "complete": 340,
+      "pronunciationOnly": 784
+    },
+    "by": {
+      "path": "lexicon/shards/by.json",
+      "sha256": "6ba83113d03b57d31d650b28faf64cbcc696abf9a5d7f89c366a8b451d6d8754",
+      "bytes": 13594,
+      "words": 72,
+      "complete": 29,
+      "pronunciationOnly": 43
+    },
+    "c": {
+      "path": "lexicon/shards/c.json",
+      "sha256": "2b79167cba278f396e6817adb3fce7bbfc320009351e7b4517e3e44d13b60518",
+      "bytes": 132,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "c_": {
+      "path": "lexicon/shards/c_.json",
+      "sha256": "4cec349b209a968ca1b119ce9e6938a80fbf6023f04e1bb0829ccf9ea86e2478",
+      "bytes": 2655,
+      "words": 12,
+      "complete": 9,
+      "pronunciationOnly": 3
+    },
+    "ca": {
+      "path": "lexicon/shards/ca.json",
+      "sha256": "e2e2e3587782e6f8c284b1d53db527dcf6c7ba84709d233c31d5f59bc0e9fae1",
+      "bytes": 585690,
+      "words": 2234,
+      "complete": 1203,
+      "pronunciationOnly": 1031
+    },
+    "cb": {
+      "path": "lexicon/shards/cb.json",
+      "sha256": "e37f926040e16afc965967cb107dd548a60d824cee008f596bd4692a3484daed",
+      "bytes": 688,
+      "words": 3,
+      "complete": 2,
+      "pronunciationOnly": 1
+    },
+    "cc": {
+      "path": "lexicon/shards/cc.json",
+      "sha256": "ad807dc42ee09bba298e86cef5996638983f5788ea0aced67cbb433e0424dd45",
+      "bytes": 1160,
+      "words": 4,
+      "complete": 3,
+      "pronunciationOnly": 1
+    },
+    "cd": {
+      "path": "lexicon/shards/cd.json",
+      "sha256": "8c200446d558ddbdd341870d72fbee3972268658b6c46b40de51faaf91908dd3",
+      "bytes": 2267,
+      "words": 6,
+      "complete": 6,
+      "pronunciationOnly": 0
+    },
+    "ce": {
+      "path": "lexicon/shards/ce.json",
+      "sha256": "06e948f07835079f747a64a875d42dfef5e4e6d83ef016968f2c8e47087c47ba",
+      "bytes": 95471,
+      "words": 385,
+      "complete": 189,
+      "pronunciationOnly": 196
+    },
+    "cf": {
+      "path": "lexicon/shards/cf.json",
+      "sha256": "84966d2cc22e6028c30fc7299481e52a180c0ebb4059a4871702f751ddd55a0a",
+      "bytes": 86,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "cg": {
+      "path": "lexicon/shards/cg.json",
+      "sha256": "496534c17c7b06a1e75eae22179595dbcdb42e81d2485ea1872291fd044098e1",
+      "bytes": 306,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "ch": {
+      "path": "lexicon/shards/ch.json",
+      "sha256": "d6b88f149a8aeed2a4189799654f8c98989bcd0081c54f910156c34de4922a4b",
+      "bytes": 141576,
+      "words": 1418,
+      "complete": 41,
+      "pronunciationOnly": 1377
+    },
+    "ci": {
+      "path": "lexicon/shards/ci.json",
+      "sha256": "58e4feffed8999cfe00720a7ec8884605e26eb0ec99c0cb4d40f7894d6d54e17",
+      "bytes": 72521,
+      "words": 302,
+      "complete": 145,
+      "pronunciationOnly": 157
+    },
+    "cl": {
+      "path": "lexicon/shards/cl.json",
+      "sha256": "52f9b8f2c5b4d753a4f52d9eb7a7c6ee14f7cceb0e2d7233e4350e9bf355d0fd",
+      "bytes": 148645,
+      "words": 683,
+      "complete": 290,
+      "pronunciationOnly": 393
+    },
+    "cm": {
+      "path": "lexicon/shards/cm.json",
+      "sha256": "a8bb2fb69dd3ef23bcba05937b7000a5c41c3e1897bf7affeb353042d5de2c8f",
+      "bytes": 591,
+      "words": 4,
+      "complete": 1,
+      "pronunciationOnly": 3
+    },
+    "cn": {
+      "path": "lexicon/shards/cn.json",
+      "sha256": "612ea837fb0d0a02dee70e594833f043b4c7dfdcb25cc115b538b34303a79489",
+      "bytes": 822,
+      "words": 6,
+      "complete": 1,
+      "pronunciationOnly": 5
+    },
+    "co": {
+      "path": "lexicon/shards/co.json",
+      "sha256": "c9acc0cbba5c7d20902d986f6594f9e98573922c443e8e3d621d17832ff56bdb",
+      "bytes": 856107,
+      "words": 3501,
+      "complete": 1422,
+      "pronunciationOnly": 2079
+    },
+    "cp": {
+      "path": "lexicon/shards/cp.json",
+      "sha256": "bf611efeaba5f1d9fc0306e86669d3083d5a1b09fa009376551e8f9d57f31179",
+      "bytes": 178,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "cr": {
+      "path": "lexicon/shards/cr.json",
+      "sha256": "f3f1ba2c9d4af0fc7ab2cd0333097811a16b8e89a8213dc89460dd488f02cb99",
+      "bytes": 219938,
+      "words": 934,
+      "complete": 432,
+      "pronunciationOnly": 502
+    },
+    "cs": {
+      "path": "lexicon/shards/cs.json",
+      "sha256": "d6f7a370b8bb2f6006b1cc06310edbcc97858fb3559d515edb1a4c2338a662a7",
+      "bytes": 1070,
+      "words": 6,
+      "complete": 2,
+      "pronunciationOnly": 4
+    },
+    "ct": {
+      "path": "lexicon/shards/ct.json",
+      "sha256": "0b71525ee37df12dfad6a9c1b1a542f7f60c412ac7098405bc0f73dc7510fcee",
+      "bytes": 77,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "cu": {
+      "path": "lexicon/shards/cu.json",
+      "sha256": "64f66986beb5b90e213afa9f64613ab343b7c9bd33c1465d51f86c0e2fa2a61d",
+      "bytes": 89144,
+      "words": 479,
+      "complete": 167,
+      "pronunciationOnly": 312
+    },
+    "cv": {
+      "path": "lexicon/shards/cv.json",
+      "sha256": "a2e445ca6c78d36bf301be76bd6e161756759f432ce0cdd2d9069e57d7119a81",
+      "bytes": 246,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "cw": {
+      "path": "lexicon/shards/cw.json",
+      "sha256": "53abcdc5a6495ffaf26930859097ea8ae2217a9d6b8a1e32b9bced3d58499abd",
+      "bytes": 1382,
+      "words": 5,
+      "complete": 3,
+      "pronunciationOnly": 2
+    },
+    "cx": {
+      "path": "lexicon/shards/cx.json",
+      "sha256": "788ed7f8e8a15808bc09bddae3cd8ca4fe071dc985d406f09d1ad5d07a9822a7",
+      "bytes": 94,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "cy": {
+      "path": "lexicon/shards/cy.json",
+      "sha256": "aa5b60efb3a1b0030b4c4fe8efc5920fa8a2b62cf8022d2bfe7bbf24b2cec95d",
+      "bytes": 30304,
+      "words": 109,
+      "complete": 65,
+      "pronunciationOnly": 44
+    },
+    "cz": {
+      "path": "lexicon/shards/cz.json",
+      "sha256": "ac74dbb30847d59ec42b682f32a161c84230ab7293f956acc082a64d5b182992",
+      "bytes": 3523,
+      "words": 31,
+      "complete": 2,
+      "pronunciationOnly": 29
+    },
+    "d": {
+      "path": "lexicon/shards/d.json",
+      "sha256": "a4d581f116c86731d602cb2ab1358cf3a76f4cdbddcc511c1d76f6a2651d8da6",
+      "bytes": 130,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "d_": {
+      "path": "lexicon/shards/d_.json",
+      "sha256": "8246512a083a6ab005b3bd39c668e9570df32e1c93b967ff4ab100a07f7c147c",
+      "bytes": 6645,
+      "words": 44,
+      "complete": 10,
+      "pronunciationOnly": 34
+    },
+    "da": {
+      "path": "lexicon/shards/da.json",
+      "sha256": "80cd17329d8ae2968daaddf912b74198087f1031465f2ad66c6d690a3c2878dc",
+      "bytes": 191025,
+      "words": 849,
+      "complete": 438,
+      "pronunciationOnly": 411
+    },
+    "db": {
+      "path": "lexicon/shards/db.json",
+      "sha256": "378bac162a9a641bce15261266b91ad5e6fff1915dc09071808e28eda3bfd120",
+      "bytes": 86,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "dc": {
+      "path": "lexicon/shards/dc.json",
+      "sha256": "281b74bf6eabb19c55e9cf9c29e1411bc5264010144cbfe9f4b78bf87f5f144d",
+      "bytes": 244,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "dd": {
+      "path": "lexicon/shards/dd.json",
+      "sha256": "3d31d47a438935b39c4954c71f118300ac2e35dfe7608a81586468d1fa071ae3",
+      "bytes": 354,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "de": {
+      "path": "lexicon/shards/de.json",
+      "sha256": "7f4d16f00489adb8ec31e4de6c9f41ee9a1953e2b604ce1c79e4417c9934cfa2",
+      "bytes": 609707,
+      "words": 2481,
+      "complete": 1064,
+      "pronunciationOnly": 1417
+    },
+    "df": {
+      "path": "lexicon/shards/df.json",
+      "sha256": "ae48a0b1556a29c0fa46a2024a868d3c9cd58876f0dbd84e1faaeb59689ddf48",
+      "bytes": 114,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "dh": {
+      "path": "lexicon/shards/dh.json",
+      "sha256": "ec094b03fe9a105e14d28c711b6f07506cd1c0118ac2c81f05d4611a00ab91a0",
+      "bytes": 1736,
+      "words": 16,
+      "complete": 1,
+      "pronunciationOnly": 15
+    },
+    "di": {
+      "path": "lexicon/shards/di.json",
+      "sha256": "12d82c917d47aa8db8cad65567c73c59f017add57b58ff034b0aaee885adee4c",
+      "bytes": 416981,
+      "words": 1569,
+      "complete": 731,
+      "pronunciationOnly": 838
+    },
+    "dj": {
+      "path": "lexicon/shards/dj.json",
+      "sha256": "f7f92d51cdc7c2644449aee8b9de8b484e27c926df93546292f0687a846b0c91",
+      "bytes": 753,
+      "words": 6,
+      "complete": 1,
+      "pronunciationOnly": 5
+    },
+    "dk": {
+      "path": "lexicon/shards/dk.json",
+      "sha256": "75a466d6e60de17dc5f1fb4ca26466debd885e030941bc2cd300df75a182dc9a",
+      "bytes": 244,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "dl": {
+      "path": "lexicon/shards/dl.json",
+      "sha256": "f81faf179758ae8e49854b81adb451952d14595a8c041d19ebd402ecd8feafd3",
+      "bytes": 280,
+      "words": 3,
+      "complete": 0,
+      "pronunciationOnly": 3
+    },
+    "dm": {
+      "path": "lexicon/shards/dm.json",
+      "sha256": "547f96b86f4b21d2286886d7abffc4092f1530791602b797a1667f3c394150e5",
+      "bytes": 185,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "dn": {
+      "path": "lexicon/shards/dn.json",
+      "sha256": "68449ebfc067a73e5d6f713454795c1f5c86b33de2a4ff6e8a70ef95e34e0210",
+      "bytes": 443,
+      "words": 5,
+      "complete": 0,
+      "pronunciationOnly": 5
+    },
+    "do": {
+      "path": "lexicon/shards/do.json",
+      "sha256": "77668df2324ef73153988e3d9663eb6398dc0f63ac4c04972bc44246368d7e7e",
+      "bytes": 191116,
+      "words": 941,
+      "complete": 389,
+      "pronunciationOnly": 552
+    },
+    "dq": {
+      "path": "lexicon/shards/dq.json",
+      "sha256": "cf720e96eb643a05caaa5000f8d2919a3ef9f9d188ca853315780a8be766c704",
+      "bytes": 108,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "dr": {
+      "path": "lexicon/shards/dr.json",
+      "sha256": "706a7445e4990bf8d05a4cff75e908acf1ec4020506ef8d73b2e528929ea5b8e",
+      "bytes": 95631,
+      "words": 466,
+      "complete": 195,
+      "pronunciationOnly": 271
+    },
+    "ds": {
+      "path": "lexicon/shards/ds.json",
+      "sha256": "56298445f86c62bbea287c8151d1a21bcd7d5a75deb2a8b827643ea42d5a2abe",
+      "bytes": 269,
+      "words": 3,
+      "complete": 0,
+      "pronunciationOnly": 3
+    },
+    "du": {
+      "path": "lexicon/shards/du.json",
+      "sha256": "bc341d1bd63d1e988e161afc7a74c078d300ff433f6741354177354405135981",
+      "bytes": 123557,
+      "words": 597,
+      "complete": 281,
+      "pronunciationOnly": 316
+    },
+    "dv": {
+      "path": "lexicon/shards/dv.json",
+      "sha256": "95425827a9881f4dc5c89b21a6f3607aec07fb2c2fcb048fbc740d3588e8dba4",
+      "bytes": 2023,
+      "words": 5,
+      "complete": 5,
+      "pronunciationOnly": 0
+    },
+    "dw": {
+      "path": "lexicon/shards/dw.json",
+      "sha256": "babf6abf8507323587d6b34d306d04d401e9b190365075720cb502e61baf971c",
+      "bytes": 7569,
+      "words": 36,
+      "complete": 17,
+      "pronunciationOnly": 19
+    },
+    "dy": {
+      "path": "lexicon/shards/dy.json",
+      "sha256": "819ea597f8b6cdca58f9d8ccaccdde87172b143f2bf1204bd0dce51cb4aca7b5",
+      "bytes": 23041,
+      "words": 84,
+      "complete": 50,
+      "pronunciationOnly": 34
+    },
+    "dz": {
+      "path": "lexicon/shards/dz.json",
+      "sha256": "557c6df2f088ff6825ba830b237584d48e52728249a24b7da5b9c082b2b25ab4",
+      "bytes": 1649,
+      "words": 14,
+      "complete": 2,
+      "pronunciationOnly": 12
+    },
+    "e": {
+      "path": "lexicon/shards/e.json",
+      "sha256": "6fa61cd775ab361076e99edc1084b1b52608ce9664cc1d156f3c337ff2def005",
+      "bytes": 77,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "e_": {
+      "path": "lexicon/shards/e_.json",
+      "sha256": "8c82cd09a48b86842b706655d7e8e6f6ed67cf28b21029f0ef15afaabaa59f06",
+      "bytes": 855,
+      "words": 10,
+      "complete": 1,
+      "pronunciationOnly": 9
+    },
+    "ea": {
+      "path": "lexicon/shards/ea.json",
+      "sha256": "e5df42a0685ef1dc89415bcfedb94d92dd9c424062c74efc5953eb5fdf8691c3",
+      "bytes": 17988,
+      "words": 209,
+      "complete": 1,
+      "pronunciationOnly": 208
+    },
+    "eb": {
+      "path": "lexicon/shards/eb.json",
+      "sha256": "a817a461e8dae0a1c23491943d7be57df028ef1796c6b2189e013dbd440f2793",
+      "bytes": 10055,
+      "words": 59,
+      "complete": 26,
+      "pronunciationOnly": 33
+    },
+    "ec": {
+      "path": "lexicon/shards/ec.json",
+      "sha256": "cfc9897f87d17d9247fb996bce3fc6d40aca1eb603d40c89acd1ce707e00d02d",
+      "bytes": 35314,
+      "words": 129,
+      "complete": 65,
+      "pronunciationOnly": 64
+    },
+    "ed": {
+      "path": "lexicon/shards/ed.json",
+      "sha256": "d81758197a94da62d701f95a559eebe63663245a12a8ff8abf056a6709bf8103",
+      "bytes": 45357,
+      "words": 191,
+      "complete": 99,
+      "pronunciationOnly": 92
+    },
+    "ee": {
+      "path": "lexicon/shards/ee.json",
+      "sha256": "a02321a7f1ec5c8f42f55be491c6a04030b1f131ee7f4bae3b77d9b6c9af74b1",
+      "bytes": 1066,
+      "words": 12,
+      "complete": 1,
+      "pronunciationOnly": 11
+    },
+    "ef": {
+      "path": "lexicon/shards/ef.json",
+      "sha256": "b45f32dd8382add4fd48f5af5d9aad94650b420bf3b79fcae2054c12ce84d0cf",
+      "bytes": 7778,
+      "words": 46,
+      "complete": 14,
+      "pronunciationOnly": 32
+    },
+    "eg": {
+      "path": "lexicon/shards/eg.json",
+      "sha256": "8871e0b42940fcac79ea71b214912aee3669d11401516da6420004e6add56808",
+      "bytes": 18412,
+      "words": 81,
+      "complete": 41,
+      "pronunciationOnly": 40
+    },
+    "eh": {
+      "path": "lexicon/shards/eh.json",
+      "sha256": "ca3f1400d8a1e005a3a41d31a5821d61ec5818c1d8a174c902101b99bf04f1f6",
+      "bytes": 3322,
+      "words": 37,
+      "complete": 1,
+      "pronunciationOnly": 36
+    },
+    "ei": {
+      "path": "lexicon/shards/ei.json",
+      "sha256": "c5a5ab8169025cee2eaf89507f2c9d43248b4f0929836aacda9d4bf546f11b56",
+      "bytes": 11710,
+      "words": 134,
+      "complete": 0,
+      "pronunciationOnly": 134
+    },
+    "ej": {
+      "path": "lexicon/shards/ej.json",
+      "sha256": "e2355cc0fdc3926bdf1ea3bb0384322f5429ec19ab2651471d4aa318b13c8cf6",
+      "bytes": 2498,
+      "words": 9,
+      "complete": 6,
+      "pronunciationOnly": 3
+    },
+    "ek": {
+      "path": "lexicon/shards/ek.json",
+      "sha256": "3931084023a3c2d607cb101e29cfe7ca3c6546bd124d08e494b6c5a58e09b9b3",
+      "bytes": 6125,
+      "words": 23,
+      "complete": 16,
+      "pronunciationOnly": 7
+    },
+    "el": {
+      "path": "lexicon/shards/el.json",
+      "sha256": "c332f0b82aadf54f79c039f23541ca043bf124c956fcebd04ad97ee3eb987811",
+      "bytes": 134336,
+      "words": 509,
+      "complete": 267,
+      "pronunciationOnly": 242
+    },
+    "em": {
+      "path": "lexicon/shards/em.json",
+      "sha256": "62b8bebc43561375dfc7dd4f6278c6ca8e70faf50f5c3d9ce840235f84ff6e16",
+      "bytes": 81023,
+      "words": 345,
+      "complete": 153,
+      "pronunciationOnly": 192
+    },
+    "en": {
+      "path": "lexicon/shards/en.json",
+      "sha256": "35740d959b2598936f1e52396356f6db26c63e6eb698f3b17fb1f950c228844b",
+      "bytes": 164991,
+      "words": 681,
+      "complete": 277,
+      "pronunciationOnly": 404
+    },
+    "eo": {
+      "path": "lexicon/shards/eo.json",
+      "sha256": "122ff6194c990e0217faef10ce90bf84cf4924d49eba059d5573444b5aa5c63e",
+      "bytes": 3392,
+      "words": 10,
+      "complete": 9,
+      "pronunciationOnly": 1
+    },
+    "ep": {
+      "path": "lexicon/shards/ep.json",
+      "sha256": "0afdd2ef717448a950918d27d0641b87f4d72e32c307b4b637e4faf281372d98",
+      "bytes": 30337,
+      "words": 101,
+      "complete": 57,
+      "pronunciationOnly": 44
+    },
+    "eq": {
+      "path": "lexicon/shards/eq.json",
+      "sha256": "8e37a7ba9509c8f9404b8fe27d912aef6df28b5060e6e70f1d4f88eb9b06e864",
+      "bytes": 22336,
+      "words": 62,
+      "complete": 41,
+      "pronunciationOnly": 21
+    },
+    "er": {
+      "path": "lexicon/shards/er.json",
+      "sha256": "e03c5ee3d1832c3bcdc3050028fcce5a90d3f12c71e150e7fc064710c4f10612",
+      "bytes": 38032,
+      "words": 215,
+      "complete": 69,
+      "pronunciationOnly": 146
+    },
+    "es": {
+      "path": "lexicon/shards/es.json",
+      "sha256": "225bc78e630ad4c3e5b8afe26fe51f5a2b5853ac6e6a6a7d4223ce20b70eba48",
+      "bytes": 68109,
+      "words": 258,
+      "complete": 137,
+      "pronunciationOnly": 121
+    },
+    "et": {
+      "path": "lexicon/shards/et.json",
+      "sha256": "f74f297e63b921b94af482d643577ac16f9c8540ff018fa6a07ceee52e7a6625",
+      "bytes": 24798,
+      "words": 97,
+      "complete": 54,
+      "pronunciationOnly": 43
+    },
+    "eu": {
+      "path": "lexicon/shards/eu.json",
+      "sha256": "d9960d93336dd6f80b4b1729943bc02096954c3efc5379e98b478e0f775bf843",
+      "bytes": 14602,
+      "words": 115,
+      "complete": 9,
+      "pronunciationOnly": 106
+    },
+    "ev": {
+      "path": "lexicon/shards/ev.json",
+      "sha256": "377209e3c93692aab19e538c7720eb1ccd2d59c7cde3358359a7d1378ab13560",
+      "bytes": 40712,
+      "words": 194,
+      "complete": 73,
+      "pronunciationOnly": 121
+    },
+    "ew": {
+      "path": "lexicon/shards/ew.json",
+      "sha256": "0270130fd952ccf57fd23e84131cd1621b9a9db48c79f4a7a7a530da51955f55",
+      "bytes": 1780,
+      "words": 22,
+      "complete": 0,
+      "pronunciationOnly": 22
+    },
+    "ex": {
+      "path": "lexicon/shards/ex.json",
+      "sha256": "eecfb60b267e446987d793e7c9fd5f78c35f41a6981b8d62095b939565180466",
+      "bytes": 74865,
+      "words": 611,
+      "complete": 25,
+      "pronunciationOnly": 586
+    },
+    "ey": {
+      "path": "lexicon/shards/ey.json",
+      "sha256": "53ff2c7f83ed31b5362da688f71a5989e1f28d4f603c113996ded8c9c5c23c38",
+      "bytes": 4389,
+      "words": 53,
+      "complete": 0,
+      "pronunciationOnly": 53
+    },
+    "ez": {
+      "path": "lexicon/shards/ez.json",
+      "sha256": "0682aecc51d11bbe4b3243a99d7e7c66bbda497ca797832e8c387a7c144468c2",
+      "bytes": 1989,
+      "words": 11,
+      "complete": 6,
+      "pronunciationOnly": 5
+    },
+    "f": {
+      "path": "lexicon/shards/f.json",
+      "sha256": "a67bdc47757dcb1af371e2e03096693bbf9db46d895366daacf0c3e640990127",
+      "bytes": 134,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "f_": {
+      "path": "lexicon/shards/f_.json",
+      "sha256": "88e6b087265556044f66682637e8056101874d4b3f8d043396124eb4720c72a2",
+      "bytes": 353,
+      "words": 4,
+      "complete": 1,
+      "pronunciationOnly": 3
+    },
+    "fa": {
+      "path": "lexicon/shards/fa.json",
+      "sha256": "7de4acbdd331a58dd208fdb07776a91e16a347fd8560d2332f8be0482e7b7d33",
+      "bytes": 166075,
+      "words": 825,
+      "complete": 330,
+      "pronunciationOnly": 495
+    },
+    "fb": {
+      "path": "lexicon/shards/fb.json",
+      "sha256": "eb9d6baff77dd429d2ca68842ce8aa67d771a3c0855fb1c532f89341ef5df371",
+      "bytes": 671,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "fc": {
+      "path": "lexicon/shards/fc.json",
+      "sha256": "02093f7c8ff306972bd7fb858f2b48670f7408573a8f7e50aaf02c65121fb88b",
+      "bytes": 781,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "fd": {
+      "path": "lexicon/shards/fd.json",
+      "sha256": "03da84821f3699894070882b65026dcdb404b4a5474c8e49ec0a7689b0294a67",
+      "bytes": 307,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "fe": {
+      "path": "lexicon/shards/fe.json",
+      "sha256": "3faff79386ec6c53b0729a3c36e29901e48f361b468cddcfe677d7c2d5603395",
+      "bytes": 100774,
+      "words": 656,
+      "complete": 157,
+      "pronunciationOnly": 499
+    },
+    "fi": {
+      "path": "lexicon/shards/fi.json",
+      "sha256": "18d7c82d6bc687a2fa377322a63cd716659b015dff76f4131148acfc33672b33",
+      "bytes": 155765,
+      "words": 772,
+      "complete": 294,
+      "pronunciationOnly": 478
+    },
+    "fj": {
+      "path": "lexicon/shards/fj.json",
+      "sha256": "a7e3dcb32003f8f7dc8f5e2f0a0abd38a8287a9b2f9d13dd6408d1182645f959",
+      "bytes": 1443,
+      "words": 4,
+      "complete": 4,
+      "pronunciationOnly": 0
+    },
+    "fl": {
+      "path": "lexicon/shards/fl.json",
+      "sha256": "5df43865033defcaec3fd45a5e02b53f66a72db45e36ba00dc9bac966a50350e",
+      "bytes": 127174,
+      "words": 600,
+      "complete": 258,
+      "pronunciationOnly": 342
+    },
+    "fm": {
+      "path": "lexicon/shards/fm.json",
+      "sha256": "69a1a3625c49ad001e50fce26585aaea7c70b12599dcc07c664b8276a108b75a",
+      "bytes": 250,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "fn": {
+      "path": "lexicon/shards/fn.json",
+      "sha256": "efbd27999956294173cf597bc7dd7e85e588ad46b0eace4ea49eea575a1db15d",
+      "bytes": 427,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "fo": {
+      "path": "lexicon/shards/fo.json",
+      "sha256": "2c8c0a5265ffb462c0760d41a1f0df60b471e0a2ed524d127a19b1b63ed0bf6d",
+      "bytes": 149262,
+      "words": 779,
+      "complete": 278,
+      "pronunciationOnly": 501
+    },
+    "fr": {
+      "path": "lexicon/shards/fr.json",
+      "sha256": "d63696702651c6331a8db006dd02e030138dbed855087e60e1c38a0813abab6b",
+      "bytes": 174027,
+      "words": 847,
+      "complete": 308,
+      "pronunciationOnly": 539
+    },
+    "fs": {
+      "path": "lexicon/shards/fs.json",
+      "sha256": "e77a0b8afe7b4c1585306877c5308b88c21619e92f3c7c3843216ca36b568640",
+      "bytes": 321,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "ft": {
+      "path": "lexicon/shards/ft.json",
+      "sha256": "fd866ae0c2de75e9ce91d68616ffcbff8d432155aa8387fee9699a2f50c915d0",
+      "bytes": 838,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "fu": {
+      "path": "lexicon/shards/fu.json",
+      "sha256": "4ce6557fcbea35434021a434899e7152a1b391199221b2a7719449d61a0e28a3",
+      "bytes": 78017,
+      "words": 379,
+      "complete": 151,
+      "pronunciationOnly": 228
+    },
+    "fy": {
+      "path": "lexicon/shards/fy.json",
+      "sha256": "7192b02f6eb1cdc8453cd386bc842ec8ac13e4a9398d56f252a688514658be2e",
+      "bytes": 1124,
+      "words": 11,
+      "complete": 1,
+      "pronunciationOnly": 10
+    },
+    "g": {
+      "path": "lexicon/shards/g.json",
+      "sha256": "8634b862a72497368c393e785b83e4d7f7cbc64481b5feda15958fa445093c53",
+      "bytes": 132,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "g_": {
+      "path": "lexicon/shards/g_.json",
+      "sha256": "6b9436788ede5dec5fda8249fadaf16c2a8d52e7d372e84407b5f908445b14e0",
+      "bytes": 1189,
+      "words": 5,
+      "complete": 5,
+      "pronunciationOnly": 0
+    },
+    "ga": {
+      "path": "lexicon/shards/ga.json",
+      "sha256": "df149acf07c2f22ecc1160e93f57f7fd0fde9b5704199b2a55c3860684c92caa",
+      "bytes": 238379,
+      "words": 1049,
+      "complete": 528,
+      "pronunciationOnly": 521
+    },
+    "gd": {
+      "path": "lexicon/shards/gd.json",
+      "sha256": "f71efa200ff03fb7b6d10c13c3e168ef45b2eae4262e154bee6cc2f8721a8390",
+      "bytes": 712,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "ge": {
+      "path": "lexicon/shards/ge.json",
+      "sha256": "e9691044bfa4ee6851cacbc79a2dfb18721940ebbc6b19ec5407c64cbfccdedb",
+      "bytes": 126914,
+      "words": 678,
+      "complete": 209,
+      "pronunciationOnly": 469
+    },
+    "gf": {
+      "path": "lexicon/shards/gf.json",
+      "sha256": "dbf054168237a035d35231590c4fd0306226b59a840f8a68df03720feccd2c6f",
+      "bytes": 94,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "gh": {
+      "path": "lexicon/shards/gh.json",
+      "sha256": "0e9a72d1c69c37f449aa708c5f9da9e7805cf57472397dee537817781edf7efe",
+      "bytes": 4625,
+      "words": 52,
+      "complete": 0,
+      "pronunciationOnly": 52
+    },
+    "gi": {
+      "path": "lexicon/shards/gi.json",
+      "sha256": "cdf67ea00984ae7f7cc93074bb129483328329de15b99cbf03b37584db525031",
+      "bytes": 110674,
+      "words": 525,
+      "complete": 238,
+      "pronunciationOnly": 287
+    },
+    "gj": {
+      "path": "lexicon/shards/gj.json",
+      "sha256": "8411dbe23178bab83c003c94b4a6b27f8c85aa44ec4df4bf50e7af236d23fc82",
+      "bytes": 266,
+      "words": 3,
+      "complete": 0,
+      "pronunciationOnly": 3
+    },
+    "gl": {
+      "path": "lexicon/shards/gl.json",
+      "sha256": "36bf3a7f18622c8bd7d98d9ba2eb459674faa7f764ce19355da5eb5526ad2397",
+      "bytes": 84881,
+      "words": 375,
+      "complete": 180,
+      "pronunciationOnly": 195
+    },
+    "gm": {
+      "path": "lexicon/shards/gm.json",
+      "sha256": "c89c66b1643c23dc6e1a5c7e68c5d33dcb33d5e1cfbf8377c9914b8cca7c829b",
+      "bytes": 238,
+      "words": 3,
+      "complete": 0,
+      "pronunciationOnly": 3
+    },
+    "gn": {
+      "path": "lexicon/shards/gn.json",
+      "sha256": "63bd88d7fbcea2a23fc7c5bb33acf3a639fb09ddf99d249367fdbb41b3df691e",
+      "bytes": 2488,
+      "words": 30,
+      "complete": 0,
+      "pronunciationOnly": 30
+    },
+    "go": {
+      "path": "lexicon/shards/go.json",
+      "sha256": "06b03b64d5c532698d545685cfc284609d3b6c4b62b13e3155595c5414856404",
+      "bytes": 171527,
+      "words": 820,
+      "complete": 368,
+      "pronunciationOnly": 452
+    },
+    "gp": {
+      "path": "lexicon/shards/gp.json",
+      "sha256": "06ab00fab6d6fc1bcd019a0302f6e74da82bdd279ccf3bfa4ae13ca8b64dcaf8",
+      "bytes": 90,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "gr": {
+      "path": "lexicon/shards/gr.json",
+      "sha256": "def79cd1acad5b893bee859627efda0df6895d1416a4bf91ed0334fbdbd568b7",
+      "bytes": 256029,
+      "words": 1203,
+      "complete": 496,
+      "pronunciationOnly": 707
+    },
+    "gs": {
+      "path": "lexicon/shards/gs.json",
+      "sha256": "bf23f380f7d4922e34518fe1cf634ebe1cc946d868283484fbc06b778707956d",
+      "bytes": 506,
+      "words": 2,
+      "complete": 1,
+      "pronunciationOnly": 1
+    },
+    "gt": {
+      "path": "lexicon/shards/gt.json",
+      "sha256": "e4babeb815a4e2a2fbd907e80b07da325ac3acb6b5e78585ab0b418acf6e1d11",
+      "bytes": 178,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "gu": {
+      "path": "lexicon/shards/gu.json",
+      "sha256": "c61907625b859fbbdc68ebc6a214a5b61d0e1a9e556e2d5314ca7978b5b6f802",
+      "bytes": 110568,
+      "words": 583,
+      "complete": 208,
+      "pronunciationOnly": 375
+    },
+    "gv": {
+      "path": "lexicon/shards/gv.json",
+      "sha256": "4430b7c8001381a83f5f872c232d7426293d72845ec8479e38ca075896ac94c1",
+      "bytes": 110,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "gw": {
+      "path": "lexicon/shards/gw.json",
+      "sha256": "7f500f0862dcaf360131bd27bcf0706f789a9f51b59061d791c5eab86f86c2ea",
+      "bytes": 5122,
+      "words": 21,
+      "complete": 13,
+      "pronunciationOnly": 8
+    },
+    "gy": {
+      "path": "lexicon/shards/gy.json",
+      "sha256": "b0c5a0334ffeb112e99ad4d0b579d04e03d2464bf4a09c646eb2a917d07f62f4",
+      "bytes": 15835,
+      "words": 48,
+      "complete": 33,
+      "pronunciationOnly": 15
+    },
+    "h": {
+      "path": "lexicon/shards/h.json",
+      "sha256": "627dd835bf6cd9a6691d3b4789b85971862091866ae9f59edf8a75ae44d64a80",
+      "bytes": 134,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "h_": {
+      "path": "lexicon/shards/h_.json",
+      "sha256": "78e6bbfaf311cbe1cf31240ab1e55e50614bd119541a8fbf3469c0b0b609f4fd",
+      "bytes": 638,
+      "words": 3,
+      "complete": 3,
+      "pronunciationOnly": 0
+    },
+    "ha": {
+      "path": "lexicon/shards/ha.json",
+      "sha256": "978be1171acf4a00a0cff6d2a042148d7cc35eb3a2cbd26a7ddb030604d8172a",
+      "bytes": 420344,
+      "words": 1863,
+      "complete": 881,
+      "pronunciationOnly": 982
+    },
+    "hb": {
+      "path": "lexicon/shards/hb.json",
+      "sha256": "0675c758dd4cec8e92cb4aa9eacf9796f6783cc43a07381fb5f8bf936edfee20",
+      "bytes": 395,
+      "words": 2,
+      "complete": 1,
+      "pronunciationOnly": 1
+    },
+    "hc": {
+      "path": "lexicon/shards/hc.json",
+      "sha256": "b223e5a9d6b03ee6d58312a36b4ec7c2fabed8eb20a908e0af392fccc8905056",
+      "bytes": 98,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "he": {
+      "path": "lexicon/shards/he.json",
+      "sha256": "f5e2548acf9dfe950abcd73d84edf61aa6ab4e95d98406eddc8d47eac3e860c0",
+      "bytes": 234979,
+      "words": 1365,
+      "complete": 374,
+      "pronunciationOnly": 991
+    },
+    "hf": {
+      "path": "lexicon/shards/hf.json",
+      "sha256": "47e49901b5b0b97f4971c2fd6d0cf5ef645c2cc018f04e6133befb02b1e36a6e",
+      "bytes": 102,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "hg": {
+      "path": "lexicon/shards/hg.json",
+      "sha256": "bfb46889e4ab778de4b7725401aec8268962f61db5d22fcecbd5a02c39dcc7d1",
+      "bytes": 364,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "hi": {
+      "path": "lexicon/shards/hi.json",
+      "sha256": "3e867acc60e63cf8abcfe7295c9bf9599c4c91f8cf0dc50c59cfd0bd175d35ab",
+      "bytes": 127760,
+      "words": 606,
+      "complete": 251,
+      "pronunciationOnly": 355
+    },
+    "hj": {
+      "path": "lexicon/shards/hj.json",
+      "sha256": "4a9ad13b1df2f3cf33d0661c2e9375d1ce58a4db154a7df91cc3a3257f550608",
+      "bytes": 743,
+      "words": 3,
+      "complete": 2,
+      "pronunciationOnly": 1
+    },
+    "hl": {
+      "path": "lexicon/shards/hl.json",
+      "sha256": "e03d36f8a5b5d588162d0dae6611f68073f9bdf2bb13291271a5e16d44f17a98",
+      "bytes": 2218,
+      "words": 6,
+      "complete": 6,
+      "pronunciationOnly": 0
+    },
+    "hm": {
+      "path": "lexicon/shards/hm.json",
+      "sha256": "17f2812265a8a337d05d7697ff52c8d6f675f83efbcfddd9f7792651e8571634",
+      "bytes": 467,
+      "words": 4,
+      "complete": 3,
+      "pronunciationOnly": 1
+    },
+    "hn": {
+      "path": "lexicon/shards/hn.json",
+      "sha256": "0e1cb69df8816a272c6697231c2201e669857be0b2c2b0824cac782dac03b6e6",
+      "bytes": 246,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "ho": {
+      "path": "lexicon/shards/ho.json",
+      "sha256": "d2d00bcdde796a2ac85e5a1a34850fe15d553ed2b01651af5ef749ad1027456f",
+      "bytes": 267432,
+      "words": 1379,
+      "complete": 504,
+      "pronunciationOnly": 875
+    },
+    "hp": {
+      "path": "lexicon/shards/hp.json",
+      "sha256": "6f5653ad12292cf9359d854be2f708b7beed250d6f3d6c2607a478d963d93e2b",
+      "bytes": 246,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "hr": {
+      "path": "lexicon/shards/hr.json",
+      "sha256": "e37389660d4925000118066609bb92f868dd9d30eeb6ca15739548f807d6046f",
+      "bytes": 4984,
+      "words": 16,
+      "complete": 14,
+      "pronunciationOnly": 2
+    },
+    "hs": {
+      "path": "lexicon/shards/hs.json",
+      "sha256": "12ca9714b4a0e0e4a0043b6ab88a85deef2301c292c3745560a7c8a05f2b7657",
+      "bytes": 933,
+      "words": 7,
+      "complete": 1,
+      "pronunciationOnly": 6
+    },
+    "ht": {
+      "path": "lexicon/shards/ht.json",
+      "sha256": "fae95ab2978a6cbf187009135785e12e5eb145a225ad5d9870c1a63f64ea9e38",
+      "bytes": 570,
+      "words": 2,
+      "complete": 1,
+      "pronunciationOnly": 1
+    },
+    "hu": {
+      "path": "lexicon/shards/hu.json",
+      "sha256": "8bcc04273807ce2ba7398fc5aa92c8c8eb18f9c58c8cc56b1000fb77676f38e0",
+      "bytes": 106302,
+      "words": 608,
+      "complete": 208,
+      "pronunciationOnly": 400
+    },
+    "hw": {
+      "path": "lexicon/shards/hw.json",
+      "sha256": "d7fce8affcec3fc4d89609d3f92284f5d9dc9c635f6f88d363c3659f68403aaf",
+      "bytes": 1269,
+      "words": 6,
+      "complete": 5,
+      "pronunciationOnly": 1
+    },
+    "hy": {
+      "path": "lexicon/shards/hy.json",
+      "sha256": "3d0c85d04fd64345bb0be47c43e473a4c08222ce20e4891cec9f9a99b64c0683",
+      "bytes": 63219,
+      "words": 226,
+      "complete": 111,
+      "pronunciationOnly": 115
+    },
+    "hz": {
+      "path": "lexicon/shards/hz.json",
+      "sha256": "1a241ddce881660b356566674909e313bc14df9489bf2ce1237151ae7b6affb9",
+      "bytes": 242,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "i": {
+      "path": "lexicon/shards/i.json",
+      "sha256": "cf04d958d00995516db20b605d854d473eed435c97a3de7b740d885093679a55",
+      "bytes": 79,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "i_": {
+      "path": "lexicon/shards/i_.json",
+      "sha256": "970ae5006cd3c19959697b5adebd819826d236a0c3a1ad00d891daed69a2e9f1",
+      "bytes": 688,
+      "words": 9,
+      "complete": 1,
+      "pronunciationOnly": 8
+    },
+    "ia": {
+      "path": "lexicon/shards/ia.json",
+      "sha256": "c347224a2957c7264e4d82668089c219696df4f1a0cb835e95b2660fb776b6c6",
+      "bytes": 11226,
+      "words": 33,
+      "complete": 29,
+      "pronunciationOnly": 4
+    },
+    "ib": {
+      "path": "lexicon/shards/ib.json",
+      "sha256": "49504d183c1ce0de6c4ccc3560694c050d1119704f780dcf0871fbf489ce3779",
+      "bytes": 5042,
+      "words": 23,
+      "complete": 13,
+      "pronunciationOnly": 10
+    },
+    "ic": {
+      "path": "lexicon/shards/ic.json",
+      "sha256": "4ad17ecf46facc7edf4bc409127c12918720a77f302cc3135ec8f4eb505fe5fd",
+      "bytes": 7305,
+      "words": 43,
+      "complete": 13,
+      "pronunciationOnly": 30
+    },
+    "id": {
+      "path": "lexicon/shards/id.json",
+      "sha256": "ec6a6ec2b2930cd327da05065a9e3c9e1ffd9729df6671e40f07e0fb3486a0b6",
+      "bytes": 27635,
+      "words": 97,
+      "complete": 56,
+      "pronunciationOnly": 41
+    },
+    "ie": {
+      "path": "lexicon/shards/ie.json",
+      "sha256": "27460cada688330b5fb1423d6a0a38aa1e3875467a40aa3cf48a3ebd11191292",
+      "bytes": 576,
+      "words": 4,
+      "complete": 1,
+      "pronunciationOnly": 3
+    },
+    "if": {
+      "path": "lexicon/shards/if.json",
+      "sha256": "8421f7998426fb2254c42c1547c70f2c0c76bf4b02345b91cab1f143b290df09",
+      "bytes": 1906,
+      "words": 9,
+      "complete": 8,
+      "pronunciationOnly": 1
+    },
+    "ig": {
+      "path": "lexicon/shards/ig.json",
+      "sha256": "e5fffdf222f54dfa5bf8ffcd60db0a875d8b92ac15f9ace2be9935e4b0c2f338",
+      "bytes": 10956,
+      "words": 43,
+      "complete": 24,
+      "pronunciationOnly": 19
+    },
+    "ih": {
+      "path": "lexicon/shards/ih.json",
+      "sha256": "dd9eabf018637cb06ac9b7ddcacda8f919df7ecd192e2ebe7b57e1e3dbb4b5ce",
+      "bytes": 569,
+      "words": 7,
+      "complete": 0,
+      "pronunciationOnly": 7
+    },
+    "ii": {
+      "path": "lexicon/shards/ii.json",
+      "sha256": "cd77a3f7b1a0c4d27e86ff4d01570ad2ac232a47378ba304e83ab1c9cd139ec3",
+      "bytes": 227,
+      "words": 3,
+      "complete": 0,
+      "pronunciationOnly": 3
+    },
+    "ij": {
+      "path": "lexicon/shards/ij.json",
+      "sha256": "043a0caf7a99144b0f126368729c4b669f7a0cc5a655c49ca2501ca42fcc4f43",
+      "bytes": 621,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "ik": {
+      "path": "lexicon/shards/ik.json",
+      "sha256": "1a4664db3dcc9111132d2a685320aabb05757d4e0cf3378a0a0a4160f6c85bfb",
+      "bytes": 1691,
+      "words": 14,
+      "complete": 3,
+      "pronunciationOnly": 11
+    },
+    "il": {
+      "path": "lexicon/shards/il.json",
+      "sha256": "afe168b05cf4ca1f46d4af686a174094c3cf7e6fec7a5512ffdd7385e3659259",
+      "bytes": 25900,
+      "words": 91,
+      "complete": 58,
+      "pronunciationOnly": 33
+    },
+    "im": {
+      "path": "lexicon/shards/im.json",
+      "sha256": "f7038c60e25c8833ec9659fb03107d550d51c2fb0b8e762b664145db972e7577",
+      "bytes": 106833,
+      "words": 401,
+      "complete": 169,
+      "pronunciationOnly": 232
+    },
+    "in": {
+      "path": "lexicon/shards/in.json",
+      "sha256": "20b1db13c88656c2724d2ba19b8ad0a040f8eccbabddd4f12f7bfa6816bd5fc0",
+      "bytes": 466023,
+      "words": 1765,
+      "complete": 669,
+      "pronunciationOnly": 1096
+    },
+    "io": {
+      "path": "lexicon/shards/io.json",
+      "sha256": "e1f38f3d4f3baa2dd14e0b2865ef68f1040daf17c4cac38d90d995a86bed17ba",
+      "bytes": 10199,
+      "words": 39,
+      "complete": 28,
+      "pronunciationOnly": 11
+    },
+    "ip": {
+      "path": "lexicon/shards/ip.json",
+      "sha256": "c7a5865ec5fba791bdb7c65bd1454bd25bd4aaa5daf6ff1ae1453d20f1a546ba",
+      "bytes": 5138,
+      "words": 18,
+      "complete": 15,
+      "pronunciationOnly": 3
+    },
+    "iq": {
+      "path": "lexicon/shards/iq.json",
+      "sha256": "e43018ea984708f90c3e0c6b888be7e9a20cba4044776cd55d37794bf942918e",
+      "bytes": 464,
+      "words": 3,
+      "complete": 1,
+      "pronunciationOnly": 2
+    },
+    "ir": {
+      "path": "lexicon/shards/ir.json",
+      "sha256": "1875a7dc600aeae49f2aeabd48f62b09406508f55f60af47ead64898bb6a84fe",
+      "bytes": 22905,
+      "words": 144,
+      "complete": 35,
+      "pronunciationOnly": 109
+    },
+    "is": {
+      "path": "lexicon/shards/is.json",
+      "sha256": "cc948a62a8f9e9b4a3b77aeac521daad7a8e278e61db00086c428f70896c8cae",
+      "bytes": 39350,
+      "words": 179,
+      "complete": 81,
+      "pronunciationOnly": 98
+    },
+    "it": {
+      "path": "lexicon/shards/it.json",
+      "sha256": "c819e82b1691ef667a37ba1ae29c61472f3338ce074735ba607cfdea1a744bbf",
+      "bytes": 14541,
+      "words": 61,
+      "complete": 37,
+      "pronunciationOnly": 24
+    },
+    "iu": {
+      "path": "lexicon/shards/iu.json",
+      "sha256": "e25309c904d909e96e89d4af5212abb21c0676e01fbfed8fdb1b3dd5314e6d7b",
+      "bytes": 432,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "iv": {
+      "path": "lexicon/shards/iv.json",
+      "sha256": "bb08a5025500614d6943bbcada795f596a76bd6d7ef32384f82255250e66f88b",
+      "bytes": 7424,
+      "words": 35,
+      "complete": 18,
+      "pronunciationOnly": 17
+    },
+    "iw": {
+      "path": "lexicon/shards/iw.json",
+      "sha256": "6057ed4507dd6a57858ad6b115f7aac63945ce2f1ee15083986ed7bb7616ab6b",
+      "bytes": 3787,
+      "words": 14,
+      "complete": 10,
+      "pronunciationOnly": 4
+    },
+    "ix": {
+      "path": "lexicon/shards/ix.json",
+      "sha256": "177d62082ede6dabbbe94fd6c8d28838233ce048e95a42f0a2b5c57cb82f4183",
+      "bytes": 92,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "iy": {
+      "path": "lexicon/shards/iy.json",
+      "sha256": "c42c39eb0983dfe7aa631a1e75f2f45b83be59fa2d761d83756ff9cdc50d1aeb",
+      "bytes": 73,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "iz": {
+      "path": "lexicon/shards/iz.json",
+      "sha256": "552fe8544862b71d07d0e3f2a19acb4253a5fca8525d09b3664d7c17d76a9826",
+      "bytes": 4840,
+      "words": 16,
+      "complete": 12,
+      "pronunciationOnly": 4
+    },
+    "j": {
+      "path": "lexicon/shards/j.json",
+      "sha256": "7bb1c032353b7d9150d403e61a32fb63f8558caac51d1955ebf18f093d5fb8c7",
+      "bytes": 134,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "j_": {
+      "path": "lexicon/shards/j_.json",
+      "sha256": "f2fc7a50aac1c8afd95cf69f851044e6f3f85f455eb152863d5740d53bbb8916",
+      "bytes": 520,
+      "words": 3,
+      "complete": 3,
+      "pronunciationOnly": 0
+    },
+    "ja": {
+      "path": "lexicon/shards/ja.json",
+      "sha256": "41cccf41221a0c36a9d39d9ff8dcf0719cd902311e1ff7d6f43abab1104ebd82",
+      "bytes": 118977,
+      "words": 494,
+      "complete": 274,
+      "pronunciationOnly": 220
+    },
+    "je": {
+      "path": "lexicon/shards/je.json",
+      "sha256": "ae7ee72d7a86b75193c946a05a684c9a8a87278f1512a475ff34957ba4a5a7bd",
+      "bytes": 60721,
+      "words": 321,
+      "complete": 134,
+      "pronunciationOnly": 187
+    },
+    "jf": {
+      "path": "lexicon/shards/jf.json",
+      "sha256": "7ed2be64195c5189cd25152532a8ca5d59265895d9fa043906fcb44db768361b",
+      "bytes": 337,
+      "words": 2,
+      "complete": 1,
+      "pronunciationOnly": 1
+    },
+    "jh": {
+      "path": "lexicon/shards/jh.json",
+      "sha256": "2d1843a941eaa00a9cf2ec071e0f437f29e1995c059139d231c73704b797c19a",
+      "bytes": 320,
+      "words": 4,
+      "complete": 0,
+      "pronunciationOnly": 4
+    },
+    "ji": {
+      "path": "lexicon/shards/ji.json",
+      "sha256": "c7a69462fd1fff644f2554cd376f348adcc1918523719cb7a7aaec063b6fda0e",
+      "bytes": 19779,
+      "words": 82,
+      "complete": 56,
+      "pronunciationOnly": 26
+    },
+    "jn": {
+      "path": "lexicon/shards/jn.json",
+      "sha256": "6382ddd8bc3db9ecebaa22a369c6ffb6f3e992e43a38082361ba78fee153ee09",
+      "bytes": 311,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "jo": {
+      "path": "lexicon/shards/jo.json",
+      "sha256": "36f16130c38cbaecdfef1e462cd7ee549cf3a6b71f437fd2ea69d7c9eadca085",
+      "bytes": 65351,
+      "words": 349,
+      "complete": 136,
+      "pronunciationOnly": 213
+    },
+    "jr": {
+      "path": "lexicon/shards/jr.json",
+      "sha256": "f68dad944a6c3261faf9cc917c3bbbd518cdf4be50d9e6886c4ea8beaa947d1a",
+      "bytes": 163,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "ju": {
+      "path": "lexicon/shards/ju.json",
+      "sha256": "0e847c6794fd9119a81e821a6efc13fc3515581939ae85d670ab9e07d4a18009",
+      "bytes": 70835,
+      "words": 304,
+      "complete": 157,
+      "pronunciationOnly": 147
+    },
+    "jw": {
+      "path": "lexicon/shards/jw.json",
+      "sha256": "343cb27640c6786c7cbf6be9edfa85da546590226e74d5e432eceb85fe9ed077",
+      "bytes": 250,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "jy": {
+      "path": "lexicon/shards/jy.json",
+      "sha256": "6f2bba42a21aa11eda32c982a498dfb2febcb8e19bf9e7c6e8178115e19c1a94",
+      "bytes": 174,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "k": {
+      "path": "lexicon/shards/k.json",
+      "sha256": "2056bc234d1eb42388a66247a61cae80ece829b4c456cdcc87f4954414dd7977",
+      "bytes": 132,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "k_": {
+      "path": "lexicon/shards/k_.json",
+      "sha256": "7d73ebbff847f9d842995fceb81c2d2a985e1cab25ce1518de546088a689ce3b",
+      "bytes": 972,
+      "words": 5,
+      "complete": 4,
+      "pronunciationOnly": 1
+    },
+    "ka": {
+      "path": "lexicon/shards/ka.json",
+      "sha256": "cd8a1dfaaa4377adf8fab7bcc5ff05a415ac9a07088a149838891e965eae0d2d",
+      "bytes": 181131,
+      "words": 752,
+      "complete": 416,
+      "pronunciationOnly": 336
+    },
+    "kc": {
+      "path": "lexicon/shards/kc.json",
+      "sha256": "e37ad8dd439724f5565f3be09b0efb91104dda4d47523f0685c19d658b4e883c",
+      "bytes": 606,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "ke": {
+      "path": "lexicon/shards/ke.json",
+      "sha256": "0c53ae1976ccfb2a3c4282bbd780aba9a9fa3b99fca8a2018fb743ee3a75d3c7",
+      "bytes": 101521,
+      "words": 620,
+      "complete": 183,
+      "pronunciationOnly": 437
+    },
+    "kg": {
+      "path": "lexicon/shards/kg.json",
+      "sha256": "2c41067bcb70167c6081e3c6de330e84a90fb9930c36143fd3ee8d9c2109501a",
+      "bytes": 822,
+      "words": 3,
+      "complete": 2,
+      "pronunciationOnly": 1
+    },
+    "kh": {
+      "path": "lexicon/shards/kh.json",
+      "sha256": "f79845aa34f46a8fca2f7119ff5be7f12369ef1e4375bfd7d52784af3af094d1",
+      "bytes": 3979,
+      "words": 45,
+      "complete": 0,
+      "pronunciationOnly": 45
+    },
+    "ki": {
+      "path": "lexicon/shards/ki.json",
+      "sha256": "c32d0511923548aced9e501f0d87af3fc996536875763c32cb3944c313fabfee",
+      "bytes": 133704,
+      "words": 660,
+      "complete": 288,
+      "pronunciationOnly": 372
+    },
+    "kj": {
+      "path": "lexicon/shards/kj.json",
+      "sha256": "e0a565662c4bad7e762e4427744f3cd513390bba830a114a4c0c5cc04fb72a0b",
+      "bytes": 1313,
+      "words": 5,
+      "complete": 4,
+      "pronunciationOnly": 1
+    },
+    "kk": {
+      "path": "lexicon/shards/kk.json",
+      "sha256": "46d472bb79d83539113f80893ea62fa0b507b7d716bd097b713f6b1c297d14c7",
+      "bytes": 360,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "kl": {
+      "path": "lexicon/shards/kl.json",
+      "sha256": "a431891e1d30f13c509707530d226b918777f3597334d30aaeceb005f032f5d1",
+      "bytes": 51102,
+      "words": 253,
+      "complete": 108,
+      "pronunciationOnly": 145
+    },
+    "km": {
+      "path": "lexicon/shards/km.json",
+      "sha256": "5c5d6e4bbfddbb27e9341242d300d4563d11973de6b7586aba80e679b48401d0",
+      "bytes": 726,
+      "words": 5,
+      "complete": 1,
+      "pronunciationOnly": 4
+    },
+    "kn": {
+      "path": "lexicon/shards/kn.json",
+      "sha256": "112b9d12eb89ff15d2ca4907b99d1ece150c805c1a07c97cd955fcd9f061d29e",
+      "bytes": 33025,
+      "words": 213,
+      "complete": 82,
+      "pronunciationOnly": 131
+    },
+    "ko": {
+      "path": "lexicon/shards/ko.json",
+      "sha256": "f89399a25fcdf4c84609341b869b18c263bfe80d3e7bbd2ba54ae89d5a46a662",
+      "bytes": 154478,
+      "words": 642,
+      "complete": 363,
+      "pronunciationOnly": 279
+    },
+    "kp": {
+      "path": "lexicon/shards/kp.json",
+      "sha256": "279fa87bec931f8d644843c27c0848477d477e235a0fc9d87469aead9815c7d8",
+      "bytes": 102,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "kr": {
+      "path": "lexicon/shards/kr.json",
+      "sha256": "4d53dacd655ef02fc50a00dc478c48f6bb156bc63b5ddc6b61f5bc81531c964e",
+      "bytes": 87759,
+      "words": 400,
+      "complete": 185,
+      "pronunciationOnly": 215
+    },
+    "ks": {
+      "path": "lexicon/shards/ks.json",
+      "sha256": "fc02396e96e88cf6606e4da379add705efe5b4696b7852c0e584b5eeb97148f2",
+      "bytes": 421,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "ku": {
+      "path": "lexicon/shards/ku.json",
+      "sha256": "60042790470a6d9da1b3d7b4aa1e54bd5b47458332f662beb9f545adf8668f80",
+      "bytes": 57811,
+      "words": 310,
+      "complete": 115,
+      "pronunciationOnly": 195
+    },
+    "kv": {
+      "path": "lexicon/shards/kv.json",
+      "sha256": "0665e03c57dd4643763df9684b444742c98dc24804733268686a41df25cf35a1",
+      "bytes": 2692,
+      "words": 9,
+      "complete": 6,
+      "pronunciationOnly": 3
+    },
+    "kw": {
+      "path": "lexicon/shards/kw.json",
+      "sha256": "7a5bd043b6906fd8a22368381412beeaa80ca6cb5b2749703d998acca41c6662",
+      "bytes": 6196,
+      "words": 24,
+      "complete": 16,
+      "pronunciationOnly": 8
+    },
+    "ky": {
+      "path": "lexicon/shards/ky.json",
+      "sha256": "3e8970ada45e1dc063190ee20c010953f3c9e471b39410e2d623dd0c464181a1",
+      "bytes": 8496,
+      "words": 45,
+      "complete": 23,
+      "pronunciationOnly": 22
+    },
+    "l": {
+      "path": "lexicon/shards/l.json",
+      "sha256": "66ef2b7fe81d74af85e154c25d4b6c54edb2c9588e116843464bdfbb41ae9607",
+      "bytes": 134,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "l_": {
+      "path": "lexicon/shards/l_.json",
+      "sha256": "3136bdea0bab1ad8cefa7e782c84815fcb07ce27a2b9516b1fb6e43701aff9f3",
+      "bytes": 1559,
+      "words": 13,
+      "complete": 4,
+      "pronunciationOnly": 9
+    },
+    "la": {
+      "path": "lexicon/shards/la.json",
+      "sha256": "bf2f2895c95bd46f8650e598121411417fe126b56d2989a82e89a5a76a87a04d",
+      "bytes": 339525,
+      "words": 1548,
+      "complete": 712,
+      "pronunciationOnly": 836
+    },
+    "lb": {
+      "path": "lexicon/shards/lb.json",
+      "sha256": "91489f25faa707e3c8f38b57ce8d66ac9e2b294e99fddc0a78d0c9538cffd106",
+      "bytes": 157,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "lc": {
+      "path": "lexicon/shards/lc.json",
+      "sha256": "5bf54915d5acc8f6e032726b965b5a0ef59cc401fa68ab7112527fcc1e646e8a",
+      "bytes": 393,
+      "words": 2,
+      "complete": 1,
+      "pronunciationOnly": 1
+    },
+    "le": {
+      "path": "lexicon/shards/le.json",
+      "sha256": "bce1e56c762f284bd7e7e467aecc149b7a024fdf2d0698fed2d315507deba001",
+      "bytes": 207024,
+      "words": 1151,
+      "complete": 387,
+      "pronunciationOnly": 764
+    },
+    "lh": {
+      "path": "lexicon/shards/lh.json",
+      "sha256": "8e8e9585e8e5824e116c5e3588809dc395b690e59659212379ea6519346dfdeb",
+      "bytes": 260,
+      "words": 3,
+      "complete": 0,
+      "pronunciationOnly": 3
+    },
+    "li": {
+      "path": "lexicon/shards/li.json",
+      "sha256": "ac3ee895dc254fb37b62e0166885bda82e8efef667371fe6e8b516bccf3729ad",
+      "bytes": 210088,
+      "words": 998,
+      "complete": 433,
+      "pronunciationOnly": 565
+    },
+    "lj": {
+      "path": "lexicon/shards/lj.json",
+      "sha256": "1c389462bff276b7389a8cf205fbaac0ce051a4dee90f9e8ec26e9c64e1b8279",
+      "bytes": 1019,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "ll": {
+      "path": "lexicon/shards/ll.json",
+      "sha256": "4698dfed05ee38d35f9038317dea6c39f908a0b8fc79bf092bf0e5c2af04cc44",
+      "bytes": 5597,
+      "words": 21,
+      "complete": 16,
+      "pronunciationOnly": 5
+    },
+    "ln": {
+      "path": "lexicon/shards/ln.json",
+      "sha256": "b6b840fb03fd6cf8caa09e8903b62517a37f95b3c841ede10535293ddc6dd4e5",
+      "bytes": 191,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "lo": {
+      "path": "lexicon/shards/lo.json",
+      "sha256": "2ea14b523fe5d7be9e56b019018c3eff85e5c350a2f4357eb34ba218e8a743f6",
+      "bytes": 183577,
+      "words": 906,
+      "complete": 393,
+      "pronunciationOnly": 513
+    },
+    "lp": {
+      "path": "lexicon/shards/lp.json",
+      "sha256": "9c2b35b5fa1224afd2b811ce1c29aa9a583904167e2d3dafb67dc2286448c7e6",
+      "bytes": 334,
+      "words": 2,
+      "complete": 1,
+      "pronunciationOnly": 1
+    },
+    "ls": {
+      "path": "lexicon/shards/ls.json",
+      "sha256": "8834b298d19943b4bd70ffb1d369a6388f345145c226715dfba85e2a111c99db",
+      "bytes": 610,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "lt": {
+      "path": "lexicon/shards/lt.json",
+      "sha256": "3c994b9c56119cb1990952c4d6e1be3b6e6ccb843785ee1b7bb49c87cbb2d7cc",
+      "bytes": 746,
+      "words": 4,
+      "complete": 2,
+      "pronunciationOnly": 2
+    },
+    "lu": {
+      "path": "lexicon/shards/lu.json",
+      "sha256": "6d62a3df4989d5bc48d01863104029b08f85a3aa5aa0427ebaa6d64f2e76569e",
+      "bytes": 119978,
+      "words": 521,
+      "complete": 278,
+      "pronunciationOnly": 243
+    },
+    "lw": {
+      "path": "lexicon/shards/lw.json",
+      "sha256": "36c7feb949a4a24679f55cae263d6412a85cfddabbc713bee166b1dad163e190",
+      "bytes": 250,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "lx": {
+      "path": "lexicon/shards/lx.json",
+      "sha256": "e9d9f4165e80b53642bdc46865bbc33e3f898a2def79d07475666f1491cfb9bb",
+      "bytes": 78,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "ly": {
+      "path": "lexicon/shards/ly.json",
+      "sha256": "e8261b75699b701b388e1aaf6af02b544622606f35310f288cfcfe1ee5b4d52a",
+      "bytes": 28355,
+      "words": 119,
+      "complete": 68,
+      "pronunciationOnly": 51
+    },
+    "m": {
+      "path": "lexicon/shards/m.json",
+      "sha256": "0eeef7efd325281712fcc0e872e1e16b86de95db283de2dca9fc5e7717ef1984",
+      "bytes": 134,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "m_": {
+      "path": "lexicon/shards/m_.json",
+      "sha256": "80ace85613a1d83c3130cc468c533359f5003f191f4407ec678e5f3f8a5abdba",
+      "bytes": 1208,
+      "words": 8,
+      "complete": 5,
+      "pronunciationOnly": 3
+    },
+    "ma": {
+      "path": "lexicon/shards/ma.json",
+      "sha256": "4726210a55d532bfde893986944cf4141795ee771f9518aacf42a3ccf452cd8a",
+      "bytes": 723634,
+      "words": 2955,
+      "complete": 1460,
+      "pronunciationOnly": 1495
+    },
+    "mb": {
+      "path": "lexicon/shards/mb.json",
+      "sha256": "1c566b3ffa0e49fd23e71b66c2678e00badfbe1dd6255292c48785236cafc4a0",
+      "bytes": 1056,
+      "words": 4,
+      "complete": 3,
+      "pronunciationOnly": 1
+    },
+    "mc": {
+      "path": "lexicon/shards/mc.json",
+      "sha256": "ad6a98a06b67f62c6ab8584fbd24c25c7febc9541eda23608a39dde2f2743f93",
+      "bytes": 173242,
+      "words": 1009,
+      "complete": 228,
+      "pronunciationOnly": 781
+    },
+    "md": {
+      "path": "lexicon/shards/md.json",
+      "sha256": "868da17510b24c4cbf1c1a42b9c5a53d33b3dd3e361403e8d264e1b3769627a6",
+      "bytes": 246,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "me": {
+      "path": "lexicon/shards/me.json",
+      "sha256": "b671829bc31c952ba7e5f1a8c7513653d2890082c551ac4c6938de5d5e45fe78",
+      "bytes": 286553,
+      "words": 1318,
+      "complete": 529,
+      "pronunciationOnly": 789
+    },
+    "mf": {
+      "path": "lexicon/shards/mf.json",
+      "sha256": "1db58f7a14fe93639c705ad3dbf64e43b2328205c9ee0ad4f6528324e1f06905",
+      "bytes": 92,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "mg": {
+      "path": "lexicon/shards/mg.json",
+      "sha256": "22f24750c6798c2424b49d498f32f6ce7141574aaac547141a3d4d0fd62b4c18",
+      "bytes": 335,
+      "words": 2,
+      "complete": 1,
+      "pronunciationOnly": 1
+    },
+    "mh": {
+      "path": "lexicon/shards/mh.json",
+      "sha256": "d3143922f7fd792dc9cbc673b86104ed9704ece0822f2342f96341a2dc70038d",
+      "bytes": 580,
+      "words": 3,
+      "complete": 2,
+      "pronunciationOnly": 1
+    },
+    "mi": {
+      "path": "lexicon/shards/mi.json",
+      "sha256": "78ee156911554282ce7147ac8f0c83a966754fa17733043d81fe2b3625cee0ce",
+      "bytes": 377079,
+      "words": 1485,
+      "complete": 699,
+      "pronunciationOnly": 786
+    },
+    "mj": {
+      "path": "lexicon/shards/mj.json",
+      "sha256": "33681f957d1eaafd66aa7ad8756f77e4adb79d6a21100749ab593b658cf7e6a5",
+      "bytes": 309,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "mk": {
+      "path": "lexicon/shards/mk.json",
+      "sha256": "29ef895ffb60c898427ad906c010960701214f8dc84de53f33a5b8c7cbbd0112",
+      "bytes": 101,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "ml": {
+      "path": "lexicon/shards/ml.json",
+      "sha256": "87ee785164f004dbe019d73110ad1dd8a2ae4d2b99b03be87119412bc2e22ccb",
+      "bytes": 2001,
+      "words": 5,
+      "complete": 5,
+      "pronunciationOnly": 0
+    },
+    "mm": {
+      "path": "lexicon/shards/mm.json",
+      "sha256": "51c2e4f12f0aa1e6b5b7a1e3090d1fc6e8bb5b511e1723132ae849d6ed91331d",
+      "bytes": 749,
+      "words": 3,
+      "complete": 3,
+      "pronunciationOnly": 0
+    },
+    "mn": {
+      "path": "lexicon/shards/mn.json",
+      "sha256": "f5059dea5313b1424813dcf71618d05a99ff014226f6efb6cea42fa48814eb7d",
+      "bytes": 1276,
+      "words": 3,
+      "complete": 3,
+      "pronunciationOnly": 0
+    },
+    "mo": {
+      "path": "lexicon/shards/mo.json",
+      "sha256": "5a2ce45447c86236a0995670a35192f33b0deb838625467346e48c69f6a67a24",
+      "bytes": 347080,
+      "words": 1490,
+      "complete": 692,
+      "pronunciationOnly": 798
+    },
+    "mp": {
+      "path": "lexicon/shards/mp.json",
+      "sha256": "cae58293bf6c3dd7dabea7ddfe13268581162619652c52724c6ca35997d724e5",
+      "bytes": 1024,
+      "words": 3,
+      "complete": 3,
+      "pronunciationOnly": 0
+    },
+    "mr": {
+      "path": "lexicon/shards/mr.json",
+      "sha256": "3e87326089eaa27ac6186ed52e7723ded43bcc4701e06c3a55a563942e3debf7",
+      "bytes": 3447,
+      "words": 16,
+      "complete": 8,
+      "pronunciationOnly": 8
+    },
+    "ms": {
+      "path": "lexicon/shards/ms.json",
+      "sha256": "e337e2c8ff9122c03100d51173d4b2d1955582f56c5d32fe160019b3fc0bd257",
+      "bytes": 852,
+      "words": 5,
+      "complete": 2,
+      "pronunciationOnly": 3
+    },
+    "mt": {
+      "path": "lexicon/shards/mt.json",
+      "sha256": "01b4de8631b63e2541702966c05dd3b38e1a22e5d5c8927dddf0870cec9baec9",
+      "bytes": 740,
+      "words": 3,
+      "complete": 2,
+      "pronunciationOnly": 1
+    },
+    "mu": {
+      "path": "lexicon/shards/mu.json",
+      "sha256": "8cf6538c573e29820241757559d1f4e60ed7b09b33947024b8faa2e78476685b",
+      "bytes": 133919,
+      "words": 673,
+      "complete": 239,
+      "pronunciationOnly": 434
+    },
+    "mw": {
+      "path": "lexicon/shards/mw.json",
+      "sha256": "c6e1a567d9889582a04394187aa7e8ecc0fcf1b02802fdcd8e4a25ec8aedcf5f",
+      "bytes": 365,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "my": {
+      "path": "lexicon/shards/my.json",
+      "sha256": "18aae7571ceaecb927a17de775c156eb4c5a3776811b6993f479bb4f3298afa2",
+      "bytes": 21008,
+      "words": 84,
+      "complete": 47,
+      "pronunciationOnly": 37
+    },
+    "n": {
+      "path": "lexicon/shards/n.json",
+      "sha256": "c00d8cd2a3d258f405d1e6fc78b5a6ebe6b10ac72095180a136f4e1d031b5dbf",
+      "bytes": 134,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "n_": {
+      "path": "lexicon/shards/n_.json",
+      "sha256": "cb422de222cdc4f512a62b7cd76a66423227a7a1a4fd2482d7e442d0990ec562",
+      "bytes": 1159,
+      "words": 9,
+      "complete": 4,
+      "pronunciationOnly": 5
+    },
+    "na": {
+      "path": "lexicon/shards/na.json",
+      "sha256": "0b6139e89dfc231d11d6e3e7de3e259f537fd846c77a33eee9e1a277806b68b7",
+      "bytes": 145391,
+      "words": 572,
+      "complete": 323,
+      "pronunciationOnly": 249
+    },
+    "nb": {
+      "path": "lexicon/shards/nb.json",
+      "sha256": "730b148108be6f28a0fc73f1e8613d1d0acc12c4a66b00c557cd1efa17b6769c",
+      "bytes": 1082,
+      "words": 3,
+      "complete": 3,
+      "pronunciationOnly": 0
+    },
+    "nd": {
+      "path": "lexicon/shards/nd.json",
+      "sha256": "292839799604c586dfed10fa2ff4ed97a17600b104dac3379372a0ee3ca7276d",
+      "bytes": 81,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "ne": {
+      "path": "lexicon/shards/ne.json",
+      "sha256": "c21f6a12ead348612c1f4ae5843763a74bf6384c2764735f504f735e2242ae25",
+      "bytes": 151152,
+      "words": 811,
+      "complete": 272,
+      "pronunciationOnly": 539
+    },
+    "nf": {
+      "path": "lexicon/shards/nf.json",
+      "sha256": "b238cd52e8d84fbb87731b1a14a65ec1a35a4a3b3c569e921a699d8953ac117b",
+      "bytes": 728,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "ng": {
+      "path": "lexicon/shards/ng.json",
+      "sha256": "cb5b0ab87581eaacc13833260fc02080519d800bf379deb3c1ab8384fb768475",
+      "bytes": 1665,
+      "words": 9,
+      "complete": 5,
+      "pronunciationOnly": 4
+    },
+    "ni": {
+      "path": "lexicon/shards/ni.json",
+      "sha256": "cd7c1e6896d78c0599e5875d6250a6976410afa13f74cfcc55cc13cfd2fe67f6",
+      "bytes": 95604,
+      "words": 463,
+      "complete": 205,
+      "pronunciationOnly": 258
+    },
+    "nk": {
+      "path": "lexicon/shards/nk.json",
+      "sha256": "80339b42379d205b5d1bc48d5541f225b15f90b062d6b2ea068b31556ad591e7",
+      "bytes": 94,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "nm": {
+      "path": "lexicon/shards/nm.json",
+      "sha256": "9a9021ac65cde4e3dae04510d10ccadbe410a6b100225e266dde132ceebcae15",
+      "bytes": 90,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "no": {
+      "path": "lexicon/shards/no.json",
+      "sha256": "500e8e8cd90858a870cb826935a511b432516dbe8d5f5592fb4e5d560970ff53",
+      "bytes": 213175,
+      "words": 911,
+      "complete": 373,
+      "pronunciationOnly": 538
+    },
+    "np": {
+      "path": "lexicon/shards/np.json",
+      "sha256": "7de418a3d018ca8b3ab3d04500b37ff242adbe08ac6ce34103dfc3e4ac221e3b",
+      "bytes": 304,
+      "words": 3,
+      "complete": 0,
+      "pronunciationOnly": 3
+    },
+    "nt": {
+      "path": "lexicon/shards/nt.json",
+      "sha256": "a5e85155facb148901d5cd0a666fbb30fa85ec7ca9087770ba1aaf61ac6b889d",
+      "bytes": 189,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "nu": {
+      "path": "lexicon/shards/nu.json",
+      "sha256": "1bd5e70c908ac4ace6228647142e99be25c7bd63ebfd436e11417073d8880c47",
+      "bytes": 46898,
+      "words": 205,
+      "complete": 102,
+      "pronunciationOnly": 103
+    },
+    "nv": {
+      "path": "lexicon/shards/nv.json",
+      "sha256": "4bfb210026a175262214972d6ca4dfd2b2119dc0369bbe85fad63a6a8ac72d8b",
+      "bytes": 1044,
+      "words": 4,
+      "complete": 2,
+      "pronunciationOnly": 2
+    },
+    "ny": {
+      "path": "lexicon/shards/ny.json",
+      "sha256": "fd64758142a2e25843faa10f8e393248784b832dce84ed08791714d2be5d3a45",
+      "bytes": 11133,
+      "words": 45,
+      "complete": 27,
+      "pronunciationOnly": 18
+    },
+    "o": {
+      "path": "lexicon/shards/o.json",
+      "sha256": "2a807438fba8a830f2b14548446d78b26618d399dfafa5dfbd52cd03274b1fd0",
+      "bytes": 79,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "o_": {
+      "path": "lexicon/shards/o_.json",
+      "sha256": "8c2000c6fe6ee8c249a473c85ba4aac4431cfe3a3e69904c94f257ce7d824dec",
+      "bytes": 11692,
+      "words": 128,
+      "complete": 2,
+      "pronunciationOnly": 126
+    },
+    "oa": {
+      "path": "lexicon/shards/oa.json",
+      "sha256": "3348f6f467b09d53b9706dc232a3a5bb74f64991906f65c6e65da26c6d229a24",
+      "bytes": 4602,
+      "words": 45,
+      "complete": 5,
+      "pronunciationOnly": 40
+    },
+    "ob": {
+      "path": "lexicon/shards/ob.json",
+      "sha256": "f07a7d4603d625859ebaf22576ca45299324642fbcd7cee2678e56cb238f86b6",
+      "bytes": 45911,
+      "words": 201,
+      "complete": 72,
+      "pronunciationOnly": 129
+    },
+    "oc": {
+      "path": "lexicon/shards/oc.json",
+      "sha256": "760a1612f2b718d7c7d5b2d7974b4ff6745aa598222d957cdb403f114362f9cb",
+      "bytes": 24288,
+      "words": 107,
+      "complete": 44,
+      "pronunciationOnly": 63
+    },
+    "od": {
+      "path": "lexicon/shards/od.json",
+      "sha256": "2d9e8d57dfcab1b7c9fcc306e565f3662bce9e75ae54645c78d4ac2cd7cbdbf4",
+      "bytes": 16124,
+      "words": 82,
+      "complete": 39,
+      "pronunciationOnly": 43
+    },
+    "oe": {
+      "path": "lexicon/shards/oe.json",
+      "sha256": "1652a8d041775988cc9c41ef947bcd2847486782e1f00bc66583e30f895f1fc6",
+      "bytes": 3236,
+      "words": 32,
+      "complete": 2,
+      "pronunciationOnly": 30
+    },
+    "of": {
+      "path": "lexicon/shards/of.json",
+      "sha256": "f78bffe0d6c9240c0933273cb48edb00e5d987414419929fc98fb634f10c135a",
+      "bytes": 18296,
+      "words": 90,
+      "complete": 38,
+      "pronunciationOnly": 52
+    },
+    "og": {
+      "path": "lexicon/shards/og.json",
+      "sha256": "69bf2315b86563ae80516d6888477f5747ab56341dabf4abbdd441c8e080a415",
+      "bytes": 7664,
+      "words": 33,
+      "complete": 20,
+      "pronunciationOnly": 13
+    },
+    "oh": {
+      "path": "lexicon/shards/oh.json",
+      "sha256": "edd26f890732c2a6421846dba1a63efc46fff881c5872534dfad90ddba43c9c5",
+      "bytes": 6938,
+      "words": 51,
+      "complete": 10,
+      "pronunciationOnly": 41
+    },
+    "oi": {
+      "path": "lexicon/shards/oi.json",
+      "sha256": "f253d3dacba3e33d40f4536764a0bd85e265c4fa249ce30309143e2b61a00121",
+      "bytes": 1777,
+      "words": 20,
+      "complete": 1,
+      "pronunciationOnly": 19
+    },
+    "oj": {
+      "path": "lexicon/shards/oj.json",
+      "sha256": "e3bb9aeb5591bfcf46ffca50acc71ad44e74d2eda6aeaf379c5e69ba36e2ec73",
+      "bytes": 1563,
+      "words": 6,
+      "complete": 6,
+      "pronunciationOnly": 0
+    },
+    "ok": {
+      "path": "lexicon/shards/ok.json",
+      "sha256": "594db8881e4583e93ba3af684a6f18abe07240704f6cd5c44fae19f03f4f8d95",
+      "bytes": 14901,
+      "words": 55,
+      "complete": 37,
+      "pronunciationOnly": 18
+    },
+    "ol": {
+      "path": "lexicon/shards/ol.json",
+      "sha256": "ccb5f628ecb35193eb3ec617d561918f84aa0988feaa63b53eb43332c0d18fab",
+      "bytes": 49414,
+      "words": 201,
+      "complete": 110,
+      "pronunciationOnly": 91
+    },
+    "om": {
+      "path": "lexicon/shards/om.json",
+      "sha256": "73fe32d228cb73c2ea6ded867b095fc9fe3aa212c9c75bde77a27e06f32fb5cb",
+      "bytes": 14187,
+      "words": 54,
+      "complete": 34,
+      "pronunciationOnly": 20
+    },
+    "on": {
+      "path": "lexicon/shards/on.json",
+      "sha256": "4f3d11c0caf4f010be751576adb03481e6fe1dbdd643514b378b2eebf43f457a",
+      "bytes": 23530,
+      "words": 107,
+      "complete": 50,
+      "pronunciationOnly": 57
+    },
+    "oo": {
+      "path": "lexicon/shards/oo.json",
+      "sha256": "577eb8de0e7f97255cdbd3dec502a0e0b33e00770f68d402dcd46bb6ec38aeca",
+      "bytes": 2504,
+      "words": 18,
+      "complete": 9,
+      "pronunciationOnly": 9
+    },
+    "op": {
+      "path": "lexicon/shards/op.json",
+      "sha256": "c9459f8fdb25521d7b8593a705092fd7200dd5d8be3b4bc36718d3c616591f52",
+      "bytes": 43787,
+      "words": 183,
+      "complete": 87,
+      "pronunciationOnly": 96
+    },
+    "oq": {
+      "path": "lexicon/shards/oq.json",
+      "sha256": "c42b2199442fefd467159b9cb17b959736893dc33ec89568b65e2270439d17f4",
+      "bytes": 1037,
+      "words": 3,
+      "complete": 3,
+      "pronunciationOnly": 0
+    },
+    "or": {
+      "path": "lexicon/shards/or.json",
+      "sha256": "9c00cba533cefa0f19d2290a481b0035e46e6a543b1567a0cb96b3e6f4a5cf1a",
+      "bytes": 107342,
+      "words": 379,
+      "complete": 233,
+      "pronunciationOnly": 146
+    },
+    "os": {
+      "path": "lexicon/shards/os.json",
+      "sha256": "d70643990c62a5f970f01f14213c95e5e89985c14cbf445b96824a6d5b6a0080",
+      "bytes": 43844,
+      "words": 177,
+      "complete": 99,
+      "pronunciationOnly": 78
+    },
+    "ot": {
+      "path": "lexicon/shards/ot.json",
+      "sha256": "340c3a84670a4fc9399a9d0597397ca90fc76791c0f41e020bd80fba959fc57b",
+      "bytes": 13952,
+      "words": 64,
+      "complete": 36,
+      "pronunciationOnly": 28
+    },
+    "ou": {
+      "path": "lexicon/shards/ou.json",
+      "sha256": "cd298893b567b89f4d710b64784fa1d315a836712019bc7f5a02b75fed7a3a9c",
+      "bytes": 25736,
+      "words": 273,
+      "complete": 1,
+      "pronunciationOnly": 272
+    },
+    "ov": {
+      "path": "lexicon/shards/ov.json",
+      "sha256": "31868434b2690be2b095457f1aab2f7eacc27863a152ade34a847681e7d46fb2",
+      "bytes": 46571,
+      "words": 412,
+      "complete": 17,
+      "pronunciationOnly": 395
+    },
+    "ow": {
+      "path": "lexicon/shards/ow.json",
+      "sha256": "cbe68dfdc5cad569b92d8fcc78b06b119663b8c7d65f4c8d2a32efb380bc3fd0",
+      "bytes": 2749,
+      "words": 34,
+      "complete": 0,
+      "pronunciationOnly": 34
+    },
+    "ox": {
+      "path": "lexicon/shards/ox.json",
+      "sha256": "d003a946f929c1db1f2247f08340241de9beb44466d4657d4653154904b382c0",
+      "bytes": 3718,
+      "words": 39,
+      "complete": 0,
+      "pronunciationOnly": 39
+    },
+    "oy": {
+      "path": "lexicon/shards/oy.json",
+      "sha256": "f685c2a6777ebda4e016391653b9114c915bfef57fb7756e91f200a9117ca103",
+      "bytes": 910,
+      "words": 9,
+      "complete": 1,
+      "pronunciationOnly": 8
+    },
+    "oz": {
+      "path": "lexicon/shards/oz.json",
+      "sha256": "f67d521069ab4fb1366834280f6af573a6cd891a574403ceb15fcf771086753e",
+      "bytes": 6338,
+      "words": 27,
+      "complete": 19,
+      "pronunciationOnly": 8
+    },
+    "p": {
+      "path": "lexicon/shards/p.json",
+      "sha256": "6e4f4665a3bc1e15973d7c1cbbfea359238b73791cae5d5579855da0ce999a3b",
+      "bytes": 130,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "p_": {
+      "path": "lexicon/shards/p_.json",
+      "sha256": "293dab7fda44943514616ccfd3d678009be26f278dbbc6997f26be2caff6438a",
+      "bytes": 943,
+      "words": 5,
+      "complete": 5,
+      "pronunciationOnly": 0
+    },
+    "pa": {
+      "path": "lexicon/shards/pa.json",
+      "sha256": "dc693e9dd2bec59b76640f54f2b6317bbfb4636c496bde751ef94a071fdfbdac",
+      "bytes": 395928,
+      "words": 1565,
+      "complete": 804,
+      "pronunciationOnly": 761
+    },
+    "pc": {
+      "path": "lexicon/shards/pc.json",
+      "sha256": "764f7780a44e92218f2d094ea9afbfddb43508f76336f6ad6080452773914807",
+      "bytes": 844,
+      "words": 3,
+      "complete": 3,
+      "pronunciationOnly": 0
+    },
+    "pd": {
+      "path": "lexicon/shards/pd.json",
+      "sha256": "299d01ec50fc3a3ca36603d19949c129b50e537dc2b6ccc59d671418d749c644",
+      "bytes": 90,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "pe": {
+      "path": "lexicon/shards/pe.json",
+      "sha256": "299960795081f43bfba92b874e83008b54c7771bc1f9245ac22bc00c63cd8d11",
+      "bytes": 259547,
+      "words": 1317,
+      "complete": 441,
+      "pronunciationOnly": 876
+    },
+    "pf": {
+      "path": "lexicon/shards/pf.json",
+      "sha256": "5f6dbeb7e175ebed91f5c91ea37d896db8630e736e92c4bcfc6e397ba64a3d41",
+      "bytes": 3548,
+      "words": 41,
+      "complete": 0,
+      "pronunciationOnly": 41
+    },
+    "pg": {
+      "path": "lexicon/shards/pg.json",
+      "sha256": "fc1bf4aebcd7c9043af6ae0882b56fbb77c32cd16297fb18fb03fd452ef9eebf",
+      "bytes": 756,
+      "words": 3,
+      "complete": 2,
+      "pronunciationOnly": 1
+    },
+    "ph": {
+      "path": "lexicon/shards/ph.json",
+      "sha256": "e229720fe67e229b4193dd5f55e27274dd1711fee2325f8535e61e24b7f81918",
+      "bytes": 100533,
+      "words": 329,
+      "complete": 202,
+      "pronunciationOnly": 127
+    },
+    "pi": {
+      "path": "lexicon/shards/pi.json",
+      "sha256": "7c5928a110d29d0370f8e8c55f1fa69a4cd83021fea4299d0db4103cbb7c5d42",
+      "bytes": 156478,
+      "words": 717,
+      "complete": 336,
+      "pronunciationOnly": 381
+    },
+    "pj": {
+      "path": "lexicon/shards/pj.json",
+      "sha256": "11f724c99fc9f118ed732f1535e2df6fd1ea6703652152f5dc2b94ddb96e54d6",
+      "bytes": 305,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "pl": {
+      "path": "lexicon/shards/pl.json",
+      "sha256": "ae5758f12866ce88bbc87004318db5fadf5def4da92e56a174772621473620bd",
+      "bytes": 104951,
+      "words": 495,
+      "complete": 205,
+      "pronunciationOnly": 290
+    },
+    "pm": {
+      "path": "lexicon/shards/pm.json",
+      "sha256": "6ec5cb0757c928ee436a368810be555eec43e2059074daf9f8ab3ac705751315",
+      "bytes": 79,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "pn": {
+      "path": "lexicon/shards/pn.json",
+      "sha256": "8aee4c04e0daeee9c2bf2d4b27b243b2c407b76ff90d42653e7b4e4d23449829",
+      "bytes": 595,
+      "words": 6,
+      "complete": 0,
+      "pronunciationOnly": 6
+    },
+    "po": {
+      "path": "lexicon/shards/po.json",
+      "sha256": "2f0da0846ffed0da939cccc43245bad4be34a186d0d99454ce7347247e61a4fc",
+      "bytes": 259412,
+      "words": 1109,
+      "complete": 510,
+      "pronunciationOnly": 599
+    },
+    "pp": {
+      "path": "lexicon/shards/pp.json",
+      "sha256": "30d4c4e9061a9adcd43be3c350791be3006604f5c977e12db3899b00ae3c5dbe",
+      "bytes": 90,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "pr": {
+      "path": "lexicon/shards/pr.json",
+      "sha256": "97021c3c953102f5b278892c10f99b5e721e367f51f9c4a151c15386e7367c73",
+      "bytes": 441510,
+      "words": 1585,
+      "complete": 737,
+      "pronunciationOnly": 848
+    },
+    "ps": {
+      "path": "lexicon/shards/ps.json",
+      "sha256": "7242adbb4a8eb938034982490734d2f9771f76b25e3e252feb3de3dc6eedc921",
+      "bytes": 6489,
+      "words": 60,
+      "complete": 1,
+      "pronunciationOnly": 59
+    },
+    "pt": {
+      "path": "lexicon/shards/pt.json",
+      "sha256": "e1893ada82e5309cc5945a6d784ede9988088fcfe5c6f7cedb115d8857fdc006",
+      "bytes": 1254,
+      "words": 10,
+      "complete": 1,
+      "pronunciationOnly": 9
+    },
+    "pu": {
+      "path": "lexicon/shards/pu.json",
+      "sha256": "0898c07086ea2888832eab527b9e6939e61e8af77bd95c9b688787b49d8f2500",
+      "bytes": 86895,
+      "words": 452,
+      "complete": 173,
+      "pronunciationOnly": 279
+    },
+    "pv": {
+      "path": "lexicon/shards/pv.json",
+      "sha256": "ee80f93ee85e6b74ac70dd8a60e742ef587ea61b6ffef3ca7c2d0b1395284805",
+      "bytes": 358,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "py": {
+      "path": "lexicon/shards/py.json",
+      "sha256": "a7014e0372bd9cf820e16c5c2ed51e0979c82e9ce9792f21a374b4d94575ed3e",
+      "bytes": 11309,
+      "words": 49,
+      "complete": 25,
+      "pronunciationOnly": 24
+    },
+    "q": {
+      "path": "lexicon/shards/q.json",
+      "sha256": "fec1b8340bbb8dd34a6660bb2b5978db4138e266fac69e96b1caa0979fe3c8a7",
+      "bytes": 72,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "q_": {
+      "path": "lexicon/shards/q_.json",
+      "sha256": "888bc5014f97816b2525e50114f33cba7651bee7f2865212b068cf3019da5fb3",
+      "bytes": 302,
+      "words": 4,
+      "complete": 0,
+      "pronunciationOnly": 4
+    },
+    "qa": {
+      "path": "lexicon/shards/qa.json",
+      "sha256": "49968a9cd5eb0642995d44943eacbe11e464237e73707352ff83eaea79412cd9",
+      "bytes": 1487,
+      "words": 6,
+      "complete": 5,
+      "pronunciationOnly": 1
+    },
+    "qi": {
+      "path": "lexicon/shards/qi.json",
+      "sha256": "81d2e2e92e095c15c5193ae39553902cc8a650786a562180c028ff11948f968a",
+      "bytes": 1909,
+      "words": 11,
+      "complete": 6,
+      "pronunciationOnly": 5
+    },
+    "qm": {
+      "path": "lexicon/shards/qm.json",
+      "sha256": "3f09c83c870d651d1890c7961cd6adcc605a598e889c5f389ac742f2bbf11cd0",
+      "bytes": 93,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "qo": {
+      "path": "lexicon/shards/qo.json",
+      "sha256": "c438066a7cc9cdcbc3d9278cca33488bdb97ed052d062da6e606b5d128f59b06",
+      "bytes": 191,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "qu": {
+      "path": "lexicon/shards/qu.json",
+      "sha256": "2ed9de665a7759034af1ee809808dea542d81b1cb40b01fe2edb7fc1a7a3c510",
+      "bytes": 102086,
+      "words": 413,
+      "complete": 211,
+      "pronunciationOnly": 202
+    },
+    "r": {
+      "path": "lexicon/shards/r.json",
+      "sha256": "ba78d7735eec605f86f91b15368d36c6a01a558ac1f5bb0a9a34ea56700e81ed",
+      "bytes": 68,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "r_": {
+      "path": "lexicon/shards/r_.json",
+      "sha256": "076b3028815a1c1ac0f3f71be2db5af88bad31c6fbce39cfccf6534a4d2621d0",
+      "bytes": 595,
+      "words": 4,
+      "complete": 3,
+      "pronunciationOnly": 1
+    },
+    "ra": {
+      "path": "lexicon/shards/ra.json",
+      "sha256": "62c659ba1c62980918f674eff3d7165e61be38f246b16f9d79eeba8a96099f9d",
+      "bytes": 231596,
+      "words": 1077,
+      "complete": 503,
+      "pronunciationOnly": 574
+    },
+    "rc": {
+      "path": "lexicon/shards/rc.json",
+      "sha256": "5e487250396560aff68de8ba1f39f42855eba292a9e53f9c9a2b22245a5a6caf",
+      "bytes": 86,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "re": {
+      "path": "lexicon/shards/re.json",
+      "sha256": "4cd116737fa20036a85b9755d11dfa6060b7c061206e1a7cbad1c79f9fc3717f",
+      "bytes": 699189,
+      "words": 2897,
+      "complete": 1125,
+      "pronunciationOnly": 1772
+    },
+    "rh": {
+      "path": "lexicon/shards/rh.json",
+      "sha256": "e9bbdd64cfbc20ed44e32c70b43cec977b41742d27f14c758633218957be6fcd",
+      "bytes": 9108,
+      "words": 102,
+      "complete": 0,
+      "pronunciationOnly": 102
+    },
+    "ri": {
+      "path": "lexicon/shards/ri.json",
+      "sha256": "d28978f0f80e4c4324797c7b7975226b7217e497f0b75c49714325dd4ab20d09",
+      "bytes": 131315,
+      "words": 708,
+      "complete": 278,
+      "pronunciationOnly": 430
+    },
+    "rn": {
+      "path": "lexicon/shards/rn.json",
+      "sha256": "4d15a1b756e295da1aa35e7cb7697a142cba1be052c8cadc799c3c5c6495869f",
+      "bytes": 86,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "ro": {
+      "path": "lexicon/shards/ro.json",
+      "sha256": "adf3017c98f34ba05d5bd128bff715665e28464ce97c321fa8a811a88121397e",
+      "bytes": 251840,
+      "words": 1243,
+      "complete": 516,
+      "pronunciationOnly": 727
+    },
+    "rp": {
+      "path": "lexicon/shards/rp.json",
+      "sha256": "17a0c2164edaed54f584d553137accc1a1146e8408489b5995bfa29c7c8f1070",
+      "bytes": 178,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "rs": {
+      "path": "lexicon/shards/rs.json",
+      "sha256": "132fa263026d8517b9d10708b0e5bf854cc6a828db7a3aceadb5ca62139a7927",
+      "bytes": 101,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "rt": {
+      "path": "lexicon/shards/rt.json",
+      "sha256": "e4058ce75241af668a9a399cb63668ab21c259c5943704091bafa8fb7f90603a",
+      "bytes": 86,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "ru": {
+      "path": "lexicon/shards/ru.json",
+      "sha256": "03b39ff92baa9fcc92e96c427d340ee78b8eed75bdac1fb06ac0eaf68aae59b1",
+      "bytes": 119071,
+      "words": 545,
+      "complete": 279,
+      "pronunciationOnly": 266
+    },
+    "rw": {
+      "path": "lexicon/shards/rw.json",
+      "sha256": "bcb23ab5ddbde3d86e7a91439b8bbc0ab39a2c395f1d8811f6c7048475478481",
+      "bytes": 2535,
+      "words": 6,
+      "complete": 5,
+      "pronunciationOnly": 1
+    },
+    "ry": {
+      "path": "lexicon/shards/ry.json",
+      "sha256": "2ae99c3ff69e905f9fb016296ec9ca7fd20b2ccde8348b637d9d572d9a64f414",
+      "bytes": 15358,
+      "words": 72,
+      "complete": 38,
+      "pronunciationOnly": 34
+    },
+    "rz": {
+      "path": "lexicon/shards/rz.json",
+      "sha256": "b9a5e76356ef7782af47e7f588c02202648ddac79c95b71d535b6807cefcc559",
+      "bytes": 665,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "s": {
+      "path": "lexicon/shards/s.json",
+      "sha256": "4f24b1e9e65cc44cb67558a1710434b90705e343cf564ad777c71b5c8694e213",
+      "bytes": 134,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "s_": {
+      "path": "lexicon/shards/s_.json",
+      "sha256": "e9786d8dfa514547f7620f287d698db6acdbe3bc539144586097028010ca388c",
+      "bytes": 638,
+      "words": 3,
+      "complete": 3,
+      "pronunciationOnly": 0
+    },
+    "sa": {
+      "path": "lexicon/shards/sa.json",
+      "sha256": "6d9bf090d27b280fa8feee8f8fe68ce7a710fe82e68b5270b1cedd75e3c378c2",
+      "bytes": 342768,
+      "words": 1393,
+      "complete": 738,
+      "pronunciationOnly": 655
+    },
+    "sb": {
+      "path": "lexicon/shards/sb.json",
+      "sha256": "2d7d7ef5369f92a5cb7abfd9dfd2fb876951cf1c08709b4462aa1991f3f99903",
+      "bytes": 480,
+      "words": 3,
+      "complete": 1,
+      "pronunciationOnly": 2
+    },
+    "sc": {
+      "path": "lexicon/shards/sc.json",
+      "sha256": "f0a94a9cf9bb367041b4530511a4f8c6a2bc1df24e853aacc7ce579cede1d592",
+      "bytes": 211728,
+      "words": 1488,
+      "complete": 254,
+      "pronunciationOnly": 1234
+    },
+    "sd": {
+      "path": "lexicon/shards/sd.json",
+      "sha256": "61e81ad310f747678a8c5f8a37fd7cde45aea5790fdd4c3241391b7446987145",
+      "bytes": 90,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "se": {
+      "path": "lexicon/shards/se.json",
+      "sha256": "aa3d81158039cb38ff0081b8fb1580d3ce99a38c6e75a5fc035e439a27f72eec",
+      "bytes": 258869,
+      "words": 1319,
+      "complete": 428,
+      "pronunciationOnly": 891
+    },
+    "sf": {
+      "path": "lexicon/shards/sf.json",
+      "sha256": "ec7a4209240bd8f9bc13e71489f6c4716db31be9949e7ec91343ab6abf152270",
+      "bytes": 1249,
+      "words": 6,
+      "complete": 3,
+      "pronunciationOnly": 3
+    },
+    "sg": {
+      "path": "lexicon/shards/sg.json",
+      "sha256": "779f64bb872e966edd53ab9f3fd46ec7d118b1d487e08165ea47697bd0847fbb",
+      "bytes": 894,
+      "words": 4,
+      "complete": 2,
+      "pronunciationOnly": 2
+    },
+    "sh": {
+      "path": "lexicon/shards/sh.json",
+      "sha256": "9725f265723177628d4a5b640ad0020530bf3e054b5a93f9be9ad4edfbfacf7a",
+      "bytes": 257535,
+      "words": 1369,
+      "complete": 575,
+      "pronunciationOnly": 794
+    },
+    "si": {
+      "path": "lexicon/shards/si.json",
+      "sha256": "675cae00516b3ab707978ab4c56ab1e5d4e612d2104163f733fe00a5a2bec0ac",
+      "bytes": 170622,
+      "words": 824,
+      "complete": 346,
+      "pronunciationOnly": 478
+    },
+    "sj": {
+      "path": "lexicon/shards/sj.json",
+      "sha256": "368e574c2862459b46a78877dce6d7ed3a734948559911d404769f668ba830bf",
+      "bytes": 2075,
+      "words": 7,
+      "complete": 5,
+      "pronunciationOnly": 2
+    },
+    "sk": {
+      "path": "lexicon/shards/sk.json",
+      "sha256": "e513eedb4a484b659299af24a7d5d8bac7bdf29761ec73339e971f2548f28a74",
+      "bytes": 60795,
+      "words": 259,
+      "complete": 131,
+      "pronunciationOnly": 128
+    },
+    "sl": {
+      "path": "lexicon/shards/sl.json",
+      "sha256": "46a2ca65a4936546c0568ae2aa3ce858f0638f6ba62812b891d72c13439327cc",
+      "bytes": 86214,
+      "words": 398,
+      "complete": 191,
+      "pronunciationOnly": 207
+    },
+    "sm": {
+      "path": "lexicon/shards/sm.json",
+      "sha256": "56e205524b75d8ea8be10994cfd2b01d4b36ebfc65936e56ed5330b35adb644f",
+      "bytes": 54084,
+      "words": 241,
+      "complete": 116,
+      "pronunciationOnly": 125
+    },
+    "sn": {
+      "path": "lexicon/shards/sn.json",
+      "sha256": "0b6510c5b426ed31acb6c823e16e1d5c6aa9bc91fc5a9393718bdb93fe0f7962",
+      "bytes": 46047,
+      "words": 244,
+      "complete": 93,
+      "pronunciationOnly": 151
+    },
+    "so": {
+      "path": "lexicon/shards/so.json",
+      "sha256": "053ee903bddde01f8a6948608f8a8ee386388ee1d151e82747d7c839083030ce",
+      "bytes": 178083,
+      "words": 816,
+      "complete": 358,
+      "pronunciationOnly": 458
+    },
+    "sp": {
+      "path": "lexicon/shards/sp.json",
+      "sha256": "71b5a311d86a45742961aa6ae2fe10f18da397d90ec68a67ddeb6ef8b5c7f82b",
+      "bytes": 188399,
+      "words": 892,
+      "complete": 353,
+      "pronunciationOnly": 539
+    },
+    "sq": {
+      "path": "lexicon/shards/sq.json",
+      "sha256": "155b07dd6aca7e8da3d56169d224f496ae20a6811a25b9a1e44057544fdcd3f7",
+      "bytes": 18039,
+      "words": 85,
+      "complete": 35,
+      "pronunciationOnly": 50
+    },
+    "sr": {
+      "path": "lexicon/shards/sr.json",
+      "sha256": "a4c8eeaa2e2a712570c9389a91518bd235c9c628c57b9331e502f15280a9fae1",
+      "bytes": 6178,
+      "words": 21,
+      "complete": 14,
+      "pronunciationOnly": 7
+    },
+    "ss": {
+      "path": "lexicon/shards/ss.json",
+      "sha256": "1af98bca82c08020b788cfdd8dde04393472b4ec1bfedbb50797919c6f2d6a45",
+      "bytes": 978,
+      "words": 3,
+      "complete": 3,
+      "pronunciationOnly": 0
+    },
+    "st": {
+      "path": "lexicon/shards/st.json",
+      "sha256": "c6bb17bf99bdfd941cbb3175dd6056ad1f6812bb870c29e7e88b5151341ef3e7",
+      "bytes": 487380,
+      "words": 2323,
+      "complete": 859,
+      "pronunciationOnly": 1464
+    },
+    "su": {
+      "path": "lexicon/shards/su.json",
+      "sha256": "16bf1e17889ed732546331280e4a4faabf38e90d9d6617b514da5c4b84c161da",
+      "bytes": 234149,
+      "words": 1088,
+      "complete": 390,
+      "pronunciationOnly": 698
+    },
+    "sv": {
+      "path": "lexicon/shards/sv.json",
+      "sha256": "524de90116ac706798a14c2b3ff3db00bc4f040dfd56f8ff973d8c4eb9834344",
+      "bytes": 5443,
+      "words": 18,
+      "complete": 13,
+      "pronunciationOnly": 5
+    },
+    "sw": {
+      "path": "lexicon/shards/sw.json",
+      "sha256": "aad8bf3c8cd21f4be56318f5d7e352ca49380b65b744c203928b4bd3eaa7271a",
+      "bytes": 67636,
+      "words": 358,
+      "complete": 129,
+      "pronunciationOnly": 229
+    },
+    "sy": {
+      "path": "lexicon/shards/sy.json",
+      "sha256": "cab4c311faff5bd794c4391c3e90112ecde87186dbcdd4fee6d318de84129a6d",
+      "bytes": 64572,
+      "words": 227,
+      "complete": 126,
+      "pronunciationOnly": 101
+    },
+    "sz": {
+      "path": "lexicon/shards/sz.json",
+      "sha256": "0c8083521c273d4aded37175a38319642c69f7e6d225e0fd8329efa776249b36",
+      "bytes": 9725,
+      "words": 39,
+      "complete": 23,
+      "pronunciationOnly": 16
+    },
+    "t": {
+      "path": "lexicon/shards/t.json",
+      "sha256": "e2faf7edecf45baa8bed1e62b959c3d2f28825d3bb3c4e7b16a1a405f3b3c3cb",
+      "bytes": 130,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "t_": {
+      "path": "lexicon/shards/t_.json",
+      "sha256": "e930915e2019be1454ac1f213dc977dbe9973d6640f10849b047aa68129df796",
+      "bytes": 1436,
+      "words": 10,
+      "complete": 5,
+      "pronunciationOnly": 5
+    },
+    "ta": {
+      "path": "lexicon/shards/ta.json",
+      "sha256": "511f75b338174adbd40b20e25e2cf23d76e4c34ea69734269f10370dc3fd2a9a",
+      "bytes": 191443,
+      "words": 800,
+      "complete": 438,
+      "pronunciationOnly": 362
+    },
+    "tb": {
+      "path": "lexicon/shards/tb.json",
+      "sha256": "ddf0aa1b1ddf22177c7c73123f3c5a288d6ee0d4511ea44e34215eab907882ae",
+      "bytes": 717,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "tc": {
+      "path": "lexicon/shards/tc.json",
+      "sha256": "ce03fa756b9c434a4076a1babe3a909fa0b0181976bad17b1f6fafa6d1642257",
+      "bytes": 724,
+      "words": 4,
+      "complete": 1,
+      "pronunciationOnly": 3
+    },
+    "te": {
+      "path": "lexicon/shards/te.json",
+      "sha256": "552249a6735cac1fdaee7934c75fb988a21d70359ba311049bb6568f48b2e78e",
+      "bytes": 167243,
+      "words": 859,
+      "complete": 277,
+      "pronunciationOnly": 582
+    },
+    "th": {
+      "path": "lexicon/shards/th.json",
+      "sha256": "747265e413f4f40dddafc7adf4f71e7192656ccd3c547e20e4d1df020887da9c",
+      "bytes": 126976,
+      "words": 709,
+      "complete": 261,
+      "pronunciationOnly": 448
+    },
+    "ti": {
+      "path": "lexicon/shards/ti.json",
+      "sha256": "24fb0dc4bc9a859fffe8abf7470dead2792c0914ea73f4f30f2ff0db43e3739b",
+      "bytes": 92457,
+      "words": 447,
+      "complete": 217,
+      "pronunciationOnly": 230
+    },
+    "tj": {
+      "path": "lexicon/shards/tj.json",
+      "sha256": "116ff16e9eb625c765d78589c10a8a61e8f670c0a0869efc5540863c41744bc9",
+      "bytes": 172,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "tk": {
+      "path": "lexicon/shards/tk.json",
+      "sha256": "c53832737c05ec324ca282750c8811dffd7369c22163c674171f7c670dc0bb24",
+      "bytes": 152,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "tl": {
+      "path": "lexicon/shards/tl.json",
+      "sha256": "7f22cfeb5e9753bedfbaf84645d3efcd9ac43b0fff118bb5c382db976ece09b7",
+      "bytes": 1041,
+      "words": 3,
+      "complete": 2,
+      "pronunciationOnly": 1
+    },
+    "to": {
+      "path": "lexicon/shards/to.json",
+      "sha256": "676002c66c89c2e3ebd25704b99ef0f297dc6283596f585a6125d78918849124",
+      "bytes": 168832,
+      "words": 779,
+      "complete": 366,
+      "pronunciationOnly": 413
+    },
+    "tr": {
+      "path": "lexicon/shards/tr.json",
+      "sha256": "59c6b90de198f31ab1b0d282ab1b16f4dbbb20d55e598fb56750841da32252f3",
+      "bytes": 281516,
+      "words": 1142,
+      "complete": 516,
+      "pronunciationOnly": 626
+    },
+    "ts": {
+      "path": "lexicon/shards/ts.json",
+      "sha256": "f09066cdea93a04b527718fb34139716702b67f189b389af5b73c6cd03740508",
+      "bytes": 7754,
+      "words": 35,
+      "complete": 19,
+      "pronunciationOnly": 16
+    },
+    "tt": {
+      "path": "lexicon/shards/tt.json",
+      "sha256": "ef2ca3fc6d06485131982e48d4219ea7138af3e5980c05edd33bdf18c0107dae",
+      "bytes": 301,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "tu": {
+      "path": "lexicon/shards/tu.json",
+      "sha256": "73b9ab354cb64083262b79d07af36a4087fdde33035730cb76ad1d516df3e43d",
+      "bytes": 64888,
+      "words": 368,
+      "complete": 135,
+      "pronunciationOnly": 233
+    },
+    "tv": {
+      "path": "lexicon/shards/tv.json",
+      "sha256": "c3f0cbc771e3bf8e95d4c4c442fea766da2280d40779c8b927acd21bee6b60fa",
+      "bytes": 1578,
+      "words": 6,
+      "complete": 5,
+      "pronunciationOnly": 1
+    },
+    "tw": {
+      "path": "lexicon/shards/tw.json",
+      "sha256": "c6f936900b2d2333f53389a53dead383d31c6ca3b74ff69fd0da6d47b0f2a4ce",
+      "bytes": 20720,
+      "words": 120,
+      "complete": 40,
+      "pronunciationOnly": 80
+    },
+    "ty": {
+      "path": "lexicon/shards/ty.json",
+      "sha256": "e1c84ad7b3e1cbbaf34db8756906e6aafbac23024bbd7d6a1b7350ddd5fd12f3",
+      "bytes": 20328,
+      "words": 88,
+      "complete": 46,
+      "pronunciationOnly": 42
+    },
+    "u": {
+      "path": "lexicon/shards/u.json",
+      "sha256": "29b1e172ed87237b73b56d4d6e8aff19579b0b4f0e448747c6f265c0f8e633df",
+      "bytes": 68,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "u_": {
+      "path": "lexicon/shards/u_.json",
+      "sha256": "d859db4a5d1c350cd3ccf3f0d1ccad67f25cac274be4fe39209cfe9d1daf4ad0",
+      "bytes": 1345,
+      "words": 11,
+      "complete": 4,
+      "pronunciationOnly": 7
+    },
+    "ua": {
+      "path": "lexicon/shards/ua.json",
+      "sha256": "67e3bf15c855f18321f0fe179c55f0c1af8f4ee67fe819b511585cb93fd77266",
+      "bytes": 175,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "ub": {
+      "path": "lexicon/shards/ub.json",
+      "sha256": "013b0be178900e6d2e8abfe9c5a50ca8e88f7e7fb4f9e614440c3a439af68554",
+      "bytes": 637,
+      "words": 5,
+      "complete": 1,
+      "pronunciationOnly": 4
+    },
+    "uc": {
+      "path": "lexicon/shards/uc.json",
+      "sha256": "e63ae5517ee02a6a35acb6a50d49afdf178bf62dfbbdb83c43245837d7d7f052",
+      "bytes": 640,
+      "words": 5,
+      "complete": 1,
+      "pronunciationOnly": 4
+    },
+    "ud": {
+      "path": "lexicon/shards/ud.json",
+      "sha256": "507c3f10468055ffe43fa4b6797dfdb2c124e4993fb77dbaf90d4343696d1794",
+      "bytes": 2652,
+      "words": 15,
+      "complete": 7,
+      "pronunciationOnly": 8
+    },
+    "ue": {
+      "path": "lexicon/shards/ue.json",
+      "sha256": "cf2441fb8a1ec7a8b43c8f1d6b3f800d4a74b8e3526e07a4a634e93426d7113b",
+      "bytes": 2576,
+      "words": 15,
+      "complete": 5,
+      "pronunciationOnly": 10
+    },
+    "uf": {
+      "path": "lexicon/shards/uf.json",
+      "sha256": "a3be2057dc57007c0a11c65a4d15b5b02ecbbe6518bf575965d79318cc55ab1d",
+      "bytes": 688,
+      "words": 4,
+      "complete": 1,
+      "pronunciationOnly": 3
+    },
+    "ug": {
+      "path": "lexicon/shards/ug.json",
+      "sha256": "27985272a538b4e0cbd3926c44c89604abd224d04f394227a0d4dc4cea135ca7",
+      "bytes": 3189,
+      "words": 14,
+      "complete": 7,
+      "pronunciationOnly": 7
+    },
+    "uh": {
+      "path": "lexicon/shards/uh.json",
+      "sha256": "7ca5f1b938f71c0d7608d015a6ca82ebcda153553bbe6d7f44360a23b270d70c",
+      "bytes": 1513,
+      "words": 20,
+      "complete": 0,
+      "pronunciationOnly": 20
+    },
+    "ui": {
+      "path": "lexicon/shards/ui.json",
+      "sha256": "bce56938643f377d6645f7477fe944d9c99f67747f984ed79ee098298a564f82",
+      "bytes": 165,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "uk": {
+      "path": "lexicon/shards/uk.json",
+      "sha256": "f1db2df1fe027c9e7b498b3c54e65db7a869f235b02e9e449ee7d9995f14d7dd",
+      "bytes": 1090,
+      "words": 9,
+      "complete": 1,
+      "pronunciationOnly": 8
+    },
+    "ul": {
+      "path": "lexicon/shards/ul.json",
+      "sha256": "d71f96e64a114fdad37304fe0242627c7a4c31a72663f31bcb65259455c9cabe",
+      "bytes": 17334,
+      "words": 78,
+      "complete": 32,
+      "pronunciationOnly": 46
+    },
+    "um": {
+      "path": "lexicon/shards/um.json",
+      "sha256": "7259281b4414491b53fc586703281867dd124b02a1968c511fed261264a0197d",
+      "bytes": 7559,
+      "words": 35,
+      "complete": 17,
+      "pronunciationOnly": 18
+    },
+    "un": {
+      "path": "lexicon/shards/un.json",
+      "sha256": "e57d64ab4162b4245b04b81f971987417d836411001e6c615ad2f2d863e5ad19",
+      "bytes": 245240,
+      "words": 1145,
+      "complete": 301,
+      "pronunciationOnly": 844
+    },
+    "up": {
+      "path": "lexicon/shards/up.json",
+      "sha256": "10cc0c5e894779b69e4eee02cd37a3aec75a09b3f40bdec8b18e4b9d97f1ae2d",
+      "bytes": 27806,
+      "words": 120,
+      "complete": 58,
+      "pronunciationOnly": 62
+    },
+    "ur": {
+      "path": "lexicon/shards/ur.json",
+      "sha256": "6555e603ce921becd539fe8b4453d12f5724bfe8a015c57f5bd4fd3198accf12",
+      "bytes": 15063,
+      "words": 110,
+      "complete": 19,
+      "pronunciationOnly": 91
+    },
+    "us": {
+      "path": "lexicon/shards/us.json",
+      "sha256": "2084c09c7de9edad0fb9d59bf11ea7b35d73632fd0605621e1ffc17954e20aa1",
+      "bytes": 5970,
+      "words": 59,
+      "complete": 3,
+      "pronunciationOnly": 56
+    },
+    "ut": {
+      "path": "lexicon/shards/ut.json",
+      "sha256": "badc302a1723a056dc93b81c58c02f9f6f9434a9b33be7fd35fae20d7128cb98",
+      "bytes": 5317,
+      "words": 45,
+      "complete": 6,
+      "pronunciationOnly": 39
+    },
+    "uv": {
+      "path": "lexicon/shards/uv.json",
+      "sha256": "731858b6a88706232b84643bb5426b10f016ab08f8ee95703856c025e01b714e",
+      "bytes": 157,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "uw": {
+      "path": "lexicon/shards/uw.json",
+      "sha256": "efa3794c8bdcf91d35d68a93186aa04a588a7d23f5ec05a8faf329d32090bbb2",
+      "bytes": 70,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "uy": {
+      "path": "lexicon/shards/uy.json",
+      "sha256": "4de511cdcc6ff4e0b1d73e115a415db8d967b5ffa9010c3a3c4ec5febfbda03f",
+      "bytes": 805,
+      "words": 5,
+      "complete": 2,
+      "pronunciationOnly": 3
+    },
+    "uz": {
+      "path": "lexicon/shards/uz.json",
+      "sha256": "977a1ae86601d59966040c1136a1b4bc88fbaf43b2f65c58cc5e295bc0a88fae",
+      "bytes": 2708,
+      "words": 9,
+      "complete": 8,
+      "pronunciationOnly": 1
+    },
+    "v": {
+      "path": "lexicon/shards/v.json",
+      "sha256": "d423fbdc4d4dc4b7281c189ab3569ed470e171cfeb66c16d69a944ef33c8da14",
+      "bytes": 132,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "v_": {
+      "path": "lexicon/shards/v_.json",
+      "sha256": "9ed90fd9fb758b35ef1aef5e91eda87f914f866ba98c641570376179b6a31cb8",
+      "bytes": 778,
+      "words": 5,
+      "complete": 4,
+      "pronunciationOnly": 1
+    },
+    "va": {
+      "path": "lexicon/shards/va.json",
+      "sha256": "b085bf83d19f6c31568968d71eecbac8bb3b9c7bbb4fe284252638696ea7f10e",
+      "bytes": 193247,
+      "words": 773,
+      "complete": 378,
+      "pronunciationOnly": 395
+    },
+    "ve": {
+      "path": "lexicon/shards/ve.json",
+      "sha256": "53f5b07bf3253028763cf8013c306d556794c7c1f6fd736ee5393845cf1b73e7",
+      "bytes": 98886,
+      "words": 508,
+      "complete": 176,
+      "pronunciationOnly": 332
+    },
+    "vi": {
+      "path": "lexicon/shards/vi.json",
+      "sha256": "ac45cd7caa8c123090bb09795c9499101142c7acfe57e92854593933d3c54668",
+      "bytes": 159114,
+      "words": 609,
+      "complete": 332,
+      "pronunciationOnly": 277
+    },
+    "vl": {
+      "path": "lexicon/shards/vl.json",
+      "sha256": "d2d797a935e028074e84a43ddff44dc8b2b98e5ef256f7a5cf80f1374aee6855",
+      "bytes": 5372,
+      "words": 16,
+      "complete": 13,
+      "pronunciationOnly": 3
+    },
+    "vn": {
+      "path": "lexicon/shards/vn.json",
+      "sha256": "15696c6c454b640e113942e091ec03511ee95ef441c40ea23fab9cd2bcad769f",
+      "bytes": 146,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "vo": {
+      "path": "lexicon/shards/vo.json",
+      "sha256": "d60698c31b6b023372210e7ad2fdf20a733eed69c47272477c3a5e1ad23ed7f1",
+      "bytes": 60202,
+      "words": 283,
+      "complete": 113,
+      "pronunciationOnly": 170
+    },
+    "vp": {
+      "path": "lexicon/shards/vp.json",
+      "sha256": "5c41b281c6416fcbeaa2b177887cff77c5c0f0e0a3fd72651b558641b4e5966a",
+      "bytes": 244,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "vr": {
+      "path": "lexicon/shards/vr.json",
+      "sha256": "3d91ead51c2ebd3c63df86f0fc2dac8242d00f7a7d1eaec13f2802e3c8c67e7b",
+      "bytes": 4708,
+      "words": 16,
+      "complete": 11,
+      "pronunciationOnly": 5
+    },
+    "vs": {
+      "path": "lexicon/shards/vs.json",
+      "sha256": "58aa1cc7eaa215ba0a1965f45fbce236c198f867db5775959f3c940fc4b9b631",
+      "bytes": 466,
+      "words": 3,
+      "complete": 1,
+      "pronunciationOnly": 2
+    },
+    "vu": {
+      "path": "lexicon/shards/vu.json",
+      "sha256": "155c745bc09b96238006aa1cf8590bd39df111795a133860f352c93c0e45cfe8",
+      "bytes": 5214,
+      "words": 24,
+      "complete": 11,
+      "pronunciationOnly": 13
+    },
+    "vy": {
+      "path": "lexicon/shards/vy.json",
+      "sha256": "d2ec1c0c7417066fc37ef0294dd782c32a872971974546f9b4d12dad575d9ad8",
+      "bytes": 742,
+      "words": 4,
+      "complete": 3,
+      "pronunciationOnly": 1
+    },
+    "w": {
+      "path": "lexicon/shards/w.json",
+      "sha256": "fa5888a23c7dee669cbaf9d0aee5e9ed947005c59c19eaa0c93c6e51339cf503",
+      "bytes": 92,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "w_": {
+      "path": "lexicon/shards/w_.json",
+      "sha256": "c7673f2f22eb5fb8b5d0989a07e87c433d248aebe54ff66e30e0ab253912cd1a",
+      "bytes": 382,
+      "words": 4,
+      "complete": 0,
+      "pronunciationOnly": 4
+    },
+    "wa": {
+      "path": "lexicon/shards/wa.json",
+      "sha256": "19eeaf8a1d503f3c0578838cc2076b12f6089a7e5247952c373eee9612baf625",
+      "bytes": 182521,
+      "words": 938,
+      "complete": 372,
+      "pronunciationOnly": 566
+    },
+    "we": {
+      "path": "lexicon/shards/we.json",
+      "sha256": "1744c3c91a72956a1673ebabc23603e4d8291dc7a8cfe52b22039d1bac22700f",
+      "bytes": 125454,
+      "words": 823,
+      "complete": 182,
+      "pronunciationOnly": 641
+    },
+    "wh": {
+      "path": "lexicon/shards/wh.json",
+      "sha256": "9f3a176acca8ad1a1738986ad22ab49ab1a4e93bc6c8a2b546a9f41302017d71",
+      "bytes": 34241,
+      "words": 388,
+      "complete": 0,
+      "pronunciationOnly": 388
+    },
+    "wi": {
+      "path": "lexicon/shards/wi.json",
+      "sha256": "c5ce36c97bac600ee590ffc3497243174050ab0d6d400455958c8dca386a1563",
+      "bytes": 212386,
+      "words": 967,
+      "complete": 438,
+      "pronunciationOnly": 529
+    },
+    "wl": {
+      "path": "lexicon/shards/wl.json",
+      "sha256": "4c4af63699c4e49d893e9f46d26d09125013e78ceee45aa2981ab84be548f19c",
+      "bytes": 224,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "wm": {
+      "path": "lexicon/shards/wm.json",
+      "sha256": "50953011f401e9badd089284994dcd24146593b65d211256bcf9661f52d884f0",
+      "bytes": 87,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "wn": {
+      "path": "lexicon/shards/wn.json",
+      "sha256": "baa3be40909bceebb871f58a9fe752f3a0785bf54e24eb3c80fdf05fce0158a8",
+      "bytes": 494,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "wo": {
+      "path": "lexicon/shards/wo.json",
+      "sha256": "a11728668404362677dfead014e45dd851f7187567e91738f6e0eb85b21a9b45",
+      "bytes": 94860,
+      "words": 539,
+      "complete": 179,
+      "pronunciationOnly": 360
+    },
+    "wr": {
+      "path": "lexicon/shards/wr.json",
+      "sha256": "92259b516a2fc0fed6fe5a1ad8062588b78d1d3d472900b30764e43c124ee97c",
+      "bytes": 10679,
+      "words": 124,
+      "complete": 0,
+      "pronunciationOnly": 124
+    },
+    "ws": {
+      "path": "lexicon/shards/ws.json",
+      "sha256": "9e2874377e8936ebce4f0131f6429e5f58b9f0d5f0cd84df6539e58835f1851a",
+      "bytes": 103,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "wu": {
+      "path": "lexicon/shards/wu.json",
+      "sha256": "7cb0b6274d2dd6dadf3a3d4935588467c5da763d50224a7d30b24f0713a9e11f",
+      "bytes": 5760,
+      "words": 45,
+      "complete": 11,
+      "pronunciationOnly": 34
+    },
+    "wy": {
+      "path": "lexicon/shards/wy.json",
+      "sha256": "97e97bdcd6fddc61ed05e95bdc233fadc710669d516c576336a7440a468f44e4",
+      "bytes": 14399,
+      "words": 71,
+      "complete": 38,
+      "pronunciationOnly": 33
+    },
+    "x": {
+      "path": "lexicon/shards/x.json",
+      "sha256": "ae3d1afda623b899fd3828b24db8330c312f111f7c16e502fb07f28f4c7f1232",
+      "bytes": 72,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "x_": {
+      "path": "lexicon/shards/x_.json",
+      "sha256": "96e43bff30622aa5ae9fba8f50d9939c2ae9110a1d6c89d1c8be6cf692de53cc",
+      "bytes": 788,
+      "words": 8,
+      "complete": 1,
+      "pronunciationOnly": 7
+    },
+    "xa": {
+      "path": "lexicon/shards/xa.json",
+      "sha256": "3d21ffee6cff56fa1c8211209bf1ddddd86c7089b4ed7b1aa65e362a817453e3",
+      "bytes": 1769,
+      "words": 9,
+      "complete": 4,
+      "pronunciationOnly": 5
+    },
+    "xb": {
+      "path": "lexicon/shards/xb.json",
+      "sha256": "304bf7181a11ad5a360cd09f922d2e30b44d4ab22820873c97ede59dad44f057",
+      "bytes": 93,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "xe": {
+      "path": "lexicon/shards/xe.json",
+      "sha256": "b68959ee7cabba58b78e4a4f2fcd8134353353a28d9c776caf053732b5e126ff",
+      "bytes": 4063,
+      "words": 18,
+      "complete": 9,
+      "pronunciationOnly": 9
+    },
+    "xh": {
+      "path": "lexicon/shards/xh.json",
+      "sha256": "d57a85a4d6c295658d701bbce54f58b7b0d8e9f78ca67b008dafe3684ea62e25",
+      "bytes": 83,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "xi": {
+      "path": "lexicon/shards/xi.json",
+      "sha256": "d5c1aa42d3dcfb780f106a9c5bdfceb53436fb9c5726882e0563358d9f292391",
+      "bytes": 3013,
+      "words": 18,
+      "complete": 9,
+      "pronunciationOnly": 9
+    },
+    "xm": {
+      "path": "lexicon/shards/xm.json",
+      "sha256": "6a2eb8c95e8bfda0f7817a9160da24983dc4669bd41877d4d4472c200cb88638",
+      "bytes": 94,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "xo": {
+      "path": "lexicon/shards/xo.json",
+      "sha256": "f2983433473fd19afcf5eb742c9b7e944e3f2d1a16fd49c2857cba30b2521e6f",
+      "bytes": 559,
+      "words": 2,
+      "complete": 2,
+      "pronunciationOnly": 0
+    },
+    "xs": {
+      "path": "lexicon/shards/xs.json",
+      "sha256": "ea0c9e434ebbe458b2c81a7503edf24ab9611400a18cd732f070e09749b928dc",
+      "bytes": 96,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "xt": {
+      "path": "lexicon/shards/xt.json",
+      "sha256": "1dd8e48c709827406cce1cb24e936cb0f22f56c7dcd0214cf7db82187d6b879c",
+      "bytes": 89,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "xu": {
+      "path": "lexicon/shards/xu.json",
+      "sha256": "dadfd82b26d1f0ec5a47005cd7f193318e4e8bb227e16e8d0de1ca05a4ccb2fa",
+      "bytes": 1110,
+      "words": 7,
+      "complete": 4,
+      "pronunciationOnly": 3
+    },
+    "xy": {
+      "path": "lexicon/shards/xy.json",
+      "sha256": "f2b11cbcdd59c002c34bd8c87f295073d908813650edc89c5616894972716539",
+      "bytes": 2774,
+      "words": 8,
+      "complete": 7,
+      "pronunciationOnly": 1
+    },
+    "y": {
+      "path": "lexicon/shards/y.json",
+      "sha256": "44779968e741d4f879bed84e2dff44c92bc54c10cd9d471c1992f5e7ae099870",
+      "bytes": 134,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "y_": {
+      "path": "lexicon/shards/y_.json",
+      "sha256": "bce588d4543e09ff54cbe22da2bc38eb5a66a8875886e64fad1a210b48384fcc",
+      "bytes": 488,
+      "words": 5,
+      "complete": 1,
+      "pronunciationOnly": 4
+    },
+    "ya": {
+      "path": "lexicon/shards/ya.json",
+      "sha256": "629be49e1e75b5e69e9f145a6ad2f1b1313c6296bac7dd8de0138023b87f34ec",
+      "bytes": 50464,
+      "words": 206,
+      "complete": 125,
+      "pronunciationOnly": 81
+    },
+    "yb": {
+      "path": "lexicon/shards/yb.json",
+      "sha256": "ac4b390a42734ec5c2a0222df05c8e67e3b4fdc57b1a8c6272a1fa022b7c4904",
+      "bytes": 820,
+      "words": 3,
+      "complete": 2,
+      "pronunciationOnly": 1
+    },
+    "yd": {
+      "path": "lexicon/shards/yd.json",
+      "sha256": "a665813292c5ac24616cd062a55ec06504562fabf6a08518b5465154dd68e1bb",
+      "bytes": 178,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "ye": {
+      "path": "lexicon/shards/ye.json",
+      "sha256": "59e02955cbe810c46c96282ce76db144c1682bf265c3580d1028dac42fdb3c28",
+      "bytes": 25738,
+      "words": 155,
+      "complete": 52,
+      "pronunciationOnly": 103
+    },
+    "yg": {
+      "path": "lexicon/shards/yg.json",
+      "sha256": "5552bcab7b0f4bd5cfd269fd4818f171aa3fa0214f654e8c24627a7f6f4d9c22",
+      "bytes": 482,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "yi": {
+      "path": "lexicon/shards/yi.json",
+      "sha256": "c63214d034a5c5f5a55a457d720e161dda17a9415bfbc66ba96bec2321a7df85",
+      "bytes": 3195,
+      "words": 21,
+      "complete": 9,
+      "pronunciationOnly": 12
+    },
+    "yl": {
+      "path": "lexicon/shards/yl.json",
+      "sha256": "07942d6b566458dc62c311407af9c3b6c01508329860713285c65deb52cab8cf",
+      "bytes": 222,
+      "words": 2,
+      "complete": 0,
+      "pronunciationOnly": 2
+    },
+    "yn": {
+      "path": "lexicon/shards/yn.json",
+      "sha256": "4414b8984ea6e4770da7bbf803775f5587116874f3cc96d725ce2d717afbe7ae",
+      "bytes": 430,
+      "words": 3,
+      "complete": 1,
+      "pronunciationOnly": 2
+    },
+    "yo": {
+      "path": "lexicon/shards/yo.json",
+      "sha256": "e93c3e9b218468b691ec0c6abd4538a51a9c3faff4247fb1f48be212893476e4",
+      "bytes": 35326,
+      "words": 197,
+      "complete": 78,
+      "pronunciationOnly": 119
+    },
+    "yp": {
+      "path": "lexicon/shards/yp.json",
+      "sha256": "721c5439ab85c72ea270c90678349110acabd0b3141c510dcd54dd8e72d92e91",
+      "bytes": 538,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "yq": {
+      "path": "lexicon/shards/yq.json",
+      "sha256": "452e7bb8fe3609cd91668d4cef032301591cf6edc3cb535e942270c2a8846cf8",
+      "bytes": 304,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "ys": {
+      "path": "lexicon/shards/ys.json",
+      "sha256": "42dfdc96d89c5c665213e750a022fd1dbb028d3a730f267d5a5e6021a8926d77",
+      "bytes": 365,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "yt": {
+      "path": "lexicon/shards/yt.json",
+      "sha256": "edb10ffe5403eb7c0000e2d372de8412240c768c7e6d9f93fa649454cc8cb009",
+      "bytes": 368,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "yu": {
+      "path": "lexicon/shards/yu.json",
+      "sha256": "d89e83758af171b72d7ad931e4633d32f5bb74c72eaf7a76f6f2dca309f903b1",
+      "bytes": 18232,
+      "words": 75,
+      "complete": 55,
+      "pronunciationOnly": 20
+    },
+    "yv": {
+      "path": "lexicon/shards/yv.json",
+      "sha256": "8f2d0831fd66b9fcc6ca885df239c6ae0ea749844abc56d4b56c59b8e40e92e2",
+      "bytes": 320,
+      "words": 4,
+      "complete": 0,
+      "pronunciationOnly": 4
+    },
+    "yz": {
+      "path": "lexicon/shards/yz.json",
+      "sha256": "16e888e4bbae51c0a8f8b71c5e00a8859f4a2fc3b8e213e3c8fb1ba135ad9add",
+      "bytes": 102,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "z": {
+      "path": "lexicon/shards/z.json",
+      "sha256": "3a0d2db9c62d6bede41ed43670c93d9b645e3ad659ce556f194fc9d831bba7c0",
+      "bytes": 132,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "z_": {
+      "path": "lexicon/shards/z_.json",
+      "sha256": "d7c3ccea73cd0a9bc7356c78b16e86361a3ba2058ae5a3233efdb45fdd8cdaef",
+      "bytes": 514,
+      "words": 3,
+      "complete": 3,
+      "pronunciationOnly": 0
+    },
+    "za": {
+      "path": "lexicon/shards/za.json",
+      "sha256": "a3cf4d6211f12c57a90cf7d54ed0410f3978a4bf47b7514ab60595a438bb3fb4",
+      "bytes": 61756,
+      "words": 247,
+      "complete": 144,
+      "pronunciationOnly": 103
+    },
+    "zb": {
+      "path": "lexicon/shards/zb.json",
+      "sha256": "c75db384157f52ef87f0750e4277b0852c4343b35d60b126376dc5d72ff0fd99",
+      "bytes": 856,
+      "words": 4,
+      "complete": 2,
+      "pronunciationOnly": 2
+    },
+    "zd": {
+      "path": "lexicon/shards/zd.json",
+      "sha256": "2d9cea4f3ad4463eeeb3540f14c258f7abb722567cee288cbd58e221897825ed",
+      "bytes": 105,
+      "words": 1,
+      "complete": 0,
+      "pronunciationOnly": 1
+    },
+    "ze": {
+      "path": "lexicon/shards/ze.json",
+      "sha256": "503ae9e928574ea5053561aebb72e2d273abd4fce231ca73e863b713e2e73a68",
+      "bytes": 41089,
+      "words": 211,
+      "complete": 94,
+      "pronunciationOnly": 117
+    },
+    "zh": {
+      "path": "lexicon/shards/zh.json",
+      "sha256": "81359c1eeb293078e65ca1176e77dafb44590c97e0d4f836bc87eae4ce6e72f0",
+      "bytes": 1294,
+      "words": 15,
+      "complete": 0,
+      "pronunciationOnly": 15
+    },
+    "zi": {
+      "path": "lexicon/shards/zi.json",
+      "sha256": "f2a05356dee83484ffaf1ceaea9dbe4d9f6ad2962933d093662730ced9fe08ad",
+      "bytes": 34463,
+      "words": 178,
+      "complete": 83,
+      "pronunciationOnly": 95
+    },
+    "zl": {
+      "path": "lexicon/shards/zl.json",
+      "sha256": "0baeb16b7b28273d6d72a5fe106fa8b505d642f2cd9c4dd6773f9ea3a9df0599",
+      "bytes": 2565,
+      "words": 9,
+      "complete": 7,
+      "pronunciationOnly": 2
+    },
+    "zm": {
+      "path": "lexicon/shards/zm.json",
+      "sha256": "bba0459975c944ecb744b56db7fcb482cd4a020a35df28a08a2df0219b271588",
+      "bytes": 426,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "zo": {
+      "path": "lexicon/shards/zo.json",
+      "sha256": "6ea7f81663ea48d7dae2f89b8be8482ddeb2291fa81d6ee5a983467fddfc2e65",
+      "bytes": 18802,
+      "words": 85,
+      "complete": 50,
+      "pronunciationOnly": 35
+    },
+    "zs": {
+      "path": "lexicon/shards/zs.json",
+      "sha256": "0b206fb6bb9ea9f2596dec0b441fbfb08a5b3e72c64e75c7c548f9270975e0d2",
+      "bytes": 310,
+      "words": 4,
+      "complete": 0,
+      "pronunciationOnly": 4
+    },
+    "zu": {
+      "path": "lexicon/shards/zu.json",
+      "sha256": "ff06291030ec8ad3a3b6b15b873c0c621f4120db058195ebb7ca298b461f4687",
+      "bytes": 18105,
+      "words": 83,
+      "complete": 45,
+      "pronunciationOnly": 38
+    },
+    "zv": {
+      "path": "lexicon/shards/zv.json",
+      "sha256": "4c4177c3dcdb7c6820f8fd18eedd6226ebd198966036ff79bdc64182d5ee497a",
+      "bytes": 424,
+      "words": 1,
+      "complete": 1,
+      "pronunciationOnly": 0
+    },
+    "zw": {
+      "path": "lexicon/shards/zw.json",
+      "sha256": "1c3df9610bbe4d6969cb95a26fcebfec8ed7312a8754037f6bfe155a1560cb09",
+      "bytes": 3127,
+      "words": 18,
+      "complete": 6,
+      "pronunciationOnly": 12
+    },
+    "zy": {
+      "path": "lexicon/shards/zy.json",
+      "sha256": "08622199938848432a6f014c491e5542cd483070a167a690cfe032e4243cacac",
+      "bytes": 5081,
+      "words": 16,
+      "complete": 13,
+      "pronunciationOnly": 3
+    }
+  }
+}

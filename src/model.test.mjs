@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import { tokenize, hintsVisible, soundAtClientX, hasBlendingCues } from './model.ts';
 
-const dictionary = JSON.parse(readFileSync(new URL('../shared/dictionary.json', import.meta.url), 'utf8'));
+import { buildDictionary } from '../scripts/build-dictionary.mjs';
+const dictionary = buildDictionary();
 
 test('repeated words retain separate occurrences and exact original text', () => {
   const source = "Dad, Dad!\nShe sees café. It's hello.";
